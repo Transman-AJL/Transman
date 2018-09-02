@@ -2,7 +2,7 @@ package Model;
 
 /**
  *
- * @author Arley Bebe
+ * @author lipe
  */
 public class Veiculo {
     
