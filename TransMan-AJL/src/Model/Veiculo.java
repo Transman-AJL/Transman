@@ -7,6 +7,21 @@ package Model;
 public class Veiculo {
     
     private String matricula;
+
+    public Veiculo(String matricula, String marca, String modelo, int ano, double kilometragem, String status, String categoria, String Tipo, double peso, double volume, int lotacao, double cilindrada) {
+        this.matricula = matricula;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+        this.kilometragem = kilometragem;
+        this.status = status;
+        this.categoria = categoria;
+        this.Tipo = Tipo;
+        this.peso = peso;
+        this.volume = volume;
+        this.lotacao = lotacao;
+        this.cilindrada = cilindrada;
+    }
     private String marca;
     private String modelo;
     private int ano;

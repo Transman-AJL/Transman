@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Model;
 
 /**
  *
  * @author lipe
  */
-public class Bus {
+    public class Bus extends Veiculo {
+    private int lotacao;
+
+    public int getLotacao() {
+        return lotacao;
+    }
+
+    public void setLotacao(int lotacao) {
+        this.lotacao = lotacao;
+    }
+
+    public Bus(int lot, String matricula, String marca, String modelo, int ano, double kilometragem, String status, String categoria, String Tipo, double peso, double volume, int lotacao, double cilindrada) {
+        super(matricula, marca, modelo, ano, kilometragem, status, categoria, Tipo, peso, volume, lotacao, cilindrada);
+        this.lotacao = lot;
+    }
     
+   
 }
