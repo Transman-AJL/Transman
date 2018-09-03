@@ -78,6 +78,7 @@ public class LogIn extends javax.swing.JFrame {
         });
 
         jPasswordField1.setBackground(new Color(0,0,0,0));
+        jPasswordField1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jPasswordField1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(255, 255, 255)));
         jPasswordField1.setOpaque(false);
 

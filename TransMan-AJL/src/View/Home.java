@@ -19,6 +19,7 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+        lbNotificacoes.setVisible(false);
     }
 
     /**
@@ -83,6 +84,8 @@ public class Home extends javax.swing.JFrame {
         kPanelRelatorios = new keeptoo.KGradientPanel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         jLabel1 = new javax.swing.JLabel();
+        btNotificacoes = new javax.swing.JLabel();
+        lbNotificacoes = new javax.swing.JLabel();
         kGradientPanel8 = new keeptoo.KGradientPanel();
         btExit = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -444,7 +447,7 @@ public class Home extends javax.swing.JFrame {
                                 .addGap(91, 91, 91)
                                 .addComponent(jLabel24))
                             .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelHomeLayout.setVerticalGroup(
             kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -491,7 +494,7 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel22))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(42, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelHome, "card2");
@@ -521,7 +524,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel26)
                 .addGap(176, 176, 176)
                 .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRViagemLayout.setVerticalGroup(
             kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -617,20 +620,37 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px.png"))); // NOI18N
+        btNotificacoes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btNotificacoesMouseClicked(evt);
+            }
+        });
+
+        lbNotificacoes.setText("Viagem Nr. 1364 - Coca-cola - Maputo -> Gaza foi terminada");
+
         javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
         kGradientPanel2.setLayout(kGradientPanel2Layout);
         kGradientPanel2Layout.setHorizontalGroup(
             kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel2Layout.createSequentialGroup()
-                .addContainerGap(670, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(btNotificacoes)
+                .addGap(18, 18, 18)
+                .addComponent(lbNotificacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(18, 18, 18))
         );
         kGradientPanel2Layout.setVerticalGroup(
             kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel2Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lbNotificacoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btNotificacoes))
                 .addContainerGap())
         );
 
@@ -693,7 +713,8 @@ public class Home extends javax.swing.JFrame {
     }//GEN-LAST:event_kButton1ActionPerformed
 
     private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton2ActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here
+        
     }//GEN-LAST:event_kButton2ActionPerformed
 
     private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton3ActionPerformed
@@ -736,6 +757,13 @@ public class Home extends javax.swing.JFrame {
         kPanelRoot.revalidate();
     }//GEN-LAST:event_jLabel26MouseClicked
 
+    private void btNotificacoesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btNotificacoesMouseClicked
+        // TODO add your handling code here:
+        if(lbNotificacoes.isVisible()==false)
+        lbNotificacoes.setVisible(true);
+        else lbNotificacoes.setVisible(false);
+    }//GEN-LAST:event_btNotificacoesMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -773,6 +801,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btExit;
+    private javax.swing.JLabel btNotificacoes;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -820,6 +849,7 @@ public class Home extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelRelatorios;
     private keeptoo.KGradientPanel kPanelRoot;
     private keeptoo.KGradientPanel kPanelVViagens;
+    private javax.swing.JLabel lbNotificacoes;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar1;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar3;
