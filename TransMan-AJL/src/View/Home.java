@@ -5,6 +5,7 @@
  */
 package View;
 
+import javax.swing.JOptionPane;
 import keeptoo.Drag;
 
 /**
@@ -29,13 +30,19 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jProgressBarLU1 = new com.alee.managers.language.updaters.JProgressBarLU();
+        webProgressBarUI1 = new com.alee.laf.progressbar.WebProgressBarUI();
+        webStepProgressStyle1 = new com.alee.extended.progress.WebStepProgressStyle();
+        webProgressBarStyle1 = new com.alee.laf.progressbar.WebProgressBarStyle();
+        webStepProgress1 = new com.alee.extended.progress.WebStepProgress();
         jPanel1 = new javax.swing.JPanel();
         kButton1 = new keeptoo.KButton();
         kButton2 = new keeptoo.KButton();
         kButton3 = new keeptoo.KButton();
         kButton4 = new keeptoo.KButton();
         kButton5 = new keeptoo.KButton();
-        kGradientPanel1 = new keeptoo.KGradientPanel();
+        jLabel25 = new javax.swing.JLabel();
+        kPanelRoot = new keeptoo.KGradientPanel();
         kPanelHome = new keeptoo.KGradientPanel();
         kGradientPanel3 = new keeptoo.KGradientPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -46,7 +53,30 @@ public class Home extends javax.swing.JFrame {
         kGradientPanel5 = new keeptoo.KGradientPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jPanelRViagem = new keeptoo.KGradientPanel();
+        jLabel9 = new javax.swing.JLabel();
+        webProgressBar1 = new com.alee.laf.progressbar.WebProgressBar();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        webProgressBar2 = new com.alee.laf.progressbar.WebProgressBar();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        webProgressBar3 = new com.alee.laf.progressbar.WebProgressBar();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        webProgressBar5 = new com.alee.laf.progressbar.WebProgressBar();
+        kPanelRViagem = new keeptoo.KGradientPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
         kPanelVViagens = new keeptoo.KGradientPanel();
         kPanelGViaturas = new keeptoo.KGradientPanel();
         kPanelGFuncionarios = new keeptoo.KGradientPanel();
@@ -159,19 +189,26 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Services_30px.png"))); // NOI18N
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(kButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                    .addComponent(kButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(kButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(kButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(kButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(kButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                            .addComponent(kButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(kButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(kButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(kButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(jLabel25)))
+                .addGap(5, 5, 5))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -183,19 +220,21 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(kButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(kButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 180, 470));
 
-        kGradientPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(204, 204, 204)));
-        kGradientPanel1.setForeground(new java.awt.Color(204, 204, 204));
-        kGradientPanel1.setkBorderRadius(0);
-        kGradientPanel1.setkEndColor(new java.awt.Color(204, 255, 255));
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 255, 255));
-        kGradientPanel1.setLayout(new java.awt.CardLayout());
+        kPanelRoot.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(204, 204, 204)));
+        kPanelRoot.setForeground(new java.awt.Color(204, 204, 204));
+        kPanelRoot.setkBorderRadius(0);
+        kPanelRoot.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelRoot.setkStartColor(new java.awt.Color(255, 255, 255));
+        kPanelRoot.setLayout(new java.awt.CardLayout());
 
         kPanelHome.setkBorderRadius(0);
         kPanelHome.setkEndColor(new java.awt.Color(204, 255, 255));
@@ -291,48 +330,210 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
+        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel9.setText("Últimas Viagens");
+
+        webProgressBar1.setValue(80);
+        webProgressBar1.setBgBottom(new java.awt.Color(204, 255, 255));
+        webProgressBar1.setBgTop(new java.awt.Color(204, 204, 255));
+        webProgressBar1.setProgressBottomColor(new java.awt.Color(51, 255, 255));
+        webProgressBar1.setProgressTopColor(new java.awt.Color(51, 255, 0));
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel10.setText("Cliente");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("Origem");
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel12.setText("Destino");
+
+        jLabel13.setText("Pepsi co.");
+
+        jLabel14.setText("Maputo - Cidade");
+
+        jLabel15.setText("Zambezia - Quelimane");
+
+        jLabel16.setText("Mozal");
+
+        webProgressBar2.setValue(20);
+        webProgressBar2.setBgBottom(new java.awt.Color(204, 255, 255));
+        webProgressBar2.setBgTop(new java.awt.Color(204, 204, 255));
+        webProgressBar2.setProgressBottomColor(new java.awt.Color(51, 255, 255));
+        webProgressBar2.setProgressTopColor(new java.awt.Color(51, 255, 0));
+
+        jLabel17.setText("Maputo - Província");
+
+        jLabel18.setText("SA - Johanesburg");
+
+        jLabel19.setText("Fematro");
+
+        webProgressBar3.setValue(56);
+        webProgressBar3.setBgBottom(new java.awt.Color(204, 255, 255));
+        webProgressBar3.setBgTop(new java.awt.Color(204, 204, 255));
+        webProgressBar3.setProgressBottomColor(new java.awt.Color(51, 255, 255));
+        webProgressBar3.setProgressTopColor(new java.awt.Color(51, 255, 0));
+
+        jLabel20.setText("Maputo - Junta");
+
+        jLabel21.setText("Inhambane - Maxixe");
+
+        jLabel22.setText("Nampula - Nacala");
+
+        jLabel23.setText("Maningue Nice");
+
+        jLabel24.setText("Sofala - Beira");
+
+        webProgressBar5.setValue(90);
+        webProgressBar5.setBgBottom(new java.awt.Color(204, 255, 255));
+        webProgressBar5.setBgTop(new java.awt.Color(204, 204, 255));
+        webProgressBar5.setProgressBottomColor(new java.awt.Color(51, 255, 255));
+        webProgressBar5.setProgressTopColor(new java.awt.Color(51, 255, 0));
+
         javax.swing.GroupLayout kPanelHomeLayout = new javax.swing.GroupLayout(kPanelHome);
         kPanelHome.setLayout(kPanelHomeLayout);
         kPanelHomeLayout.setHorizontalGroup(
             kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelHomeLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kGradientPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kGradientPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelHomeLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kPanelHomeLayout.createSequentialGroup()
+                                .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(kGradientPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(kGradientPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(kPanelHomeLayout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kPanelHomeLayout.createSequentialGroup()
+                                .addComponent(jLabel13)
+                                .addGap(125, 125, 125)
+                                .addComponent(jLabel14)
+                                .addGap(81, 81, 81)
+                                .addComponent(jLabel15))
+                            .addGroup(kPanelHomeLayout.createSequentialGroup()
+                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(32, 32, 32)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(webProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(kPanelHomeLayout.createSequentialGroup()
+                                .addComponent(jLabel16)
+                                .addGap(139, 139, 139)
+                                .addComponent(jLabel17)
+                                .addGap(74, 74, 74)
+                                .addComponent(jLabel18))
+                            .addComponent(webProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(kPanelHomeLayout.createSequentialGroup()
+                                .addComponent(jLabel19)
+                                .addGap(125, 125, 125)
+                                .addComponent(jLabel20)
+                                .addGap(90, 90, 90)
+                                .addComponent(jLabel21))
+                            .addComponent(webProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(kPanelHomeLayout.createSequentialGroup()
+                                .addComponent(jLabel23)
+                                .addGap(86, 86, 86)
+                                .addComponent(jLabel22)
+                                .addGap(91, 91, 91)
+                                .addComponent(jLabel24))
+                            .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         kPanelHomeLayout.setVerticalGroup(
             kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelHomeLayout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(22, 22, 22)
                 .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(kGradientPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kGradientPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(338, Short.MAX_VALUE))
+                .addGap(26, 26, 26)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14)
+                    .addComponent(jLabel15))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(webProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel16)
+                    .addComponent(jLabel17)
+                    .addComponent(jLabel18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(webProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel21))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(webProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23)
+                    .addComponent(jLabel24)
+                    .addComponent(jLabel22))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
-        kGradientPanel1.add(kPanelHome, "card2");
+        kPanelRoot.add(kPanelHome, "card2");
 
-        jPanelRViagem.setkBorderRadius(0);
-        jPanelRViagem.setkEndColor(new java.awt.Color(204, 255, 255));
-        jPanelRViagem.setkStartColor(new java.awt.Color(255, 255, 255));
+        kPanelRViagem.setkBorderRadius(0);
+        kPanelRViagem.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelRViagem.setkStartColor(new java.awt.Color(255, 255, 255));
 
-        javax.swing.GroupLayout jPanelRViagemLayout = new javax.swing.GroupLayout(jPanelRViagem);
-        jPanelRViagem.setLayout(jPanelRViagemLayout);
-        jPanelRViagemLayout.setHorizontalGroup(
-            jPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 619, Short.MAX_VALUE)
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        jLabel26.setText("Voltar");
+        jLabel26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel26MouseClicked(evt);
+            }
+        });
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel27.setText("Registrar viagem");
+
+        javax.swing.GroupLayout kPanelRViagemLayout = new javax.swing.GroupLayout(kPanelRViagem);
+        kPanelRViagem.setLayout(kPanelRViagemLayout);
+        kPanelRViagemLayout.setHorizontalGroup(
+            kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelRViagemLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel26)
+                .addGap(176, 176, 176)
+                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(250, Short.MAX_VALUE))
         );
-        jPanelRViagemLayout.setVerticalGroup(
-            jPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 470, Short.MAX_VALUE)
+        kPanelRViagemLayout.setVerticalGroup(
+            kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelRViagemLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel27))
+                .addContainerGap(429, Short.MAX_VALUE))
         );
 
-        kGradientPanel1.add(jPanelRViagem, "card2");
+        kPanelRoot.add(kPanelRViagem, "card2");
 
         kPanelVViagens.setkBorderRadius(0);
         kPanelVViagens.setkEndColor(new java.awt.Color(204, 255, 255));
@@ -349,7 +550,7 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 470, Short.MAX_VALUE)
         );
 
-        kGradientPanel1.add(kPanelVViagens, "card2");
+        kPanelRoot.add(kPanelVViagens, "card2");
 
         kPanelGViaturas.setkBorderRadius(0);
         kPanelGViaturas.setkEndColor(new java.awt.Color(204, 255, 255));
@@ -366,7 +567,7 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 470, Short.MAX_VALUE)
         );
 
-        kGradientPanel1.add(kPanelGViaturas, "card2");
+        kPanelRoot.add(kPanelGViaturas, "card2");
 
         kPanelGFuncionarios.setkBorderRadius(0);
         kPanelGFuncionarios.setkEndColor(new java.awt.Color(204, 255, 255));
@@ -383,7 +584,7 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 470, Short.MAX_VALUE)
         );
 
-        kGradientPanel1.add(kPanelGFuncionarios, "card2");
+        kPanelRoot.add(kPanelGFuncionarios, "card2");
 
         kPanelRelatorios.setkBorderRadius(0);
         kPanelRelatorios.setkEndColor(new java.awt.Color(204, 255, 255));
@@ -400,16 +601,21 @@ public class Home extends javax.swing.JFrame {
             .addGap(0, 470, Short.MAX_VALUE)
         );
 
-        kGradientPanel1.add(kPanelRelatorios, "card2");
+        kPanelRoot.add(kPanelRelatorios, "card2");
 
-        getContentPane().add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 620, 470));
+        getContentPane().add(kPanelRoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 620, 470));
 
         kGradientPanel2.setkBorderRadius(0);
         kGradientPanel2.setkEndColor(new java.awt.Color(255, 255, 204));
         kGradientPanel2.setkStartColor(new java.awt.Color(204, 255, 255));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Male_User_30px.png"))); // NOI18N
-        jLabel1.setText("username here");
+        jLabel1.setText("username aqui");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
         kGradientPanel2.setLayout(kGradientPanel2Layout);
@@ -480,6 +686,10 @@ public class Home extends javax.swing.JFrame {
 
     private void kButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton1ActionPerformed
         // TODO add your handling code here:
+        kPanelRoot.removeAll();
+            kPanelRoot.add(kPanelRViagem);
+            kPanelRoot.repaint();
+            kPanelRoot.revalidate(); 
     }//GEN-LAST:event_kButton1ActionPerformed
 
     private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton2ActionPerformed
@@ -512,6 +722,19 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
         new Drag(kGradientPanel8).moveWindow(evt);
     }//GEN-LAST:event_kGradientPanel8MouseDragged
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        JOptionPane.showInputDialog("Alterar a password? [Y/N]");
+    }//GEN-LAST:event_jLabel1MouseClicked
+
+    private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_jLabel26MouseClicked
 
     /**
      * @param args the command line arguments
@@ -551,21 +774,40 @@ public class Home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btExit;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private keeptoo.KGradientPanel jPanelRViagem;
+    private com.alee.managers.language.updaters.JProgressBarLU jProgressBarLU1;
+    private javax.swing.JSeparator jSeparator1;
     private keeptoo.KButton kButton1;
     private keeptoo.KButton kButton2;
     private keeptoo.KButton kButton3;
     private keeptoo.KButton kButton4;
     private keeptoo.KButton kButton5;
-    private keeptoo.KGradientPanel kGradientPanel1;
     private keeptoo.KGradientPanel kGradientPanel2;
     private keeptoo.KGradientPanel kGradientPanel3;
     private keeptoo.KGradientPanel kGradientPanel4;
@@ -574,7 +816,17 @@ public class Home extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelGFuncionarios;
     private keeptoo.KGradientPanel kPanelGViaturas;
     private keeptoo.KGradientPanel kPanelHome;
+    private keeptoo.KGradientPanel kPanelRViagem;
     private keeptoo.KGradientPanel kPanelRelatorios;
+    private keeptoo.KGradientPanel kPanelRoot;
     private keeptoo.KGradientPanel kPanelVViagens;
+    private com.alee.laf.progressbar.WebProgressBar webProgressBar1;
+    private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
+    private com.alee.laf.progressbar.WebProgressBar webProgressBar3;
+    private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
+    private com.alee.laf.progressbar.WebProgressBarStyle webProgressBarStyle1;
+    private com.alee.laf.progressbar.WebProgressBarUI webProgressBarUI1;
+    private com.alee.extended.progress.WebStepProgress webStepProgress1;
+    private com.alee.extended.progress.WebStepProgressStyle webStepProgressStyle1;
     // End of variables declaration//GEN-END:variables
 }
