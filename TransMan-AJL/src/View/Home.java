@@ -37,11 +37,11 @@ public class Home extends javax.swing.JFrame {
         webProgressBarStyle1 = new com.alee.laf.progressbar.WebProgressBarStyle();
         webStepProgress1 = new com.alee.extended.progress.WebStepProgress();
         jPanel1 = new javax.swing.JPanel();
-        kButton1 = new keeptoo.KButton();
-        kButton2 = new keeptoo.KButton();
-        kButton3 = new keeptoo.KButton();
-        kButton4 = new keeptoo.KButton();
-        kButton5 = new keeptoo.KButton();
+        kbtRViagem = new keeptoo.KButton();
+        kbtRelatorios = new keeptoo.KButton();
+        kbtVViagens = new keeptoo.KButton();
+        kbtGViaturas = new keeptoo.KButton();
+        kbtGFuncionarios = new keeptoo.KButton();
         jLabel25 = new javax.swing.JLabel();
         kPanelRoot = new keeptoo.KGradientPanel();
         kPanelHome = new keeptoo.KGradientPanel();
@@ -79,9 +79,17 @@ public class Home extends javax.swing.JFrame {
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         kPanelVViagens = new keeptoo.KGradientPanel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
         kPanelGViaturas = new keeptoo.KGradientPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
         kPanelGFuncionarios = new keeptoo.KGradientPanel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
         kPanelRelatorios = new keeptoo.KGradientPanel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
         kGradientPanel2 = new keeptoo.KGradientPanel();
         jLabel1 = new javax.swing.JLabel();
         btNotificacoes = new javax.swing.JLabel();
@@ -97,98 +105,98 @@ public class Home extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        kButton1.setBackground(new java.awt.Color(236, 236, 236));
-        kButton1.setForeground(new java.awt.Color(0, 0, 0));
-        kButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Truck_30px.png"))); // NOI18N
-        kButton1.setText("  Registrar Viagem");
-        kButton1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        kButton1.setkAllowGradient(false);
-        kButton1.setkBackGroundColor(new java.awt.Color(255, 255, 255));
-        kButton1.setkBorderRadius(0);
-        kButton1.setkEndColor(new java.awt.Color(0, 255, 255));
-        kButton1.setkForeGround(new java.awt.Color(0, 0, 0));
-        kButton1.setkHoverForeGround(new java.awt.Color(102, 102, 102));
-        kButton1.setkPressedColor(new java.awt.Color(255, 255, 255));
-        kButton1.setkSelectedColor(new java.awt.Color(101, 198, 187));
-        kButton1.addActionListener(new java.awt.event.ActionListener() {
+        kbtRViagem.setBackground(new java.awt.Color(236, 236, 236));
+        kbtRViagem.setForeground(new java.awt.Color(0, 0, 0));
+        kbtRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Truck_30px.png"))); // NOI18N
+        kbtRViagem.setText("  Registrar Viagem");
+        kbtRViagem.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtRViagem.setkAllowGradient(false);
+        kbtRViagem.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtRViagem.setkBorderRadius(0);
+        kbtRViagem.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtRViagem.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtRViagem.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtRViagem.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtRViagem.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtRViagem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kButton1ActionPerformed(evt);
+                kbtRViagemActionPerformed(evt);
             }
         });
 
-        kButton2.setBackground(new java.awt.Color(236, 236, 236));
-        kButton2.setForeground(new java.awt.Color(0, 0, 0));
-        kButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Stop_Pie_Chart_Report_30px.png"))); // NOI18N
-        kButton2.setText("Relatórios");
-        kButton2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        kButton2.setkAllowGradient(false);
-        kButton2.setkBackGroundColor(new java.awt.Color(255, 255, 255));
-        kButton2.setkBorderRadius(0);
-        kButton2.setkEndColor(new java.awt.Color(0, 255, 255));
-        kButton2.setkForeGround(new java.awt.Color(0, 0, 0));
-        kButton2.setkHoverForeGround(new java.awt.Color(102, 102, 102));
-        kButton2.setkPressedColor(new java.awt.Color(255, 255, 255));
-        kButton2.setkSelectedColor(new java.awt.Color(101, 198, 187));
-        kButton2.addActionListener(new java.awt.event.ActionListener() {
+        kbtRelatorios.setBackground(new java.awt.Color(236, 236, 236));
+        kbtRelatorios.setForeground(new java.awt.Color(0, 0, 0));
+        kbtRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Stop_Pie_Chart_Report_30px.png"))); // NOI18N
+        kbtRelatorios.setText("Relatórios");
+        kbtRelatorios.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtRelatorios.setkAllowGradient(false);
+        kbtRelatorios.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtRelatorios.setkBorderRadius(0);
+        kbtRelatorios.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtRelatorios.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtRelatorios.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtRelatorios.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtRelatorios.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtRelatorios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kButton2ActionPerformed(evt);
+                kbtRelatoriosActionPerformed(evt);
             }
         });
 
-        kButton3.setBackground(new java.awt.Color(236, 236, 236));
-        kButton3.setForeground(new java.awt.Color(0, 0, 0));
-        kButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Traveler_30px_3.png"))); // NOI18N
-        kButton3.setText("Ver viagens");
-        kButton3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        kButton3.setkAllowGradient(false);
-        kButton3.setkBackGroundColor(new java.awt.Color(255, 255, 255));
-        kButton3.setkBorderRadius(0);
-        kButton3.setkEndColor(new java.awt.Color(0, 255, 255));
-        kButton3.setkForeGround(new java.awt.Color(0, 0, 0));
-        kButton3.setkHoverForeGround(new java.awt.Color(102, 102, 102));
-        kButton3.setkPressedColor(new java.awt.Color(255, 255, 255));
-        kButton3.setkSelectedColor(new java.awt.Color(101, 198, 187));
-        kButton3.addActionListener(new java.awt.event.ActionListener() {
+        kbtVViagens.setBackground(new java.awt.Color(236, 236, 236));
+        kbtVViagens.setForeground(new java.awt.Color(0, 0, 0));
+        kbtVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Traveler_30px_3.png"))); // NOI18N
+        kbtVViagens.setText("Ver viagens");
+        kbtVViagens.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtVViagens.setkAllowGradient(false);
+        kbtVViagens.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtVViagens.setkBorderRadius(0);
+        kbtVViagens.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtVViagens.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtVViagens.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtVViagens.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtVViagens.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtVViagens.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kButton3ActionPerformed(evt);
+                kbtVViagensActionPerformed(evt);
             }
         });
 
-        kButton4.setBackground(new java.awt.Color(236, 236, 236));
-        kButton4.setForeground(new java.awt.Color(0, 0, 0));
-        kButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Car_Service_30px_1.png"))); // NOI18N
-        kButton4.setText("Gerir Viaturas");
-        kButton4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        kButton4.setkAllowGradient(false);
-        kButton4.setkBackGroundColor(new java.awt.Color(255, 255, 255));
-        kButton4.setkBorderRadius(0);
-        kButton4.setkEndColor(new java.awt.Color(0, 255, 255));
-        kButton4.setkForeGround(new java.awt.Color(0, 0, 0));
-        kButton4.setkHoverForeGround(new java.awt.Color(102, 102, 102));
-        kButton4.setkPressedColor(new java.awt.Color(255, 255, 255));
-        kButton4.setkSelectedColor(new java.awt.Color(101, 198, 187));
-        kButton4.addActionListener(new java.awt.event.ActionListener() {
+        kbtGViaturas.setBackground(new java.awt.Color(236, 236, 236));
+        kbtGViaturas.setForeground(new java.awt.Color(0, 0, 0));
+        kbtGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Car_Service_30px_1.png"))); // NOI18N
+        kbtGViaturas.setText("Gerir Viaturas");
+        kbtGViaturas.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtGViaturas.setkAllowGradient(false);
+        kbtGViaturas.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtGViaturas.setkBorderRadius(0);
+        kbtGViaturas.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtGViaturas.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtGViaturas.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtGViaturas.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtGViaturas.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtGViaturas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kButton4ActionPerformed(evt);
+                kbtGViaturasActionPerformed(evt);
             }
         });
 
-        kButton5.setBackground(new java.awt.Color(236, 236, 236));
-        kButton5.setForeground(new java.awt.Color(0, 0, 0));
-        kButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_People_30px.png"))); // NOI18N
-        kButton5.setText("Gerir Funcionários");
-        kButton5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        kButton5.setkAllowGradient(false);
-        kButton5.setkBackGroundColor(new java.awt.Color(255, 255, 255));
-        kButton5.setkBorderRadius(0);
-        kButton5.setkEndColor(new java.awt.Color(0, 255, 255));
-        kButton5.setkForeGround(new java.awt.Color(0, 0, 0));
-        kButton5.setkHoverForeGround(new java.awt.Color(102, 102, 102));
-        kButton5.setkPressedColor(new java.awt.Color(255, 255, 255));
-        kButton5.setkSelectedColor(new java.awt.Color(101, 198, 187));
-        kButton5.addActionListener(new java.awt.event.ActionListener() {
+        kbtGFuncionarios.setBackground(new java.awt.Color(236, 236, 236));
+        kbtGFuncionarios.setForeground(new java.awt.Color(0, 0, 0));
+        kbtGFuncionarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_People_30px.png"))); // NOI18N
+        kbtGFuncionarios.setText("Gerir Funcionários");
+        kbtGFuncionarios.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtGFuncionarios.setkAllowGradient(false);
+        kbtGFuncionarios.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtGFuncionarios.setkBorderRadius(0);
+        kbtGFuncionarios.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtGFuncionarios.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtGFuncionarios.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtGFuncionarios.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtGFuncionarios.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtGFuncionarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kButton5ActionPerformed(evt);
+                kbtGFuncionariosActionPerformed(evt);
             }
         });
 
@@ -203,11 +211,11 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(kButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                            .addComponent(kButton5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(kButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(kButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(kButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
+                            .addComponent(kbtRelatorios, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
+                            .addComponent(kbtGFuncionarios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(kbtGViaturas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(kbtRViagem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                            .addComponent(kbtVViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(71, 71, 71)
                         .addComponent(jLabel25)))
@@ -216,15 +224,15 @@ public class Home extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(kbtRViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(kButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(kbtVViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(kButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(kbtGViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(kButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(kbtGFuncionarios, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(kbtRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -488,10 +496,11 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(webProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel23)
-                    .addComponent(jLabel24)
-                    .addComponent(jLabel22))
+                    .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel24)
+                        .addComponent(jLabel22)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -533,7 +542,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel26)
                     .addComponent(jLabel27))
-                .addContainerGap(429, Short.MAX_VALUE))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRViagem, "card2");
@@ -542,15 +551,37 @@ public class Home extends javax.swing.JFrame {
         kPanelVViagens.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelVViagens.setkStartColor(new java.awt.Color(255, 255, 255));
 
+        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        jLabel28.setText("Voltar");
+        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel28MouseClicked(evt);
+            }
+        });
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel29.setText("Ver Viagens");
+
         javax.swing.GroupLayout kPanelVViagensLayout = new javax.swing.GroupLayout(kPanelVViagens);
         kPanelVViagens.setLayout(kPanelVViagensLayout);
         kPanelVViagensLayout.setHorizontalGroup(
             kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 619, Short.MAX_VALUE)
+            .addGroup(kPanelVViagensLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel28)
+                .addGap(176, 176, 176)
+                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelVViagensLayout.setVerticalGroup(
             kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 470, Short.MAX_VALUE)
+            .addGroup(kPanelVViagensLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel29))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelVViagens, "card2");
@@ -559,15 +590,37 @@ public class Home extends javax.swing.JFrame {
         kPanelGViaturas.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelGViaturas.setkStartColor(new java.awt.Color(255, 255, 255));
 
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        jLabel30.setText("Voltar");
+        jLabel30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel30MouseClicked(evt);
+            }
+        });
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel31.setText("Gerir viaturas");
+
         javax.swing.GroupLayout kPanelGViaturasLayout = new javax.swing.GroupLayout(kPanelGViaturas);
         kPanelGViaturas.setLayout(kPanelGViaturasLayout);
         kPanelGViaturasLayout.setHorizontalGroup(
             kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 619, Short.MAX_VALUE)
+            .addGroup(kPanelGViaturasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel30)
+                .addGap(176, 176, 176)
+                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelGViaturasLayout.setVerticalGroup(
             kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 470, Short.MAX_VALUE)
+            .addGroup(kPanelGViaturasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel30)
+                    .addComponent(jLabel31))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelGViaturas, "card2");
@@ -576,15 +629,37 @@ public class Home extends javax.swing.JFrame {
         kPanelGFuncionarios.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelGFuncionarios.setkStartColor(new java.awt.Color(255, 255, 255));
 
+        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        jLabel32.setText("Voltar");
+        jLabel32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel32MouseClicked(evt);
+            }
+        });
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel33.setText("Gerir Funcionários");
+
         javax.swing.GroupLayout kPanelGFuncionariosLayout = new javax.swing.GroupLayout(kPanelGFuncionarios);
         kPanelGFuncionarios.setLayout(kPanelGFuncionariosLayout);
         kPanelGFuncionariosLayout.setHorizontalGroup(
             kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 619, Short.MAX_VALUE)
+            .addGroup(kPanelGFuncionariosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel32)
+                .addGap(176, 176, 176)
+                .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelGFuncionariosLayout.setVerticalGroup(
             kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 470, Short.MAX_VALUE)
+            .addGroup(kPanelGFuncionariosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel32)
+                    .addComponent(jLabel33))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelGFuncionarios, "card2");
@@ -593,15 +668,37 @@ public class Home extends javax.swing.JFrame {
         kPanelRelatorios.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelRelatorios.setkStartColor(new java.awt.Color(255, 255, 255));
 
+        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        jLabel34.setText("Voltar");
+        jLabel34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel34MouseClicked(evt);
+            }
+        });
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel35.setText("Relatórios");
+
         javax.swing.GroupLayout kPanelRelatoriosLayout = new javax.swing.GroupLayout(kPanelRelatorios);
         kPanelRelatorios.setLayout(kPanelRelatoriosLayout);
         kPanelRelatoriosLayout.setHorizontalGroup(
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 619, Short.MAX_VALUE)
+            .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel34)
+                .addGap(176, 176, 176)
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRelatoriosLayout.setVerticalGroup(
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 470, Short.MAX_VALUE)
+            .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel34)
+                    .addComponent(jLabel35))
+                .addContainerGap(239, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRelatorios, "card2");
@@ -704,33 +801,50 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void kButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton1ActionPerformed
+    private void kbtRViagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtRViagemActionPerformed
         // TODO add your handling code here:
         kPanelRoot.removeAll();
             kPanelRoot.add(kPanelRViagem);
             kPanelRoot.repaint();
             kPanelRoot.revalidate(); 
-    }//GEN-LAST:event_kButton1ActionPerformed
+    }//GEN-LAST:event_kbtRViagemActionPerformed
 
-    private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton2ActionPerformed
+    private void kbtRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtRelatoriosActionPerformed
         // TODO add your handling code here
+        kPanelRoot.removeAll();
+            kPanelRoot.add(kPanelRelatorios);
+            kPanelRoot.repaint();
+            kPanelRoot.revalidate(); 
         
-    }//GEN-LAST:event_kButton2ActionPerformed
+    }//GEN-LAST:event_kbtRelatoriosActionPerformed
 
-    private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton3ActionPerformed
+    private void kbtVViagensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtVViagensActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_kButton3ActionPerformed
+        kPanelRoot.removeAll();
+            kPanelRoot.add(kPanelVViagens);
+            kPanelRoot.repaint();
+            kPanelRoot.revalidate(); 
+    }//GEN-LAST:event_kbtVViagensActionPerformed
 
-    private void kButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton4ActionPerformed
+    private void kbtGViaturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtGViaturasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_kButton4ActionPerformed
+        kPanelRoot.removeAll();
+            kPanelRoot.add(kPanelGViaturas);
+            kPanelRoot.repaint();
+            kPanelRoot.revalidate(); 
+    }//GEN-LAST:event_kbtGViaturasActionPerformed
 
-    private void kButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton5ActionPerformed
+    private void kbtGFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtGFuncionariosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_kButton5ActionPerformed
+       kPanelRoot.removeAll();
+            kPanelRoot.add(kPanelGFuncionarios);
+            kPanelRoot.repaint();
+            kPanelRoot.revalidate(); 
+    }//GEN-LAST:event_kbtGFuncionariosActionPerformed
 
     private void btExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btExitMouseClicked
         // TODO add your handling code here:
+        
         System.exit(0);
     }//GEN-LAST:event_btExitMouseClicked
 
@@ -763,6 +877,38 @@ public class Home extends javax.swing.JFrame {
         lbNotificacoes.setVisible(true);
         else lbNotificacoes.setVisible(false);
     }//GEN-LAST:event_btNotificacoesMouseClicked
+
+    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_jLabel28MouseClicked
+
+    private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_jLabel30MouseClicked
+
+    private void jLabel32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel32MouseClicked
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_jLabel32MouseClicked
+
+    private void jLabel34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseClicked
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_jLabel34MouseClicked
 
     /**
      * @param args the command line arguments
@@ -822,7 +968,15 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -832,11 +986,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private com.alee.managers.language.updaters.JProgressBarLU jProgressBarLU1;
     private javax.swing.JSeparator jSeparator1;
-    private keeptoo.KButton kButton1;
-    private keeptoo.KButton kButton2;
-    private keeptoo.KButton kButton3;
-    private keeptoo.KButton kButton4;
-    private keeptoo.KButton kButton5;
     private keeptoo.KGradientPanel kGradientPanel2;
     private keeptoo.KGradientPanel kGradientPanel3;
     private keeptoo.KGradientPanel kGradientPanel4;
@@ -849,6 +998,11 @@ public class Home extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelRelatorios;
     private keeptoo.KGradientPanel kPanelRoot;
     private keeptoo.KGradientPanel kPanelVViagens;
+    private keeptoo.KButton kbtGFuncionarios;
+    private keeptoo.KButton kbtGViaturas;
+    private keeptoo.KButton kbtRViagem;
+    private keeptoo.KButton kbtRelatorios;
+    private keeptoo.KButton kbtVViagens;
     private javax.swing.JLabel lbNotificacoes;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar1;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
