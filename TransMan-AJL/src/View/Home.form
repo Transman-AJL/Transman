@@ -41,7 +41,7 @@
     <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
   <SubComponents>
-    <Container class="javax.swing.JPanel" name="jPanel1">
+    <Container class="javax.swing.JPanel" name="jPanelMenu">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -70,7 +70,7 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                          <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
+                          <Component id="btSettings" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
@@ -90,7 +90,7 @@
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="kbtRelatorios" min="-2" pref="73" max="-2" attributes="0"/>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jLabel25" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="btSettings" min="-2" pref="40" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -297,7 +297,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kbtGFuncionariosActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel25">
+        <Component class="javax.swing.JLabel" name="btSettings">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/View/icons/icons8_Services_30px.png"/>
@@ -359,56 +359,56 @@
                               <EmptySpace min="18" pref="18" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="kGradientPanel3" min="-2" pref="185" max="-2" attributes="0"/>
+                                      <Component id="kPanelPendentes" min="-2" pref="185" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="kGradientPanel4" min="-2" pref="185" max="-2" attributes="0"/>
+                                      <Component id="kPanelEmCurso" min="-2" pref="185" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="kGradientPanel5" min="-2" pref="185" max="-2" attributes="0"/>
+                                      <Component id="kPanelTerminadas" min="-2" pref="185" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="jLabel9" alignment="0" min="-2" pref="221" max="-2" attributes="0"/>
+                                  <Component id="lbUltimasViagens" alignment="0" min="-2" pref="221" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
-                                      <Component id="jLabel14" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
-                                      <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel10" min="-2" pref="138" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                                      <Component id="jLabel11" min="-2" pref="138" max="-2" attributes="0"/>
+                                      <Component id="lbClienteHome1" min="-2" pref="150" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="jLabel12" min="-2" pref="138" max="-2" attributes="0"/>
+                                      <Component id="lbOrigemHome1" min="-2" pref="150" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="lbDestinohome1" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="webProgressBar1" alignment="0" min="-2" pref="514" max="-2" attributes="0"/>
-                                  <Component id="jSeparator1" alignment="0" min="-2" pref="505" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="lbClienteHome" min="-2" pref="138" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Component id="lbOrigemHome" min="-2" pref="138" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lbDestinoHome" min="-2" pref="138" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="progressHome1" alignment="0" min="-2" pref="514" max="-2" attributes="0"/>
+                                  <Component id="sepHome" alignment="0" min="-2" pref="505" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
-                                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-                                      <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbClienteHome2" min="-2" pref="148" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lbOrigemHome2" min="-2" pref="145" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lbDestinoHome2" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="webProgressBar2" alignment="0" min="-2" pref="514" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
-                                      <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbClienteHome3" min="-2" pref="147" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lbOrigemHome3" min="-2" pref="145" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lbDestinoHome3" max="32767" attributes="0"/>
                                   </Group>
-                                  <Component id="webProgressBar3" alignment="0" min="-2" pref="514" max="-2" attributes="0"/>
+                                  <Component id="progressHome3" alignment="0" min="-2" pref="514" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="86" max="-2" attributes="0"/>
-                                      <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                                      <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
+                                      <Component id="lbClienteHome4" min="-2" pref="145" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                                      <Component id="lbOrigemHome4" min="-2" pref="148" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="lbDestinoHome4" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="webProgressBar5" alignment="0" min="-2" pref="514" max="-2" attributes="0"/>
                               </Group>
@@ -423,50 +423,50 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="kGradientPanel5" min="-2" pref="90" max="-2" attributes="0"/>
-                          <Component id="kGradientPanel4" min="-2" pref="90" max="-2" attributes="0"/>
-                          <Component id="kGradientPanel3" min="-2" pref="90" max="-2" attributes="0"/>
+                          <Component id="kPanelTerminadas" min="-2" pref="90" max="-2" attributes="0"/>
+                          <Component id="kPanelEmCurso" min="-2" pref="90" max="-2" attributes="0"/>
+                          <Component id="kPanelPendentes" min="-2" pref="90" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                      <Component id="jLabel9" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="lbUltimasViagens" min="-2" pref="29" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbClienteHome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbOrigemHome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbDestinoHome" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSeparator1" min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="sepHome" min="-2" pref="12" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbClienteHome1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbOrigemHome1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbDestinohome1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="webProgressBar1" min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="progressHome1" min="-2" pref="18" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel18" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbClienteHome2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbOrigemHome2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbDestinoHome2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="webProgressBar2" min="-2" pref="18" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbClienteHome3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbOrigemHome3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbDestinoHome3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="webProgressBar3" min="-2" pref="18" max="-2" attributes="0"/>
+                      <Component id="progressHome3" min="-2" pref="18" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbClienteHome4" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbDestinoHome4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lbOrigemHome4" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -477,7 +477,7 @@
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="keeptoo.KGradientPanel" name="kGradientPanel3">
+            <Container class="keeptoo.KGradientPanel" name="kPanelPendentes">
               <Properties>
                 <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="13" green="26" red="f2" type="rgb"/>
@@ -493,8 +493,8 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace pref="49" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel3" max="32767" attributes="0"/>
-                              <Component id="jLabel8" max="32767" attributes="0"/>
+                              <Component id="lbPendentesTop" max="32767" attributes="0"/>
+                              <Component id="lbPendentes" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       </Group>
@@ -504,21 +504,21 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbPendentesTop" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel8" max="32767" attributes="0"/>
+                          <Component id="lbPendentes" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel3">
+                <Component class="javax.swing.JLabel" name="lbPendentesTop">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Viagens Pendentes"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel8">
+                <Component class="javax.swing.JLabel" name="lbPendentes">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Josefin Sans" size="36" style="1"/>
@@ -529,7 +529,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="keeptoo.KGradientPanel" name="kGradientPanel4">
+            <Container class="keeptoo.KGradientPanel" name="kPanelEmCurso">
               <Properties>
                 <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="db" green="98" red="34" type="rgb"/>
@@ -545,8 +545,8 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel4" max="32767" attributes="0"/>
-                              <Component id="jLabel7" max="32767" attributes="0"/>
+                              <Component id="lbEmCursoTop" max="32767" attributes="0"/>
+                              <Component id="lbEmCurso" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace pref="55" max="32767" attributes="0"/>
                       </Group>
@@ -556,21 +556,21 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbEmCursoTop" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel7" pref="43" max="32767" attributes="0"/>
+                          <Component id="lbEmCurso" pref="43" max="32767" attributes="0"/>
                           <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel4">
+                <Component class="javax.swing.JLabel" name="lbEmCursoTop">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Viagens em curso"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel7">
+                <Component class="javax.swing.JLabel" name="lbEmCurso">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Josefin Sans" size="36" style="1"/>
@@ -581,7 +581,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Container class="keeptoo.KGradientPanel" name="kGradientPanel5">
+            <Container class="keeptoo.KGradientPanel" name="kPanelTerminadas">
               <Properties>
                 <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="0" green="0" red="0" type="rgb"/>
@@ -597,8 +597,8 @@
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace pref="47" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="jLabel5" max="32767" attributes="0"/>
-                              <Component id="jLabel6" max="32767" attributes="0"/>
+                              <Component id="lbTerminadasTop" max="32767" attributes="0"/>
+                              <Component id="lbTerminadas" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                       </Group>
@@ -608,21 +608,21 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel5" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="lbTerminadasTop" min="-2" pref="14" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="jLabel6" min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="lbTerminadas" min="-2" pref="39" max="-2" attributes="0"/>
                           <EmptySpace pref="20" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JLabel" name="jLabel5">
+                <Component class="javax.swing.JLabel" name="lbTerminadasTop">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Viagens terminadas"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="jLabel6">
+                <Component class="javax.swing.JLabel" name="lbTerminadas">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Josefin Sans" size="36" style="1"/>
@@ -633,7 +633,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JLabel" name="jLabel9">
+            <Component class="javax.swing.JLabel" name="lbUltimasViagens">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Segoe UI" size="14" style="1"/>
@@ -641,7 +641,7 @@
                 <Property name="text" type="java.lang.String" value="&#xda;ltimas Viagens"/>
               </Properties>
             </Component>
-            <Component class="com.alee.laf.progressbar.WebProgressBar" name="webProgressBar1">
+            <Component class="com.alee.laf.progressbar.WebProgressBar" name="progressHome1">
               <Properties>
                 <Property name="value" type="int" value="80"/>
                 <Property name="bgBottom" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -658,7 +658,7 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel10">
+            <Component class="javax.swing.JLabel" name="lbClienteHome">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="1"/>
@@ -666,7 +666,7 @@
                 <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel11">
+            <Component class="javax.swing.JLabel" name="lbOrigemHome">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="1"/>
@@ -674,7 +674,7 @@
                 <Property name="text" type="java.lang.String" value="Origem"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel12">
+            <Component class="javax.swing.JLabel" name="lbDestinoHome">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="12" style="1"/>
@@ -682,24 +682,24 @@
                 <Property name="text" type="java.lang.String" value="Destino"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel13">
+            <Component class="javax.swing.JLabel" name="lbClienteHome1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pepsi co."/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator1">
+            <Component class="javax.swing.JSeparator" name="sepHome">
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel14">
+            <Component class="javax.swing.JLabel" name="lbOrigemHome1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Maputo - Cidade"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel15">
+            <Component class="javax.swing.JLabel" name="lbDestinohome1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Zambezia - Quelimane"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel16">
+            <Component class="javax.swing.JLabel" name="lbClienteHome2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Mozal"/>
               </Properties>
@@ -721,22 +721,22 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel17">
+            <Component class="javax.swing.JLabel" name="lbOrigemHome2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Maputo - Prov&#xed;ncia"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel18">
+            <Component class="javax.swing.JLabel" name="lbDestinoHome2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="SA - Johanesburg"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel19">
+            <Component class="javax.swing.JLabel" name="lbClienteHome3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Fematro"/>
               </Properties>
             </Component>
-            <Component class="com.alee.laf.progressbar.WebProgressBar" name="webProgressBar3">
+            <Component class="com.alee.laf.progressbar.WebProgressBar" name="progressHome3">
               <Properties>
                 <Property name="value" type="int" value="56"/>
                 <Property name="bgBottom" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -753,27 +753,27 @@
                 </Property>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel20">
+            <Component class="javax.swing.JLabel" name="lbOrigemHome3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Maputo - Junta"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel21">
+            <Component class="javax.swing.JLabel" name="lbDestinoHome3">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Inhambane - Maxixe"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel22">
+            <Component class="javax.swing.JLabel" name="lbOrigemHome4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Nampula - Nacala"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel23">
+            <Component class="javax.swing.JLabel" name="lbClienteHome4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Maningue Nice"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel24">
+            <Component class="javax.swing.JLabel" name="lbDestinoHome4">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Sofala - Beira"/>
               </Properties>
@@ -948,12 +948,24 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
-                      <Component id="jLabel31" min="-2" pref="115" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
+                              <Component id="jLabel31" min="-2" pref="115" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                              <Component id="btVerViaturas" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btEditarViaturas" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="kButton2" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="21" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -965,7 +977,13 @@
                           <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel31" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="239" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btVerViaturas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btEditarViaturas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="kButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="378" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -991,6 +1009,75 @@
                   <Font name="Tahoma" size="12" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Gerir viaturas"/>
+              </Properties>
+            </Component>
+            <Component class="keeptoo.KButton" name="btEditarViaturas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Alterar Viaturas"/>
+                <Property name="kBackGroundColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="kHoverEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+                <Property name="kHoverForeGround" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="kHoverStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="99" red="0" type="rgb"/>
+                </Property>
+                <Property name="kSelectedColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="keeptoo.KButton" name="kButton2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar Viaturas"/>
+                <Property name="kBackGroundColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="kHoverEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+                <Property name="kHoverForeGround" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="kHoverStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="99" red="0" type="rgb"/>
+                </Property>
+                <Property name="kSelectedColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="0" type="rgb"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="keeptoo.KButton" name="btVerViaturas">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ver Viaturas"/>
+                <Property name="kBackGroundColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="kHoverEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="cc" type="rgb"/>
+                </Property>
+                <Property name="kHoverForeGround" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="kHoverStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="99" red="0" type="rgb"/>
+                </Property>
+                <Property name="kSelectedColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="cc" green="cc" red="0" type="rgb"/>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>
@@ -1019,7 +1106,7 @@
                       <Component id="jLabel32" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
                       <Component id="jLabel33" min="-2" pref="115" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="250" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1031,7 +1118,7 @@
                           <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel33" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="239" max="32767" attributes="0"/>
+                      <EmptySpace pref="429" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1129,7 +1216,7 @@
         </Container>
       </SubComponents>
     </Container>
-    <Container class="keeptoo.KGradientPanel" name="kGradientPanel2">
+    <Container class="keeptoo.KGradientPanel" name="kPanelNorth">
       <Properties>
         <Property name="kBorderRadius" type="int" value="0"/>
         <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1154,8 +1241,7 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="lbNotificacoes" min="-2" pref="415" max="-2" attributes="0"/>
                   <EmptySpace pref="189" max="32767" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="120" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <Component id="lbUserNameHome" min="-2" pref="138" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1166,7 +1252,7 @@
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lbNotificacoes" alignment="3" max="32767" attributes="0"/>
-                          <Component id="jLabel1" alignment="3" max="32767" attributes="0"/>
+                          <Component id="lbUserNameHome" alignment="3" max="32767" attributes="0"/>
                       </Group>
                       <Component id="btNotificacoes" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -1176,7 +1262,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="lbUserNameHome">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/View/icons/icons8_Male_User_30px.png"/>
@@ -1184,7 +1270,7 @@
             <Property name="text" type="java.lang.String" value="username aqui"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel1MouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="lbUserNameHomeMouseClicked"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="btNotificacoes">
@@ -1204,7 +1290,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="keeptoo.KGradientPanel" name="kGradientPanel8">
+    <Container class="keeptoo.KGradientPanel" name="kPanelTitleBar">
       <Properties>
         <Property name="kBorderRadius" type="int" value="0"/>
         <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -1215,8 +1301,8 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="kGradientPanel8MouseDragged"/>
-        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="kGradientPanel8MousePressed"/>
+        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="kPanelTitleBarMouseDragged"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="kPanelTitleBarMousePressed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

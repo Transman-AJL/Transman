@@ -36,44 +36,44 @@ public class Home extends javax.swing.JFrame {
         webStepProgressStyle1 = new com.alee.extended.progress.WebStepProgressStyle();
         webProgressBarStyle1 = new com.alee.laf.progressbar.WebProgressBarStyle();
         webStepProgress1 = new com.alee.extended.progress.WebStepProgress();
-        jPanel1 = new javax.swing.JPanel();
+        jPanelMenu = new javax.swing.JPanel();
         kbtRViagem = new keeptoo.KButton();
         kbtRelatorios = new keeptoo.KButton();
         kbtVViagens = new keeptoo.KButton();
         kbtGViaturas = new keeptoo.KButton();
         kbtGFuncionarios = new keeptoo.KButton();
-        jLabel25 = new javax.swing.JLabel();
+        btSettings = new javax.swing.JLabel();
         kPanelRoot = new keeptoo.KGradientPanel();
         kPanelHome = new keeptoo.KGradientPanel();
-        kGradientPanel3 = new keeptoo.KGradientPanel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        kGradientPanel4 = new keeptoo.KGradientPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        kGradientPanel5 = new keeptoo.KGradientPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        webProgressBar1 = new com.alee.laf.progressbar.WebProgressBar();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
+        kPanelPendentes = new keeptoo.KGradientPanel();
+        lbPendentesTop = new javax.swing.JLabel();
+        lbPendentes = new javax.swing.JLabel();
+        kPanelEmCurso = new keeptoo.KGradientPanel();
+        lbEmCursoTop = new javax.swing.JLabel();
+        lbEmCurso = new javax.swing.JLabel();
+        kPanelTerminadas = new keeptoo.KGradientPanel();
+        lbTerminadasTop = new javax.swing.JLabel();
+        lbTerminadas = new javax.swing.JLabel();
+        lbUltimasViagens = new javax.swing.JLabel();
+        progressHome1 = new com.alee.laf.progressbar.WebProgressBar();
+        lbClienteHome = new javax.swing.JLabel();
+        lbOrigemHome = new javax.swing.JLabel();
+        lbDestinoHome = new javax.swing.JLabel();
+        lbClienteHome1 = new javax.swing.JLabel();
+        sepHome = new javax.swing.JSeparator();
+        lbOrigemHome1 = new javax.swing.JLabel();
+        lbDestinohome1 = new javax.swing.JLabel();
+        lbClienteHome2 = new javax.swing.JLabel();
         webProgressBar2 = new com.alee.laf.progressbar.WebProgressBar();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        webProgressBar3 = new com.alee.laf.progressbar.WebProgressBar();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
+        lbOrigemHome2 = new javax.swing.JLabel();
+        lbDestinoHome2 = new javax.swing.JLabel();
+        lbClienteHome3 = new javax.swing.JLabel();
+        progressHome3 = new com.alee.laf.progressbar.WebProgressBar();
+        lbOrigemHome3 = new javax.swing.JLabel();
+        lbDestinoHome3 = new javax.swing.JLabel();
+        lbOrigemHome4 = new javax.swing.JLabel();
+        lbClienteHome4 = new javax.swing.JLabel();
+        lbDestinoHome4 = new javax.swing.JLabel();
         webProgressBar5 = new com.alee.laf.progressbar.WebProgressBar();
         kPanelRViagem = new keeptoo.KGradientPanel();
         jLabel26 = new javax.swing.JLabel();
@@ -84,17 +84,20 @@ public class Home extends javax.swing.JFrame {
         kPanelGViaturas = new keeptoo.KGradientPanel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
+        btEditarViaturas = new keeptoo.KButton();
+        kButton2 = new keeptoo.KButton();
+        btVerViaturas = new keeptoo.KButton();
         kPanelGFuncionarios = new keeptoo.KGradientPanel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         kPanelRelatorios = new keeptoo.KGradientPanel();
         jLabel34 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
-        kGradientPanel2 = new keeptoo.KGradientPanel();
-        jLabel1 = new javax.swing.JLabel();
+        kPanelNorth = new keeptoo.KGradientPanel();
+        lbUserNameHome = new javax.swing.JLabel();
         btNotificacoes = new javax.swing.JLabel();
         lbNotificacoes = new javax.swing.JLabel();
-        kGradientPanel8 = new keeptoo.KGradientPanel();
+        kPanelTitleBar = new keeptoo.KGradientPanel();
         btExit = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
@@ -103,7 +106,7 @@ public class Home extends javax.swing.JFrame {
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelMenu.setBackground(new java.awt.Color(255, 255, 255));
 
         kbtRViagem.setBackground(new java.awt.Color(236, 236, 236));
         kbtRViagem.setForeground(new java.awt.Color(0, 0, 0));
@@ -200,30 +203,30 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Services_30px.png"))); // NOI18N
+        btSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Services_30px.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanelMenuLayout = new javax.swing.GroupLayout(jPanelMenu);
+        jPanelMenu.setLayout(jPanelMenuLayout);
+        jPanelMenuLayout.setHorizontalGroup(
+            jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMenuLayout.createSequentialGroup()
+                .addGroup(jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelMenuLayout.createSequentialGroup()
                         .addGap(10, 10, 10)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(kbtRelatorios, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
                             .addComponent(kbtGFuncionarios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(kbtGViaturas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(kbtRViagem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addComponent(kbtVViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(jPanelMenuLayout.createSequentialGroup()
                         .addGap(71, 71, 71)
-                        .addComponent(jLabel25)))
+                        .addComponent(btSettings)))
                 .addGap(5, 5, 5))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        jPanelMenuLayout.setVerticalGroup(
+            jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelMenuLayout.createSequentialGroup()
                 .addComponent(kbtRViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(kbtVViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -234,11 +237,11 @@ public class Home extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(kbtRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 180, 470));
+        getContentPane().add(jPanelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 180, 470));
 
         kPanelRoot.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(204, 204, 204)));
         kPanelRoot.setForeground(new java.awt.Color(204, 204, 204));
@@ -251,121 +254,121 @@ public class Home extends javax.swing.JFrame {
         kPanelHome.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelHome.setkStartColor(new java.awt.Color(255, 255, 255));
 
-        kGradientPanel3.setkEndColor(new java.awt.Color(242, 38, 19));
-        kGradientPanel3.setkStartColor(new java.awt.Color(242, 23, 153));
+        kPanelPendentes.setkEndColor(new java.awt.Color(242, 38, 19));
+        kPanelPendentes.setkStartColor(new java.awt.Color(242, 23, 153));
 
-        jLabel3.setText("Viagens Pendentes");
+        lbPendentesTop.setText("Viagens Pendentes");
 
-        jLabel8.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("0");
+        lbPendentes.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
+        lbPendentes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbPendentes.setText("0");
 
-        javax.swing.GroupLayout kGradientPanel3Layout = new javax.swing.GroupLayout(kGradientPanel3);
-        kGradientPanel3.setLayout(kGradientPanel3Layout);
-        kGradientPanel3Layout.setHorizontalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout kPanelPendentesLayout = new javax.swing.GroupLayout(kPanelPendentes);
+        kPanelPendentes.setLayout(kPanelPendentesLayout);
+        kPanelPendentesLayout.setHorizontalGroup(
+            kPanelPendentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelPendentesLayout.createSequentialGroup()
                 .addContainerGap(49, Short.MAX_VALUE)
-                .addGroup(kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(kPanelPendentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lbPendentesTop, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lbPendentes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(45, 45, 45))
         );
-        kGradientPanel3Layout.setVerticalGroup(
-            kGradientPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel3Layout.createSequentialGroup()
+        kPanelPendentesLayout.setVerticalGroup(
+            kPanelPendentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelPendentesLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3)
+                .addComponent(lbPendentesTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbPendentes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(23, 23, 23))
         );
 
-        kGradientPanel4.setkEndColor(new java.awt.Color(52, 152, 219));
-        kGradientPanel4.setkStartColor(new java.awt.Color(129, 207, 224));
+        kPanelEmCurso.setkEndColor(new java.awt.Color(52, 152, 219));
+        kPanelEmCurso.setkStartColor(new java.awt.Color(129, 207, 224));
 
-        jLabel4.setText("Viagens em curso");
+        lbEmCursoTop.setText("Viagens em curso");
 
-        jLabel7.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("0");
+        lbEmCurso.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
+        lbEmCurso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbEmCurso.setText("0");
 
-        javax.swing.GroupLayout kGradientPanel4Layout = new javax.swing.GroupLayout(kGradientPanel4);
-        kGradientPanel4.setLayout(kGradientPanel4Layout);
-        kGradientPanel4Layout.setHorizontalGroup(
-            kGradientPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout kPanelEmCursoLayout = new javax.swing.GroupLayout(kPanelEmCurso);
+        kPanelEmCurso.setLayout(kPanelEmCursoLayout);
+        kPanelEmCursoLayout.setHorizontalGroup(
+            kPanelEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelEmCursoLayout.createSequentialGroup()
                 .addGap(47, 47, 47)
-                .addGroup(kGradientPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(kPanelEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lbEmCursoTop, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(55, Short.MAX_VALUE))
         );
-        kGradientPanel4Layout.setVerticalGroup(
-            kGradientPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel4Layout.createSequentialGroup()
+        kPanelEmCursoLayout.setVerticalGroup(
+            kPanelEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelEmCursoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4)
+                .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
-        kGradientPanel5.setkEndColor(new java.awt.Color(0, 0, 0));
-        kGradientPanel5.setkStartColor(new java.awt.Color(0, 230, 64));
+        kPanelTerminadas.setkEndColor(new java.awt.Color(0, 0, 0));
+        kPanelTerminadas.setkStartColor(new java.awt.Color(0, 230, 64));
 
-        jLabel5.setText("Viagens terminadas");
+        lbTerminadasTop.setText("Viagens terminadas");
 
-        jLabel6.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("0");
+        lbTerminadas.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
+        lbTerminadas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbTerminadas.setText("0");
 
-        javax.swing.GroupLayout kGradientPanel5Layout = new javax.swing.GroupLayout(kGradientPanel5);
-        kGradientPanel5.setLayout(kGradientPanel5Layout);
-        kGradientPanel5Layout.setHorizontalGroup(
-            kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout kPanelTerminadasLayout = new javax.swing.GroupLayout(kPanelTerminadas);
+        kPanelTerminadas.setLayout(kPanelTerminadasLayout);
+        kPanelTerminadasLayout.setHorizontalGroup(
+            kPanelTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelTerminadasLayout.createSequentialGroup()
                 .addContainerGap(47, Short.MAX_VALUE)
-                .addGroup(kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(kPanelTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lbTerminadasTop, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lbTerminadas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(45, 45, 45))
         );
-        kGradientPanel5Layout.setVerticalGroup(
-            kGradientPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(kGradientPanel5Layout.createSequentialGroup()
+        kPanelTerminadasLayout.setVerticalGroup(
+            kPanelTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelTerminadasLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbTerminadasTop, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbTerminadas, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel9.setText("Últimas Viagens");
+        lbUltimasViagens.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lbUltimasViagens.setText("Últimas Viagens");
 
-        webProgressBar1.setValue(80);
-        webProgressBar1.setBgBottom(new java.awt.Color(204, 255, 255));
-        webProgressBar1.setBgTop(new java.awt.Color(204, 204, 255));
-        webProgressBar1.setProgressBottomColor(new java.awt.Color(51, 255, 255));
-        webProgressBar1.setProgressTopColor(new java.awt.Color(51, 255, 0));
+        progressHome1.setValue(80);
+        progressHome1.setBgBottom(new java.awt.Color(204, 255, 255));
+        progressHome1.setBgTop(new java.awt.Color(204, 204, 255));
+        progressHome1.setProgressBottomColor(new java.awt.Color(51, 255, 255));
+        progressHome1.setProgressTopColor(new java.awt.Color(51, 255, 0));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel10.setText("Cliente");
+        lbClienteHome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbClienteHome.setText("Cliente");
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setText("Origem");
+        lbOrigemHome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbOrigemHome.setText("Origem");
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel12.setText("Destino");
+        lbDestinoHome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbDestinoHome.setText("Destino");
 
-        jLabel13.setText("Pepsi co.");
+        lbClienteHome1.setText("Pepsi co.");
 
-        jLabel14.setText("Maputo - Cidade");
+        lbOrigemHome1.setText("Maputo - Cidade");
 
-        jLabel15.setText("Zambezia - Quelimane");
+        lbDestinohome1.setText("Zambezia - Quelimane");
 
-        jLabel16.setText("Mozal");
+        lbClienteHome2.setText("Mozal");
 
         webProgressBar2.setValue(20);
         webProgressBar2.setBgBottom(new java.awt.Color(204, 255, 255));
@@ -373,27 +376,27 @@ public class Home extends javax.swing.JFrame {
         webProgressBar2.setProgressBottomColor(new java.awt.Color(51, 255, 255));
         webProgressBar2.setProgressTopColor(new java.awt.Color(51, 255, 0));
 
-        jLabel17.setText("Maputo - Província");
+        lbOrigemHome2.setText("Maputo - Província");
 
-        jLabel18.setText("SA - Johanesburg");
+        lbDestinoHome2.setText("SA - Johanesburg");
 
-        jLabel19.setText("Fematro");
+        lbClienteHome3.setText("Fematro");
 
-        webProgressBar3.setValue(56);
-        webProgressBar3.setBgBottom(new java.awt.Color(204, 255, 255));
-        webProgressBar3.setBgTop(new java.awt.Color(204, 204, 255));
-        webProgressBar3.setProgressBottomColor(new java.awt.Color(51, 255, 255));
-        webProgressBar3.setProgressTopColor(new java.awt.Color(51, 255, 0));
+        progressHome3.setValue(56);
+        progressHome3.setBgBottom(new java.awt.Color(204, 255, 255));
+        progressHome3.setBgTop(new java.awt.Color(204, 204, 255));
+        progressHome3.setProgressBottomColor(new java.awt.Color(51, 255, 255));
+        progressHome3.setProgressTopColor(new java.awt.Color(51, 255, 0));
 
-        jLabel20.setText("Maputo - Junta");
+        lbOrigemHome3.setText("Maputo - Junta");
 
-        jLabel21.setText("Inhambane - Maxixe");
+        lbDestinoHome3.setText("Inhambane - Maxixe");
 
-        jLabel22.setText("Nampula - Nacala");
+        lbOrigemHome4.setText("Nampula - Nacala");
 
-        jLabel23.setText("Maningue Nice");
+        lbClienteHome4.setText("Maningue Nice");
 
-        jLabel24.setText("Sofala - Beira");
+        lbDestinoHome4.setText("Sofala - Beira");
 
         webProgressBar5.setValue(90);
         webProgressBar5.setBgBottom(new java.awt.Color(204, 255, 255));
@@ -411,49 +414,49 @@ public class Home extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(kPanelHomeLayout.createSequentialGroup()
-                                .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(kPanelPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(kGradientPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(kPanelEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(kGradientPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(kPanelTerminadas, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lbUltimasViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 221, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(kPanelHomeLayout.createSequentialGroup()
                         .addGap(43, 43, 43)
-                        .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(kPanelHomeLayout.createSequentialGroup()
-                                .addComponent(jLabel13)
-                                .addGap(125, 125, 125)
-                                .addComponent(jLabel14)
-                                .addGap(81, 81, 81)
-                                .addComponent(jLabel15))
-                            .addGroup(kPanelHomeLayout.createSequentialGroup()
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(32, 32, 32)
-                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbClienteHome1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(webProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbOrigemHome1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(lbDestinohome1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(kPanelHomeLayout.createSequentialGroup()
-                                .addComponent(jLabel16)
-                                .addGap(139, 139, 139)
-                                .addComponent(jLabel17)
-                                .addGap(74, 74, 74)
-                                .addComponent(jLabel18))
+                                .addComponent(lbClienteHome, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(32, 32, 32)
+                                .addComponent(lbOrigemHome, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbDestinoHome, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(progressHome1, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(sepHome, javax.swing.GroupLayout.PREFERRED_SIZE, 505, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(kPanelHomeLayout.createSequentialGroup()
+                                .addComponent(lbClienteHome2, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbOrigemHome2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbDestinoHome2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(webProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(kPanelHomeLayout.createSequentialGroup()
-                                .addComponent(jLabel19)
-                                .addGap(125, 125, 125)
-                                .addComponent(jLabel20)
-                                .addGap(90, 90, 90)
-                                .addComponent(jLabel21))
-                            .addComponent(webProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbClienteHome3, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbOrigemHome3, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbDestinoHome3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(progressHome3, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(kPanelHomeLayout.createSequentialGroup()
-                                .addComponent(jLabel23)
-                                .addGap(86, 86, 86)
-                                .addComponent(jLabel22)
-                                .addGap(91, 91, 91)
-                                .addComponent(jLabel24))
+                                .addComponent(lbClienteHome4, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbOrigemHome4, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(lbDestinoHome4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -462,45 +465,45 @@ public class Home extends javax.swing.JFrame {
             .addGroup(kPanelHomeLayout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(kGradientPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kGradientPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kGradientPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(kPanelTerminadas, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kPanelEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kPanelPendentes, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbUltimasViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jLabel11)
-                    .addComponent(jLabel12))
+                    .addComponent(lbClienteHome)
+                    .addComponent(lbOrigemHome)
+                    .addComponent(lbDestinoHome))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(sepHome, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel13)
-                    .addComponent(jLabel14)
-                    .addComponent(jLabel15))
+                    .addComponent(lbClienteHome1)
+                    .addComponent(lbOrigemHome1)
+                    .addComponent(lbDestinohome1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(webProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(progressHome1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel16)
-                    .addComponent(jLabel17)
-                    .addComponent(jLabel18))
+                    .addComponent(lbClienteHome2)
+                    .addComponent(lbOrigemHome2)
+                    .addComponent(lbDestinoHome2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(webProgressBar2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel19)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel21))
+                    .addComponent(lbClienteHome3)
+                    .addComponent(lbOrigemHome3)
+                    .addComponent(lbDestinoHome3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(webProgressBar3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(progressHome3, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel23)
+                    .addComponent(lbClienteHome4)
                     .addGroup(kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel24)
-                        .addComponent(jLabel22)))
+                        .addComponent(lbDestinoHome4)
+                        .addComponent(lbOrigemHome4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -602,16 +605,49 @@ public class Home extends javax.swing.JFrame {
         jLabel31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel31.setText("Gerir viaturas");
 
+        btEditarViaturas.setText("Alterar Viaturas");
+        btEditarViaturas.setkBackGroundColor(new java.awt.Color(0, 0, 0));
+        btEditarViaturas.setkEndColor(new java.awt.Color(255, 255, 255));
+        btEditarViaturas.setkHoverEndColor(new java.awt.Color(204, 204, 204));
+        btEditarViaturas.setkHoverForeGround(new java.awt.Color(255, 255, 255));
+        btEditarViaturas.setkHoverStartColor(new java.awt.Color(0, 153, 153));
+        btEditarViaturas.setkSelectedColor(new java.awt.Color(0, 204, 204));
+
+        kButton2.setText("Adicionar Viaturas");
+        kButton2.setkBackGroundColor(new java.awt.Color(0, 0, 0));
+        kButton2.setkEndColor(new java.awt.Color(255, 255, 255));
+        kButton2.setkHoverEndColor(new java.awt.Color(204, 204, 204));
+        kButton2.setkHoverForeGround(new java.awt.Color(255, 255, 255));
+        kButton2.setkHoverStartColor(new java.awt.Color(0, 153, 153));
+        kButton2.setkSelectedColor(new java.awt.Color(0, 204, 204));
+
+        btVerViaturas.setText("Ver Viaturas");
+        btVerViaturas.setkBackGroundColor(new java.awt.Color(0, 0, 0));
+        btVerViaturas.setkEndColor(new java.awt.Color(255, 255, 255));
+        btVerViaturas.setkHoverEndColor(new java.awt.Color(204, 204, 204));
+        btVerViaturas.setkHoverForeGround(new java.awt.Color(255, 255, 255));
+        btVerViaturas.setkHoverStartColor(new java.awt.Color(0, 153, 153));
+        btVerViaturas.setkSelectedColor(new java.awt.Color(0, 204, 204));
+
         javax.swing.GroupLayout kPanelGViaturasLayout = new javax.swing.GroupLayout(kPanelGViaturas);
         kPanelGViaturas.setLayout(kPanelGViaturasLayout);
         kPanelGViaturasLayout.setHorizontalGroup(
             kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelGViaturasLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel30)
-                .addGap(176, 176, 176)
-                .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelGViaturasLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel30)
+                        .addGap(176, 176, 176)
+                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kPanelGViaturasLayout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
         kPanelGViaturasLayout.setVerticalGroup(
             kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -620,7 +656,12 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel30)
                     .addComponent(jLabel31))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(378, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelGViaturas, "card2");
@@ -650,7 +691,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel32)
                 .addGap(176, 176, 176)
                 .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(250, Short.MAX_VALUE))
         );
         kPanelGFuncionariosLayout.setVerticalGroup(
             kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -659,7 +700,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel32)
                     .addComponent(jLabel33))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(429, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelGFuncionarios, "card2");
@@ -705,15 +746,15 @@ public class Home extends javax.swing.JFrame {
 
         getContentPane().add(kPanelRoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 620, 470));
 
-        kGradientPanel2.setkBorderRadius(0);
-        kGradientPanel2.setkEndColor(new java.awt.Color(255, 255, 204));
-        kGradientPanel2.setkStartColor(new java.awt.Color(204, 255, 255));
+        kPanelNorth.setkBorderRadius(0);
+        kPanelNorth.setkEndColor(new java.awt.Color(255, 255, 204));
+        kPanelNorth.setkStartColor(new java.awt.Color(204, 255, 255));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Male_User_30px.png"))); // NOI18N
-        jLabel1.setText("username aqui");
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+        lbUserNameHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Male_User_30px.png"))); // NOI18N
+        lbUserNameHome.setText("username aqui");
+        lbUserNameHome.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
+                lbUserNameHomeMouseClicked(evt);
             }
         });
 
@@ -726,44 +767,43 @@ public class Home extends javax.swing.JFrame {
 
         lbNotificacoes.setText("Viagem Nr. 1364 - Coca-cola - Maputo -> Gaza foi terminada");
 
-        javax.swing.GroupLayout kGradientPanel2Layout = new javax.swing.GroupLayout(kGradientPanel2);
-        kGradientPanel2.setLayout(kGradientPanel2Layout);
-        kGradientPanel2Layout.setHorizontalGroup(
-            kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout kPanelNorthLayout = new javax.swing.GroupLayout(kPanelNorth);
+        kPanelNorth.setLayout(kPanelNorthLayout);
+        kPanelNorthLayout.setHorizontalGroup(
+            kPanelNorthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelNorthLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btNotificacoes)
                 .addGap(18, 18, 18)
                 .addComponent(lbNotificacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addComponent(lbUserNameHome, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        kGradientPanel2Layout.setVerticalGroup(
-            kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel2Layout.createSequentialGroup()
+        kPanelNorthLayout.setVerticalGroup(
+            kPanelNorthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelNorthLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(kGradientPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(kPanelNorthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(kPanelNorthLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lbNotificacoes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lbUserNameHome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(btNotificacoes))
                 .addContainerGap())
         );
 
-        getContentPane().add(kGradientPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 800, 50));
+        getContentPane().add(kPanelNorth, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 800, 50));
 
-        kGradientPanel8.setkBorderRadius(0);
-        kGradientPanel8.setkEndColor(new java.awt.Color(0, 204, 204));
-        kGradientPanel8.setkStartColor(new java.awt.Color(102, 255, 255));
-        kGradientPanel8.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        kPanelTitleBar.setkBorderRadius(0);
+        kPanelTitleBar.setkEndColor(new java.awt.Color(0, 204, 204));
+        kPanelTitleBar.setkStartColor(new java.awt.Color(102, 255, 255));
+        kPanelTitleBar.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
-                kGradientPanel8MouseDragged(evt);
+                kPanelTitleBarMouseDragged(evt);
             }
         });
-        kGradientPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
+        kPanelTitleBar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                kGradientPanel8MousePressed(evt);
+                kPanelTitleBarMousePressed(evt);
             }
         });
 
@@ -777,26 +817,26 @@ public class Home extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("TRANSMAN");
 
-        javax.swing.GroupLayout kGradientPanel8Layout = new javax.swing.GroupLayout(kGradientPanel8);
-        kGradientPanel8.setLayout(kGradientPanel8Layout);
-        kGradientPanel8Layout.setHorizontalGroup(
-            kGradientPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout kPanelTitleBarLayout = new javax.swing.GroupLayout(kPanelTitleBar);
+        kPanelTitleBar.setLayout(kPanelTitleBarLayout);
+        kPanelTitleBarLayout.setHorizontalGroup(
+            kPanelTitleBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelTitleBarLayout.createSequentialGroup()
                 .addContainerGap(379, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(334, 334, 334)
                 .addComponent(btExit))
         );
-        kGradientPanel8Layout.setVerticalGroup(
-            kGradientPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kGradientPanel8Layout.createSequentialGroup()
+        kPanelTitleBarLayout.setVerticalGroup(
+            kPanelTitleBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelTitleBarLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(kGradientPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(kPanelTitleBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
                     .addComponent(btExit)))
         );
 
-        getContentPane().add(kGradientPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 20));
+        getContentPane().add(kPanelTitleBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -848,20 +888,20 @@ public class Home extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_btExitMouseClicked
 
-    private void kGradientPanel8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kGradientPanel8MousePressed
+    private void kPanelTitleBarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kPanelTitleBarMousePressed
         // TODO add your handling code here:
-        new Drag(kGradientPanel8).onPress(evt);
-    }//GEN-LAST:event_kGradientPanel8MousePressed
+        new Drag(kPanelTitleBar).onPress(evt);
+    }//GEN-LAST:event_kPanelTitleBarMousePressed
 
-    private void kGradientPanel8MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kGradientPanel8MouseDragged
+    private void kPanelTitleBarMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kPanelTitleBarMouseDragged
         // TODO add your handling code here:
-        new Drag(kGradientPanel8).moveWindow(evt);
-    }//GEN-LAST:event_kGradientPanel8MouseDragged
+        new Drag(kPanelTitleBar).moveWindow(evt);
+    }//GEN-LAST:event_kPanelTitleBarMouseDragged
 
-    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+    private void lbUserNameHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbUserNameHomeMouseClicked
         // TODO add your handling code here:
         JOptionPane.showInputDialog("Alterar a password? [Y/N]");
-    }//GEN-LAST:event_jLabel1MouseClicked
+    }//GEN-LAST:event_lbUserNameHomeMouseClicked
 
     private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
         // TODO add your handling code here:
@@ -946,67 +986,70 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private keeptoo.KButton btEditarViaturas;
     private javax.swing.JLabel btExit;
     private javax.swing.JLabel btNotificacoes;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel btSettings;
+    private keeptoo.KButton btVerViaturas;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanelMenu;
     private com.alee.managers.language.updaters.JProgressBarLU jProgressBarLU1;
-    private javax.swing.JSeparator jSeparator1;
-    private keeptoo.KGradientPanel kGradientPanel2;
-    private keeptoo.KGradientPanel kGradientPanel3;
-    private keeptoo.KGradientPanel kGradientPanel4;
-    private keeptoo.KGradientPanel kGradientPanel5;
-    private keeptoo.KGradientPanel kGradientPanel8;
+    private keeptoo.KButton kButton2;
+    private keeptoo.KGradientPanel kPanelEmCurso;
     private keeptoo.KGradientPanel kPanelGFuncionarios;
     private keeptoo.KGradientPanel kPanelGViaturas;
     private keeptoo.KGradientPanel kPanelHome;
+    private keeptoo.KGradientPanel kPanelNorth;
+    private keeptoo.KGradientPanel kPanelPendentes;
     private keeptoo.KGradientPanel kPanelRViagem;
     private keeptoo.KGradientPanel kPanelRelatorios;
     private keeptoo.KGradientPanel kPanelRoot;
+    private keeptoo.KGradientPanel kPanelTerminadas;
+    private keeptoo.KGradientPanel kPanelTitleBar;
     private keeptoo.KGradientPanel kPanelVViagens;
     private keeptoo.KButton kbtGFuncionarios;
     private keeptoo.KButton kbtGViaturas;
     private keeptoo.KButton kbtRViagem;
     private keeptoo.KButton kbtRelatorios;
     private keeptoo.KButton kbtVViagens;
+    private javax.swing.JLabel lbClienteHome;
+    private javax.swing.JLabel lbClienteHome1;
+    private javax.swing.JLabel lbClienteHome2;
+    private javax.swing.JLabel lbClienteHome3;
+    private javax.swing.JLabel lbClienteHome4;
+    private javax.swing.JLabel lbDestinoHome;
+    private javax.swing.JLabel lbDestinoHome2;
+    private javax.swing.JLabel lbDestinoHome3;
+    private javax.swing.JLabel lbDestinoHome4;
+    private javax.swing.JLabel lbDestinohome1;
+    private javax.swing.JLabel lbEmCurso;
+    private javax.swing.JLabel lbEmCursoTop;
     private javax.swing.JLabel lbNotificacoes;
-    private com.alee.laf.progressbar.WebProgressBar webProgressBar1;
+    private javax.swing.JLabel lbOrigemHome;
+    private javax.swing.JLabel lbOrigemHome1;
+    private javax.swing.JLabel lbOrigemHome2;
+    private javax.swing.JLabel lbOrigemHome3;
+    private javax.swing.JLabel lbOrigemHome4;
+    private javax.swing.JLabel lbPendentes;
+    private javax.swing.JLabel lbPendentesTop;
+    private javax.swing.JLabel lbTerminadas;
+    private javax.swing.JLabel lbTerminadasTop;
+    private javax.swing.JLabel lbUltimasViagens;
+    private javax.swing.JLabel lbUserNameHome;
+    private com.alee.laf.progressbar.WebProgressBar progressHome1;
+    private com.alee.laf.progressbar.WebProgressBar progressHome3;
+    private javax.swing.JSeparator sepHome;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
-    private com.alee.laf.progressbar.WebProgressBar webProgressBar3;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
     private com.alee.laf.progressbar.WebProgressBarStyle webProgressBarStyle1;
     private com.alee.laf.progressbar.WebProgressBarUI webProgressBarUI1;

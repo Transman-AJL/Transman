@@ -50,7 +50,6 @@ public class LogIn extends javax.swing.JFrame {
         lbUserIconLogin = new javax.swing.JLabel();
         kPanelLoading = new keeptoo.KGradientPanel();
         lbUserNameLoad = new javax.swing.JLabel();
-        btExit1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         lbUserIconLoad = new javax.swing.JLabel();
@@ -136,7 +135,7 @@ public class LogIn extends javax.swing.JFrame {
 
         jLabel5.setFont(new java.awt.Font("Josefin Sans", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Logo.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/Logo250x100.png"))); // NOI18N
 
         lbUserIconLogin.setFont(new java.awt.Font("Josefin Sans", 0, 14)); // NOI18N
         lbUserIconLogin.setForeground(new java.awt.Color(102, 102, 102));
@@ -236,22 +235,13 @@ public class LogIn extends javax.swing.JFrame {
         lbUserNameLoad.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lbUserNameLoad.setText("Nome Do utilizador");
 
-        btExit1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btExit1.setForeground(new java.awt.Color(255, 255, 255));
-        btExit1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Close_Window_20px.png"))); // NOI18N
-        btExit1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btExit1MouseClicked(evt);
-            }
-        });
-
         jLabel8.setFont(new java.awt.Font("Josefin Sans", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(102, 102, 102));
         jLabel8.setText("TransmanAJL");
 
         jLabel9.setFont(new java.awt.Font("Josefin Sans", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Logo.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/Logo250x100.png"))); // NOI18N
 
         lbUserIconLoad.setFont(new java.awt.Font("Josefin Sans", 0, 14)); // NOI18N
         lbUserIconLoad.setForeground(new java.awt.Color(102, 102, 102));
@@ -279,10 +269,9 @@ public class LogIn extends javax.swing.JFrame {
                 .addGroup(kPanelLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelLoadingLayout.createSequentialGroup()
                         .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btExit1))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelLoadingLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 101, Short.MAX_VALUE)
                         .addGroup(kPanelLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelLoadingLayout.createSequentialGroup()
                                 .addComponent(lbUserNameLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -303,20 +292,17 @@ public class LogIn extends javax.swing.JFrame {
         kPanelLoadingLayout.setVerticalGroup(
             kPanelLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelLoadingLayout.createSequentialGroup()
-                .addGroup(kPanelLoadingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btExit1)
-                    .addGroup(kPanelLoadingLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(8, 8, 8)
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbUserIconLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addComponent(lbUserNameLoad, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(43, 43, 43)
                 .addComponent(webProgressBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         panelRoot.add(kPanelLoading, "card2");
@@ -374,11 +360,6 @@ public class LogIn extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btExitMouseClicked
-
-    private void btExit1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btExit1MouseClicked
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_btExit1MouseClicked
 
     private void kPanelLoadingMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kPanelLoadingMouseDragged
         // TODO add your handling code here:
@@ -511,7 +492,6 @@ public class LogIn extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btExit;
-    private javax.swing.JLabel btExit1;
     private keeptoo.KButton btLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
