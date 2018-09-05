@@ -12,22 +12,32 @@ import java.util.Date;
  * @author lipe
  */
 public class Funcionario {
-     private int codigo;
+    private int codigo;
     private String nome;
     private Date DataNascimento;
     private Date DataAdmissao;
     private String funcao;
     private int numBI;
     private boolean status;
+    private String disponibilidade;
 
-    public Funcionario(int codigo, String nome, Date DataNascimento, Date DataAdmissao, String funcao, int numBI, boolean status) {
+    public Funcionario(int codigo, String nome, Date DataNascimento, Date DataAdmissao, String funcao, int numBI, boolean status, String disponibilidade) {
         this.codigo = codigo;
         this.nome = nome;
         this.DataNascimento = DataNascimento;
         this.DataAdmissao = DataAdmissao;
         this.funcao = funcao;
         this.numBI = numBI;
+        this.disponibilidade=disponibilidade;
         this.status = status;
+    }
+
+    public String getDisponibilidade() {
+        return disponibilidade;
+    }
+
+    public void setDisponibilidade(String disponibilidade) {
+        this.disponibilidade = disponibilidade;
     }
     
     public int getCodigo() {

@@ -18,8 +18,8 @@ public class Motorista extends Funcionario{
     private Date dataFim;
     private int numCarta;
     
-    public Motorista(int codigo, String nome, Date DataNascimento, Date DataAdmissao, String funcao, int numBI, boolean status) {
-        super(codigo, nome, DataNascimento, DataAdmissao, funcao, numBI, status);
+    public Motorista(int codigo, String nome, Date DataNascimento, Date DataAdmissao, String funcao, int numBI, String disponibilidade, boolean status) {
+        super(codigo, nome, DataNascimento, DataAdmissao, funcao, numBI, status, disponibilidade);
     }
 
     public String getCategoria() {
