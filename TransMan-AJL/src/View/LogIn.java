@@ -335,7 +335,7 @@ public class LogIn extends javax.swing.JFrame {
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
         // TODO add your handling code here:
             
-            
+            userName=tfUserName.getText();
             panelRoot.removeAll();
             panelRoot.add(kPanelLoading);
             if(tfUserName.getText().equalsIgnoreCase("josemanuel")){
@@ -386,7 +386,7 @@ public class LogIn extends javax.swing.JFrame {
                         ((Timer)e.getSource()).stop();
                         System.out.println("Timer Ended");
                         finishScreen();
-                        Home home=new Home();
+                        Home home=new Home(userName);
                         home.setLocationRelativeTo(null);
                         home.setVisible(true);
                         
@@ -482,10 +482,7 @@ public class LogIn extends javax.swing.JFrame {
             
             webProgressBar1.repaint();
             webProgressBar1.validate();
-            webProgressBar1.revalidate();
-             System.out.println("Next "+index);
-             
-          
+            webProgressBar1.revalidate();              
     }
     
     public void finishScreen(){
@@ -494,7 +491,7 @@ public class LogIn extends javax.swing.JFrame {
     
     private Timer timer;
     private int index=0;
-    
+    private String userName;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel btExit;

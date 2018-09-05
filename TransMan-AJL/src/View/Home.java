@@ -17,8 +17,10 @@ public class Home extends javax.swing.JFrame {
     /**
      * Creates new form Home
      */
-    public Home() {
+    public Home(String username) {
+        
         initComponents();
+        lbUserNameHome.setText(username);
         lbNotificacoes.setVisible(false);
     }
 
@@ -1001,7 +1003,7 @@ public class Home extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Home().setVisible(true);
+                new Home("Username aqui").setVisible(true);
             }
         });
     }
