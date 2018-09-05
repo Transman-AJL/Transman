@@ -87,6 +87,7 @@ public class Home extends javax.swing.JFrame {
         btEditarViaturas = new keeptoo.KButton();
         kButton2 = new keeptoo.KButton();
         btVerViaturas = new keeptoo.KButton();
+        kPanelGViaturas1 = new keeptoo.KGradientPanel();
         kPanelGFuncionarios = new keeptoo.KGradientPanel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
@@ -545,7 +546,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel26)
                     .addComponent(jLabel27))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(429, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRViagem, "card2");
@@ -629,6 +630,21 @@ public class Home extends javax.swing.JFrame {
         btVerViaturas.setkHoverStartColor(new java.awt.Color(0, 153, 153));
         btVerViaturas.setkSelectedColor(new java.awt.Color(0, 204, 204));
 
+        kPanelGViaturas1.setkBorderRadius(0);
+        kPanelGViaturas1.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelGViaturas1.setkStartColor(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout kPanelGViaturas1Layout = new javax.swing.GroupLayout(kPanelGViaturas1);
+        kPanelGViaturas1.setLayout(kPanelGViaturas1Layout);
+        kPanelGViaturas1Layout.setHorizontalGroup(
+            kPanelGViaturas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        kPanelGViaturas1Layout.setVerticalGroup(
+            kPanelGViaturas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 280, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout kPanelGViaturasLayout = new javax.swing.GroupLayout(kPanelGViaturas);
         kPanelGViaturas.setLayout(kPanelGViaturasLayout);
         kPanelGViaturasLayout.setHorizontalGroup(
@@ -648,6 +664,7 @@ public class Home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
+            .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 619, Short.MAX_VALUE)
         );
         kPanelGViaturasLayout.setVerticalGroup(
             kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -661,7 +678,9 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(378, Short.MAX_VALUE))
+                .addGap(45, 45, 45)
+                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelGViaturas, "card2");
@@ -884,8 +903,10 @@ public class Home extends javax.swing.JFrame {
 
     private void btExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btExitMouseClicked
         // TODO add your handling code here:
-        
-        System.exit(0);
+        ExitDialog exit=new ExitDialog();
+        exit.setLocationRelativeTo(null);
+        exit.setVisible(true);
+        //System.exit(0);
     }//GEN-LAST:event_btExitMouseClicked
 
     private void kPanelTitleBarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kPanelTitleBarMousePressed
@@ -1008,6 +1029,7 @@ public class Home extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelEmCurso;
     private keeptoo.KGradientPanel kPanelGFuncionarios;
     private keeptoo.KGradientPanel kPanelGViaturas;
+    private keeptoo.KGradientPanel kPanelGViaturas1;
     private keeptoo.KGradientPanel kPanelHome;
     private keeptoo.KGradientPanel kPanelNorth;
     private keeptoo.KGradientPanel kPanelPendentes;

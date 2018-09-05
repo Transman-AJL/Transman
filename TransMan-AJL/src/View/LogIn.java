@@ -57,6 +57,7 @@ public class LogIn extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Log In");
+        setAlwaysOnTop(true);
         setUndecorated(true);
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -386,6 +387,7 @@ public class LogIn extends javax.swing.JFrame {
                         System.out.println("Timer Ended");
                         finishScreen();
                         Home home=new Home();
+                        home.setLocationRelativeTo(null);
                         home.setVisible(true);
                         
                     }
@@ -462,7 +464,11 @@ public class LogIn extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new LogIn().setVisible(true);
+                LogIn login=new LogIn();
+                login.setLocationRelativeTo(null);
+                login.setVisible(true);
+                
+                //new LogIn().setVisible(true);
             }
         });
     }

@@ -833,7 +833,7 @@
                           <Component id="jLabel26" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel27" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="239" max="32767" attributes="0"/>
+                      <EmptySpace pref="429" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -967,6 +967,7 @@
                       </Group>
                       <EmptySpace pref="21" max="32767" attributes="0"/>
                   </Group>
+                  <Component id="kPanelGViaturas1" alignment="0" pref="619" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -983,7 +984,9 @@
                           <Component id="btEditarViaturas" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="kButton2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="378" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+                      <Component id="kPanelGViaturas1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1080,6 +1083,30 @@
                 </Property>
               </Properties>
             </Component>
+            <Container class="keeptoo.KGradientPanel" name="kPanelGViaturas1">
+              <Properties>
+                <Property name="kBorderRadius" type="int" value="0"/>
+                <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                </Property>
+                <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="280" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="keeptoo.KGradientPanel" name="kPanelGFuncionarios">
