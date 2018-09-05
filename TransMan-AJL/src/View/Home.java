@@ -5,6 +5,8 @@
  */
 package View;
 
+import java.awt.Color;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import keeptoo.Drag;
@@ -94,8 +96,8 @@ public class Home extends javax.swing.JFrame {
         kPanelGViaturas1 = new keeptoo.KGradientPanel();
         kPanelGFRoot = new keeptoo.KGradientPanel();
         kPanelGFuncionarios = new keeptoo.KGradientPanel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
+        btVoltarGFunc = new javax.swing.JLabel();
+        lbGerirFunc = new javax.swing.JLabel();
         btPaneVerFunc = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -106,11 +108,11 @@ public class Home extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         kPanelVerFunc = new keeptoo.KGradientPanel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
-        rSPanelShadow1 = new rojeru_san.RSPanelShadow();
+        btVoltarVerFunc = new javax.swing.JLabel();
+        lbGerirFuncV = new javax.swing.JLabel();
+        ShadowProfile = new rojeru_san.RSPanelShadow();
         jLabel1 = new javax.swing.JLabel();
-        rSPanelShadow2 = new rojeru_san.RSPanelShadow();
+        shadowDadosFunc = new rojeru_san.RSPanelShadow();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -122,8 +124,8 @@ public class Home extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jLabel9 = new javax.swing.JLabel();
-        rSPanelShadow3 = new rojeru_san.RSPanelShadow();
+        lbViagemEDocFunc = new javax.swing.JLabel();
+        ShadowViagemEDocFunc = new rojeru_san.RSPanelShadow();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
@@ -139,15 +141,21 @@ public class Home extends javax.swing.JFrame {
         jLabel44 = new javax.swing.JLabel();
         jLabel45 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        rSPanelShadow4 = new rojeru_san.RSPanelShadow();
+        ShadowTableVFunc = new rojeru_san.RSPanelShadow();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
+        lbTelefoneVFunc = new javax.swing.JLabel();
+        lbEmailVFunc = new javax.swing.JLabel();
+        lbEstadoVFunc = new javax.swing.JLabel();
+        kPanelAddFunc = new keeptoo.KGradientPanel();
+        btVoltarAddFunc = new javax.swing.JLabel();
+        lbGerirFuncV1 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
         kPanelRelatorios = new keeptoo.KGradientPanel();
-        jLabel34 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
+        btVoltarRelatorios = new javax.swing.JLabel();
+        lbRelatorios = new javax.swing.JLabel();
         kPanelNorth = new keeptoo.KGradientPanel();
         lbUserNameHome = new javax.swing.JLabel();
         btNotificacoes = new javax.swing.JLabel();
@@ -157,11 +165,15 @@ public class Home extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("TransmaN");
         setBackground(new java.awt.Color(255, 255, 255));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setFocusCycleRoot(false);
         setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanelMenu.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelMenu.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 1, 0, new java.awt.Color(0, 204, 204)));
 
         kbtRViagem.setBackground(new java.awt.Color(236, 236, 236));
         kbtRViagem.setForeground(new java.awt.Color(0, 0, 0));
@@ -259,6 +271,14 @@ public class Home extends javax.swing.JFrame {
         });
 
         btSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Services_30px.png"))); // NOI18N
+        btSettings.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btSettingsMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btSettingsMouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanelMenuLayout = new javax.swing.GroupLayout(jPanelMenu);
         jPanelMenu.setLayout(jPanelMenuLayout);
@@ -266,18 +286,17 @@ public class Home extends javax.swing.JFrame {
             jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelMenuLayout.createSequentialGroup()
                 .addGroup(jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanelMenuLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(kbtRelatorios, javax.swing.GroupLayout.DEFAULT_SIZE, 170, Short.MAX_VALUE)
-                            .addComponent(kbtGFuncionarios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(kbtGViaturas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(kbtRViagem, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                            .addComponent(kbtVViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                    .addGroup(jPanelMenuLayout.createSequentialGroup()
-                        .addGap(71, 71, 71)
-                        .addComponent(btSettings)))
-                .addGap(5, 5, 5))
+                    .addGroup(jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(kbtVViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addGroup(jPanelMenuLayout.createSequentialGroup()
+                            .addGap(71, 71, 71)
+                            .addComponent(btSettings)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE))
+                        .addComponent(kbtRViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(kbtGViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(kbtGFuncionarios, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kbtRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         jPanelMenuLayout.setVerticalGroup(
             jPanelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -285,11 +304,11 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(kbtRViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(kbtVViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(kbtGViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(kbtGFuncionarios, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addComponent(kbtRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -748,17 +767,23 @@ public class Home extends javax.swing.JFrame {
         kPanelGFuncionarios.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelGFuncionarios.setkStartColor(new java.awt.Color(255, 255, 255));
 
-        jLabel36.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
-        jLabel36.setText("Voltar");
-        jLabel36.addMouseListener(new java.awt.event.MouseAdapter() {
+        btVoltarGFunc.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        btVoltarGFunc.setText("Voltar");
+        btVoltarGFunc.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel36MouseClicked(evt);
+                btVoltarGFuncMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVoltarGFuncMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVoltarGFuncMouseExited(evt);
             }
         });
 
-        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel37.setText("Gerir Funcionários");
+        lbGerirFunc.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbGerirFunc.setText("Gerir Funcionários");
 
         btPaneVerFunc.setBackground(new java.awt.Color(102, 255, 255));
         btPaneVerFunc.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -802,6 +827,9 @@ public class Home extends javax.swing.JFrame {
 
         btPaneAddFunc.setBackground(new java.awt.Color(102, 255, 255));
         btPaneAddFunc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btPaneAddFuncMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btPaneAddFuncMouseEntered(evt);
             }
@@ -885,9 +913,9 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelGFuncionariosLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel36)
+                        .addComponent(btVoltarGFunc)
                         .addGap(176, 176, 176)
-                        .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lbGerirFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(kPanelGFuncionariosLayout.createSequentialGroup()
                         .addGap(33, 33, 33)
                         .addComponent(btPaneVerFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -905,8 +933,8 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(btPaneAlterFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(kPanelGFuncionariosLayout.createSequentialGroup()
                         .addGroup(kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel36)
-                            .addComponent(jLabel37))
+                            .addComponent(btVoltarGFunc)
+                            .addComponent(lbGerirFunc))
                         .addGap(134, 134, 134)
                         .addGroup(kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btPaneVerFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -921,23 +949,29 @@ public class Home extends javax.swing.JFrame {
         kPanelVerFunc.setkStartColor(new java.awt.Color(255, 255, 255));
         kPanelVerFunc.setMaximumSize(new java.awt.Dimension(380, 280));
 
-        jLabel38.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
-        jLabel38.setText("Voltar");
-        jLabel38.addMouseListener(new java.awt.event.MouseAdapter() {
+        btVoltarVerFunc.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        btVoltarVerFunc.setText("Voltar");
+        btVoltarVerFunc.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel38MouseClicked(evt);
+                btVoltarVerFuncMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVoltarVerFuncMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVoltarVerFuncMouseExited(evt);
             }
         });
 
-        jLabel39.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel39.setText("Gerir Funcionários");
+        lbGerirFuncV.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbGerirFuncV.setText("Gerir Funcionários");
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/fred.png"))); // NOI18N
-        rSPanelShadow1.add(jLabel1, java.awt.BorderLayout.CENTER);
+        ShadowProfile.add(jLabel1, java.awt.BorderLayout.CENTER);
 
-        rSPanelShadow2.setMaximumSize(new java.awt.Dimension(275, 113));
-        rSPanelShadow2.setMinimumSize(new java.awt.Dimension(275, 113));
+        shadowDadosFunc.setMaximumSize(new java.awt.Dimension(275, 113));
+        shadowDadosFunc.setMinimumSize(new java.awt.Dimension(275, 113));
 
         jLabel10.setText("Nome: ");
 
@@ -961,23 +995,23 @@ public class Home extends javax.swing.JFrame {
 
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        javax.swing.GroupLayout rSPanelShadow2Layout = new javax.swing.GroupLayout(rSPanelShadow2);
-        rSPanelShadow2.setLayout(rSPanelShadow2Layout);
-        rSPanelShadow2Layout.setHorizontalGroup(
-            rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rSPanelShadow2Layout.createSequentialGroup()
+        javax.swing.GroupLayout shadowDadosFuncLayout = new javax.swing.GroupLayout(shadowDadosFunc);
+        shadowDadosFunc.setLayout(shadowDadosFuncLayout);
+        shadowDadosFuncLayout.setHorizontalGroup(
+            shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(shadowDadosFuncLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 7, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -985,43 +1019,43 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        rSPanelShadow2Layout.setVerticalGroup(
-            rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rSPanelShadow2Layout.createSequentialGroup()
-                .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(rSPanelShadow2Layout.createSequentialGroup()
+        shadowDadosFuncLayout.setVerticalGroup(
+            shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(shadowDadosFuncLayout.createSequentialGroup()
+                .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(shadowDadosFuncLayout.createSequentialGroup()
                         .addGap(9, 9, 9)
                         .addComponent(jLabel10))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelShadow2Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, shadowDadosFuncLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel11)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel13)
                     .addComponent(jLabel12))
                 .addGap(6, 6, 6)
-                .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
                     .addComponent(jLabel14))
                 .addGap(6, 6, 6)
-                .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
                     .addComponent(jLabel18))
-                .addGroup(rSPanelShadow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(rSPanelShadow2Layout.createSequentialGroup()
+                .addGroup(shadowDadosFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(shadowDadosFuncLayout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(jLabel16)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelShadow2Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, shadowDadosFuncLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel17))))
             .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
-        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel9.setText("Viagem e documentação");
+        lbViagemEDocFunc.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lbViagemEDocFunc.setText("Viagem e documentação");
 
-        rSPanelShadow3.setMaximumSize(new java.awt.Dimension(330, 136));
+        ShadowViagemEDocFunc.setMaximumSize(new java.awt.Dimension(330, 136));
 
         jLabel20.setText("Disponibilidade: ");
 
@@ -1053,13 +1087,13 @@ public class Home extends javax.swing.JFrame {
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        javax.swing.GroupLayout rSPanelShadow3Layout = new javax.swing.GroupLayout(rSPanelShadow3);
-        rSPanelShadow3.setLayout(rSPanelShadow3Layout);
-        rSPanelShadow3Layout.setHorizontalGroup(
-            rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(rSPanelShadow3Layout.createSequentialGroup()
+        javax.swing.GroupLayout ShadowViagemEDocFuncLayout = new javax.swing.GroupLayout(ShadowViagemEDocFunc);
+        ShadowViagemEDocFunc.setLayout(ShadowViagemEDocFuncLayout);
+        ShadowViagemEDocFuncLayout.setHorizontalGroup(
+            ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ShadowViagemEDocFuncLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1070,7 +1104,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(13, 13, 13)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel41, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1078,41 +1112,41 @@ public class Home extends javax.swing.JFrame {
                     .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(41, Short.MAX_VALUE))
         );
-        rSPanelShadow3Layout.setVerticalGroup(
-            rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, rSPanelShadow3Layout.createSequentialGroup()
+        ShadowViagemEDocFuncLayout.setVerticalGroup(
+            ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ShadowViagemEDocFuncLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel20)
                     .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel22)
                     .addComponent(jLabel23))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel24)
                     .addComponent(jLabel25))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel33)
                     .addComponent(jLabel41))
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(rSPanelShadow3Layout.createSequentialGroup()
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ShadowViagemEDocFuncLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel40)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(rSPanelShadow3Layout.createSequentialGroup()
+                    .addGroup(ShadowViagemEDocFuncLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel42)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel45)
                     .addComponent(jLabel44))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(rSPanelShadow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ShadowViagemEDocFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel32)
                     .addComponent(jLabel43, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
@@ -1156,17 +1190,17 @@ public class Home extends javax.swing.JFrame {
             jTable1.getColumnModel().getColumn(2).setPreferredWidth(50);
         }
 
-        rSPanelShadow4.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        ShadowTableVFunc.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Phone_20px.png"))); // NOI18N
-        jLabel46.setText("821234567");
+        lbTelefoneVFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Phone_20px.png"))); // NOI18N
+        lbTelefoneVFunc.setText("821234567");
 
-        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Envelope_20px.png"))); // NOI18N
-        jLabel47.setText("propriofredjos@jossias.co.mz");
+        lbEmailVFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Envelope_20px.png"))); // NOI18N
+        lbEmailVFunc.setText("propriofredjos@jossias.co.mz");
 
-        jLabel48.setForeground(new java.awt.Color(0, 153, 0));
-        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Exercise_20px.png"))); // NOI18N
-        jLabel48.setText("Activo");
+        lbEstadoVFunc.setForeground(new java.awt.Color(0, 153, 0));
+        lbEstadoVFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Exercise_20px.png"))); // NOI18N
+        lbEstadoVFunc.setText("Activo");
 
         javax.swing.GroupLayout kPanelVerFuncLayout = new javax.swing.GroupLayout(kPanelVerFunc);
         kPanelVerFunc.setLayout(kPanelVerFuncLayout);
@@ -1176,29 +1210,25 @@ public class Home extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                        .addComponent(jLabel38)
+                        .addComponent(btVoltarVerFunc)
                         .addGap(176, 176, 176)
-                        .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lbGerirFuncV, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                        .addComponent(rSPanelShadow4, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(ShadowTableVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ShadowViagemEDocFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                                .addGap(91, 91, 91)
-                                .addComponent(jLabel9))
-                            .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(rSPanelShadow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ShadowProfile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(rSPanelShadow3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                                        .addComponent(rSPanelShadow1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
+                                    .addComponent(lbEmailVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lbTelefoneVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lbEstadoVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(shadowDadosFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(kPanelVerFuncLayout.createSequentialGroup()
+                                .addGap(95, 95, 95)
+                                .addComponent(lbViagemEDocFunc)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelVerFuncLayout.setVerticalGroup(
@@ -1206,30 +1236,102 @@ public class Home extends javax.swing.JFrame {
             .addGroup(kPanelVerFuncLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel38)
-                    .addComponent(jLabel39))
+                    .addComponent(btVoltarVerFunc)
+                    .addComponent(lbGerirFuncV))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(rSPanelShadow4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                        .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(kPanelVerFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(kPanelVerFuncLayout.createSequentialGroup()
-                                .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                                .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(lbTelefoneVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(rSPanelShadow1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lbEmailVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lbEstadoVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ShadowProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(shadowDadosFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rSPanelShadow2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lbViagemEDocFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(4, 4, 4)
-                        .addComponent(rSPanelShadow3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addComponent(ShadowViagemEDocFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ShadowTableVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         kPanelGFRoot.add(kPanelVerFunc, "card2");
+
+        kPanelAddFunc.setkBorderRadius(0);
+        kPanelAddFunc.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelAddFunc.setkStartColor(new java.awt.Color(255, 255, 255));
+        kPanelAddFunc.setMaximumSize(new java.awt.Dimension(380, 280));
+
+        btVoltarAddFunc.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        btVoltarAddFunc.setText("Voltar");
+        btVoltarAddFunc.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btVoltarAddFuncMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVoltarAddFuncMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVoltarAddFuncMouseExited(evt);
+            }
+        });
+
+        lbGerirFuncV1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbGerirFuncV1.setText("Adicionar Funcionário");
+
+        jLabel64.setText("Nome");
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
+        jLabel9.setText("To Be Continued...");
+
+        javax.swing.GroupLayout kPanelAddFuncLayout = new javax.swing.GroupLayout(kPanelAddFunc);
+        kPanelAddFunc.setLayout(kPanelAddFuncLayout);
+        kPanelAddFuncLayout.setHorizontalGroup(
+            kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelAddFuncLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelAddFuncLayout.createSequentialGroup()
+                        .addComponent(btVoltarAddFunc)
+                        .addGap(176, 176, 176)
+                        .addComponent(lbGerirFuncV1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelAddFuncLayout.createSequentialGroup()
+                .addContainerGap(162, Short.MAX_VALUE)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(143, 143, 143))
+        );
+        kPanelAddFuncLayout.setVerticalGroup(
+            kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelAddFuncLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btVoltarAddFunc)
+                    .addComponent(lbGerirFuncV1))
+                .addGap(28, 28, 28)
+                .addComponent(jLabel64)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(95, 95, 95)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(177, Short.MAX_VALUE))
+        );
+
+        kPanelGFRoot.add(kPanelAddFunc, "card2");
 
         kPanelRoot.add(kPanelGFRoot, "card2");
 
@@ -1237,17 +1339,23 @@ public class Home extends javax.swing.JFrame {
         kPanelRelatorios.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelRelatorios.setkStartColor(new java.awt.Color(255, 255, 255));
 
-        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
-        jLabel34.setText("Voltar");
-        jLabel34.addMouseListener(new java.awt.event.MouseAdapter() {
+        btVoltarRelatorios.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        btVoltarRelatorios.setText("Voltar");
+        btVoltarRelatorios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel34MouseClicked(evt);
+                btVoltarRelatoriosMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVoltarRelatoriosMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVoltarRelatoriosMouseExited(evt);
             }
         });
 
-        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel35.setText("Relatórios");
+        lbRelatorios.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbRelatorios.setText("Relatórios");
 
         javax.swing.GroupLayout kPanelRelatoriosLayout = new javax.swing.GroupLayout(kPanelRelatorios);
         kPanelRelatorios.setLayout(kPanelRelatoriosLayout);
@@ -1255,9 +1363,9 @@ public class Home extends javax.swing.JFrame {
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel34)
+                .addComponent(btVoltarRelatorios)
                 .addGap(176, 176, 176)
-                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRelatoriosLayout.setVerticalGroup(
@@ -1265,8 +1373,8 @@ public class Home extends javax.swing.JFrame {
             .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel34)
-                    .addComponent(jLabel35))
+                    .addComponent(btVoltarRelatorios)
+                    .addComponent(lbRelatorios))
                 .addContainerGap(429, Short.MAX_VALUE))
         );
 
@@ -1274,6 +1382,7 @@ public class Home extends javax.swing.JFrame {
 
         getContentPane().add(kPanelRoot, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, 620, 470));
 
+        kPanelNorth.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 204, 204)));
         kPanelNorth.setkBorderRadius(0);
         kPanelNorth.setkEndColor(new java.awt.Color(255, 255, 204));
         kPanelNorth.setkStartColor(new java.awt.Color(204, 255, 255));
@@ -1284,12 +1393,24 @@ public class Home extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lbUserNameHomeMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                lbUserNameHomeMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                lbUserNameHomeMouseExited(evt);
+            }
         });
 
-        btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px.png"))); // NOI18N
+        btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px_4.png"))); // NOI18N
         btNotificacoes.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 btNotificacoesMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btNotificacoesMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btNotificacoesMouseExited(evt);
             }
         });
 
@@ -1304,7 +1425,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(btNotificacoes)
                 .addGap(18, 18, 18)
                 .addComponent(lbNotificacoes, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 188, Short.MAX_VALUE)
                 .addComponent(lbUserNameHome, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         kPanelNorthLayout.setVerticalGroup(
@@ -1446,6 +1567,7 @@ public class Home extends javax.swing.JFrame {
         if(lbNotificacoes.isVisible()==false)
         lbNotificacoes.setVisible(true);
         else lbNotificacoes.setVisible(false);
+        //btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px_4.png")));
     }//GEN-LAST:event_btNotificacoesMouseClicked
 
     private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
@@ -1464,21 +1586,23 @@ public class Home extends javax.swing.JFrame {
         kPanelRoot.revalidate();
     }//GEN-LAST:event_jLabel30MouseClicked
 
-    private void jLabel34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel34MouseClicked
-        // TODO add your handling code here:
+    private void btVoltarRelatoriosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseClicked
+        // TODO add your handling code here
+        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
         kPanelRoot.removeAll();
         kPanelRoot.add(kPanelHome);
         kPanelRoot.repaint();
         kPanelRoot.revalidate();
-    }//GEN-LAST:event_jLabel34MouseClicked
+    }//GEN-LAST:event_btVoltarRelatoriosMouseClicked
 
-    private void jLabel36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel36MouseClicked
+    private void btVoltarGFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseClicked
         // TODO add your handling code here:
         kPanelRoot.removeAll();
         kPanelRoot.add(kPanelHome);
         kPanelRoot.repaint();
         kPanelRoot.revalidate();
-    }//GEN-LAST:event_jLabel36MouseClicked
+        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarGFuncMouseClicked
 
     private void btPaneVerFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneVerFuncMouseEntered
         // TODO add your handling code here:
@@ -1497,10 +1621,12 @@ public class Home extends javax.swing.JFrame {
         kPanelGFRoot.add(kPanelVerFunc);
         kPanelGFRoot.repaint();
         kPanelGFRoot.revalidate();
+        resetColor(btPaneVerFunc);
     }//GEN-LAST:event_btPaneVerFuncMousePressed
 
     private void btPaneAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseEntered
         // TODO add your handling code here:
+        
         setColor(btPaneAddFunc);
     }//GEN-LAST:event_btPaneAddFuncMouseEntered
 
@@ -1525,24 +1651,132 @@ public class Home extends javax.swing.JFrame {
         resetColor(btPaneAlterFunc);
     }//GEN-LAST:event_btPaneAlterFuncMouseExited
 
-    private void jLabel38MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel38MouseClicked
+    private void btVoltarVerFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseClicked
         // TODO add your handling code here:
         kPanelGFRoot.removeAll();
         kPanelGFRoot.add(kPanelGFuncionarios);
         kPanelGFRoot.repaint();
         kPanelGFRoot.revalidate();
-    }//GEN-LAST:event_jLabel38MouseClicked
+        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarVerFuncMouseClicked
+
+    private void btSettingsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btSettingsMouseEntered
+        // TODO add your handling code here:
+        btSettings.setOpaque(true);
+        setColorSettings(btSettings);
+        System.out.println("Entrou");
+    }//GEN-LAST:event_btSettingsMouseEntered
+
+    private void btSettingsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btSettingsMouseExited
+        // TODO add your handling code here:
+        
+        resetColorSettings(btSettings);
+        System.out.println("Saiu");
+        btSettings.setOpaque(false);
+    }//GEN-LAST:event_btSettingsMouseExited
+
+    private void btVoltarRelatoriosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseEntered
+        // TODO add your handling code here:
+        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarRelatoriosMouseEntered
+
+    private void btVoltarRelatoriosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseExited
+        // TODO add your handling code here:
+        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarRelatoriosMouseExited
+
+    private void btNotificacoesMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btNotificacoesMouseEntered
+        // TODO add your handling code here:
+        btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px_5.png")));
+    }//GEN-LAST:event_btNotificacoesMouseEntered
+
+    private void btNotificacoesMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btNotificacoesMouseExited
+        // TODO add your handling code here:
+        btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px_4.png")));
+    }//GEN-LAST:event_btNotificacoesMouseExited
+
+    private void lbUserNameHomeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbUserNameHomeMouseEntered
+        // TODO add your handling code here:
+        lbUserNameHome.setForeground(Color.blue);
+    }//GEN-LAST:event_lbUserNameHomeMouseEntered
+
+    private void lbUserNameHomeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbUserNameHomeMouseExited
+        // TODO add your handling code here:
+        lbUserNameHome.setForeground(Color.black);
+    }//GEN-LAST:event_lbUserNameHomeMouseExited
+
+    private void btVoltarGFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseEntered
+        // TODO add your handling code here:
+        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarGFuncMouseEntered
+
+    private void btVoltarVerFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseEntered
+        // TODO add your handling code here:
+        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarVerFuncMouseEntered
+
+    private void btVoltarVerFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseExited
+        // TODO add your handling code here:
+       btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); 
+    }//GEN-LAST:event_btVoltarVerFuncMouseExited
+
+    private void btVoltarGFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseExited
+        // TODO add your handling code here:
+        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); 
+    }//GEN-LAST:event_btVoltarGFuncMouseExited
+
+    private void btVoltarAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseClicked
+        // TODO add your handling code here:
+        kPanelGFRoot.removeAll();
+        kPanelGFRoot.add(kPanelGFuncionarios);
+        kPanelGFRoot.repaint();
+        kPanelGFRoot.revalidate();
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseClicked
+
+    private void btVoltarAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseEntered
+        // TODO add your handling code here:
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseEntered
+
+    private void btVoltarAddFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseExited
+        // TODO add your handling code here:
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseExited
+
+    private void btPaneAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseClicked
+        // TODO add your handling code here:
+        kPanelGFRoot.removeAll();
+        kPanelGFRoot.add(kPanelAddFunc);
+        kPanelGFRoot.repaint();
+        kPanelGFRoot.revalidate();
+        resetColor(btPaneAddFunc);
+    }//GEN-LAST:event_btPaneAddFuncMouseClicked
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     
     public void setColor(JPanel panel)
- {
+    {
      panel.setBackground(new java.awt.Color(0,204,204));
- }
+    }
  
- public void resetColor(JPanel panel)
- {
+    public void resetColor(JPanel panel)
+    {
      panel.setBackground(new java.awt.Color(102,255,255));
- }
+    }
+    
+    public void setColorSettings(JLabel label)
+    {
+     label.setBackground(new java.awt.Color(0,204,204));
+    }
+ 
+    public void resetColorSettings(JLabel label)
+    {
+     label.setBackground(new java.awt.Color(102,255,255));
+    }
     
     /**
      * @param args the command line arguments
@@ -1580,6 +1814,9 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private rojeru_san.RSPanelShadow ShadowProfile;
+    private rojeru_san.RSPanelShadow ShadowTableVFunc;
+    private rojeru_san.RSPanelShadow ShadowViagemEDocFunc;
     private keeptoo.KButton btEditarViaturas;
     private javax.swing.JLabel btExit;
     private javax.swing.JLabel btNotificacoes;
@@ -1588,6 +1825,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel btPaneVerFunc;
     private javax.swing.JLabel btSettings;
     private keeptoo.KButton btVerViaturas;
+    private javax.swing.JLabel btVoltarAddFunc;
+    private javax.swing.JLabel btVoltarGFunc;
+    private javax.swing.JLabel btVoltarRelatorios;
+    private javax.swing.JLabel btVoltarVerFunc;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1615,12 +1856,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
@@ -1628,11 +1863,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1642,7 +1875,9 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
     private keeptoo.KButton kButton2;
+    private keeptoo.KGradientPanel kPanelAddFunc;
     private keeptoo.KGradientPanel kPanelEmCurso;
     private keeptoo.KGradientPanel kPanelGFRoot;
     private keeptoo.KGradientPanel kPanelGFuncionarios;
@@ -1675,6 +1910,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lbDestinohome1;
     private javax.swing.JLabel lbEmCurso;
     private javax.swing.JLabel lbEmCursoTop;
+    private javax.swing.JLabel lbEmailVFunc;
+    private javax.swing.JLabel lbEstadoVFunc;
+    private javax.swing.JLabel lbGerirFunc;
+    private javax.swing.JLabel lbGerirFuncV;
+    private javax.swing.JLabel lbGerirFuncV1;
     private javax.swing.JLabel lbNotificacoes;
     private javax.swing.JLabel lbOrigemHome;
     private javax.swing.JLabel lbOrigemHome1;
@@ -1683,17 +1923,17 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lbOrigemHome4;
     private javax.swing.JLabel lbPendentes;
     private javax.swing.JLabel lbPendentesTop;
+    private javax.swing.JLabel lbRelatorios;
+    private javax.swing.JLabel lbTelefoneVFunc;
     private javax.swing.JLabel lbTerminadas;
     private javax.swing.JLabel lbTerminadasTop;
     private javax.swing.JLabel lbUltimasViagens;
     private javax.swing.JLabel lbUserNameHome;
+    private javax.swing.JLabel lbViagemEDocFunc;
     private com.alee.laf.progressbar.WebProgressBar progressHome1;
     private com.alee.laf.progressbar.WebProgressBar progressHome3;
-    private rojeru_san.RSPanelShadow rSPanelShadow1;
-    private rojeru_san.RSPanelShadow rSPanelShadow2;
-    private rojeru_san.RSPanelShadow rSPanelShadow3;
-    private rojeru_san.RSPanelShadow rSPanelShadow4;
     private javax.swing.JSeparator sepHome;
+    private rojeru_san.RSPanelShadow shadowDadosFunc;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
     private com.alee.laf.progressbar.WebProgressBarStyle webProgressBarStyle1;
