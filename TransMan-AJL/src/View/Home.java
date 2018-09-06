@@ -35,7 +35,6 @@ public class Home extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
-        java.awt.GridBagConstraints gridBagConstraints;
 
         jProgressBarLU1 = new com.alee.managers.language.updaters.JProgressBarLU();
         webProgressBarUI1 = new com.alee.laf.progressbar.WebProgressBarUI();
@@ -82,14 +81,14 @@ public class Home extends javax.swing.JFrame {
         lbDestinoHome4 = new javax.swing.JLabel();
         webProgressBar5 = new com.alee.laf.progressbar.WebProgressBar();
         kPanelRViagem = new keeptoo.KGradientPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
+        btVoltarRViagem = new javax.swing.JLabel();
+        lbRegistrarViagem = new javax.swing.JLabel();
         kPanelVViagens = new keeptoo.KGradientPanel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
+        btVoltarVViagens = new javax.swing.JLabel();
+        lbVerViagens = new javax.swing.JLabel();
         kPanelGViaturas = new keeptoo.KGradientPanel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
+        btVoltarGViaturas = new javax.swing.JLabel();
+        lbGerirViaturas = new javax.swing.JLabel();
         btEditarViaturas = new keeptoo.KButton();
         kButton2 = new keeptoo.KButton();
         btVerViaturas = new keeptoo.KButton();
@@ -589,17 +588,23 @@ public class Home extends javax.swing.JFrame {
         kPanelRViagem.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelRViagem.setkStartColor(new java.awt.Color(255, 255, 255));
 
-        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
-        jLabel26.setText("Voltar");
-        jLabel26.addMouseListener(new java.awt.event.MouseAdapter() {
+        btVoltarRViagem.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        btVoltarRViagem.setText("Voltar");
+        btVoltarRViagem.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel26MouseClicked(evt);
+                btVoltarRViagemMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVoltarRViagemMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVoltarRViagemMouseExited(evt);
             }
         });
 
-        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel27.setText("Registrar viagem");
+        lbRegistrarViagem.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbRegistrarViagem.setText("Registrar viagem");
 
         javax.swing.GroupLayout kPanelRViagemLayout = new javax.swing.GroupLayout(kPanelRViagem);
         kPanelRViagem.setLayout(kPanelRViagemLayout);
@@ -607,9 +612,9 @@ public class Home extends javax.swing.JFrame {
             kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelRViagemLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel26)
+                .addComponent(btVoltarRViagem)
                 .addGap(176, 176, 176)
-                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbRegistrarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRViagemLayout.setVerticalGroup(
@@ -617,8 +622,8 @@ public class Home extends javax.swing.JFrame {
             .addGroup(kPanelRViagemLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel26)
-                    .addComponent(jLabel27))
+                    .addComponent(btVoltarRViagem)
+                    .addComponent(lbRegistrarViagem))
                 .addContainerGap(429, Short.MAX_VALUE))
         );
 
@@ -628,17 +633,23 @@ public class Home extends javax.swing.JFrame {
         kPanelVViagens.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelVViagens.setkStartColor(new java.awt.Color(255, 255, 255));
 
-        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
-        jLabel28.setText("Voltar");
-        jLabel28.addMouseListener(new java.awt.event.MouseAdapter() {
+        btVoltarVViagens.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        btVoltarVViagens.setText("Voltar");
+        btVoltarVViagens.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel28MouseClicked(evt);
+                btVoltarVViagensMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVoltarVViagensMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVoltarVViagensMouseExited(evt);
             }
         });
 
-        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel29.setText("Ver Viagens");
+        lbVerViagens.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbVerViagens.setText("Ver Viagens");
 
         javax.swing.GroupLayout kPanelVViagensLayout = new javax.swing.GroupLayout(kPanelVViagens);
         kPanelVViagens.setLayout(kPanelVViagensLayout);
@@ -646,9 +657,9 @@ public class Home extends javax.swing.JFrame {
             kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelVViagensLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel28)
+                .addComponent(btVoltarVViagens)
                 .addGap(176, 176, 176)
-                .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lbVerViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelVViagensLayout.setVerticalGroup(
@@ -656,8 +667,8 @@ public class Home extends javax.swing.JFrame {
             .addGroup(kPanelVViagensLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel28)
-                    .addComponent(jLabel29))
+                    .addComponent(btVoltarVViagens)
+                    .addComponent(lbVerViagens))
                 .addContainerGap(429, Short.MAX_VALUE))
         );
 
@@ -667,17 +678,23 @@ public class Home extends javax.swing.JFrame {
         kPanelGViaturas.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelGViaturas.setkStartColor(new java.awt.Color(255, 255, 255));
 
-        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
-        jLabel30.setText("Voltar");
-        jLabel30.addMouseListener(new java.awt.event.MouseAdapter() {
+        btVoltarGViaturas.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png"))); // NOI18N
+        btVoltarGViaturas.setText("Voltar");
+        btVoltarGViaturas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel30MouseClicked(evt);
+                btVoltarGViaturasMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btVoltarGViaturasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btVoltarGViaturasMouseExited(evt);
             }
         });
 
-        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel31.setText("Gerir viaturas");
+        lbGerirViaturas.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbGerirViaturas.setText("Gerir viaturas");
 
         btEditarViaturas.setText("Alterar Viaturas");
         btEditarViaturas.setkBackGroundColor(new java.awt.Color(0, 0, 0));
@@ -726,9 +743,9 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelGViaturasLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel30)
+                        .addComponent(btVoltarGViaturas)
                         .addGap(176, 176, 176)
-                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(lbGerirViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(kPanelGViaturasLayout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -744,8 +761,8 @@ public class Home extends javax.swing.JFrame {
             .addGroup(kPanelGViaturasLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel30)
-                    .addComponent(jLabel31))
+                    .addComponent(btVoltarGViaturas)
+                    .addComponent(lbGerirViaturas))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1554,13 +1571,14 @@ public class Home extends javax.swing.JFrame {
         JOptionPane.showInputDialog("Alterar a password? [Y/N]");
     }//GEN-LAST:event_lbUserNameHomeMouseClicked
 
-    private void jLabel26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel26MouseClicked
+    private void btVoltarRViagemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseClicked
         // TODO add your handling code here:
+        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
         kPanelRoot.removeAll();
         kPanelRoot.add(kPanelHome);
         kPanelRoot.repaint();
         kPanelRoot.revalidate();
-    }//GEN-LAST:event_jLabel26MouseClicked
+    }//GEN-LAST:event_btVoltarRViagemMouseClicked
 
     private void btNotificacoesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btNotificacoesMouseClicked
         // TODO add your handling code here:
@@ -1570,21 +1588,23 @@ public class Home extends javax.swing.JFrame {
         //btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px_4.png")));
     }//GEN-LAST:event_btNotificacoesMouseClicked
 
-    private void jLabel28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel28MouseClicked
+    private void btVoltarVViagensMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseClicked
         // TODO add your handling code here:
+        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
         kPanelRoot.removeAll();
         kPanelRoot.add(kPanelHome);
         kPanelRoot.repaint();
         kPanelRoot.revalidate();
-    }//GEN-LAST:event_jLabel28MouseClicked
+    }//GEN-LAST:event_btVoltarVViagensMouseClicked
 
-    private void jLabel30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel30MouseClicked
+    private void btVoltarGViaturasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseClicked
         // TODO add your handling code here:
+        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
         kPanelRoot.removeAll();
         kPanelRoot.add(kPanelHome);
         kPanelRoot.repaint();
         kPanelRoot.revalidate();
-    }//GEN-LAST:event_jLabel30MouseClicked
+    }//GEN-LAST:event_btVoltarGViaturasMouseClicked
 
     private void btVoltarRelatoriosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseClicked
         // TODO add your handling code here
@@ -1757,6 +1777,37 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
 
+    private void btVoltarRViagemMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseEntered
+        // TODO add your handling code here:
+        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+        
+    }//GEN-LAST:event_btVoltarRViagemMouseEntered
+
+    private void btVoltarRViagemMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseExited
+        // TODO add your handling code here:
+        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarRViagemMouseExited
+
+    private void btVoltarVViagensMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseEntered
+        // TODO add your handling code here:
+         btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarVViagensMouseEntered
+
+    private void btVoltarVViagensMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseExited
+        // TODO add your handling code here:
+        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarVViagensMouseExited
+
+    private void btVoltarGViaturasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseEntered
+        // TODO add your handling code here:
+        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarGViaturasMouseEntered
+
+    private void btVoltarGViaturasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseExited
+        // TODO add your handling code here:
+        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarGViaturasMouseExited
+
     
     public void setColor(JPanel panel)
     {
@@ -1827,7 +1878,10 @@ public class Home extends javax.swing.JFrame {
     private keeptoo.KButton btVerViaturas;
     private javax.swing.JLabel btVoltarAddFunc;
     private javax.swing.JLabel btVoltarGFunc;
+    private javax.swing.JLabel btVoltarGViaturas;
+    private javax.swing.JLabel btVoltarRViagem;
     private javax.swing.JLabel btVoltarRelatorios;
+    private javax.swing.JLabel btVoltarVViagens;
     private javax.swing.JLabel btVoltarVerFunc;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -1847,13 +1901,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel4;
@@ -1915,6 +1963,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lbGerirFunc;
     private javax.swing.JLabel lbGerirFuncV;
     private javax.swing.JLabel lbGerirFuncV1;
+    private javax.swing.JLabel lbGerirViaturas;
     private javax.swing.JLabel lbNotificacoes;
     private javax.swing.JLabel lbOrigemHome;
     private javax.swing.JLabel lbOrigemHome1;
@@ -1923,12 +1972,14 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lbOrigemHome4;
     private javax.swing.JLabel lbPendentes;
     private javax.swing.JLabel lbPendentesTop;
+    private javax.swing.JLabel lbRegistrarViagem;
     private javax.swing.JLabel lbRelatorios;
     private javax.swing.JLabel lbTelefoneVFunc;
     private javax.swing.JLabel lbTerminadas;
     private javax.swing.JLabel lbTerminadasTop;
     private javax.swing.JLabel lbUltimasViagens;
     private javax.swing.JLabel lbUserNameHome;
+    private javax.swing.JLabel lbVerViagens;
     private javax.swing.JLabel lbViagemEDocFunc;
     private com.alee.laf.progressbar.WebProgressBar progressHome1;
     private com.alee.laf.progressbar.WebProgressBar progressHome3;
