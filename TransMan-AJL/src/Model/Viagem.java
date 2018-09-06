@@ -1,12 +1,19 @@
 package Model;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author lipe
  */
+@Entity
 public class Viagem {
     
+    @Id
+    @GeneratedValue
+    private int id;
     private String partida;
     private String destino;
     private Date dataPartida;

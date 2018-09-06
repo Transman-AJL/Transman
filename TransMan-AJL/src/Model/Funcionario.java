@@ -1,18 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Model;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  *
  * @author lipe
  */
+@Entity
+
 public class Funcionario {
-    private int codigo;
+    
+    @Id
+    @GeneratedValue
+    private int id;
     private String nome;
     private Date DataNascimento;
     private Date DataAdmissao;
@@ -22,7 +25,7 @@ public class Funcionario {
     private String disponibilidade;
 
     public Funcionario(int codigo, String nome, Date DataNascimento, Date DataAdmissao, String funcao, int numBI, boolean status, String disponibilidade) {
-        this.codigo = codigo;
+        this.id = codigo;
         this.nome = nome;
         this.DataNascimento = DataNascimento;
         this.DataAdmissao = DataAdmissao;
@@ -41,11 +44,11 @@ public class Funcionario {
     }
     
     public int getCodigo() {
-        return codigo;
+        return id;
     }
 
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
+        this.id = codigo;
     }
 
     public String getNome() {
