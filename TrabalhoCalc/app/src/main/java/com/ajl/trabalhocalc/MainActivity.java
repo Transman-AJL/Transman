@@ -13,10 +13,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
- public void abrirActividade(View view){
-     Intent intent = new Intent(this, CalculateActivity.class);
-     startActivity(intent);
-     //-----
- }
+    public void abrirActividade(View view){
+        Intent intent = new Intent(this, CalculateActivity.class);
+        startActivity(intent);
+        //-----
+    }
+
+
+    public void abrirFibonacci(View view){
+        Intent intent = new Intent(this, FiboActivity.class);
+        startActivity(intent);
+        //-----
+    }
 
 }

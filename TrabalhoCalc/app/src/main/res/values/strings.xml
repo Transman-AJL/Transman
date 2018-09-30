@@ -6,4 +6,15 @@
     <string name="tfNumero">0</string>
     <string name="tfRes">0</string>
     <string name="btCalcular">Calcular</string>
+    <string name="btFibonacci">Fibonacci</string>
+    <string name="CalcFact">CALCULADORA DE FACTORIAL</string>
+    <string name="CalcFib">Calculadora Fibonacci</string>
+    <string name="lbIndice">Índice</string>
+    <string name="tfIndice">1</string>
+    <string name="lbElemento">Elemento</string>
+    <string name="tfResultadoFib">1</string>
+    <string name="lbMDC">Calculadora de MDC</string>
+    <string name="lbValor1">Valor 1</string>
+    <string name="lbValor2">Valor 2</string>
+    <string name="lbResultMDC">1</string>
 </resources>
