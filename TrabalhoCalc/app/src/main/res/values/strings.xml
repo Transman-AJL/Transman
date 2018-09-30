@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TrabalhoCalc</string>
+    <string name="Calculadora">Factorial</string>
+    <string name="lbNumero">Numero</string>
+    <string name="tfResultado">Resultado</string>
+    <string name="tfNumero">0</string>
+    <string name="tfRes">0</string>
+    <string name="btCalcular">Calcular</string>
+</resources>
