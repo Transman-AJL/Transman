@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Trabalho Mobile</string>
+    <string name="Edit_message">Introduza o texto</string>
+    <string name="Button_Send">Enviar</string>
+</resources>
