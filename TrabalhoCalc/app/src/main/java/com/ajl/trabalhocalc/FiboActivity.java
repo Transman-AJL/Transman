@@ -24,9 +24,14 @@ public class FiboActivity extends AppCompatActivity {
         String resultadoS=textView1.getText().toString();
         int resultado=Integer.parseInt(resultadoS);
 
-        resultado=fibonacci(resultado);
-        resultadoS=resultado+" ";
-        textView.setText(resultadoS);
+        if(resultado<0){
+            textView.setText("Número Inválido");
+        }else{
+            resultado=fibonacci(resultado);
+            resultadoS=resultado+" ";
+            textView.setText(resultadoS);
+        }
+
         //startActivity(intent);
     }
 

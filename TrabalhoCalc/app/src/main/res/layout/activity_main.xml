@@ -10,10 +10,11 @@
         android:id="@+id/button"
         android:layout_width="206dp"
         android:layout_height="73dp"
-        android:layout_marginTop="16dp"
         android:onClick="abrirActividade"
         android:text="@string/Calculadora"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,11 +22,11 @@
         android:id="@+id/button3"
         android:layout_width="206dp"
         android:layout_height="73dp"
-        android:layout_marginTop="48dp"
         android:onClick="abrirFibonacci"
         android:text="@string/btFibonacci"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -33,10 +34,11 @@
         android:id="@+id/button6"
         android:layout_width="206dp"
         android:layout_height="73dp"
-        android:layout_marginTop="48dp"
         android:onClick="abrirMdc"
         android:text="@string/btMDC"
+        app:layout_constraintBottom_toTopOf="@+id/button16"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
@@ -44,10 +46,11 @@
         android:id="@+id/button16"
         android:layout_width="206dp"
         android:layout_height="73dp"
-        android:layout_marginTop="48dp"
         android:onClick="abrirCalculadora"
         android:text="@string/btCalculadora"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button6" />
 </android.support.constraint.ConstraintLayout>

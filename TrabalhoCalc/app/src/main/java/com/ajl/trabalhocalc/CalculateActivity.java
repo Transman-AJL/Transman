@@ -24,15 +24,25 @@ public class CalculateActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView3);
 
         String resultadoS=textView0.getText().toString();
-        int resultado=Integer.parseInt(resultadoS);
+        long resultado=Long.parseLong(resultadoS);
 
-        resultado=fatorial(resultado);
-        resultadoS=resultado+" ";
-        textView.setText(resultadoS);
+        if(resultado<0){
+            textView.setText("Número negativo");
+        }else
+        if (resultado>20){
+            textView.setText("Número Muito grande");
+
+        }
+        else{
+            resultado=fatorial(resultado);
+            resultadoS=resultado+" ";
+            textView.setText(resultadoS);
+        }
+
         //startActivity(intent);
     }
 
-    public int fatorial(int numero){
+    public long fatorial(long numero){
         if(numero==0){
             return 1;
         }
