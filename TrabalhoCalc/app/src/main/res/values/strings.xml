@@ -34,4 +34,5 @@
     <string name="btIgual">=</string>
     <string name="btDiv">/</string>
     <string name="btMult">X</string>
+    <string name="sobre">Sobre</string>
 </resources>

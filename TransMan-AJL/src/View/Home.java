@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import keeptoo.Drag;
+import Control.ComponentResizer;
+import java.awt.Dimension;
 
 /**
  *
@@ -23,6 +25,10 @@ public class Home extends javax.swing.JFrame {
     public Home(String username) {
         
         initComponents();
+        cr.setMinimumSize(new Dimension(800, 540));
+        cr.setMaximumSize(new Dimension(1280, 720));
+        cr.registerComponent(this);
+        cr.setSnapSize(new Dimension(10, 10));
         lbUserNameHome.setText(username);
         lbNotificacoes.setVisible(false);
     }
@@ -1863,7 +1869,7 @@ public class Home extends javax.swing.JFrame {
             }
         });
     }
-
+    private ComponentResizer cr= new ComponentResizer();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private rojeru_san.RSPanelShadow ShadowProfile;
     private rojeru_san.RSPanelShadow ShadowTableVFunc;
