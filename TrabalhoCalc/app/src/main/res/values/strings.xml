@@ -31,4 +31,7 @@
     <string name="bt0">0</string>
     <string name="btSoma">+</string>
     <string name="btSub">-</string>
+    <string name="btIgual">=</string>
+    <string name="btDiv">/</string>
+    <string name="btMult">X</string>
 </resources>
