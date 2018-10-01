@@ -28,4 +28,26 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="206dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="48dp"
+        android:onClick="abrirMdc"
+        android:text="@string/btMDC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="206dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="48dp"
+        android:onClick="abrirCalculadora"
+        android:text="@string/btCalculadora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 </android.support.constraint.ConstraintLayout>

@@ -26,4 +26,15 @@ public class MainActivity extends AppCompatActivity {
         //-----
     }
 
+    public void abrirMdc(View view){
+        Intent intent = new Intent(this, MDCActivity.class);
+        startActivity(intent);
+        //-----
+    }
+
+    public void abrirCalculadora(View view){
+        Intent intent = new Intent(this, CalculadoraActivity.class);
+        startActivity(intent);
+        //-----
+    }
 }

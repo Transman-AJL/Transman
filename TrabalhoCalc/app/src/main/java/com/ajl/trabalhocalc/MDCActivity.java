@@ -18,16 +18,28 @@ public class MDCActivity extends AppCompatActivity {
 
         Intent intent = new Intent();
         TextView textView1 = findViewById(R.id.editText3);
-        TextView textView2 = findViewById(R.id.editText4)
+        TextView textView2 = findViewById(R.id.editText4);
 
-        TextView textView = findViewById(R.id.textView8);
+        TextView textView = findViewById(R.id.textView13);
 
-        String resultadoS=textView1.getText().toString();
-        int resultado=Integer.parseInt(resultadoS);
+        String resultadoS1=textView1.getText().toString();
+        String resultadoS2=textView2.getText().toString();
 
-        resultado=fibonacci(resultado);
-        resultadoS=resultado+" ";
-        textView.setText(resultadoS);
+        int resultado1=Integer.parseInt(resultadoS1);
+        int resultado2=Integer.parseInt(resultadoS2);
+
+        resultado1=mdc(resultado1,resultado2);
+        resultadoS1=resultado1+" ";
+        textView.setText(resultadoS1);
         //startActivity(intent);
+    }
+
+    public static int mdc(int a,int b){
+
+        if(b==0){
+            return a;
+        }else{
+            return mdc(b,a%b);
+        }
     }
 }
