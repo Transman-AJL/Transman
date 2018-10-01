@@ -25,12 +25,19 @@ public class MDCActivity extends AppCompatActivity {
         String resultadoS1=textView1.getText().toString();
         String resultadoS2=textView2.getText().toString();
 
-        int resultado1=Integer.parseInt(resultadoS1);
-        int resultado2=Integer.parseInt(resultadoS2);
-
-        resultado1=mdc(resultado1,resultado2);
-        resultadoS1=resultado1+" ";
         textView.setText(resultadoS1);
+
+        if(resultadoS1.equalsIgnoreCase("") || resultadoS2.equalsIgnoreCase("")){
+            textView.setText("nenhum campo pode estar vazio");
+        }else{
+            int resultado1=Integer.parseInt(resultadoS1);
+            int resultado2=Integer.parseInt(resultadoS2);
+
+            resultado1=mdc(resultado1,resultado2);
+            resultadoS1=resultado1+" ";
+            textView.setText(resultadoS1);
+        }
+
         //startActivity(intent);
     }
 
