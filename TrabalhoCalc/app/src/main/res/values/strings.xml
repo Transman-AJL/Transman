@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TrabalhoCalc</string>
+    <string name="app_name">Trabalho Java AJL</string>
     <string name="Calculadora">Factorial</string>
     <string name="lbNumero">Numero</string>
     <string name="tfResultado">Resultado</string>
