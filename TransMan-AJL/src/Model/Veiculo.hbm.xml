@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 6, 2018 5:25:53 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Veiculo" table="veiculo" catalog="transman" optimistic-lock="version">
+        <id name="matricula" type="string">
+            <column name="matricula" length="15" />
+            <generator class="assigned" />
+        </id>
+        <property name="marca" type="string">
+            <column name="marca" length="45" />
+        </property>
+        <property name="modelo" type="string">
+            <column name="modelo" length="45" />
+        </property>
+        <property name="ano" type="java.lang.Integer">
+            <column name="ano" />
+        </property>
+        <property name="kilometragem" type="java.lang.Double">
+            <column name="kilometragem" precision="22" scale="0" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="15" />
+        </property>
+        <property name="categoria" type="string">
+            <column name="categoria" length="45" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="45" />
+        </property>
+        <property name="peso" type="java.lang.Double">
+            <column name="peso" precision="22" scale="0" />
+        </property>
+        <property name="volume" type="java.lang.Double">
+            <column name="volume" precision="22" scale="0" />
+        </property>
+        <property name="lotacao" type="java.lang.Integer">
+            <column name="lotacao" />
+        </property>
+    </class>
+</hibernate-mapping>
