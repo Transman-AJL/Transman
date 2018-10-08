@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 8, 2018 7:21:04 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Cliente" table="cliente" catalog="transman" optimistic-lock="version">
+        <composite-id name="id" class="Model.ClienteId">
+            <key-property name="nuit" type="int">
+                <column name="nuit" />
+            </key-property>
+            <key-property name="idCliente" type="int">
+                <column name="idCliente" />
+            </key-property>
+        </composite-id>
+        <property name="nome" type="string">
+            <column name="nome" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>
