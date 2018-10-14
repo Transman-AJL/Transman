@@ -19,11 +19,10 @@ public class Funcionario {
     private Date DataNascimento;
     private Date DataAdmissao;
     private String funcao;
-    private int numBI;
-    private boolean status;
+    private String numBI;
+    private String status;
 
-    public Funcionario(int codigo, String nome, Date DataNascimento, Date DataAdmissao, String funcao, int numBI, boolean status) {
-        this.id = codigo;
+    public Funcionario(String nome, Date DataNascimento, Date DataAdmissao, String funcao, String numBI, String status) {
         this.nome = nome;
         this.DataNascimento = DataNascimento;
         this.DataAdmissao = DataAdmissao;
@@ -72,19 +71,19 @@ public class Funcionario {
         this.funcao = funcao;
     }
 
-    public int getNumBI() {
+    public String getNumBI() {
         return numBI;
     }
 
-    public void setNumBI(int numBI) {
+    public void setNumBI(String numBI) {
         this.numBI = numBI;
     }
 
-    public boolean isStatus() {
+    public String setStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(String status) {
         this.status = status;
     }
     

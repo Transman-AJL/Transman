@@ -48,5 +48,10 @@ Contributor(s):
     <property name="hibernate.connection.password">root</property>
     <property name="hibernate.hbm2ddl.auto">validate</property>
     <mapping class="Model.Cliente"/>
+    <mapping class="Model.Veiculo"/>
+    <mapping class="Model.Viagem"/>
+    <mapping class="Model.Usuario"/>
+    <mapping class="Model.Funcionario"/>
+    <mapping class="Model.Documentacao"/>
   </session-factory>
 </hibernate-configuration>

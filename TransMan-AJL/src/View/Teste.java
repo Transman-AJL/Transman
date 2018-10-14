@@ -7,6 +7,7 @@ package View;
 
 import Control.Controller;
 import Model.Cliente;
+import Model.Veiculo;
 
 /**
  *
@@ -19,13 +20,18 @@ public class Teste {
      */
     public static void main(String[] args) {
         
-        // TODO code application logic here
-        
+        /*Cliente
         Cliente c=new Cliente();
         c.setNome("Francois Bettencourt Meyer");
         c.setNuit("872301");
         
         System.out.println(c.gravar());
+        System.exit(0);
+        */
+        
+        //Veiculo
+        Veiculo v=new Veiculo("MLW-145-MP", "Volvo", "XC40", 1998, 2000);
+        System.out.println(v.gravar());
         System.exit(0);
         
     }
