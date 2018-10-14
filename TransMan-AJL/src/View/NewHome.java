@@ -102,9 +102,31 @@ public class NewHome extends javax.swing.JFrame {
         btVoltarGViaturas = new javax.swing.JLabel();
         lbGerirViaturas = new javax.swing.JLabel();
         btEditarViaturas = new keeptoo.KButton();
-        kButton2 = new keeptoo.KButton();
+        btAdicionarViaturas = new keeptoo.KButton();
         btVerViaturas = new keeptoo.KButton();
         kPanelGViaturas1 = new keeptoo.KGradientPanel();
+        kPanelAdViaturas = new keeptoo.KGradientPanel();
+        jLabel29 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel30 = new javax.swing.JLabel();
+        jTextField3 = new javax.swing.JTextField();
+        jLabel31 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel34 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jLabel36 = new javax.swing.JLabel();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
+        jLabel46 = new javax.swing.JLabel();
+        jTextField11 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        kButton1 = new keeptoo.KButton();
         kPanelGFRoot = new keeptoo.KGradientPanel();
         kPanelGFuncionarios = new keeptoo.KGradientPanel();
         btVoltarGFunc = new javax.swing.JLabel();
@@ -705,7 +727,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarRViagem)
                 .addGap(176, 176, 176)
                 .addComponent(lbRegistrarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
         kPanelRViagemLayout.setVerticalGroup(
             kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -750,7 +772,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarVViagens)
                 .addGap(176, 176, 176)
                 .addComponent(lbVerViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
         kPanelVViagensLayout.setVerticalGroup(
             kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -794,13 +816,23 @@ public class NewHome extends javax.swing.JFrame {
         btEditarViaturas.setkHoverStartColor(new java.awt.Color(0, 153, 153));
         btEditarViaturas.setkSelectedColor(new java.awt.Color(0, 204, 204));
 
-        kButton2.setText("Adicionar Viaturas");
-        kButton2.setkBackGroundColor(new java.awt.Color(0, 0, 0));
-        kButton2.setkEndColor(new java.awt.Color(255, 255, 255));
-        kButton2.setkHoverEndColor(new java.awt.Color(204, 204, 204));
-        kButton2.setkHoverForeGround(new java.awt.Color(255, 255, 255));
-        kButton2.setkHoverStartColor(new java.awt.Color(0, 153, 153));
-        kButton2.setkSelectedColor(new java.awt.Color(0, 204, 204));
+        btAdicionarViaturas.setText("Adicionar Viaturas");
+        btAdicionarViaturas.setkBackGroundColor(new java.awt.Color(0, 0, 0));
+        btAdicionarViaturas.setkEndColor(new java.awt.Color(255, 255, 255));
+        btAdicionarViaturas.setkHoverEndColor(new java.awt.Color(204, 204, 204));
+        btAdicionarViaturas.setkHoverForeGround(new java.awt.Color(255, 255, 255));
+        btAdicionarViaturas.setkHoverStartColor(new java.awt.Color(0, 153, 153));
+        btAdicionarViaturas.setkSelectedColor(new java.awt.Color(0, 204, 204));
+        btAdicionarViaturas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAdicionarViaturasActionPerformed(evt);
+            }
+        });
+        btAdicionarViaturas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                btAdicionarViaturasKeyPressed(evt);
+            }
+        });
 
         btVerViaturas.setText("Ver Viaturas");
         btVerViaturas.setkBackGroundColor(new java.awt.Color(0, 0, 0));
@@ -813,17 +845,125 @@ public class NewHome extends javax.swing.JFrame {
         kPanelGViaturas1.setkBorderRadius(0);
         kPanelGViaturas1.setkEndColor(new java.awt.Color(204, 255, 255));
         kPanelGViaturas1.setkStartColor(new java.awt.Color(255, 255, 255));
+        kPanelGViaturas1.setLayout(new java.awt.CardLayout());
 
-        javax.swing.GroupLayout kPanelGViaturas1Layout = new javax.swing.GroupLayout(kPanelGViaturas1);
-        kPanelGViaturas1.setLayout(kPanelGViaturas1Layout);
-        kPanelGViaturas1Layout.setHorizontalGroup(
-            kPanelGViaturas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+        kPanelAdViaturas.setkBorderRadius(0);
+        kPanelAdViaturas.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelAdViaturas.setkStartColor(new java.awt.Color(255, 255, 255));
+
+        jLabel29.setText("Matricula");
+
+        jLabel30.setText("Marca");
+
+        jLabel31.setText("Modelo");
+
+        jLabel34.setText("Ano Fabrico");
+
+        jLabel35.setText("Kilometragem");
+
+        jLabel36.setText("Categoria");
+
+        jLabel37.setText("Tipo");
+
+        jLabel38.setText("Peso");
+
+        jLabel39.setText("Lotação");
+
+        jLabel46.setText("Volume");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
+        kButton1.setText("Gravar");
+
+        javax.swing.GroupLayout kPanelAdViaturasLayout = new javax.swing.GroupLayout(kPanelAdViaturas);
+        kPanelAdViaturas.setLayout(kPanelAdViaturasLayout);
+        kPanelAdViaturasLayout.setHorizontalGroup(
+            kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jTextField3)
+                        .addComponent(jTextField2)
+                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jTextField9, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.LEADING, 0, 180, Short.MAX_VALUE))
+                    .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jTextField10, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE)
+                        .addComponent(jTextField11)))
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 123, Short.MAX_VALUE))
         );
-        kPanelGViaturas1Layout.setVerticalGroup(
-            kPanelGViaturas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
+        kPanelAdViaturasLayout.setVerticalGroup(
+            kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
+                .addGap(57, 57, 57)
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
+                        .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
+                        .addComponent(jLabel31, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(kButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
+                        .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
+
+        kPanelGViaturas1.add(kPanelAdViaturas, "card2");
 
         javax.swing.GroupLayout kPanelGViaturasLayout = new javax.swing.GroupLayout(kPanelGViaturas);
         kPanelGViaturas.setLayout(kPanelGViaturasLayout);
@@ -832,19 +972,22 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(kPanelGViaturasLayout.createSequentialGroup()
                 .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelGViaturasLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btVoltarGViaturas)
-                        .addGap(176, 176, 176)
-                        .addComponent(lbGerirViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(kPanelGViaturasLayout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
+                        .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kPanelGViaturasLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btVoltarGViaturas)
+                                .addGap(176, 176, 176)
+                                .addComponent(lbGerirViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kPanelGViaturasLayout.createSequentialGroup()
+                                .addGap(31, 31, 31)
+                                .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btAdicionarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 126, Short.MAX_VALUE))
+                    .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         kPanelGViaturasLayout.setVerticalGroup(
             kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -857,10 +1000,10 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btVerViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(45, 45, 45)
-                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btAdicionarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         kPanelRoot.add(kPanelGViaturas, "card2");
@@ -1469,7 +1612,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarRelatorios)
                 .addGap(176, 176, 176)
                 .addComponent(lbRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
         kPanelRelatoriosLayout.setVerticalGroup(
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1875,10 +2018,22 @@ public class NewHome extends javax.swing.JFrame {
             this.setSize(1360, 740);
             this.setLocationRelativeTo(null);
         }
-        
-        System.out.println("Tamanho :"+this.getSize());
+
         
     }//GEN-LAST:event_btMaxMouseClicked
+
+    private void btAdicionarViaturasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_btAdicionarViaturasKeyPressed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btAdicionarViaturasKeyPressed
+
+    private void btAdicionarViaturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionarViaturasActionPerformed
+        // TODO add your handling code here:
+        kPanelGViaturas1.removeAll();
+        kPanelGViaturas1.add(kPanelAdViaturas);
+        kPanelGViaturas1.repaint();
+        kPanelGViaturas1.revalidate();
+    }//GEN-LAST:event_btAdicionarViaturasActionPerformed
 
     public void setColor(JPanel panel)
     {
@@ -1941,6 +2096,7 @@ public class NewHome extends javax.swing.JFrame {
     private rojeru_san.RSPanelShadow ShadowTableVFunc;
     private rojeru_san.RSPanelShadow ShadowViagemEDocFunc;
     private keeptoo.KGradientPanel TitleBar;
+    private keeptoo.KButton btAdicionarViaturas;
     private keeptoo.KButton btEditarViaturas;
     private javax.swing.JLabel btExit;
     private javax.swing.JLabel btMax;
@@ -1957,6 +2113,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel btVoltarRelatorios;
     private javax.swing.JLabel btVoltarVViagens;
     private javax.swing.JLabel btVoltarVerFunc;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1978,9 +2135,18 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
@@ -1988,6 +2154,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel64;
@@ -2004,7 +2171,17 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-    private keeptoo.KButton kButton2;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField9;
+    private keeptoo.KButton kButton1;
+    private keeptoo.KGradientPanel kPanelAdViaturas;
     private keeptoo.KGradientPanel kPanelAddFunc;
     private keeptoo.KGradientPanel kPanelEmCurso;
     private keeptoo.KGradientPanel kPanelGFRoot;
