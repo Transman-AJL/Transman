@@ -20,6 +20,11 @@ public class Veiculo {
     private int ano;
     private double kilometragem;
     private String status;
+    private String categoria;
+    private String tipo;
+    private double peso;
+    private int lotacao;
+    private double volume;
     private Documentacao doc;
 
     public Veiculo(String matricula, String marca, String modelo, int ano, double kilometragem, String status, Documentacao doc) {

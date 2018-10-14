@@ -22,7 +22,6 @@ public class Teste {
         // TODO code application logic here
         
         Cliente c=new Cliente();
-        c.setId(0);
         c.setNome("Francois Bettencourt Meyer");
         c.setNuit("872301");
         
