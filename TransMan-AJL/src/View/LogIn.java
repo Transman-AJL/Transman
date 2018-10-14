@@ -386,9 +386,9 @@ public class LogIn extends javax.swing.JFrame {
                         ((Timer)e.getSource()).stop();
                         System.out.println("Timer Ended");
                         finishScreen();
-                        Home home=new Home(userName);
-                        home.setLocationRelativeTo(null);
-                        home.setVisible(true);
+                        NewHome newHome=new NewHome(userName);
+                        newHome.setLocationRelativeTo(null);
+                        newHome.setVisible(true);
                         
                     }
                 }
