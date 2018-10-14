@@ -47,6 +47,6 @@ Contributor(s):
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
     <property name="hibernate.hbm2ddl.auto">validate</property>
-    <mapping class="Model.Cliente" file="" jar="" package="" resource=""/>
+    <mapping class="Model.Cliente"/>
   </session-factory>
 </hibernate-configuration>
