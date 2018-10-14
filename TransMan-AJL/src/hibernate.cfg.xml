@@ -46,11 +46,7 @@ Contributor(s):
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/transman?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">root</property>
-    <mapping resource="Model/Veiculo.hbm.xml"/>
-    <mapping resource="Model/Documentacao.hbm.xml"/>
-    <mapping resource="Model/Usuario.hbm.xml"/>
-    <mapping resource="Model/Viagem.hbm.xml"/>
-    <mapping resource="Model/Cliente.hbm.xml"/>
-    <mapping resource="Model/Funcionario.hbm.xml"/>
+    <property name="hibernate.hbm2ddl.auto">validate</property>
+    <mapping class="Model.Cliente" file="" jar="" package="" resource=""/>
   </session-factory>
 </hibernate-configuration>
