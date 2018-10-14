@@ -31,6 +31,7 @@ public class Home extends javax.swing.JFrame {
         cr.setSnapSize(new Dimension(10, 10));
         lbUserNameHome.setText(username);
         lbNotificacoes.setVisible(false);
+        this.setSize(1200, 700);
     }
 
     /**

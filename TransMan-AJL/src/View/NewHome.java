@@ -22,13 +22,14 @@ public class NewHome extends javax.swing.JFrame {
     /**
      * Creates new form NewHome
      */
-    public NewHome() {
+    public NewHome(String username) {
         initComponents();
         cr.setMinimumSize(new Dimension(800, 540));
         cr.setMaximumSize(new Dimension(1280, 720));
         cr.registerComponent(this);
         cr.setSnapSize(new Dimension(10, 10));
-        
+        lbUserNameHome.setText(username);
+        lbNotificacoes.setVisible(false);
     }
 
     /**
@@ -48,8 +49,17 @@ public class NewHome extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         btExit = new javax.swing.JLabel();
+        btMax = new javax.swing.JLabel();
+        jPanelMenu = new javax.swing.JPanel();
+        kbtRViagem = new keeptoo.KButton();
+        kbtVViagens = new keeptoo.KButton();
+        kbtGViaturas = new keeptoo.KButton();
+        kbtGFuncionarios = new keeptoo.KButton();
+        kbtRelatorios = new keeptoo.KButton();
+        jLabel28 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        btSettings = new javax.swing.JLabel();
+        jPanelMainBackground = new javax.swing.JPanel();
         kPanelRoot = new keeptoo.KGradientPanel();
         kPanelHome = new keeptoo.KGradientPanel();
         kPanelPendentes = new keeptoo.KGradientPanel();
@@ -205,18 +215,29 @@ public class NewHome extends javax.swing.JFrame {
             }
         });
 
+        btMax.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Maximize_Window_20px.png"))); // NOI18N
+        btMax.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btMaxMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(0, 180, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(btMax)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btExit))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(btExit)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btExit)
+                    .addComponent(btMax))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -231,18 +252,159 @@ public class NewHome extends javax.swing.JFrame {
         gridBagConstraints.weighty = -1.0;
         jPanel1.add(TitleBar, gridBagConstraints);
 
+        jPanelMenu.setBackground(new java.awt.Color(255, 255, 255));
+        jPanelMenu.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 1, 0, new java.awt.Color(0, 204, 204)));
+        jPanelMenu.setLayout(new java.awt.GridLayout(7, 1));
+
+        kbtRViagem.setBackground(new java.awt.Color(236, 236, 236));
+        kbtRViagem.setForeground(new java.awt.Color(0, 0, 0));
+        kbtRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Truck_30px.png"))); // NOI18N
+        kbtRViagem.setText("  Registrar Viagem");
+        kbtRViagem.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtRViagem.setkAllowGradient(false);
+        kbtRViagem.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtRViagem.setkBorderRadius(0);
+        kbtRViagem.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtRViagem.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtRViagem.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtRViagem.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtRViagem.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtRViagem.setPreferredSize(new java.awt.Dimension(150, 45));
+        kbtRViagem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kbtRViagemActionPerformed(evt);
+            }
+        });
+        jPanelMenu.add(kbtRViagem);
+
+        kbtVViagens.setBackground(new java.awt.Color(236, 236, 236));
+        kbtVViagens.setForeground(new java.awt.Color(0, 0, 0));
+        kbtVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Traveler_30px_3.png"))); // NOI18N
+        kbtVViagens.setText("Ver viagens");
+        kbtVViagens.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtVViagens.setkAllowGradient(false);
+        kbtVViagens.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtVViagens.setkBorderRadius(0);
+        kbtVViagens.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtVViagens.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtVViagens.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtVViagens.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtVViagens.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtVViagens.setPreferredSize(new java.awt.Dimension(150, 45));
+        kbtVViagens.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kbtVViagensActionPerformed(evt);
+            }
+        });
+        jPanelMenu.add(kbtVViagens);
+
+        kbtGViaturas.setBackground(new java.awt.Color(236, 236, 236));
+        kbtGViaturas.setForeground(new java.awt.Color(0, 0, 0));
+        kbtGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Car_Service_30px_1.png"))); // NOI18N
+        kbtGViaturas.setText("Gerir Viaturas");
+        kbtGViaturas.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtGViaturas.setkAllowGradient(false);
+        kbtGViaturas.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtGViaturas.setkBorderRadius(0);
+        kbtGViaturas.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtGViaturas.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtGViaturas.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtGViaturas.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtGViaturas.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtGViaturas.setPreferredSize(new java.awt.Dimension(150, 45));
+        kbtGViaturas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kbtGViaturasActionPerformed(evt);
+            }
+        });
+        jPanelMenu.add(kbtGViaturas);
+
+        kbtGFuncionarios.setBackground(new java.awt.Color(236, 236, 236));
+        kbtGFuncionarios.setForeground(new java.awt.Color(0, 0, 0));
+        kbtGFuncionarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_People_30px.png"))); // NOI18N
+        kbtGFuncionarios.setText("Gerir Funcionários");
+        kbtGFuncionarios.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtGFuncionarios.setkAllowGradient(false);
+        kbtGFuncionarios.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtGFuncionarios.setkBorderRadius(0);
+        kbtGFuncionarios.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtGFuncionarios.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtGFuncionarios.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtGFuncionarios.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtGFuncionarios.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtGFuncionarios.setPreferredSize(new java.awt.Dimension(150, 45));
+        kbtGFuncionarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kbtGFuncionariosActionPerformed(evt);
+            }
+        });
+        jPanelMenu.add(kbtGFuncionarios);
+
+        kbtRelatorios.setBackground(new java.awt.Color(236, 236, 236));
+        kbtRelatorios.setForeground(new java.awt.Color(0, 0, 0));
+        kbtRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Stop_Pie_Chart_Report_30px.png"))); // NOI18N
+        kbtRelatorios.setText("Relatórios");
+        kbtRelatorios.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        kbtRelatorios.setkAllowGradient(false);
+        kbtRelatorios.setkBackGroundColor(new java.awt.Color(255, 255, 255));
+        kbtRelatorios.setkBorderRadius(0);
+        kbtRelatorios.setkEndColor(new java.awt.Color(0, 255, 255));
+        kbtRelatorios.setkForeGround(new java.awt.Color(0, 0, 0));
+        kbtRelatorios.setkHoverForeGround(new java.awt.Color(102, 102, 102));
+        kbtRelatorios.setkPressedColor(new java.awt.Color(255, 255, 255));
+        kbtRelatorios.setkSelectedColor(new java.awt.Color(101, 198, 187));
+        kbtRelatorios.setPreferredSize(new java.awt.Dimension(150, 45));
+        kbtRelatorios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kbtRelatoriosActionPerformed(evt);
+            }
+        });
+        jPanelMenu.add(kbtRelatorios);
+        jPanelMenu.add(jLabel28);
+
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setPreferredSize(new java.awt.Dimension(150, 67));
+
+        btSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Services_30px.png"))); // NOI18N
+        btSettings.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btSettingsMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btSettingsMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(btSettings)
+                .addContainerGap(86, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(16, Short.MAX_VALUE)
+                .addComponent(btSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jPanelMenu.add(jPanel2);
+
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipadx = 1;
-        gridBagConstraints.weightx = 0.28;
+        gridBagConstraints.weightx = 0.15;
         gridBagConstraints.weighty = 1.0;
-        jPanel1.add(jPanel2, gridBagConstraints);
+        jPanel1.add(jPanelMenu, gridBagConstraints);
 
-        jPanel3.setBackground(new java.awt.Color(51, 255, 255));
-        jPanel3.setLayout(new java.awt.GridLayout());
+        jPanelMainBackground.setBackground(new java.awt.Color(51, 255, 255));
+        jPanelMainBackground.setLayout(new java.awt.GridLayout(1, 0));
 
         kPanelRoot.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(204, 204, 204)));
         kPanelRoot.setForeground(new java.awt.Color(204, 204, 204));
@@ -507,7 +669,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(lbOrigemHome4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelHome, "card2");
@@ -682,7 +844,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 799, Short.MAX_VALUE)
+            .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 771, Short.MAX_VALUE)
         );
         kPanelGViaturasLayout.setVerticalGroup(
             kPanelGViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1321,7 +1483,7 @@ public class NewHome extends javax.swing.JFrame {
 
         kPanelRoot.add(kPanelRelatorios, "card2");
 
-        jPanel3.add(kPanelRoot);
+        jPanelMainBackground.add(kPanelRoot);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -1330,7 +1492,7 @@ public class NewHome extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 1;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
-        jPanel1.add(jPanel3, gridBagConstraints);
+        jPanel1.add(jPanelMainBackground, gridBagConstraints);
 
         kPanelNorth.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 204, 204)));
         kPanelNorth.setkBorderRadius(0);
@@ -1456,92 +1618,102 @@ public class NewHome extends javax.swing.JFrame {
         btNotificacoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Notification_30px_4.png")));
     }//GEN-LAST:event_btNotificacoesMouseExited
 
-    private void btVoltarRViagemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseClicked
+    private void btVoltarRelatoriosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseExited
         // TODO add your handling code here:
-        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarRelatoriosMouseExited
+
+    private void btVoltarRelatoriosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseEntered
+        // TODO add your handling code here:
+        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarRelatoriosMouseEntered
+
+    private void btVoltarRelatoriosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseClicked
+        // TODO add your handling code here
+        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
         kPanelRoot.removeAll();
         kPanelRoot.add(kPanelHome);
         kPanelRoot.repaint();
         kPanelRoot.revalidate();
-    }//GEN-LAST:event_btVoltarRViagemMouseClicked
+    }//GEN-LAST:event_btVoltarRelatoriosMouseClicked
 
-    private void btVoltarRViagemMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseEntered
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
-        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
-    }//GEN-LAST:event_btVoltarRViagemMouseEntered
-
-    private void btVoltarRViagemMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseExited
+    private void btVoltarAddFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseExited
         // TODO add your handling code here:
-        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarRViagemMouseExited
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseExited
 
-    private void btVoltarVViagensMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseClicked
+    private void btVoltarAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseEntered
         // TODO add your handling code here:
-        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-        kPanelRoot.removeAll();
-        kPanelRoot.add(kPanelHome);
-        kPanelRoot.repaint();
-        kPanelRoot.revalidate();
-    }//GEN-LAST:event_btVoltarVViagensMouseClicked
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseEntered
 
-    private void btVoltarVViagensMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseEntered
+    private void btVoltarAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseClicked
         // TODO add your handling code here:
-        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
-    }//GEN-LAST:event_btVoltarVViagensMouseEntered
+        kPanelGFRoot.removeAll();
+        kPanelGFRoot.add(kPanelGFuncionarios);
+        kPanelGFRoot.repaint();
+        kPanelGFRoot.revalidate();
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseClicked
 
-    private void btVoltarVViagensMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseExited
+    private void btVoltarVerFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseExited
         // TODO add your handling code here:
-        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarVViagensMouseExited
+        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarVerFuncMouseExited
 
-    private void btVoltarGViaturasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseClicked
+    private void btVoltarVerFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseEntered
         // TODO add your handling code here:
-        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-        kPanelRoot.removeAll();
-        kPanelRoot.add(kPanelHome);
-        kPanelRoot.repaint();
-        kPanelRoot.revalidate();
-    }//GEN-LAST:event_btVoltarGViaturasMouseClicked
+        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarVerFuncMouseEntered
 
-    private void btVoltarGViaturasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseEntered
+    private void btVoltarVerFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseClicked
         // TODO add your handling code here:
-        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
-    }//GEN-LAST:event_btVoltarGViaturasMouseEntered
+        kPanelGFRoot.removeAll();
+        kPanelGFRoot.add(kPanelGFuncionarios);
+        kPanelGFRoot.repaint();
+        kPanelGFRoot.revalidate();
+        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarVerFuncMouseClicked
 
-    private void btVoltarGViaturasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseExited
+    private void btPaneAlterFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAlterFuncMouseExited
         // TODO add your handling code here:
-        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarGViaturasMouseExited
+        resetColor(btPaneAlterFunc);
+    }//GEN-LAST:event_btPaneAlterFuncMouseExited
 
-    private void btVoltarGFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseClicked
-        // TODO add your handling code here:
-        kPanelRoot.removeAll();
-        kPanelRoot.add(kPanelHome);
-        kPanelRoot.repaint();
-        kPanelRoot.revalidate();
-        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarGFuncMouseClicked
+    private void btPaneAlterFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAlterFuncMouseEntered
+        // TODO add your handling code here
+        setColor(btPaneAlterFunc);
+    }//GEN-LAST:event_btPaneAlterFuncMouseEntered
 
-    private void btVoltarGFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseEntered
+    private void btPaneAddFuncMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMousePressed
         // TODO add your handling code here:
-        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
-    }//GEN-LAST:event_btVoltarGFuncMouseEntered
+        //just a sample.
+        //new Students().show();
+    }//GEN-LAST:event_btPaneAddFuncMousePressed
 
-    private void btVoltarGFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseExited
+    private void btPaneAddFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseExited
         // TODO add your handling code here:
-        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarGFuncMouseExited
+        resetColor(btPaneAddFunc);
+    }//GEN-LAST:event_btPaneAddFuncMouseExited
 
-    private void btPaneVerFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneVerFuncMouseEntered
+    private void btPaneAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseEntered
         // TODO add your handling code here:
-        setColor(btPaneVerFunc);
-    }//GEN-LAST:event_btPaneVerFuncMouseEntered
 
-    private void btPaneVerFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneVerFuncMouseExited
+        setColor(btPaneAddFunc);
+    }//GEN-LAST:event_btPaneAddFuncMouseEntered
+
+    private void btPaneAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseClicked
         // TODO add your handling code here:
-        resetColor(btPaneVerFunc);
-    }//GEN-LAST:event_btPaneVerFuncMouseExited
+        kPanelGFRoot.removeAll();
+        kPanelGFRoot.add(kPanelAddFunc);
+        kPanelGFRoot.repaint();
+        kPanelGFRoot.revalidate();
+        resetColor(btPaneAddFunc);
+    }//GEN-LAST:event_btPaneAddFuncMouseClicked
 
     private void btPaneVerFuncMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneVerFuncMousePressed
         // TODO add your handling code here:
@@ -1553,102 +1725,160 @@ public class NewHome extends javax.swing.JFrame {
         resetColor(btPaneVerFunc);
     }//GEN-LAST:event_btPaneVerFuncMousePressed
 
-    private void btPaneAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseClicked
+    private void btPaneVerFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneVerFuncMouseExited
         // TODO add your handling code here:
-        kPanelGFRoot.removeAll();
-        kPanelGFRoot.add(kPanelAddFunc);
-        kPanelGFRoot.repaint();
-        kPanelGFRoot.revalidate();
-        resetColor(btPaneAddFunc);
-    }//GEN-LAST:event_btPaneAddFuncMouseClicked
+        resetColor(btPaneVerFunc);
+    }//GEN-LAST:event_btPaneVerFuncMouseExited
 
-    private void btPaneAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseEntered
+    private void btPaneVerFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneVerFuncMouseEntered
         // TODO add your handling code here:
+        setColor(btPaneVerFunc);
+    }//GEN-LAST:event_btPaneVerFuncMouseEntered
 
-        setColor(btPaneAddFunc);
-    }//GEN-LAST:event_btPaneAddFuncMouseEntered
-
-    private void btPaneAddFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseExited
+    private void btVoltarGFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseExited
         // TODO add your handling code here:
-        resetColor(btPaneAddFunc);
-    }//GEN-LAST:event_btPaneAddFuncMouseExited
+        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarGFuncMouseExited
 
-    private void btPaneAddFuncMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMousePressed
+    private void btVoltarGFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseEntered
         // TODO add your handling code here:
-        //just a sample.
-        //new Students().show();
-    }//GEN-LAST:event_btPaneAddFuncMousePressed
+        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarGFuncMouseEntered
 
-    private void btPaneAlterFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAlterFuncMouseEntered
-        // TODO add your handling code here
-        setColor(btPaneAlterFunc);
-    }//GEN-LAST:event_btPaneAlterFuncMouseEntered
-
-    private void btPaneAlterFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAlterFuncMouseExited
+    private void btVoltarGFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGFuncMouseClicked
         // TODO add your handling code here:
-        resetColor(btPaneAlterFunc);
-    }//GEN-LAST:event_btPaneAlterFuncMouseExited
-
-    private void btVoltarVerFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseClicked
-        // TODO add your handling code here:
-        kPanelGFRoot.removeAll();
-        kPanelGFRoot.add(kPanelGFuncionarios);
-        kPanelGFRoot.repaint();
-        kPanelGFRoot.revalidate();
-        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarVerFuncMouseClicked
-
-    private void btVoltarVerFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseEntered
-        // TODO add your handling code here:
-        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
-    }//GEN-LAST:event_btVoltarVerFuncMouseEntered
-
-    private void btVoltarVerFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseExited
-        // TODO add your handling code here:
-        btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarVerFuncMouseExited
-
-    private void btVoltarAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseClicked
-        // TODO add your handling code here:
-        kPanelGFRoot.removeAll();
-        kPanelGFRoot.add(kPanelGFuncionarios);
-        kPanelGFRoot.repaint();
-        kPanelGFRoot.revalidate();
-        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarAddFuncMouseClicked
-
-    private void btVoltarAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseEntered
-        // TODO add your handling code here:
-        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
-    }//GEN-LAST:event_btVoltarAddFuncMouseEntered
-
-    private void btVoltarAddFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseExited
-        // TODO add your handling code here:
-        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarAddFuncMouseExited
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void btVoltarRelatoriosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseClicked
-        // TODO add your handling code here
-        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
         kPanelRoot.removeAll();
         kPanelRoot.add(kPanelHome);
         kPanelRoot.repaint();
         kPanelRoot.revalidate();
-    }//GEN-LAST:event_btVoltarRelatoriosMouseClicked
+        btVoltarGFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarGFuncMouseClicked
 
-    private void btVoltarRelatoriosMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseEntered
+    private void btVoltarGViaturasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseExited
         // TODO add your handling code here:
-        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
-    }//GEN-LAST:event_btVoltarRelatoriosMouseEntered
+        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarGViaturasMouseExited
 
-    private void btVoltarRelatoriosMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRelatoriosMouseExited
+    private void btVoltarGViaturasMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseEntered
         // TODO add your handling code here:
-        btVoltarRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarRelatoriosMouseExited
+        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarGViaturasMouseEntered
+
+    private void btVoltarGViaturasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarGViaturasMouseClicked
+        // TODO add your handling code here:
+        btVoltarGViaturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_btVoltarGViaturasMouseClicked
+
+    private void btVoltarVViagensMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseExited
+        // TODO add your handling code here:
+        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarVViagensMouseExited
+
+    private void btVoltarVViagensMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseEntered
+        // TODO add your handling code here:
+        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarVViagensMouseEntered
+
+    private void btVoltarVViagensMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVViagensMouseClicked
+        // TODO add your handling code here:
+        btVoltarVViagens.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_btVoltarVViagensMouseClicked
+
+    private void btVoltarRViagemMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseExited
+        // TODO add your handling code here:
+        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarRViagemMouseExited
+
+    private void btVoltarRViagemMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseEntered
+        // TODO add your handling code here:
+        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarRViagemMouseEntered
+
+    private void btVoltarRViagemMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarRViagemMouseClicked
+        // TODO add your handling code here:
+        btVoltarRViagem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelHome);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_btVoltarRViagemMouseClicked
+
+    private void kbtRViagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtRViagemActionPerformed
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelRViagem);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_kbtRViagemActionPerformed
+
+    private void kbtVViagensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtVViagensActionPerformed
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelVViagens);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_kbtVViagensActionPerformed
+
+    private void kbtGViaturasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtGViaturasActionPerformed
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelGViaturas);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_kbtGViaturasActionPerformed
+
+    private void kbtGFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtGFuncionariosActionPerformed
+        // TODO add your handling code here:
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelGFRoot);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+    }//GEN-LAST:event_kbtGFuncionariosActionPerformed
+
+    private void kbtRelatoriosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kbtRelatoriosActionPerformed
+        // TODO add your handling code here
+        kPanelRoot.removeAll();
+        kPanelRoot.add(kPanelRelatorios);
+        kPanelRoot.repaint();
+        kPanelRoot.revalidate();
+
+    }//GEN-LAST:event_kbtRelatoriosActionPerformed
+
+    private void btSettingsMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btSettingsMouseEntered
+        // TODO add your handling code here:
+        btSettings.setOpaque(true);
+        setColorSettings(btSettings);
+        System.out.println("Entrou");
+    }//GEN-LAST:event_btSettingsMouseEntered
+
+    private void btSettingsMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btSettingsMouseExited
+        // TODO add your handling code here:
+
+        resetColorSettings(btSettings);
+        System.out.println("Saiu");
+        btSettings.setOpaque(false);
+    }//GEN-LAST:event_btSettingsMouseExited
+
+    private void btMaxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btMaxMouseClicked
+        // TODO add your handling code here:
+        if(this.getSize().equals(new Dimension(1360, 740))){
+            this.setSize(800, 540);
+        }else{
+            this.setSize(1360, 740);
+            this.setLocationRelativeTo(null);
+        }
+        
+        System.out.println("Tamanho :"+this.getSize());
+        
+    }//GEN-LAST:event_btMaxMouseClicked
 
     public void setColor(JPanel panel)
     {
@@ -1701,7 +1931,7 @@ public class NewHome extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new NewHome().setVisible(true);
+                new NewHome("Username aqui").setVisible(true);
             }
         });
     }
@@ -1713,10 +1943,12 @@ public class NewHome extends javax.swing.JFrame {
     private keeptoo.KGradientPanel TitleBar;
     private keeptoo.KButton btEditarViaturas;
     private javax.swing.JLabel btExit;
+    private javax.swing.JLabel btMax;
     private javax.swing.JLabel btNotificacoes;
     private javax.swing.JPanel btPaneAddFunc;
     private javax.swing.JPanel btPaneAlterFunc;
     private javax.swing.JPanel btPaneVerFunc;
+    private javax.swing.JLabel btSettings;
     private keeptoo.KButton btVerViaturas;
     private javax.swing.JLabel btVoltarAddFunc;
     private javax.swing.JLabel btVoltarGFunc;
@@ -1745,6 +1977,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
@@ -1763,8 +1996,9 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanelMainBackground;
+    private javax.swing.JPanel jPanelMenu;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -1786,6 +2020,11 @@ public class NewHome extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelTerminadas;
     private keeptoo.KGradientPanel kPanelVViagens;
     private keeptoo.KGradientPanel kPanelVerFunc;
+    private keeptoo.KButton kbtGFuncionarios;
+    private keeptoo.KButton kbtGViaturas;
+    private keeptoo.KButton kbtRViagem;
+    private keeptoo.KButton kbtRelatorios;
+    private keeptoo.KButton kbtVViagens;
     private javax.swing.JLabel lbClienteHome;
     private javax.swing.JLabel lbClienteHome1;
     private javax.swing.JLabel lbClienteHome2;
