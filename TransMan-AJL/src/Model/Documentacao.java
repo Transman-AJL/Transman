@@ -1,4 +1,5 @@
 package Model;
+import Control.Controller;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -49,6 +50,12 @@ public class Documentacao {
         this.DataFim = DataFim;
     }
     
+    public boolean gravar(){
+        
+        Controller <Documentacao>d=new Controller<Documentacao>(Documentacao.class);
+        return d.salvarOuAtualizar(this);
+    
+    }
     
     
     

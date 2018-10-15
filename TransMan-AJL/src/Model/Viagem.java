@@ -1,4 +1,5 @@
 package Model;
+import Control.Controller;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -123,5 +124,11 @@ public class Viagem {
         this.precoTotal = precoTotal;
     }
     
+    public boolean gravar(){
+        
+        Controller <Viagem>v=new Controller<Viagem>(Viagem.class);
+        return v.salvarOuAtualizar(this);
+    
+    }
     
 }

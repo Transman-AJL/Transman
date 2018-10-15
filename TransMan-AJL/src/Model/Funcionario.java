@@ -1,5 +1,6 @@
 package Model;
 
+import Control.Controller;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -30,6 +31,7 @@ public class Funcionario {
         this.numBI = numBI;
         this.status = status;
     }
+    public Funcionario(){}
     
     public int getCodigo() {
         return id;
@@ -87,5 +89,11 @@ public class Funcionario {
         this.status = status;
     }
     
+    public boolean gravar(){
+        
+        Controller <Funcionario>f=new Controller<Funcionario>(Funcionario.class);
+        return f.salvarOuAtualizar(this);
+    
+    }
     
 }
