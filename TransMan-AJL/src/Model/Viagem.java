@@ -28,7 +28,7 @@ public class Viagem {
     private double consumoCombustivel;
     private double tempoEstimado;
     private double ValorAlimentacao;
-    private double valorlojamento;
+    private double valorAlojamento;
     private double precoTotal;
     private String nomeUsuario;
     private String nomeCliente;
@@ -108,11 +108,11 @@ public class Viagem {
     }
 
     public double getValorlojamento() {
-        return valorlojamento;
+        return valorAlojamento;
     }
 
     public void setValorlojamento(double valorlojamento) {
-        this.valorlojamento = valorlojamento;
+        this.valorAlojamento = valorlojamento;
     }
 
     public double getPrecoTotal() {
