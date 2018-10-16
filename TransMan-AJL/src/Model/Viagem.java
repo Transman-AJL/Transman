@@ -1,4 +1,5 @@
 package Model;
+import Control.Controller;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,38 +15,26 @@ public class Viagem {
     @Id
     @GeneratedValue
     private int id;
-    private String partida;
-    private String destino;
+    private String localPartida;
+    private String provinciaPartida;
+    private String localDestino;
+    private String provinciaDestino;
+    private Date dataRegisto;
     private Date dataPartida;
     private Date dataChegada;
     private int numMotoristas;
-    private String tipo;
     private String estado;
-    private int idCliente;
     private double distancia;
     private String matriculaVeiculo;
     private double consumoCombustivel;
     private double tempoEstimado;
     private double ValorAlimentacao;
-    private double valorlojamento;
+    private double valorAlojamento;
     private double precoTotal;
+    private String nomeUsuario;
+    private String nomeCliente;
 
-    public String getPartida() {
-        return partida;
-    }
-
-    public void setPartida(String partida) {
-        this.partida = partida;
-    }
-
-    public String getDestino() {
-        return destino;
-    }
-
-    public void setDestino(String destino) {
-        this.destino = destino;
-    }
-
+    
     public Date getDataPartida() {
         return dataPartida;
     }
@@ -70,13 +59,6 @@ public class Viagem {
         this.numMotoristas = numMotoristas;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 
     public String getEstado() {
         return estado;
@@ -84,14 +66,6 @@ public class Viagem {
 
     public void setEstado(String estado) {
         this.estado = estado;
-    }
-
-    public int getIdCliente() {
-        return idCliente;
-    }
-
-    public void setIdCliente(int idCliente) {
-        this.idCliente = idCliente;
     }
 
     public double getDistancia() {
@@ -135,11 +109,11 @@ public class Viagem {
     }
 
     public double getValorlojamento() {
-        return valorlojamento;
+        return valorAlojamento;
     }
 
     public void setValorlojamento(double valorlojamento) {
-        this.valorlojamento = valorlojamento;
+        this.valorAlojamento = valorlojamento;
     }
 
     public double getPrecoTotal() {
@@ -150,5 +124,11 @@ public class Viagem {
         this.precoTotal = precoTotal;
     }
     
+    public boolean gravar(){
+        
+        Controller <Viagem>v=new Controller<Viagem>(Viagem.class);
+        return v.salvarOuAtualizar(this);
+    
+    }
     
 }

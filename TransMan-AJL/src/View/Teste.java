@@ -7,6 +7,9 @@ package View;
 
 import Control.Controller;
 import Model.Cliente;
+import Model.Funcionario;
+import Model.Veiculo;
+import java.util.Date;
 
 /**
  *
@@ -19,15 +22,25 @@ public class Teste {
      */
     public static void main(String[] args) {
         
-        // TODO code application logic here
-        
+        /*//Cliente
         Cliente c=new Cliente();
         c.setNome("Francois Bettencourt Meyer");
         c.setNuit("872301");
         
         System.out.println(c.gravar());
         System.exit(0);
+        */
         
+        /*//Veiculo
+        Veiculo v=new Veiculo("MLW-145-MP", "Volvo", "XC40", 1998, 2000);
+        System.out.println(v.gravar());
+        System.exit(0);
+        */
+        
+        //Funcionario
+        Funcionario f=new Funcionario("Fred Jossias", new Date(1997, 10, 15), new Date(2018, 10, 15), "Motorista", "11105646M", "Avaliable");
+        System.out.println(f.gravar());
+        System.exit(0);
     }
     
 }

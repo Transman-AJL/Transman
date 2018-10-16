@@ -1,5 +1,6 @@
 package Model;
 
+import Control.Controller;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -25,18 +26,21 @@ public class Veiculo {
     private double peso;
     private int lotacao;
     private double volume;
-    private Documentacao doc;
+    //private Documentacao doc;
 
-    public Veiculo(String matricula, String marca, String modelo, int ano, double kilometragem, String status, Documentacao doc) {
+    public Veiculo(String matricula, String marca, String modelo, int ano, double kilometragem) {
         this.matricula = matricula;
         this.marca = marca;
         this.modelo = modelo;
         this.ano = ano;
         this.kilometragem = kilometragem;
-        this.status = status;
-        this.doc = doc;
+        this.status = "Disponivel";
     }
 
+    public Veiculo(){
+    
+    }
+    
     public String getMatricula() {
         return matricula;
     }
@@ -85,12 +89,19 @@ public class Veiculo {
         this.status = status;
     }
 
-    public Documentacao getDoc() {
+    /*public Documentacao getDoc() {
         return doc;
     }
 
     public void setDoc(Documentacao doc) {
         this.doc = doc;
+    }*/
+    
+    public boolean gravar(){
+        
+        Controller <Veiculo>v=new Controller<Veiculo>(Veiculo.class);
+        return v.salvarOuAtualizar(this);
+    
     }
     
     
