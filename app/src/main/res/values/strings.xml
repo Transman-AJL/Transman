@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TurmaC3</string>
+    <string name="btClique">Clique</string>
+    <string name="lbHelloWorld">Test</string>
+</resources>
