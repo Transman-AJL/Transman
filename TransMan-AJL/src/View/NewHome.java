@@ -2461,7 +2461,7 @@ public class NewHome extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField8ActionPerformed
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
     private void kButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton1ActionPerformed
 
         String matricula=tfMatricula.getText();
@@ -2480,11 +2480,11 @@ public class NewHome extends javax.swing.JFrame {
         System.exit(0);
 
     }//GEN-LAST:event_kButton1ActionPerformed
-=======
+//=======
     private void kButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_kButton4ActionPerformed
->>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+//>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
 
     public void setColor(JPanel panel)
     {
