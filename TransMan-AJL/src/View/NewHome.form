@@ -1273,10 +1273,10 @@
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="jLabel34" min="-2" pref="131" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField3" max="32767" attributes="0"/>
-                                                      <Component id="jTextField2" max="32767" attributes="0"/>
-                                                      <Component id="jTextField4" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
-                                                      <Component id="jTextField5" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
+                                                      <Component id="tfMarca" max="32767" attributes="0"/>
+                                                      <Component id="tfMatricula" max="32767" attributes="0"/>
+                                                      <Component id="tfModelo" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
+                                                      <Component id="tfAno" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Component id="jLabel31" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
                                                   <Component id="jLabel30" alignment="0" min="-2" pref="131" max="-2" attributes="0"/>
@@ -1289,20 +1289,20 @@
                                                   <Component id="jLabel39" min="-2" pref="131" max="-2" attributes="0"/>
                                                   <Component id="jLabel46" min="-2" pref="131" max="-2" attributes="0"/>
                                                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                                      <Component id="jTextField9" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jComboBox1" alignment="0" pref="180" max="32767" attributes="0"/>
+                                                      <Component id="tfPeso" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="cbTipo" alignment="0" pref="180" max="32767" attributes="0"/>
                                                   </Group>
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                                      <Component id="jTextField10" pref="180" max="32767" attributes="0"/>
-                                                      <Component id="jTextField11" max="32767" attributes="0"/>
+                                                      <Component id="tfLotacao" pref="180" max="32767" attributes="0"/>
+                                                      <Component id="tfVolume" max="32767" attributes="0"/>
                                                   </Group>
                                               </Group>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" attributes="0">
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" attributes="0">
-                                                          <Component id="jTextField6" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
-                                                          <Component id="jTextField7" min="-2" pref="180" max="-2" attributes="0"/>
+                                                          <Component id="tfKilometragem" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
+                                                          <Component id="tfCategoria" min="-2" pref="180" max="-2" attributes="0"/>
                                                           <Component id="jLabel36" min="-2" pref="131" max="-2" attributes="0"/>
                                                           <Component id="jLabel35" min="-2" pref="131" max="-2" attributes="0"/>
                                                       </Group>
@@ -1335,9 +1335,9 @@
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfMatricula" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfKilometragem" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -1349,9 +1349,9 @@
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jTextField9" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfCategoria" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfPeso" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfMarca" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -1361,8 +1361,8 @@
                                               <Component id="jLabel31" min="-2" pref="14" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfModelo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfLotacao" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="kButton1" alignment="3" min="-2" pref="27" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
@@ -1374,8 +1374,8 @@
                                               <Component id="jLabel34" min="-2" pref="14" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jTextField11" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfAno" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfVolume" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Component id="jLabel46" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
@@ -1391,42 +1391,42 @@
                                 <Property name="text" type="java.lang.String" value="Matricula"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField2">
+                            <Component class="javax.swing.JTextField" name="tfMatricula">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel30">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Marca"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField3">
+                            <Component class="javax.swing.JTextField" name="tfMarca">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel31">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Modelo"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField4">
+                            <Component class="javax.swing.JTextField" name="tfModelo">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel34">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Ano Fabrico"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField5">
+                            <Component class="javax.swing.JTextField" name="tfAno">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel35">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Kilometragem"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField6">
+                            <Component class="javax.swing.JTextField" name="tfKilometragem">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel36">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Categoria"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField7">
+                            <Component class="javax.swing.JTextField" name="tfCategoria">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel37">
                               <Properties>
@@ -1438,30 +1438,28 @@
                                 <Property name="text" type="java.lang.String" value="Peso"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField9">
+                            <Component class="javax.swing.JTextField" name="tfPeso">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel39">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Lota&#xe7;&#xe3;o"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField10">
+                            <Component class="javax.swing.JTextField" name="tfLotacao">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel46">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Volume"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField11">
+                            <Component class="javax.swing.JTextField" name="tfVolume">
                             </Component>
-                            <Component class="javax.swing.JComboBox" name="jComboBox1">
+                            <Component class="javax.swing.JComboBox" name="cbTipo">
                               <Properties>
                                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                                  <StringArray count="4">
-                                    <StringItem index="0" value="Item 1"/>
-                                    <StringItem index="1" value="Item 2"/>
-                                    <StringItem index="2" value="Item 3"/>
-                                    <StringItem index="3" value="Item 4"/>
+                                  <StringArray count="2">
+                                    <StringItem index="0" value="Carga"/>
+                                    <StringItem index="1" value="Tanque"/>
                                   </StringArray>
                                 </Property>
                               </Properties>
@@ -1473,6 +1471,9 @@
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Gravar"/>
                               </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kButton1ActionPerformed"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel47">
                               <Properties>
