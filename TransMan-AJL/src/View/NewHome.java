@@ -154,6 +154,22 @@ public class NewHome extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         kButton3 = new keeptoo.KButton();
+        kPanelVerViaturas = new keeptoo.KGradientPanel();
+        jLabel70 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        kButton4 = new keeptoo.KButton();
+        jLabel71 = new javax.swing.JLabel();
         kPanelGFRoot = new keeptoo.KGradientPanel();
         kPanelGFuncionarios = new keeptoo.KGradientPanel();
         btVoltarGFunc = new javax.swing.JLabel();
@@ -431,7 +447,7 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(75, 75, 75)
                 .addComponent(btSettings)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -718,7 +734,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(lbOrigemHome4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelHome, "card2");
@@ -754,7 +770,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarRViagem)
                 .addGap(176, 176, 176)
                 .addComponent(lbRegistrarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
         kPanelRViagemLayout.setVerticalGroup(
             kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -763,7 +779,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRViagemLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarRViagem)
                     .addComponent(lbRegistrarViagem))
-                .addContainerGap(432, Short.MAX_VALUE))
+                .addContainerGap(429, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRViagem, "card2");
@@ -799,7 +815,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarVViagens)
                 .addGap(176, 176, 176)
                 .addComponent(lbVerViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
         kPanelVViagensLayout.setVerticalGroup(
             kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -808,7 +824,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarVViagens)
                     .addComponent(lbVerViagens))
-                .addContainerGap(432, Short.MAX_VALUE))
+                .addContainerGap(429, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelVViagens, "card2");
@@ -1143,7 +1159,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(61, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         kPanelAlterarViatLayout.setVerticalGroup(
             kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1208,10 +1224,146 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(jLabel58)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
-                .addGap(82, 82, 82))
+                .addGap(74, 74, 74))
         );
 
         kPanelGViaturas1.add(kPanelAlterarViat, "card2");
+
+        kPanelVerViaturas.setkBorderRadius(0);
+        kPanelVerViaturas.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelVerViaturas.setkStartColor(new java.awt.Color(255, 255, 255));
+
+        jLabel70.setText("Ver Viaturas");
+
+        jScrollPane3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
+        jTable3.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"ABC-123 MC", "Volvo", "Vlv"},
+                {"ACD-234 MP", "Freightliner", "Cascadia"},
+                {"AEF-456 GZ", "Tata", "Prima"}
+            },
+            new String [] {
+                "Matricula", "Marca", "Modelo"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable3.setGridColor(new java.awt.Color(255, 255, 255));
+        jTable3.setRowHeight(22);
+        jScrollPane3.setViewportView(jTable3);
+
+        jLabel59.setText("Matricula");
+
+        jLabel60.setText("Peso");
+
+        jLabel61.setText("Marca");
+
+        jLabel62.setText("Lotação");
+
+        jLabel63.setText("Modelo");
+
+        jLabel65.setText("Volume");
+
+        jLabel66.setText("Ano Fabrico");
+
+        jLabel67.setText("Kilometragem");
+
+        jLabel68.setText("Tipo");
+
+        jLabel69.setText("Categoria");
+
+        kButton4.setText("Ver Doc.");
+        kButton4.setkHoverForeGround(new java.awt.Color(102, 255, 102));
+        kButton4.setkHoverStartColor(new java.awt.Color(51, 153, 0));
+        kButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kButton4ActionPerformed(evt);
+            }
+        });
+
+        jLabel71.setText("Disponibilidade");
+
+        javax.swing.GroupLayout kPanelVerViaturasLayout = new javax.swing.GroupLayout(kPanelVerViaturas);
+        kPanelVerViaturas.setLayout(kPanelVerViaturasLayout);
+        kPanelVerViaturasLayout.setHorizontalGroup(
+            kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelVerViaturasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel70))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelVerViaturasLayout.createSequentialGroup()
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel66, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel61, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(28, 28, 28)
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+        kPanelVerViaturasLayout.setVerticalGroup(
+            kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelVerViaturasLayout.createSequentialGroup()
+                .addContainerGap(26, Short.MAX_VALUE)
+                .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(kPanelVerViaturasLayout.createSequentialGroup()
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel70)
+                            .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(23, 23, 23)
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(28, 28, 28)
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(27, 27, 27)
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel67)
+                            .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(26, 26, 26)
+                        .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(39, 39, 39)
+                        .addComponent(kButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 26, Short.MAX_VALUE))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(54, 54, 54))
+        );
+
+        kPanelGViaturas1.add(kPanelVerViaturas, "card2");
 
         javax.swing.GroupLayout kPanelGViaturasLayout = new javax.swing.GroupLayout(kPanelGViaturas);
         kPanelGViaturas.setLayout(kPanelGViaturasLayout);
@@ -1233,7 +1385,7 @@ public class NewHome extends javax.swing.JFrame {
                                 .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btAdicionarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 16, Short.MAX_VALUE))
+                        .addGap(0, 163, Short.MAX_VALUE))
                     .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -1250,7 +1402,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btAdicionarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.PREFERRED_SIZE, 359, Short.MAX_VALUE)
+                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -1860,7 +2012,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarRelatorios)
                 .addGap(176, 176, 176)
                 .addComponent(lbRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(255, Short.MAX_VALUE))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
         kPanelRelatoriosLayout.setVerticalGroup(
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1869,7 +2021,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarRelatorios)
                     .addComponent(lbRelatorios))
-                .addContainerGap(432, Short.MAX_VALUE))
+                .addContainerGap(429, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRelatorios, "card2");
@@ -2303,6 +2455,10 @@ public class NewHome extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField8ActionPerformed
 
+    private void kButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_kButton4ActionPerformed
+
     public void setColor(JPanel panel)
     {
      panel.setBackground(new java.awt.Color(0,204,204));
@@ -2437,9 +2593,21 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -2449,10 +2617,12 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelMenu;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
@@ -2475,6 +2645,7 @@ public class NewHome extends javax.swing.JFrame {
     private keeptoo.KButton kButton1;
     private keeptoo.KButton kButton2;
     private keeptoo.KButton kButton3;
+    private keeptoo.KButton kButton4;
     private keeptoo.KGradientPanel kPanelAdViaturas;
     private keeptoo.KGradientPanel kPanelAddFunc;
     private keeptoo.KGradientPanel kPanelAlterarViat;
@@ -2492,6 +2663,7 @@ public class NewHome extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelTerminadas;
     private keeptoo.KGradientPanel kPanelVViagens;
     private keeptoo.KGradientPanel kPanelVerFunc;
+    private keeptoo.KGradientPanel kPanelVerViaturas;
     private keeptoo.KButton kbtGFuncionarios;
     private keeptoo.KButton kbtGViaturas;
     private keeptoo.KButton kbtRViagem;
