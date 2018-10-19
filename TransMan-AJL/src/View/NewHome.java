@@ -45,6 +45,7 @@ public class NewHome extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         TitleBar = new keeptoo.KGradientPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -151,6 +152,30 @@ public class NewHome extends javax.swing.JFrame {
         kPanelVViagens = new keeptoo.KGradientPanel();
         btVoltarVViagens = new javax.swing.JLabel();
         lbVerViagens = new javax.swing.JLabel();
+        kPanelVerVRoot = new keeptoo.KGradientPanel();
+        kPanelVEmCurso = new keeptoo.KGradientPanel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jLabel91 = new javax.swing.JLabel();
+        jTextField29 = new javax.swing.JTextField();
+        jLabel92 = new javax.swing.JLabel();
+        jTextField30 = new javax.swing.JTextField();
+        jLabel93 = new javax.swing.JLabel();
+        jTextField31 = new javax.swing.JTextField();
+        jLabel94 = new javax.swing.JLabel();
+        jTextField32 = new javax.swing.JTextField();
+        jLabel95 = new javax.swing.JLabel();
+        jTextField33 = new javax.swing.JTextField();
+        jLabel96 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel97 = new javax.swing.JLabel();
+        jTextField34 = new javax.swing.JTextField();
+        jLabel98 = new javax.swing.JLabel();
+        jTextField35 = new javax.swing.JTextField();
+        jButton7 = new javax.swing.JButton();
+        kButton5 = new keeptoo.KButton();
+        kButton6 = new keeptoo.KButton();
+        kButton7 = new keeptoo.KButton();
         kPanelGViaturas = new keeptoo.KGradientPanel();
         btVoltarGViaturas = new javax.swing.JLabel();
         lbGerirViaturas = new javax.swing.JLabel();
@@ -967,10 +992,13 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel82.setText("Tipo de Veículo");
 
+        buttonGroup1.add(jRadioButton1);
         jRadioButton1.setText("Aberto");
 
+        buttonGroup1.add(jRadioButton3);
         jRadioButton3.setText("Fechado");
 
+        buttonGroup1.add(jRadioButton4);
         jRadioButton4.setText("Frigorífico");
 
         jLabel83.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Waggon_Truck_25px.png"))); // NOI18N
@@ -979,22 +1007,27 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Truck_25px_1.png"))); // NOI18N
 
+        buttonGroup1.add(jRadioButton5);
         jRadioButton5.setText("Basculante");
 
         jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Fire_Truck_25px.png"))); // NOI18N
 
         jLabel87.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Container_Truck_25px.png"))); // NOI18N
 
+        buttonGroup1.add(jRadioButton6);
         jRadioButton6.setText("Porta Contentor");
 
         jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Truck_25px_2.png"))); // NOI18N
 
+        buttonGroup1.add(jRadioButton7);
         jRadioButton7.setText("Tanque");
 
         jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Bus_25px.png"))); // NOI18N
 
+        buttonGroup1.add(jRadioButton8);
         jRadioButton8.setText("Bus");
 
+        buttonGroup1.add(jRadioButton9);
         jRadioButton9.setText("Automóvel");
 
         jLabel90.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Car_25px_2.png"))); // NOI18N
@@ -1042,7 +1075,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                        .addGap(0, 1, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(jPanel5Layout.createSequentialGroup()
                                 .addComponent(jLabel90)
@@ -1177,7 +1210,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGroup(kPanelRegRoot1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton5)
                             .addComponent(jButton6))))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         kPanelRegRoot.add(kPanelRegRoot1, "card2");
@@ -1229,16 +1262,186 @@ public class NewHome extends javax.swing.JFrame {
         lbVerViagens.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbVerViagens.setText("Ver Viagens");
 
+        kPanelVerVRoot.setkBorderRadius(0);
+        kPanelVerVRoot.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelVerVRoot.setkStartColor(new java.awt.Color(255, 255, 255));
+        kPanelVerVRoot.setLayout(new java.awt.CardLayout());
+
+        kPanelVEmCurso.setkBorderRadius(0);
+        kPanelVEmCurso.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelVEmCurso.setkStartColor(new java.awt.Color(255, 255, 255));
+
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Cliente", "Origem", "Destino", "Data Partida"
+            }
+        ));
+        jScrollPane5.setViewportView(jTable4);
+
+        jLabel91.setText("Cliente");
+
+        jLabel92.setText("Estado");
+
+        jLabel93.setText("Prov. Origem");
+
+        jLabel94.setText("Prov. Destino");
+
+        jLabel95.setText("Data Partida");
+
+        jLabel96.setText("Motoristas");
+
+        jLabel97.setText("Distancia");
+
+        jLabel98.setText("Veículo");
+
+        jButton7.setText("Imprimir detalhes");
+
+        javax.swing.GroupLayout kPanelVEmCursoLayout = new javax.swing.GroupLayout(kPanelVEmCurso);
+        kPanelVEmCurso.setLayout(kPanelVEmCursoLayout);
+        kPanelVEmCursoLayout.setHorizontalGroup(
+            kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField29)
+                            .addComponent(jLabel91, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField30)
+                            .addComponent(jLabel92, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)))
+                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField31)
+                            .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField32)
+                            .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField33)
+                            .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jTextField34, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel97, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+        kPanelVEmCursoLayout.setVerticalGroup(
+            kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addComponent(jLabel92)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addComponent(jLabel91)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addComponent(jLabel93)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addComponent(jLabel94)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addComponent(jLabel95)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addComponent(jLabel96)
+                                .addGap(26, 26, 26)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel97)
+                            .addComponent(jLabel98))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(42, 42, 42)
+                        .addComponent(jButton7)
+                        .addGap(0, 130, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+
+        kPanelVerVRoot.add(kPanelVEmCurso, "card2");
+
+        kButton5.setText("Viagens Terminadas");
+        kButton5.setkHoverEndColor(new java.awt.Color(0, 204, 51));
+        kButton5.setkHoverForeGround(new java.awt.Color(255, 255, 255));
+        kButton5.setkHoverStartColor(new java.awt.Color(0, 153, 51));
+        kButton5.setkSelectedColor(new java.awt.Color(0, 0, 0));
+
+        kButton6.setText("Viagens Em Curso");
+        kButton6.setkEndColor(new java.awt.Color(204, 255, 255));
+        kButton6.setkHoverEndColor(new java.awt.Color(102, 204, 255));
+        kButton6.setkHoverForeGround(new java.awt.Color(255, 255, 255));
+        kButton6.setkHoverStartColor(new java.awt.Color(0, 51, 204));
+        kButton6.setkSelectedColor(new java.awt.Color(0, 0, 0));
+
+        kButton7.setText("Viagens Pendentes");
+        kButton7.setkEndColor(new java.awt.Color(255, 255, 255));
+        kButton7.setkHoverEndColor(new java.awt.Color(255, 102, 102));
+        kButton7.setkHoverForeGround(new java.awt.Color(255, 255, 255));
+        kButton7.setkHoverStartColor(new java.awt.Color(204, 0, 0));
+        kButton7.setkSelectedColor(new java.awt.Color(0, 0, 0));
+        kButton7.setkStartColor(new java.awt.Color(255, 0, 0));
+
         javax.swing.GroupLayout kPanelVViagensLayout = new javax.swing.GroupLayout(kPanelVViagens);
         kPanelVViagens.setLayout(kPanelVViagensLayout);
         kPanelVViagensLayout.setHorizontalGroup(
             kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelVViagensLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btVoltarVViagens)
-                .addGap(176, 176, 176)
-                .addComponent(lbVerViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelVViagensLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(kButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(kButton7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(kButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kPanelVViagensLayout.createSequentialGroup()
+                        .addComponent(btVoltarVViagens)
+                        .addGap(176, 176, 176)
+                        .addComponent(lbVerViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(21, Short.MAX_VALUE))
+            .addComponent(kPanelVerVRoot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kPanelVViagensLayout.setVerticalGroup(
             kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1247,7 +1450,13 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarVViagens)
                     .addComponent(lbVerViagens))
-                .addContainerGap(429, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelVViagensLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(kButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(kButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(kPanelVerVRoot, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         kPanelRoot.add(kPanelVViagens, "card2");
@@ -3183,6 +3392,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel btVoltarRelatorios;
     private javax.swing.JLabel btVoltarVViagens;
     private javax.swing.JLabel btVoltarVerFunc;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JComboBox<String> cbDistritosDestino;
     private javax.swing.JComboBox<String> cbDistritosPartida;
     private javax.swing.JComboBox<String> cbProvinciasDest;
@@ -3194,6 +3404,8 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
@@ -3286,6 +3498,14 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -3305,11 +3525,13 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
@@ -3331,7 +3553,14 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField28;
+    private javax.swing.JTextField jTextField29;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField30;
+    private javax.swing.JTextField jTextField31;
+    private javax.swing.JTextField jTextField32;
+    private javax.swing.JTextField jTextField33;
+    private javax.swing.JTextField jTextField34;
+    private javax.swing.JTextField jTextField35;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
@@ -3342,6 +3571,9 @@ public class NewHome extends javax.swing.JFrame {
     private keeptoo.KButton kButton2;
     private keeptoo.KButton kButton3;
     private keeptoo.KButton kButton4;
+    private keeptoo.KButton kButton5;
+    private keeptoo.KButton kButton6;
+    private keeptoo.KButton kButton7;
     private keeptoo.KGradientPanel kPanelAdViaturas;
     private keeptoo.KGradientPanel kPanelAddFunc;
     private keeptoo.KGradientPanel kPanelAlterarViat;
@@ -3359,8 +3591,10 @@ public class NewHome extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelRelatorios;
     private keeptoo.KGradientPanel kPanelRoot;
     private keeptoo.KGradientPanel kPanelTerminadas;
+    private keeptoo.KGradientPanel kPanelVEmCurso;
     private keeptoo.KGradientPanel kPanelVViagens;
     private keeptoo.KGradientPanel kPanelVerFunc;
+    private keeptoo.KGradientPanel kPanelVerVRoot;
     private keeptoo.KGradientPanel kPanelVerViaturas;
     private keeptoo.KButton kbtGFuncionarios;
     private keeptoo.KButton kbtGViaturas;
