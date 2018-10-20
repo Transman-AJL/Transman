@@ -2935,7 +2935,7 @@ public class NewHome extends javax.swing.JFrame {
     private void btPaneAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseClicked
         // TODO add your handling code here:
         kPanelGFRoot.removeAll();
-        kPanelGFRoot.add(kPanelVerFunc1);
+        kPanelGFRoot.add(kPanelVerFunc);
         kPanelGFRoot.repaint();
         kPanelGFRoot.revalidate();
         resetColor(btPaneAddFunc);
