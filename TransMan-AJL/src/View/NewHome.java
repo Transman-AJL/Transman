@@ -24,9 +24,17 @@ public class NewHome extends javax.swing.JFrame {
 
     /**
      * Creates new form NewHome
+     * Onde é criado o formulário principal da classe newHome
      */
     public NewHome(String username) {
+        /**
+         * Inicialização de todos componentes do painel.
+         */
         initComponents();
+        /**
+         * 
+         * Permite que os frames sejam redimensionáveis.
+         */
         cr.setMinimumSize(new Dimension(800, 540));
         cr.setMaximumSize(new Dimension(1280, 720));
         cr.registerComponent(this);
@@ -928,9 +936,9 @@ public class NewHome extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel73)
-                    .addComponent(jLabel74))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel74)
+                    .addComponent(jLabel73))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1385,7 +1393,6 @@ public class NewHome extends javax.swing.JFrame {
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                                 .addComponent(jLabel96)
                                 .addGap(26, 26, 26)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel97)
                             .addComponent(jLabel98))
@@ -2821,17 +2828,30 @@ public class NewHome extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Permite que objectos sejam arrastados na tela.
+     * @param evt 
+     */
     private void TitleBarMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TitleBarMouseDragged
         // TODO add your handling code here:
         new Drag(TitleBar).moveWindow(evt);
     }//GEN-LAST:event_TitleBarMouseDragged
-
+    
+    /**
+     * Permite que objectos sejam arrastados quando clicados.
+     * @param evt 
+     */
     private void TitleBarMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TitleBarMousePressed
         // TODO add your handling code here:
         
         new Drag(TitleBar).onPress(evt);
     }//GEN-LAST:event_TitleBarMousePressed
-
+    
+    /**
+     * Botão que permite fechar o app
+     * @param evt 
+     * Recebe um evento como parámetro
+     */
     private void btExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btExitMouseClicked
         // TODO add your handling code here:
         ExitDialog exit=new ExitDialog();
@@ -2839,7 +2859,10 @@ public class NewHome extends javax.swing.JFrame {
         exit.setVisible(true);
         //System.exit(0);
     }//GEN-LAST:event_btExitMouseClicked
-
+    /**
+     * Permite que o username seja clicável.
+     * @param evt 
+     */
     private void lbUserNameHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lbUserNameHomeMouseClicked
         // TODO add your handling code here:
         JOptionPane.showInputDialog("Alterar a password? [Y/N]");
@@ -3356,17 +3379,17 @@ public class NewHome extends javax.swing.JFrame {
     private String [] provincias = {"Maputo Cidade","Maputo Província","Gaza","Inhambane","Sofala","Manica","Tete","Cabo Delgado","Zambezia","Nampula","Niassa" };
     
     //Distritos
-    private String [] maputoP = {"Boane","Magude","Manhiça","Marracuene","Matola","Matutuíne","Moamba","Namaacha"};
-    private String [] maputoC = {"KaMpfumo","Nlhamankulu","KaMaxaquene","KaMavota","KaMubukwana","KaTembe","KaNyaka"};
-    private String [] gaza = {"Bilene","Chibuto","Chicualacuala","Chigubo","Chókwè","Chongoene","Guijá","Limpopo","Mabalane","Manjacaze","Mapai","Massangena","Massingir","Xai-Xai"};
-    private String [] inhambane = {"Funhalouro","Govuro","Homoíne","Inhambane","Inharrime","Inhassoro","Jangamo","Mabote","Massinga","Maxixe","Morrumbene","Panda","Vilanculos","Zavala"};
-    private String [] sofala = {"Beira","Búzi","Caia","Chemba","Cheringoma","Chibabava","Dondo","Gorongosa","Machanga","Maringué","Marromeu","Muanza","Nhamatanda"};
-    private String [] manica = {"Bárue","Chimoio","Gondola","Guro","Macate","Machaze","Macossa","Manica","Mossurize","Sussundenga","Tambara","Vanduzi"};
-    private String [] tete = {"Angónia","Cahora-Bassa","Changara","Chifunde","Chiuta","Dôa","Macanga","Magoé","Marara","Marávia","Moatize","Mutarara","Tete","Tsangano","Zumbo"};
-    private String [] zambezia = {"Alto Molócue","Chinde","Derre","Gilé","Gurué","Ile","Inhassunge","Luabo","Lugela","Maganja da Costa","Milange","Mocuba","Mocubela","Molumbo","Mopeia","Morrumbala","Mulevala","Namacurra","Namarroi","Nicoadala","Pebane","Quelimane"};
-    private String [] nampula ={"Angoche","Eráti","Ilha de Moçambique","Lalaua","Larde","Liúpo","Malema","Meconta","Mecubúri","Memba","Mogincual","Mogovolas","Moma","Monapo","Mossuril","Muecate","Murrupula","Nacala Velha","Nacala Porto","Nacarôa","Nampula","Rapale","Ribaué"};
-    private String [] caboDelgado = {"Ancuabe","Balama","Chiúre","Ibo","Macomia","Mecúfi","Meluco","Metuge","Mocímboa da Praia","Montepuez","Mueda","Muidumbe","Namuno","Nangade","Palma","Pemba","Quissanga"};
-    private String [] niassa = {"Chimbonila","Cuamba","Lago","Lichinga","Majune","Mandimba","Marrupa","Maúa","Mavago","Mecanhelas","Mecula","Metarica","Muembe","N'gauma","Nipepe","Sanga"};
+    final private String [] maputoP = {"Boane","Magude","Manhiça","Marracuene","Matola","Matutuíne","Moamba","Namaacha"};
+    final private String [] maputoC = {"KaMpfumo","Nlhamankulu","KaMaxaquene","KaMavota","KaMubukwana","KaTembe","KaNyaka"};
+    final private String [] gaza = {"Bilene","Chibuto","Chicualacuala","Chigubo","Chókwè","Chongoene","Guijá","Limpopo","Mabalane","Manjacaze","Mapai","Massangena","Massingir","Xai-Xai"};
+    final private String [] inhambane = {"Funhalouro","Govuro","Homoíne","Inhambane","Inharrime","Inhassoro","Jangamo","Mabote","Massinga","Maxixe","Morrumbene","Panda","Vilanculos","Zavala"};
+    final private String [] sofala = {"Beira","Búzi","Caia","Chemba","Cheringoma","Chibabava","Dondo","Gorongosa","Machanga","Maringué","Marromeu","Muanza","Nhamatanda"};
+    final private String [] manica = {"Bárue","Chimoio","Gondola","Guro","Macate","Machaze","Macossa","Manica","Mossurize","Sussundenga","Tambara","Vanduzi"};
+    final private String [] tete = {"Angónia","Cahora-Bassa","Changara","Chifunde","Chiuta","Dôa","Macanga","Magoé","Marara","Marávia","Moatize","Mutarara","Tete","Tsangano","Zumbo"};
+    final private String [] zambezia = {"Alto Molócue","Chinde","Derre","Gilé","Gurué","Ile","Inhassunge","Luabo","Lugela","Maganja da Costa","Milange","Mocuba","Mocubela","Molumbo","Mopeia","Morrumbala","Mulevala","Namacurra","Namarroi","Nicoadala","Pebane","Quelimane"};
+    final private String [] nampula ={"Angoche","Eráti","Ilha de Moçambique","Lalaua","Larde","Liúpo","Malema","Meconta","Mecubúri","Memba","Mogincual","Mogovolas","Moma","Monapo","Mossuril","Muecate","Murrupula","Nacala Velha","Nacala Porto","Nacarôa","Nampula","Rapale","Ribaué"};
+    final private String [] caboDelgado = {"Ancuabe","Balama","Chiúre","Ibo","Macomia","Mecúfi","Meluco","Metuge","Mocímboa da Praia","Montepuez","Mueda","Muidumbe","Namuno","Nangade","Palma","Pemba","Quissanga"};
+    final private String [] niassa = {"Chimbonila","Cuamba","Lago","Lichinga","Majune","Mandimba","Marrupa","Maúa","Mavago","Mecanhelas","Mecula","Metarica","Muembe","N'gauma","Nipepe","Sanga"};
     //Fim Distritos
     
     private ComponentResizer cr= new ComponentResizer();
