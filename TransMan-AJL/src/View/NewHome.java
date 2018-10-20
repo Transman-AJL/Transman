@@ -527,6 +527,9 @@ public class NewHome extends javax.swing.JFrame {
 
         btSettings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Services_30px.png"))); // NOI18N
         btSettings.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btSettingsMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btSettingsMouseEntered(evt);
             }
@@ -3285,6 +3288,15 @@ public class NewHome extends javax.swing.JFrame {
         kPanelGFRoot.revalidate();
         btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
     }//GEN-LAST:event_btVoltarAddFuncMouseClicked
+
+    private void btSettingsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btSettingsMouseClicked
+        // TODO add your handling code here:
+        
+        Definicoes definicoes= new Definicoes();
+        definicoes.setLocationRelativeTo(null);
+        definicoes.setVisible(true);
+        
+    }//GEN-LAST:event_btSettingsMouseClicked
 //>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
 
     public void setColor(JPanel panel)
