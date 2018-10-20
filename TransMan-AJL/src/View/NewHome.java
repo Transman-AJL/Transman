@@ -324,9 +324,6 @@ public class NewHome extends javax.swing.JFrame {
         kPanelAddFunc = new keeptoo.KGradientPanel();
         btVoltarAddFunc = new javax.swing.JLabel();
         lbGerirFuncV1 = new javax.swing.JLabel();
-        jLabel64 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel27 = new javax.swing.JLabel();
         kPanelRelatorios = new keeptoo.KGradientPanel();
         btVoltarRelatorios = new javax.swing.JLabel();
         lbRelatorios = new javax.swing.JLabel();
@@ -550,7 +547,7 @@ public class NewHome extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
+                .addContainerGap(17, Short.MAX_VALUE)
                 .addComponent(btSettings, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -1243,7 +1240,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(btVoltarRViagem)
                     .addComponent(lbRegistrarViagem))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE))
+                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRViagem, "card2");
@@ -1354,7 +1351,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(174, Short.MAX_VALUE))
         );
         kPanelVEmCursoLayout.setVerticalGroup(
             kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1402,7 +1399,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42)
                         .addComponent(jButton7)
-                        .addGap(0, 130, Short.MAX_VALUE)))
+                        .addGap(0, 136, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -1447,7 +1444,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(btVoltarVViagens)
                         .addGap(176, 176, 176)
                         .addComponent(lbVerViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
             .addComponent(kPanelVerVRoot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kPanelVViagensLayout.setVerticalGroup(
@@ -2121,7 +2118,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btAdicionarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -2649,36 +2646,16 @@ public class NewHome extends javax.swing.JFrame {
         lbGerirFuncV1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbGerirFuncV1.setText("Adicionar Funcionário");
 
-        jLabel64.setText("Nome");
-
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
-            }
-        });
-
-        jLabel27.setFont(new java.awt.Font("Tahoma", 2, 36)); // NOI18N
-        jLabel27.setText("To Be Continued...");
-
         javax.swing.GroupLayout kPanelAddFuncLayout = new javax.swing.GroupLayout(kPanelAddFunc);
         kPanelAddFunc.setLayout(kPanelAddFuncLayout);
         kPanelAddFuncLayout.setHorizontalGroup(
             kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelAddFuncLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(kPanelAddFuncLayout.createSequentialGroup()
-                        .addComponent(btVoltarAddFunc)
-                        .addGap(176, 176, 176)
-                        .addComponent(lbGerirFuncV1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel64, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)))
+                .addComponent(btVoltarAddFunc)
+                .addGap(176, 176, 176)
+                .addComponent(lbGerirFuncV1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelAddFuncLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 319, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(143, 143, 143))
         );
         kPanelAddFuncLayout.setVerticalGroup(
             kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2687,12 +2664,6 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarAddFunc)
                     .addComponent(lbGerirFuncV1))
-                .addGap(28, 28, 28)
-                .addComponent(jLabel64)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95)
-                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -2740,7 +2711,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarRelatorios)
                     .addComponent(lbRelatorios))
-                .addContainerGap(429, Short.MAX_VALUE))
+                .addContainerGap(439, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRelatorios, "card2");
@@ -2915,29 +2886,6 @@ public class NewHome extends javax.swing.JFrame {
         kPanelRoot.revalidate();
     }//GEN-LAST:event_btVoltarRelatoriosMouseClicked
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
-
-    private void btVoltarAddFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseExited
-        // TODO add your handling code here:
-        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarAddFuncMouseExited
-
-    private void btVoltarAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseEntered
-        // TODO add your handling code here:
-        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
-    }//GEN-LAST:event_btVoltarAddFuncMouseEntered
-
-    private void btVoltarAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseClicked
-        // TODO add your handling code here:
-        kPanelGFRoot.removeAll();
-        kPanelGFRoot.add(kPanelGFuncionarios);
-        kPanelGFRoot.repaint();
-        kPanelGFRoot.revalidate();
-        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
-    }//GEN-LAST:event_btVoltarAddFuncMouseClicked
-
     private void btVoltarVerFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarVerFuncMouseExited
         // TODO add your handling code here:
         btVoltarVerFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
@@ -2987,7 +2935,7 @@ public class NewHome extends javax.swing.JFrame {
     private void btPaneAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btPaneAddFuncMouseClicked
         // TODO add your handling code here:
         kPanelGFRoot.removeAll();
-        kPanelGFRoot.add(kPanelAddFunc);
+        kPanelGFRoot.add(kPanelVerFunc1);
         kPanelGFRoot.repaint();
         kPanelGFRoot.revalidate();
         resetColor(btPaneAddFunc);
@@ -3318,6 +3266,25 @@ public class NewHome extends javax.swing.JFrame {
     private void cbDistritosDestinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbDistritosDestinoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cbDistritosDestinoActionPerformed
+
+    private void btVoltarAddFuncMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseExited
+        // TODO add your handling code here:
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseExited
+
+    private void btVoltarAddFuncMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseEntered
+        // TODO add your handling code here:
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_3.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseEntered
+
+    private void btVoltarAddFuncMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btVoltarAddFuncMouseClicked
+        // TODO add your handling code here:
+        kPanelGFRoot.removeAll();
+        kPanelGFRoot.add(kPanelGFuncionarios);
+        kPanelGFRoot.repaint();
+        kPanelGFRoot.revalidate();
+        btVoltarAddFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Back_Arrow_30px_2.png")));
+    }//GEN-LAST:event_btVoltarAddFuncMouseClicked
 //>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
 
     public void setColor(JPanel panel)
@@ -3450,7 +3417,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
@@ -3491,7 +3457,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
-    private javax.swing.JLabel jLabel64;
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
@@ -3555,7 +3520,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
