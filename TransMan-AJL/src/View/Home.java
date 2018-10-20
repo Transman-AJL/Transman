@@ -17,6 +17,7 @@ import java.awt.Dimension;
  *
  * @author JoseM
  */
+@Deprecated
 public class Home extends javax.swing.JFrame {
 
     /**
