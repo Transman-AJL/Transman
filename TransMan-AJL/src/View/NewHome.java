@@ -6,14 +6,18 @@
 package View;
 
 import Control.ComponentResizer;
+import Control.Controller;
 import Model.Veiculo;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
 import keeptoo.Drag;
 
 /**
@@ -31,6 +35,7 @@ public class NewHome extends javax.swing.JFrame {
          * Inicialização de todos componentes do painel.
          */
         initComponents();
+        this.preencherTabela();
         /**
          * 
          * Permite que os frames sejam redimensionáveis.
@@ -636,7 +641,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
@@ -1548,9 +1553,7 @@ public class NewHome extends javax.swing.JFrame {
         jTable3.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"ABC-123 MC", "Volvo", "Vlv"},
-                {"ACD-234 MP", "Freightliner", "Cascadia"},
-                {"AEF-456 GZ", "Tata", "Prima"}
+
             },
             new String [] {
                 "Matricula", "Marca", "Modelo"
@@ -3317,6 +3320,21 @@ public class NewHome extends javax.swing.JFrame {
     public void resetColorSettings(JLabel label)
     {
      label.setBackground(new java.awt.Color(102,255,255));
+    }
+    
+    public void preencherTabela(){
+    
+        Controller <Veiculo>v=new Controller<Veiculo>(Veiculo.class);
+        List<Veiculo> todosDados=(List<Veiculo>)v.getDados();
+
+        DefaultTableModel dtm=(DefaultTableModel)jTable3.getModel();        
+        
+        for(Veiculo vei:todosDados){
+            String dados[]={vei.getMatricula(),vei.getMarca(),vei.getModelo()};
+            
+            dtm.addRow(dados);
+            System.out.println(vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
+        }
     }
     
     /**

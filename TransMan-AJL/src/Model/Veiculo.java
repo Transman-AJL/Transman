@@ -1,6 +1,7 @@
 package Model;
 
 import Control.Controller;
+import java.util.Vector;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -151,6 +152,5 @@ public class Veiculo {
         return v.salvarOuAtualizar(this);
     
     }
-    
     
 }
