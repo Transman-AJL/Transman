@@ -46,7 +46,7 @@ public class Teste {
         Controller <Veiculo>v=new Controller<Veiculo>(Veiculo.class);
         List<Veiculo> lista=(List<Veiculo>)v.getDados();
         for(Veiculo vei:lista){
-            System.out.println(vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
+            System.out.println(vei.getMatricula()+" "+vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
         }
     }
     
