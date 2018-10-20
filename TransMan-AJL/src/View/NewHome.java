@@ -210,19 +210,19 @@ public class NewHome extends javax.swing.JFrame {
         jLabel69 = new javax.swing.JLabel();
         kButton4 = new keeptoo.KButton();
         jLabel71 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
-        jTextField22 = new javax.swing.JTextField();
+        tFMatriculaVer = new javax.swing.JTextField();
+        tFMarcaVer = new javax.swing.JTextField();
+        tFModeloVer = new javax.swing.JTextField();
+        tFAnoVer = new javax.swing.JTextField();
+        tFTipoVer = new javax.swing.JTextField();
+        tFPesoVer = new javax.swing.JTextField();
+        tFLotacaoVer = new javax.swing.JTextField();
+        tFVolumeVer = new javax.swing.JTextField();
+        tFKilometragemVer = new javax.swing.JTextField();
+        tFCategoriaVer = new javax.swing.JTextField();
+        tFStatusVer = new javax.swing.JTextField();
         jLabel72 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
+        tFViagemVer = new javax.swing.JTextField();
         kPanelAlterarViat = new keeptoo.KGradientPanel();
         jLabel48 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
@@ -1572,6 +1572,11 @@ public class NewHome extends javax.swing.JFrame {
         });
         jTable3.setGridColor(new java.awt.Color(255, 255, 255));
         jTable3.setRowHeight(22);
+        jTable3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable3MouseClicked(evt);
+            }
+        });
         jScrollPane3.setViewportView(jTable3);
 
         jLabel59.setText("Matricula");
@@ -1605,43 +1610,43 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel71.setText("Disponibilidade");
 
-        jTextField2.setEditable(false);
-        jTextField2.setBackground(new java.awt.Color(204, 255, 204));
+        tFMatriculaVer.setEditable(false);
+        tFMatriculaVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField3.setEditable(false);
-        jTextField3.setBackground(new java.awt.Color(204, 255, 204));
+        tFMarcaVer.setEditable(false);
+        tFMarcaVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField4.setEditable(false);
-        jTextField4.setBackground(new java.awt.Color(204, 255, 204));
+        tFModeloVer.setEditable(false);
+        tFModeloVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField5.setEditable(false);
-        jTextField5.setBackground(new java.awt.Color(204, 255, 204));
+        tFAnoVer.setEditable(false);
+        tFAnoVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField6.setEditable(false);
-        jTextField6.setBackground(new java.awt.Color(204, 255, 204));
+        tFTipoVer.setEditable(false);
+        tFTipoVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField7.setEditable(false);
-        jTextField7.setBackground(new java.awt.Color(204, 255, 204));
+        tFPesoVer.setEditable(false);
+        tFPesoVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField9.setEditable(false);
-        jTextField9.setBackground(new java.awt.Color(204, 255, 204));
+        tFLotacaoVer.setEditable(false);
+        tFLotacaoVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField10.setEditable(false);
-        jTextField10.setBackground(new java.awt.Color(204, 255, 204));
+        tFVolumeVer.setEditable(false);
+        tFVolumeVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField11.setEditable(false);
-        jTextField11.setBackground(new java.awt.Color(204, 255, 204));
+        tFKilometragemVer.setEditable(false);
+        tFKilometragemVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField20.setEditable(false);
-        jTextField20.setBackground(new java.awt.Color(204, 255, 204));
+        tFCategoriaVer.setEditable(false);
+        tFCategoriaVer.setBackground(new java.awt.Color(204, 255, 204));
 
-        jTextField22.setEditable(false);
-        jTextField22.setBackground(new java.awt.Color(204, 255, 204));
+        tFStatusVer.setEditable(false);
+        tFStatusVer.setBackground(new java.awt.Color(204, 255, 204));
 
         jLabel72.setText("Viagem");
 
-        jTextField23.setEditable(false);
-        jTextField23.setBackground(new java.awt.Color(204, 255, 204));
+        tFViagemVer.setEditable(false);
+        tFViagemVer.setBackground(new java.awt.Color(204, 255, 204));
 
         javax.swing.GroupLayout kPanelVerViaturasLayout = new javax.swing.GroupLayout(kPanelVerViaturas);
         kPanelVerViaturas.setLayout(kPanelVerViaturasLayout);
@@ -1657,31 +1662,31 @@ public class NewHome extends javax.swing.JFrame {
                     .addGroup(kPanelVerViaturasLayout.createSequentialGroup()
                         .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tFMatriculaVer, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel66, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel61, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel59, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(tFMarcaVer, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tFModeloVer, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(tFAnoVer, javax.swing.GroupLayout.Alignment.LEADING))
+                            .addComponent(tFTipoVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel71, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tFStatusVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(28, 28, 28)
                         .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tFViagemVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tFCategoriaVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel67, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(tFPesoVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tFLotacaoVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tFVolumeVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tFKilometragemVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelVerViaturasLayout.setVerticalGroup(
@@ -1692,48 +1697,48 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(jLabel72, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(4, 4, 4)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tFStatusVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tFViagemVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel60, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel59, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tFMatriculaVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tFPesoVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel61, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel62, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(2, 2, 2)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tFMarcaVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tFLotacaoVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel65, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tFModeloVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tFVolumeVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(1, 1, 1)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel67)
                     .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tFAnoVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tFKilometragemVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel68, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel69, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(1, 1, 1)
                 .addGroup(kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tFTipoVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tFCategoriaVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(kButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -3152,11 +3157,14 @@ public class NewHome extends javax.swing.JFrame {
         int ano=Integer.parseInt(tfAno.getText());
         double kilometragem=Double.parseDouble(tfKilometragem.getText());
         
-        
         Veiculo v=new Veiculo(matricula, marca, modelo, ano, kilometragem);
         String tipo=(String)cbTipo.getSelectedItem();
         
         v.setTipo(tipo);
+        v.setCategoria(tfCategoria.getText());
+        v.setLotacao(Integer.parseInt(tfLotacao.getText()));
+        v.setVolume(Double.parseDouble(tfVolume.getText()));
+        v.setPeso(Double.parseDouble(tfPeso.getText()));
         
         System.out.println(v.gravar());
         System.exit(0);
@@ -3296,6 +3304,31 @@ public class NewHome extends javax.swing.JFrame {
         definicoes.setVisible(true);
         
     }//GEN-LAST:event_btSettingsMouseClicked
+
+    private void jTable3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable3MouseClicked
+
+        String matricula=(String)jTable3.getValueAt(jTable3.getSelectedRow(), 0);
+        for(Veiculo v:todosDados){
+        
+            if(v.getMatricula().equalsIgnoreCase(matricula)){
+                System.out.println("Matricula igual");
+                tFStatusVer.setText(v.getStatus());
+                tFAnoVer.setText(v.getAno()+"");
+                tFCategoriaVer.setText(v.getCategoria());
+                tFKilometragemVer.setText(v.getKilometragem()+"");
+                tFLotacaoVer.setText(v.getLotacao()+"");
+                tFMarcaVer.setText(v.getMarca());
+                tFMatriculaVer.setText(v.getMatricula());
+                tFModeloVer.setText(v.getModelo());
+                tFPesoVer.setText(v.getPeso()+"");
+                tFTipoVer.setText(v.getTipo());
+
+                tFVolumeVer.setText(v.getVolume()+"");
+            }
+        }
+        
+        
+    }//GEN-LAST:event_jTable3MouseClicked
 //>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
 
     public void setColor(JPanel panel)
@@ -3320,8 +3353,8 @@ public class NewHome extends javax.swing.JFrame {
     
     public void preencherTabela(){
     
-        Controller <Veiculo>v=new Controller<Veiculo>(Veiculo.class);
-        List<Veiculo> todosDados=(List<Veiculo>)v.getDados();
+        controller=new Controller<Veiculo>(Veiculo.class);
+        todosDados=(List<Veiculo>)controller.getDados();
 
         DefaultTableModel dtm=(DefaultTableModel)jTable3.getModel();        
         
@@ -3545,8 +3578,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
@@ -3555,30 +3586,20 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField24;
     private javax.swing.JTextField jTextField25;
     private javax.swing.JTextField jTextField26;
     private javax.swing.JTextField jTextField27;
     private javax.swing.JTextField jTextField28;
     private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField33;
     private javax.swing.JTextField jTextField34;
     private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private keeptoo.KButton kButton1;
     private keeptoo.KButton kButton2;
     private keeptoo.KButton kButton3;
@@ -3653,6 +3674,18 @@ public class NewHome extends javax.swing.JFrame {
     private com.alee.laf.progressbar.WebProgressBar progressHome3;
     private javax.swing.JSeparator sepHome;
     private rojeru_san.RSPanelShadow shadowDadosFunc;
+    private javax.swing.JTextField tFAnoVer;
+    private javax.swing.JTextField tFCategoriaVer;
+    private javax.swing.JTextField tFKilometragemVer;
+    private javax.swing.JTextField tFLotacaoVer;
+    private javax.swing.JTextField tFMarcaVer;
+    private javax.swing.JTextField tFMatriculaVer;
+    private javax.swing.JTextField tFModeloVer;
+    private javax.swing.JTextField tFPesoVer;
+    private javax.swing.JTextField tFStatusVer;
+    private javax.swing.JTextField tFTipoVer;
+    private javax.swing.JTextField tFViagemVer;
+    private javax.swing.JTextField tFVolumeVer;
     private javax.swing.JTextField tfAno;
     private javax.swing.JTextField tfCategoria;
     private javax.swing.JTextField tfKilometragem;
@@ -3665,4 +3698,6 @@ public class NewHome extends javax.swing.JFrame {
     private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
     // End of variables declaration//GEN-END:variables
+    Controller <Veiculo>controller;
+    List<Veiculo> todosDados;
 }
