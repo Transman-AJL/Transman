@@ -23,6 +23,17 @@ public class Cliente {
     private int id;
     private String nome;
     private String nuit;
+
+    public Cliente(String nome, String nuit) {
+        this.nome = nome;
+        this.nuit = nuit;
+    }
+
+    public Cliente() {
+    
+    }
+    
+    
     /**
      * Metodo de adição do Identificador
      * @return 
