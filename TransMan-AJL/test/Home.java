@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import keeptoo.Drag;
 import Control.ComponentResizer;
+import View.ExitDialog;
 import java.awt.Dimension;
 
 /**
