@@ -103,10 +103,13 @@ public class Definicoes extends javax.swing.JFrame {
         jTextField11 = new javax.swing.JTextField();
         jTextField12 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
+<<<<<<< HEAD
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 =======
 >>>>>>> parent of c66c3fe... Merge branch 'master' of https://github.com/Transman-AJL/Transman
+=======
+>>>>>>> parent of c877b9a... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Definições");
@@ -611,7 +614,6 @@ public class Definicoes extends javax.swing.JFrame {
         JPanelTarifas.add(jPanel3, gridBagConstraints);
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Custos de recursos"));
-        jPanel4.setOpaque(false);
         jPanel4.setLayout(new java.awt.GridBagLayout());
 
         jLabel13.setText("Alojamento (por 500KM)");
@@ -623,7 +625,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel4.add(jLabel13, gridBagConstraints);
 
-        jLabel14.setText("Alimentação (por KM)");
+        jLabel14.setText("jLabel14");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -632,7 +634,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel4.add(jLabel14, gridBagConstraints);
 
-        jLabel15.setText("Motorista");
+        jLabel15.setText("jLabel15");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -641,7 +643,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel4.add(jLabel15, gridBagConstraints);
 
-        jLabel16.setText("Estivador");
+        jLabel16.setText("jLabel16");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 3;
@@ -650,7 +652,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel4.add(jLabel16, gridBagConstraints);
 
-        jLabel17.setText("Preço do Combustível");
+        jLabel17.setText("jLabel17");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -659,7 +661,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel4.add(jLabel17, gridBagConstraints);
 
-        jLabel18.setText("Viagem (por KM)");
+        jLabel18.setText("jLabel18");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
@@ -732,24 +734,6 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         JPanelTarifas.add(jPanel4, gridBagConstraints);
-
-        jPanel5.setOpaque(false);
-        jPanel5.setLayout(new java.awt.GridBagLayout());
-
-        jButton1.setText("Actualiza Tarifas");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.weightx = 1.0;
-        jPanel5.add(jButton1, gridBagConstraints);
-
-        jButton2.setText("Ver Histórico de Alterações");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.weightx = 1.0;
-        jPanel5.add(jButton2, gridBagConstraints);
-
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -1011,8 +995,6 @@ public class Definicoes extends javax.swing.JFrame {
     private keeptoo.KGradientPanel btDefUtilizador;
     private javax.swing.JButton btGravar;
     private javax.swing.JComboBox<String> cbCategoria;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
