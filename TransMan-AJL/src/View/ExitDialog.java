@@ -17,9 +17,12 @@ import keeptoo.Drag;
 public class ExitDialog extends javax.swing.JFrame {
 
     /**
-     * Creates new form Loading
+     * Inicializando tela de saida
      */
     public ExitDialog() {
+        /**
+         * Inicializando componentes
+         */
         initComponents();
         
     }
@@ -148,7 +151,10 @@ public class ExitDialog extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    /**
+     * 
+     * @param evt 
+     */
     private void kPanelDialogKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kPanelDialogKeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_kPanelDialogKeyPressed
@@ -157,12 +163,19 @@ public class ExitDialog extends javax.swing.JFrame {
         // TODO add your handling code here:
         new Drag(kPanelDialog).onPress(evt);
     }//GEN-LAST:event_kPanelDialogMousePressed
-
+    
+    /**
+     * Evento que permite arrastar a tela deum lado ao outro
+     * @param evt 
+     */
     private void kPanelDialogMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kPanelDialogMouseDragged
         // TODO add your handling code here:
         new Drag(kPanelDialog).moveWindow(evt);
     }//GEN-LAST:event_kPanelDialogMouseDragged
-
+    /**
+     * Evento que permite fazer clicks usando o mouse
+     * @param evt 
+     */
     private void btExit1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btExit1MouseClicked
         // TODO add your handling code here:
         this.dispose();
