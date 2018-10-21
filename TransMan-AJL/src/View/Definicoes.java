@@ -28,6 +28,7 @@ public class Definicoes extends javax.swing.JFrame {
      */
     public Definicoes() {
         initComponents();
+        dtm=(DefaultTableModel)jTable2.getModel();
         this.preencherTabela();
     }
 
@@ -64,9 +65,9 @@ public class Definicoes extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         pwPassword = new javax.swing.JPasswordField();
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        btAdicionar = new javax.swing.JButton();
         btAlterar = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btCancelar = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         JPanelTarifas = new javax.swing.JPanel();
@@ -296,6 +297,11 @@ public class Definicoes extends javax.swing.JFrame {
 
         cbCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gestor", "Utilizador" }));
         cbCategoria.setEnabled(false);
+        cbCategoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbCategoriaActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
@@ -349,10 +355,10 @@ public class Definicoes extends javax.swing.JFrame {
         jPanel1.setOpaque(false);
         jPanel1.setLayout(new java.awt.GridBagLayout());
 
-        jButton1.setText("Adicionar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btAdicionar.setText("Adicionar");
+        btAdicionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btAdicionarActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -360,7 +366,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.gridy = 0;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        jPanel1.add(jButton1, gridBagConstraints);
+        jPanel1.add(btAdicionar, gridBagConstraints);
 
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
@@ -374,17 +380,17 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         jPanel1.add(btAlterar, gridBagConstraints);
 
-        jButton3.setText("Cancelar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btCancelar.setText("Cancelar");
+        btCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btCancelarActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        jPanel1.add(jButton3, gridBagConstraints);
+        jPanel1.add(btCancelar, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -445,10 +451,11 @@ public class Definicoes extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btDefUtilizadorMouseEntered
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+    private void btCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarActionPerformed
+        tfUsername.setText("");
+        pwPassword.setText("");
         
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btCancelarActionPerformed
 
     private void btDefUtilizadorMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefUtilizadorMouseExited
         // TODO add your handling code here:
@@ -520,7 +527,7 @@ public class Definicoes extends javax.swing.JFrame {
         tfBtDefAdicionais.setFont(new java.awt.Font("Tahoma", 0, 14));
     }//GEN-LAST:event_btDefAdicionaisMouseReleased
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionarActionPerformed
         // TODO add your handling code here:
         tfUsername.setEnabled(true);
         pwPassword.setEnabled(true);
@@ -528,7 +535,7 @@ public class Definicoes extends javax.swing.JFrame {
         tfUsername.setText("");
         pwPassword.setText("");
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btAdicionarActionPerformed
 
     private void btGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGravarActionPerformed
         
@@ -538,18 +545,16 @@ public class Definicoes extends javax.swing.JFrame {
         if(btGravar.getText().equalsIgnoreCase("guardar")){
             System.out.println(usr.gravar());
             JOptionPane.showMessageDialog(this, "Usuario Registado");
+            this.limparTabela();
+            this.preencherTabela();
         }
         else if(btGravar.getText().equalsIgnoreCase("alterar")){
+            
             usr.setId(a.getId());
-            
-            if(pwPassword.getPassword()!="".toCharArray()){
-            
-                System.out.println(usr.gravar());
-            }else{
-            
-                JOptionPane.showMessageDialog(this, "Digite a senha");
-            }
-            
+            System.out.println(usr.gravar());
+            JOptionPane.showMessageDialog(this,"Dados Alterados");
+            this.limparTabela();
+            this.preencherTabela();
         }
         
     }//GEN-LAST:event_btGravarActionPerformed
@@ -569,12 +574,19 @@ public class Definicoes extends javax.swing.JFrame {
             if(u.getNome().equalsIgnoreCase(nome)){
                 System.out.println("Nome igual");
                 tfUsername.setText(nome);
+                pwPassword.setText(new String(u.getSenha()));
                 pwPassword.setFocusable(true);
+                cbCategoria.setSelectedItem(u.getTipo());
                 a=u;
+                
             }
         }
 
     }//GEN-LAST:event_btAlterarActionPerformed
+
+    private void cbCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCategoriaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbCategoriaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -612,11 +624,11 @@ public class Definicoes extends javax.swing.JFrame {
     }
     
     public void preencherTabela(){
-        
+        this.limparTabela();
         controller=new Controller<Usuario>(Usuario.class);
         todosUsers=(List<Usuario>)controller.getDados();
 
-        DefaultTableModel dtm=(DefaultTableModel)jTable2.getModel(); 
+        //DefaultTableModel dtm=(DefaultTableModel)jTable2.getModel(); 
         
         for(Usuario usr:todosUsers){
             
@@ -634,19 +646,34 @@ public class Definicoes extends javax.swing.JFrame {
             dtm.addRow(dados);
         }
     }
+    
+    public void limparTabela(){
+        
+        DefaultTableModel dtm=(DefaultTableModel)jTable2.getModel();
+        
+        System.out.println(dtm.getRowCount());
+        int linhas=dtm.getRowCount();
+        
+        for(int i=linhas-1;i>=0;i--){
+          dtm.removeRow(i);  
+        }
+            
+        
+    }
 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPanelRoot;
     private javax.swing.JPanel JPanelTarifas;
     private javax.swing.JPanel JPanelUtilizador;
+    private javax.swing.JButton btAdicionar;
     private javax.swing.JButton btAlterar;
+    private javax.swing.JButton btCancelar;
     private keeptoo.KGradientPanel btDefAdicionais;
     private keeptoo.KGradientPanel btDefTarifas;
     private keeptoo.KGradientPanel btDefUtilizador;
     private javax.swing.JButton btGravar;
     private javax.swing.JComboBox<String> cbCategoria;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;
@@ -668,5 +695,6 @@ public class Definicoes extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     Controller<Usuario> controller;
     List<Usuario> todosUsers;
+    DefaultTableModel dtm;
     Usuario a;
 }
