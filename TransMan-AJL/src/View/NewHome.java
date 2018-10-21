@@ -7,8 +7,6 @@ package View;
 
 import Control.ComponentResizer;
 import Control.Controller;
-import Model.Cliente;
-import Model.Usuario;
 import Model.Veiculo;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -38,7 +36,6 @@ public class NewHome extends javax.swing.JFrame {
          */
         initComponents();
         this.preencherTabela();
-        this.preencherLista();
         /**
          * 
          * Permite que os frames sejam redimensionáveis.
@@ -127,9 +124,9 @@ public class NewHome extends javax.swing.JFrame {
         jLabel74 = new javax.swing.JLabel();
         tfNomeCliente1 = new javax.swing.JTextField();
         tfClienteNuit1 = new javax.swing.JTextField();
-        btAdicionar = new javax.swing.JButton();
-        btAlterar = new javax.swing.JButton();
-        btNovo = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         lbErro = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel70 = new javax.swing.JLabel();
@@ -738,7 +735,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
@@ -999,6 +996,7 @@ public class NewHome extends javax.swing.JFrame {
         });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         tfClienteNuit1.setEditable(false);
 
         btAdicionar.setText("Adicionar");
@@ -1028,6 +1026,13 @@ public class NewHome extends javax.swing.JFrame {
 =======
         jButton4.setText("Novo");
 >>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
+=======
+        jButton2.setText("Adicionar");
+
+        jButton3.setText("Alterar");
+
+        jButton4.setText("Novo");
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 
         lbErro.setForeground(new java.awt.Color(255, 0, 51));
         lbErro.setText(" ");
@@ -1040,11 +1045,11 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(btAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btAlterar)
+                        .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btNovo))
+                        .addComponent(jButton4))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1083,9 +1088,9 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(tfClienteNuit1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btAdicionar)
-                    .addComponent(btAlterar)
-                    .addComponent(btNovo))
+                    .addComponent(jButton2)
+                    .addComponent(jButton3)
+                    .addComponent(jButton4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbErro))
         );
@@ -1936,7 +1941,7 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(kPanelRegRoot3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(btTerminar)
@@ -4138,6 +4143,7 @@ public class NewHome extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tfValorTotal3ActionPerformed
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
@@ -4192,6 +4198,9 @@ public class NewHome extends javax.swing.JFrame {
 =======
 //>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
 >>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
+=======
+//>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 
     public void setColor(JPanel panel)
     {
@@ -4226,21 +4235,6 @@ public class NewHome extends javax.swing.JFrame {
             dtm.addRow(dados);
             System.out.println(vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
         }
-    }
-    
-    public void preencherLista(){
-    
-        controllerCliente=new Controller<Cliente>(Cliente.class);
-        todosClientes=(List<Cliente>)controllerCliente.getDados();
-        
-        String [] a=new String[todosClientes.size()];
-        int i=0;
-        
-        for(Cliente cli:todosClientes){
-            a[i]=(String)cli.getNome();
-            i++;
-        }
-        lsListaClientes.setListData(a);
     }
     
     /**
@@ -4302,14 +4296,11 @@ public class NewHome extends javax.swing.JFrame {
     private rojeru_san.RSPanelShadow ShadowTableVFunc;
     private rojeru_san.RSPanelShadow ShadowViagemEDocFunc;
     private keeptoo.KGradientPanel TitleBar;
-    private javax.swing.JButton btAdicionar;
     private keeptoo.KButton btAdicionarViaturas;
-    private javax.swing.JButton btAlterar;
     private keeptoo.KButton btEditarViaturas;
     private javax.swing.JLabel btExit;
     private javax.swing.JLabel btMax;
     private javax.swing.JLabel btNotificacoes;
-    private javax.swing.JButton btNovo;
     private javax.swing.JPanel btPaneAddFunc;
     private javax.swing.JPanel btPaneAlterFunc;
     private javax.swing.JPanel btPaneVerFunc;
@@ -4332,6 +4323,9 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbTipo;
     private com.toedter.calendar.JDateChooser dateDataP1;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -4660,7 +4654,5 @@ public class NewHome extends javax.swing.JFrame {
     private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
     // End of variables declaration//GEN-END:variables
     Controller <Veiculo>controller;
-    Controller <Cliente>controllerCliente;
     List<Veiculo> todosDados;
-    List<Cliente> todosClientes;
 }
