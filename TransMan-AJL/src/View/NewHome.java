@@ -995,11 +995,52 @@ public class NewHome extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        tfClienteNuit1.setEditable(false);
+
+        btAdicionar.setText("Adicionar");
+        btAdicionar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAdicionarActionPerformed(evt);
+            }
+        });
+=======
+        jButton2.setText("Adicionar");
+>>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
+
+        btAlterar.setText("Alterar");
+        btAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAlterarActionPerformed(evt);
+            }
+        });
+
+<<<<<<< HEAD
+        btNovo.setText("Novo");
+        btNovo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btNovoActionPerformed(evt);
+            }
+        });
+=======
+        jButton4.setText("Novo");
+>>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
+=======
         jButton2.setText("Adicionar");
 
         jButton3.setText("Alterar");
 
         jButton4.setText("Novo");
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
+=======
+        jButton2.setText("Adicionar");
+
+        jButton3.setText("Alterar");
+
+        jButton4.setText("Novo");
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 
         lbErro.setForeground(new java.awt.Color(255, 0, 51));
         lbErro.setText(" ");
@@ -4109,7 +4150,69 @@ public class NewHome extends javax.swing.JFrame {
     private void tfValorTotal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfValorTotal3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfValorTotal3ActionPerformed
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        kPanelRegRoot.removeAll();
+        kPanelRegRoot.add(kPanelRegRoot1);
+        kPanelRegRoot.repaint();
+        kPanelRegRoot.revalidate();
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void btAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionarActionPerformed
+
+        String nome=tfNomeCliente1.getText();
+        String nuit=tfClienteNuit1.getText();
+        
+        Cliente c=new Cliente(nome, nuit);
+        
+        if(c.gravar()){
+            JOptionPane.showMessageDialog(this, "Cliente Registado.");
+            tfNomeCliente1.setText("");
+            tfClienteNuit1.setText("");
+            this.preencherLista();
+        }
+    }//GEN-LAST:event_btAdicionarActionPerformed
+
+    private void btNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNovoActionPerformed
+        
+        tfNomeCliente1.setEditable(true);
+        tfClienteNuit1.setEditable(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btNovoActionPerformed
+
+    private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
+
+        String c=lsListaClientes.getSelectedValue();
+        
+        for(Cliente cl:todosClientes){
+
+            if(cl.getNome().equalsIgnoreCase(c)){
+            
+                tfNomeCliente1.setText(cl.getNome());
+                tfNomeCliente1.setEditable(true);
+                tfClienteNuit1.setText(cl.getNuit());
+                tfClienteNuit1.setEditable(true);
+            }
+            
+        }
+        
+        
+
+    }//GEN-LAST:event_btAlterarActionPerformed
+
+=======
 //>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+>>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
+=======
+//>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
+=======
+//>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 
     public void setColor(JPanel panel)
     {
