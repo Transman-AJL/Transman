@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Entity
 /**
  * Classe Cliente.
- * nelaencontramos os requisitos para cadastrar clintes e suas necessiddes.
+ * Nela encontramos os requisitos para cadastrar clintes e suas necessiddes.
  */
 public class Cliente {
     /**
@@ -23,27 +23,45 @@ public class Cliente {
     private int id;
     private String nome;
     private String nuit;
-
+    /**
+     * Metodo de adição do Identificador
+     * @return 
+     */
     public int getId() {
         return id;
     }
-
+    /**
+     * Metodo de Alteraçáo dos Identificadores dos clientes
+     * @param id 
+     */
     public void setId(int id) {
         this.id = id;
     }
-
+    /**
+     * Metedo de adição de Nome dos clientes(Sejam empresas ou individuais) 
+     * @return 
+     */
     public String getNome() {
         return nome;
     }
-
+    /**
+     * Metodo de Alteraçáo dos nome dos clientes
+     * @param nome 
+     */
     public void setNome(String nome) {
         this.nome = nome;
     }
-
+    /**
+     * Metodo de adição de documento dos clientes
+     * @return 
+     */
     public String getNuit() {
         return nuit;
     }
-
+    /**
+     * Metodo de Alteração dos documentos dos Clientes
+     * @param nuit 
+     */
     public void setNuit(String nuit) {
         this.nuit = nuit;
     }
