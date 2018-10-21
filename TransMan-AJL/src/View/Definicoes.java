@@ -524,7 +524,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel3.add(jTextField4, gridBagConstraints);
 
-        jLabel11.setText("Frigorífico(por KG)");
+        jLabel11.setText("Frigorífico(por litro)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -540,7 +540,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel3.add(jTextField5, gridBagConstraints);
 
-        jLabel12.setText("Tanque(por KG)");
+        jLabel12.setText("Tanque(por litro)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 5;
@@ -556,7 +556,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel3.add(jTextField6, gridBagConstraints);
 
-        jLabel19.setText("jLabel19");
+        jLabel19.setText("Bus(por lugar)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
@@ -572,7 +572,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel3.add(jTextField13, gridBagConstraints);
 
-        jLabel20.setText("jLabel20");
+        jLabel20.setText("Automóvel(p/ lugar)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
