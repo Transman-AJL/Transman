@@ -9,7 +9,9 @@ import Control.Controller;
 import Model.Cliente;
 import Model.Funcionario;
 import Model.Veiculo;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -38,9 +40,14 @@ public class Teste {
         */
         
         //Funcionario
-        Funcionario f=new Funcionario("Fred Jossias", new Date(1997, 10, 15), new Date(2018, 10, 15), "Motorista", "11105646M", "Avaliable");
+        /*Funcionario f=new Funcionario("Fred Jossias", new Date(1997, 10, 15), new Date(2018, 10, 15), "Motorista", "11105646M", "Avaliable");
         System.out.println(f.gravar());
-        System.exit(0);
+        System.exit(0);*/
+        Controller <Veiculo>v=new Controller<Veiculo>(Veiculo.class);
+        List<Veiculo> lista=(List<Veiculo>)v.getDados();
+        for(Veiculo vei:lista){
+            System.out.println(vei.getMatricula()+" "+vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
+        }
     }
     
 }

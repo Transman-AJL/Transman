@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package View;
+
 
 import java.awt.Color;
 import javax.swing.JLabel;
@@ -17,6 +17,7 @@ import java.awt.Dimension;
  *
  * @author JoseM
  */
+@Deprecated
 public class Home extends javax.swing.JFrame {
 
     /**

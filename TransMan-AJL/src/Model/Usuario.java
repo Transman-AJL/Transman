@@ -19,6 +19,19 @@ public class Usuario {
     private String nome;
     private String senha;
     private Date dataUltimoLog;
+    private String tipo;
+    
+    public Usuario(){
+    
+        this.dataUltimoLog=new Date();
+    }
+    
+    public Usuario(String nome, String password, String tipo){
+        this();
+        this.nome=nome;
+        this.senha=password;
+        this.tipo=tipo;
+    }
 
     public int getId() {
         return id;
@@ -26,6 +39,14 @@ public class Usuario {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     public String getNome() {

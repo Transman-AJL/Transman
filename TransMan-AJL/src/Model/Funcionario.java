@@ -22,6 +22,15 @@ public class Funcionario {
     private String funcao;
     private String numBI;
     private String status;
+    //private Documentacao documentacao;
+
+    /*public Documentacao getDocumentacao() {
+        return documentacao;
+    }*/
+
+    /*public void setDocumentacao(Documentacao documentacao) {
+        this.documentacao = documentacao;
+    }*/
 
     public Funcionario(String nome, Date DataNascimento, Date DataAdmissao, String funcao, String numBI, String status) {
         this.nome = nome;
