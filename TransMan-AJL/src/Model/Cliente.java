@@ -10,8 +10,14 @@ import javax.persistence.Id;
  * @author Arley Bebe
  */
 @Entity
+/**
+ * Classe Cliente.
+ * nelaencontramos os requisitos para cadastrar clintes e suas necessiddes.
+ */
 public class Cliente {
-    
+    /**
+     * crinado chave primaria 
+     */
     @Id
     @GeneratedValue
     private int id;
@@ -42,6 +48,10 @@ public class Cliente {
         this.nuit = nuit;
     }
     
+    /**
+     * Metodo construtor Que permite gravar os clientes a serem registados
+     * @return 
+     */
     public boolean gravar(){
         
         Controller <Cliente>c=new Controller<Cliente>(Cliente.class);
