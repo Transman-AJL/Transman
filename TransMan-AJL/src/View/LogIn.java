@@ -56,6 +56,7 @@ public class LogIn extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         lbUserIconLogin = new javax.swing.JLabel();
+        lbErro = new javax.swing.JLabel();
         kPanelLoading = new keeptoo.KGradientPanel();
         lbUserNameLoad = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -150,6 +151,9 @@ public class LogIn extends javax.swing.JFrame {
         lbUserIconLogin.setForeground(new java.awt.Color(102, 102, 102));
         lbUserIconLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Male_User_60px.png"))); // NOI18N
 
+        lbErro.setForeground(new java.awt.Color(255, 0, 0));
+        lbErro.setText(" ");
+
         javax.swing.GroupLayout kPanelLoginLayout = new javax.swing.GroupLayout(kPanelLogin);
         kPanelLogin.setLayout(kPanelLoginLayout);
         kPanelLoginLayout.setHorizontalGroup(
@@ -158,18 +162,18 @@ public class LogIn extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(kPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelLoginLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(kPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelLoginLayout.createSequentialGroup()
-                                .addComponent(btLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(200, 200, 200))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelLoginLayout.createSequentialGroup()
                                 .addGroup(kPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(tfPassword)
                                     .addComponent(tfUserName)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 216, Short.MAX_VALUE)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGap(166, 166, 166))))
+                                .addGap(166, 166, 166))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelLoginLayout.createSequentialGroup()
+                                .addComponent(btLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(200, 200, 200))))
                     .addGroup(kPanelLoginLayout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -183,6 +187,10 @@ public class LogIn extends javax.swing.JFrame {
                         .addGap(248, 248, 248)
                         .addComponent(lbUserIconLogin)))
                 .addGap(0, 158, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelLoginLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lbErro)
+                .addGap(241, 241, 241))
         );
         kPanelLoginLayout.setVerticalGroup(
             kPanelLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,15 +204,17 @@ public class LogIn extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbUserIconLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
+                .addGap(4, 4, 4)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tfUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tfUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(10, 10, 10)
+                .addComponent(lbErro)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(19, Short.MAX_VALUE))
         );
@@ -368,7 +378,8 @@ public class LogIn extends javax.swing.JFrame {
             Loading loa=new Loading();
             loa.setVisible(true);*/
         }else{
-            JOptionPane.showMessageDialog(this, "Usuario ou Senha Invalidas");
+            //JOptionPane.showMessageDialog(this, "Usuario ou Senha Invalidas");
+            lbErro.setText("Dados inválidos");
         }
             
     }//GEN-LAST:event_btLoginActionPerformed
@@ -556,6 +567,7 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private keeptoo.KGradientPanel kPanelLoading;
     private keeptoo.KGradientPanel kPanelLogin;
+    private javax.swing.JLabel lbErro;
     private javax.swing.JLabel lbUserIconLoad;
     private javax.swing.JLabel lbUserIconLogin;
     private javax.swing.JLabel lbUserNameLoad;
