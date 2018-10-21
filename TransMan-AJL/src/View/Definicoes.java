@@ -59,7 +59,7 @@ public class Definicoes extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         tfUsername = new javax.swing.JTextField();
         lbPassword = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        lbCategoria = new javax.swing.JLabel();
         cbCategoria = new javax.swing.JComboBox<>();
         btGravar = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
@@ -288,7 +288,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(20, 20, 0, 0);
         jPanel2.add(lbPassword, gridBagConstraints);
 
-        jLabel9.setText("Categoria");
+        lbCategoria.setText("Categoria");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 4;
@@ -296,7 +296,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(20, 20, 0, 0);
-        jPanel2.add(jLabel9, gridBagConstraints);
+        jPanel2.add(lbCategoria, gridBagConstraints);
 
         cbCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gestor", "Utilizador" }));
         cbCategoria.setEnabled(false);
@@ -709,7 +709,6 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -719,6 +718,7 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
     private keeptoo.KGradientPanel kPannelMain;
+    private javax.swing.JLabel lbCategoria;
     private javax.swing.JLabel lbPassword;
     private javax.swing.JPasswordField pwPassword;
     private javax.swing.JLabel tfBtDefAdicionais;

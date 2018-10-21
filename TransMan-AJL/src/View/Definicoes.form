@@ -302,7 +302,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel9">
+                    <Component class="javax.swing.JLabel" name="lbCategoria">
                       <Properties>
                         <Property name="text" type="java.lang.String" value="Categoria"/>
                       </Properties>
