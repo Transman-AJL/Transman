@@ -18,6 +18,9 @@ public class Funcionario {
     
     @Id
     @GeneratedValue
+    /**
+     * Criando variáveis dÃ Classe Funcionáro
+     */
     private int id;
     private String nome;
     private Date DataNascimento;
