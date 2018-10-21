@@ -21,15 +21,18 @@ import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 /**
- *
+ * Classe Principal na qual são feitas as cadastrações para o acesso a aplicação 
  * @author JoseM
  */
 public class LogIn extends javax.swing.JFrame {
 
     /**
-     * Creates new form LogIn
+     * Criando o novo formulario para o acesso (Login) 
      */
     public LogIn() {
+        /**
+         * Inicializando as componentes
+         */
         initComponents();
     }
 
@@ -336,7 +339,11 @@ public class LogIn extends javax.swing.JFrame {
         // TODO add your handling code here:
         new Drag(kPanelLogin).onPress(evt);
     }//GEN-LAST:event_kPanelLoginMousePressed
-
+    /**
+     * Fazendo operações com eventos;
+     * usando o botão para aceder a aplicação
+     * @param evt 
+     */
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
         
         if(verificar(tfUserName.getText(), new String(tfPassword.getPassword()))){
@@ -365,7 +372,13 @@ public class LogIn extends javax.swing.JFrame {
         }
             
     }//GEN-LAST:event_btLoginActionPerformed
-
+/**
+ * Neste metodo fazemos a verificação e validação das credencias de acesso comparando o nome do utilizador e a sua respectiva pala Passe
+ * Apos a verificação, caso ambas estejam corretas sera permitido acesso caso contrário retornará um erro. 
+ * @param nome
+ * @param password
+ * @return 
+ */
     public boolean verificar(String nome, String password){
         
         controller=new Controller<Usuario>(Usuario.class);
@@ -380,16 +393,25 @@ public class LogIn extends javax.swing.JFrame {
         return false;
         
     }
-    
+    /**
+     * Evento sobre o botão sair que possibilita fechar a aplicação ao clicarmos sobre ele.
+     * @param evt 
+     */
     private void btExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btExitMouseClicked
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btExitMouseClicked
-
+    /**
+     * Evento sobre o painel de acesso, que nos possibilita arrastar a tela ao clicarmos por qualquer canto da mesma
+     * @param evt 
+     */
     private void kPanelLoadingMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kPanelLoadingMouseDragged
         // TODO add your handling code here:
     }//GEN-LAST:event_kPanelLoadingMouseDragged
-
+    /**
+     * 
+     * @param evt 
+     */
     private void kPanelLoadingMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_kPanelLoadingMousePressed
         // TODO add your handling code here:
     }//GEN-LAST:event_kPanelLoadingMousePressed
@@ -397,7 +419,11 @@ public class LogIn extends javax.swing.JFrame {
     private void kPanelLoadingKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_kPanelLoadingKeyPressed
         // TODO add your handling code here:
     }//GEN-LAST:event_kPanelLoadingKeyPressed
-
+    /**
+     * 
+     * Evento que visualisa a barra de carregamento apos se cadastrar de forma correta (Nome do utilizador e Palavra passe congruentes)
+     * @param evt 
+     */
     private void kPanelLoadingAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_kPanelLoadingAncestorAdded
         //timer.start();
         
@@ -508,7 +534,9 @@ public class LogIn extends javax.swing.JFrame {
             webProgressBar1.validate();
             webProgressBar1.revalidate();              
     }
-    
+    /**
+     * Fechando a tela de cadastro possibilitando assim a visualização da nova tela, a tela  peincipal
+     */
     public void finishScreen(){
         this.dispose();
     }
