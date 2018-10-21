@@ -5,6 +5,8 @@
  */
 package Model;
 
+import java.util.Date;
+
 /**
  *
  * @author JoseM
@@ -12,13 +14,18 @@ package Model;
 public class Tarifas {
     
     private double precoKM;
-    private double precoKG;
+    private double precoKGAberto;
+    private double precoKGFechado;
+    private double precoKGFrigorifico;
     private double precoAlojamento;
     private double precoAliementacao;
     private double precoMotorista;
     private double precoEstivador;
     private double precoCombustivel;
-    private double preco;
+    private double precoLitro;
+    private double precoPassageiro;
+    private Date dataAlteracao;
+    
     
     
     
