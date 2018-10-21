@@ -20,6 +20,18 @@ public class Usuario {
     private String senha;
     private Date dataUltimoLog;
     private String tipo;
+    
+    public Usuario(){
+    
+        this.dataUltimoLog=new Date();
+    }
+    
+    public Usuario(String nome, String password, String tipo){
+        this();
+        this.nome=nome;
+        this.senha=password;
+        this.tipo=tipo;
+    }
 
     public int getId() {
         return id;
