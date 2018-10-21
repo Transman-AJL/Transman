@@ -5,6 +5,7 @@ import java.util.Vector;
 import javax.swing.JOptionPane;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 /**
@@ -67,14 +68,16 @@ public class Controller<T> {
     
         boolean funcionou = false;
         Session sessao = factory.openSession();
-        sessao.beginTransaction();
+        Transaction t=sessao.beginTransaction();
         
         try {
             sessao.update(objecto);
-            sessao.getTransaction().commit();
+            System.out.println("Passou");
+            t.commit();
             funcionou = true;
         } catch (Exception h) {
-            funcionou = false;
+            h.printStackTrace();
+            //funcionou = false;
 //            JOptionPane.showMessageDialog(null, "Erro do hibernate: \n" + h);
         } finally {
             sessao.close();
