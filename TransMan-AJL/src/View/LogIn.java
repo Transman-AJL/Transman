@@ -5,6 +5,9 @@
  */
 package View;
 
+import Control.Controller;
+import Model.Usuario;
+import Model.Veiculo;
 import com.alee.laf.progressbar.WebProgressBar;
 import java.awt.Color;
 import java.awt.event.ActionListener;
@@ -13,6 +16,8 @@ import java.util.logging.Logger;
 import keeptoo.Drag;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
+import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
 /**
@@ -334,9 +339,9 @@ public class LogIn extends javax.swing.JFrame {
 
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
         
+        if(verificar(tfUserName.getText(), new String(tfPassword.getPassword()))){
             userName=tfUserName.getText();
             String pw=new String(tfPassword.getPassword());
-            
             
             panelRoot.removeAll();
             panelRoot.add(kPanelLoading);
@@ -352,15 +357,26 @@ public class LogIn extends javax.swing.JFrame {
             panelRoot.revalidate();
             //webProgressBar1.setValue(50);
             
-           /*this.dispose();
+            /*this.dispose();
             Loading loa=new Loading();
             loa.setVisible(true);*/
-         
+        }else{
+            JOptionPane.showMessageDialog(this, "Usuario ou Senha Invalidas");
+        }
             
     }//GEN-LAST:event_btLoginActionPerformed
 
     public boolean verificar(String nome, String password){
         
+        controller=new Controller<Usuario>(Usuario.class);
+        todosUsers=(List<Usuario>)controller.getDados();
+        
+        for(Usuario u:todosUsers){
+        
+            if(u.getNome().equalsIgnoreCase(nome) && u.getSenha().equalsIgnoreCase(password)){
+                return true;
+            }
+        }
         return false;
         
     }
@@ -520,4 +536,6 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JTextField tfUserName;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar1;
     // End of variables declaration//GEN-END:variables
+    Controller<Usuario> controller;
+    List<Usuario> todosUsers;
 }
