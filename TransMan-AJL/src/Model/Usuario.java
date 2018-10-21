@@ -10,11 +10,21 @@ import javax.persistence.Id;
  *
  * @author User
  */
+/**
+ * Classe Usuario
+ * @author lipe
+ */
 @Entity
 public class Usuario {
-    
+    /**
+     * Criando identificador da classe usuario
+     */
     @Id
     @GeneratedValue
+    /**
+     * Crindo Variáveis da classe Usuario
+     * 
+     */
     private int id;
     private String nome;
     private String senha;
@@ -25,7 +35,12 @@ public class Usuario {
     
         this.dataUltimoLog=new Date();
     }
-    
+    /**
+     * Metodo Construtor da classe Usuario
+     * @param nome
+     * @param password
+     * @param tipo 
+     */
     public Usuario(String nome, String password, String tipo){
         this();
         this.nome=nome;
@@ -37,22 +52,40 @@ public class Usuario {
         return id;
     }
 
+    /**
+     * Metodo que recebe o Identificador da classe
+     * @param id 
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Metodo que recebe o tipo de usuario 
+     * @return 
+     */
     public String getTipo() {
         return tipo;
     }
-
+    /**
+     * Metodo de alteração do tipo de usuario
+     * @param tipo 
+     */
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
+    /**
+     * Metodo que recebe o nome dos usuarios
+     * @return 
+     */
     public String getNome() {
         return nome;
     }
 
+    /***
+     * Matodo que recebe
+     * @param nome 
+     */
     public void setNome(String nome) {
         this.nome = nome;
     }
