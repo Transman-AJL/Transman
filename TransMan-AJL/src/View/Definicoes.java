@@ -546,7 +546,7 @@ public class Definicoes extends javax.swing.JFrame {
         tfUsername.setEnabled(true);
         pwPassword.setEnabled(true);
         cbCategoria.setEnabled(true);
-        lbPassword.setText("Nova Password");
+        lbPassword.setText("Nova Senha");
         
         String nome=(String)jTable2.getValueAt(jTable2.getSelectedRow(), 0);
         for(Usuario u:todosUsers){
@@ -554,7 +554,7 @@ public class Definicoes extends javax.swing.JFrame {
             if(u.getNome().equalsIgnoreCase(nome)){
                 System.out.println("Nome igual");
                 tfUsername.setText(nome);
-                pwPassword.setText(new String(u.getSenha()));
+                pwPassword.setFocusable(true);
             }
         }
 
