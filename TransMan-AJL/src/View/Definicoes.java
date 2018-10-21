@@ -50,8 +50,6 @@ public class Definicoes extends javax.swing.JFrame {
         tfBtDefAdicionais = new javax.swing.JLabel();
         JPanelRoot = new javax.swing.JPanel();
         JPanelUtilizador = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         tfUsername = new javax.swing.JTextField();
@@ -65,6 +63,8 @@ public class Definicoes extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
         JPanelTarifas = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -248,26 +248,6 @@ public class Definicoes extends javax.swing.JFrame {
         JPanelUtilizador.setOpaque(false);
         JPanelUtilizador.setLayout(new java.awt.GridBagLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "Nome de Utilizador", "Tipo", "Último Log In"
-            }
-        ));
-        jTable1.setPreferredSize(new java.awt.Dimension(150, 64));
-        jScrollPane1.setViewportView(jTable1);
-
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 0;
-        gridBagConstraints.gridy = 0;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.weightx = 1.0;
-        gridBagConstraints.weighty = 1.0;
-        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
-        JPanelUtilizador.add(jScrollPane1, gridBagConstraints);
-
         jPanel2.setOpaque(false);
         jPanel2.setLayout(new java.awt.GridBagLayout());
 
@@ -404,6 +384,25 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 0.1;
         JPanelUtilizador.add(jPanel1, gridBagConstraints);
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Nome de Utilizador", "Tipo", "Ultimo Login"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable2);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
+        JPanelUtilizador.add(jScrollPane2, gridBagConstraints);
 
         JPanelRoot.add(JPanelUtilizador, "card2");
 
@@ -573,7 +572,7 @@ public class Definicoes extends javax.swing.JFrame {
         controller=new Controller<Usuario>(Usuario.class);
         todosUsers=(List<Usuario>)controller.getDados();
 
-        DefaultTableModel dtm=(DefaultTableModel)jTable1.getModel(); 
+        DefaultTableModel dtm=(DefaultTableModel)jTable2.getModel(); 
        // dtm.setNumRows(0);
         
         for(Usuario usr:todosUsers){
@@ -605,8 +604,8 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanelButtons;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable2;
     private keeptoo.KGradientPanel kPannelMain;
     private javax.swing.JPasswordField pwPassword;
     private javax.swing.JLabel tfBtDefAdicionais;
