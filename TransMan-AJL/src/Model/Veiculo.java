@@ -55,19 +55,34 @@ public class Veiculo {
     public Veiculo(){
     
     }
-    
+    /**
+     * Metodo que recebe a matriculoa do veículo
+     * @return 
+     */
     public String getMatricula() {
         return matricula;
     }
 
+    /**
+     * Matodod que recebe o Identificador do veículo
+     * @return 
+     */
     public int getId() {
         return id;
     }
 
+    /**
+     * Metodod de alteração da matriculoa dos veículos
+     * @param id 
+     */
     public void setId(int id) {
         this.id = id;
     }
 
+    /**
+     * Metodo que recebe as catregorias dos veículos
+     * @return 
+     */
     public String getCategoria() {
         return categoria;
     }
@@ -79,6 +94,10 @@ public class Veiculo {
         this.categoria = categoria;
     }
 
+    /**
+     * Metodo que recebe os Tipos dos Veículos
+     * @return 
+     */
     public String getTipo() {
         return tipo;
     }
@@ -90,6 +109,10 @@ public class Veiculo {
         this.tipo = tipo;
     }
 
+    /**
+     * Metodo que recebe o peso do veículo
+     * @return 
+     */
     public double getPeso() {
         return peso;
     }
@@ -101,6 +124,10 @@ public class Veiculo {
         this.peso = peso;
     }
 
+    /**
+     * Metodo que recebe a lotação dos veículos
+     * @return 
+     */
     public int getLotacao() {
         return lotacao;
     }
@@ -112,6 +139,10 @@ public class Veiculo {
         this.lotacao = lotacao;
     }
 
+    /**
+     * Metodoque recebe o Volume dos veículos do tipo Tanque
+     * @return 
+     */
     public double getVolume() {
         return volume;
     }
@@ -131,6 +162,10 @@ public class Veiculo {
         this.matricula = matricula;
     }
 
+    /***
+     * Metodo que recebe a marca dos veículos
+     * @return 
+     */
     public String getMarca() {
         return marca;
     }
@@ -143,6 +178,10 @@ public class Veiculo {
         this.marca = marca;
     }
 
+    /**
+     * Metodo que recebe o modelo dos veículos
+     * @return 
+     */
     public String getModelo() {
         return modelo;
     }
@@ -156,19 +195,23 @@ public class Veiculo {
     }
 
     /**
-     * Metodo de alteração do ano de fabrico dos veículos
+     * Metodo que recebe o  ano de fabrico dos veículos
      * @return 
      */
     public int getAno() {
         return ano;
     }
 
+    /**
+     * Metodo de alteração do ano de fabrico dos veículos
+     * @param ano 
+     */
     public void setAno(int ano) {
         this.ano = ano;
     }
 
     /**
-     * 
+     * metodo que recebe a kilometragem dos veículos
      * @return 
      */
     public double getKilometragem() {
@@ -182,6 +225,10 @@ public class Veiculo {
         this.kilometragem = kilometragem;
     }
 
+    /**
+     * Metodo que reebe o estado dos veículos
+     * @return 
+     */
     public String getStatus() {
         return status;
     }
