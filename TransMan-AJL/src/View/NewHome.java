@@ -3163,7 +3163,7 @@ public class NewHome extends javax.swing.JFrame {
         v.setPeso(Double.parseDouble(tfPeso.getText()));
         
         System.out.println(v.gravar());
-        System.exit(0);
+        JOptionPane.showMessageDialog(this, "Veiculo Registado.");
 
     }//GEN-LAST:event_kButton1ActionPerformed
 //=======

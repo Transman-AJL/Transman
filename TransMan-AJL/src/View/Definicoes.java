@@ -5,7 +5,13 @@
  */
 package View;
 
+import Control.Controller;
+import Model.Usuario;
+import Model.Veiculo;
 import java.awt.Color;
+import java.util.List;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -18,6 +24,7 @@ public class Definicoes extends javax.swing.JFrame {
      */
     public Definicoes() {
         initComponents();
+        this.preencherTabela();
     }
 
     /**
@@ -243,10 +250,7 @@ public class Definicoes extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+
             },
             new String [] {
                 "Nome de Utilizador", "Tipo", "Último Log In"
@@ -318,6 +322,11 @@ public class Definicoes extends javax.swing.JFrame {
         jPanel2.add(cbCategoria, gridBagConstraints);
 
         jButton4.setText("Guardar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
@@ -513,6 +522,17 @@ public class Definicoes extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+
+        String tipo=(String)cbCategoria.getSelectedItem();
+        Usuario usr=new Usuario(tfUsername.getText(), new String(pwPassword.getPassword()),tipo);
+        System.out.println(usr.gravar());
+        JOptionPane.showMessageDialog(this, "Usuario Registado");
+        
+        
+
+    }//GEN-LAST:event_jButton4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -547,6 +567,21 @@ public class Definicoes extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void preencherTabela(){
+        
+        controller=new Controller<Usuario>(Usuario.class);
+        todosUsers=(List<Usuario>)controller.getDados();
+
+        DefaultTableModel dtm=(DefaultTableModel)jTable1.getModel(); 
+       // dtm.setNumRows(0);
+        
+        for(Usuario usr:todosUsers){
+            String dados[]={usr.getNome(),usr.getTipo(),usr.getDataUltimoLog()+""};
+            
+            dtm.addRow(dados);
+        }
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel JPanelRoot;
@@ -579,4 +614,6 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JLabel tfBtDefUtilizador;
     private javax.swing.JTextField tfUsername;
     // End of variables declaration//GEN-END:variables
+    Controller<Usuario> controller;
+    List<Usuario> todosUsers;
 }
