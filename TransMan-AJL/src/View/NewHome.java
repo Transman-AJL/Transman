@@ -3148,7 +3148,7 @@ public class NewHome extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField8ActionPerformed
 
-//<<<<<<< HEAD
+    //<<<<<<< HEAD
     private void kButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton1ActionPerformed
 
         String matricula=tfMatricula.getText();
@@ -3352,7 +3352,7 @@ public class NewHome extends javax.swing.JFrame {
     }
     
     public void preencherTabela(){
-    
+        
         controller=new Controller<Veiculo>(Veiculo.class);
         todosDados=(List<Veiculo>)controller.getDados();
 

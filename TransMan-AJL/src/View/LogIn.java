@@ -333,9 +333,11 @@ public class LogIn extends javax.swing.JFrame {
     }//GEN-LAST:event_kPanelLoginMousePressed
 
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
-        // TODO add your handling code here:
-            
+        
             userName=tfUserName.getText();
+            String pw=new String(tfPassword.getPassword());
+            
+            
             panelRoot.removeAll();
             panelRoot.add(kPanelLoading);
             if(tfUserName.getText().equalsIgnoreCase("josemanuel")){
@@ -357,6 +359,12 @@ public class LogIn extends javax.swing.JFrame {
             
     }//GEN-LAST:event_btLoginActionPerformed
 
+    public boolean verificar(String nome, String password){
+        
+        return false;
+        
+    }
+    
     private void btExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btExitMouseClicked
         // TODO add your handling code here:
         System.exit(0);
