@@ -104,12 +104,15 @@ public class Definicoes extends javax.swing.JFrame {
         jTextField12 = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
 <<<<<<< HEAD
+<<<<<<< HEAD
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 =======
 >>>>>>> parent of c66c3fe... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 =======
 >>>>>>> parent of c877b9a... Merge branch 'master' of https://github.com/Transman-AJL/Transman
+=======
+>>>>>>> parent of e1e5d5a... Mais Settings
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Definições");
