@@ -532,18 +532,26 @@ public class Definicoes extends javax.swing.JFrame {
 
     private void btGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGravarActionPerformed
         
+        String tipo=(String)cbCategoria.getSelectedItem();
+        Usuario usr=new Usuario(tfUsername.getText(), new String(pwPassword.getPassword()),tipo);
+        
         if(btGravar.getText().equalsIgnoreCase("guardar")){
-            String tipo=(String)cbCategoria.getSelectedItem();
-            Usuario usr=new Usuario(tfUsername.getText(), new String(pwPassword.getPassword()),tipo);
             System.out.println(usr.gravar());
             JOptionPane.showMessageDialog(this, "Usuario Registado");
         }
         else if(btGravar.getText().equalsIgnoreCase("alterar")){
-            System.out.println("bt Alterar");
+            usr.setId(a.getId());
+            
+            if(pwPassword.getPassword()!="".toCharArray()){
+            
+                System.out.println(usr.gravar());
+            }else{
+            
+                JOptionPane.showMessageDialog(this, "Digite a senha");
+            }
+            
         }
         
-        
-
     }//GEN-LAST:event_btGravarActionPerformed
 
     private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
@@ -562,6 +570,7 @@ public class Definicoes extends javax.swing.JFrame {
                 System.out.println("Nome igual");
                 tfUsername.setText(nome);
                 pwPassword.setFocusable(true);
+                a=u;
             }
         }
 
@@ -659,4 +668,5 @@ public class Definicoes extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
     Controller<Usuario> controller;
     List<Usuario> todosUsers;
+    Usuario a;
 }
