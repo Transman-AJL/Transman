@@ -7,6 +7,8 @@ package View;
 
 import Control.ComponentResizer;
 import Control.Controller;
+import Model.Cliente;
+import Model.Usuario;
 import Model.Veiculo;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -36,6 +38,7 @@ public class NewHome extends javax.swing.JFrame {
          */
         initComponents();
         this.preencherTabela();
+        this.preencherLista();
         /**
          * 
          * Permite que os frames sejam redimensionáveis.
@@ -124,9 +127,9 @@ public class NewHome extends javax.swing.JFrame {
         jLabel74 = new javax.swing.JLabel();
         tfNomeCliente1 = new javax.swing.JTextField();
         tfClienteNuit1 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btAdicionar = new javax.swing.JButton();
+        btAlterar = new javax.swing.JButton();
+        btNovo = new javax.swing.JButton();
         lbErro = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jLabel70 = new javax.swing.JLabel();
@@ -735,7 +738,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
@@ -998,19 +1001,24 @@ public class NewHome extends javax.swing.JFrame {
 
         tfClienteNuit1.setEditable(false);
 
-        jButton2.setText("Adicionar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btAdicionar.setText("Adicionar");
+        btAdicionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btAdicionarActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Alterar");
-
-        jButton4.setText("Novo");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btAlterar.setText("Alterar");
+        btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btAlterarActionPerformed(evt);
+            }
+        });
+
+        btNovo.setText("Novo");
+        btNovo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btNovoActionPerformed(evt);
             }
         });
 
@@ -1025,11 +1033,11 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btAdicionar, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(btAlterar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4))
+                        .addComponent(btNovo))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1068,9 +1076,9 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(tfClienteNuit1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4))
+                    .addComponent(btAdicionar)
+                    .addComponent(btAlterar)
+                    .addComponent(btNovo))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbErro))
         );
@@ -1921,7 +1929,7 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(kPanelRegRoot3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(btTerminar)
@@ -4138,16 +4146,47 @@ public class NewHome extends javax.swing.JFrame {
         kPanelRegRoot.revalidate();
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void btAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionarActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        String nome=tfNomeCliente1.getText();
+        String nuit=tfClienteNuit1.getText();
+        
+        Cliente c=new Cliente(nome, nuit);
+        
+        if(c.gravar()){
+            JOptionPane.showMessageDialog(this, "Cliente Registado.");
+            tfNomeCliente1.setText("");
+            tfClienteNuit1.setText("");
+            this.preencherLista();
+        }
+    }//GEN-LAST:event_btAdicionarActionPerformed
+
+    private void btNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btNovoActionPerformed
         
         tfNomeCliente1.setEditable(true);
         tfClienteNuit1.setEditable(true);
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btNovoActionPerformed
+
+    private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
+
+        String c=lsListaClientes.getSelectedValue();
+        
+        for(Cliente cl:todosClientes){
+
+            if(cl.getNome().equalsIgnoreCase(c)){
+            
+                tfNomeCliente1.setText(cl.getNome());
+                tfNomeCliente1.setEditable(true);
+                tfClienteNuit1.setText(cl.getNuit());
+                tfClienteNuit1.setEditable(true);
+            }
+            
+        }
+        
+        
+
+    }//GEN-LAST:event_btAlterarActionPerformed
 
 
     public void setColor(JPanel panel)
@@ -4183,6 +4222,21 @@ public class NewHome extends javax.swing.JFrame {
             dtm.addRow(dados);
             System.out.println(vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
         }
+    }
+    
+    public void preencherLista(){
+    
+        controllerCliente=new Controller<Cliente>(Cliente.class);
+        todosClientes=(List<Cliente>)controllerCliente.getDados();
+        
+        String [] a=new String[todosClientes.size()];
+        int i=0;
+        
+        for(Cliente cli:todosClientes){
+            a[i]=(String)cli.getNome();
+            i++;
+        }
+        lsListaClientes.setListData(a);
     }
     
     /**
@@ -4244,11 +4298,14 @@ public class NewHome extends javax.swing.JFrame {
     private rojeru_san.RSPanelShadow ShadowTableVFunc;
     private rojeru_san.RSPanelShadow ShadowViagemEDocFunc;
     private keeptoo.KGradientPanel TitleBar;
+    private javax.swing.JButton btAdicionar;
     private keeptoo.KButton btAdicionarViaturas;
+    private javax.swing.JButton btAlterar;
     private keeptoo.KButton btEditarViaturas;
     private javax.swing.JLabel btExit;
     private javax.swing.JLabel btMax;
     private javax.swing.JLabel btNotificacoes;
+    private javax.swing.JButton btNovo;
     private javax.swing.JPanel btPaneAddFunc;
     private javax.swing.JPanel btPaneAlterFunc;
     private javax.swing.JPanel btPaneVerFunc;
@@ -4271,9 +4328,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbTipo;
     private com.toedter.calendar.JDateChooser dateDataP1;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -4602,5 +4656,7 @@ public class NewHome extends javax.swing.JFrame {
     private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
     // End of variables declaration//GEN-END:variables
     Controller <Veiculo>controller;
+    Controller <Cliente>controllerCliente;
     List<Veiculo> todosDados;
+    List<Cliente> todosClientes;
 }
