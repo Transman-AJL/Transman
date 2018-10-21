@@ -737,7 +737,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
@@ -984,6 +984,11 @@ public class NewHome extends javax.swing.JFrame {
             String[] strings = { "Fizz", "Coca-Cola", "TVCabo", "Young Leaders", "UEM" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
+        });
+        lsListaClientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lsListaClientesMouseClicked(evt);
+            }
         });
         jScrollPane4.setViewportView(lsListaClientes);
 
@@ -1924,7 +1929,7 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(kPanelRegRoot3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(btTerminar)
@@ -4164,13 +4169,24 @@ public class NewHome extends javax.swing.JFrame {
     }//GEN-LAST:event_btNovoActionPerformed
 
     private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
+        
+        cli.setNome(tfNomeCliente1.getText());
+        cli.setNuit(tfClienteNuit1.getText());
+        
+        System.out.println(cli.actualizar());
+        JOptionPane.showMessageDialog(this,"Dados Alterados");
+        this.preencherLista();
+    }//GEN-LAST:event_btAlterarActionPerformed
+
+    private void lsListaClientesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lsListaClientesMouseClicked
 
         String c=lsListaClientes.getSelectedValue();
         
         for(Cliente cl:todosClientes){
 
             if(cl.getNome().equalsIgnoreCase(c)){
-            
+                cli=cl;
+                cli.setId(cl.getId());
                 tfNomeCliente1.setText(cl.getNome());
                 tfNomeCliente1.setEditable(true);
                 tfClienteNuit1.setText(cl.getNuit());
@@ -4178,10 +4194,8 @@ public class NewHome extends javax.swing.JFrame {
             }
             
         }
-        
-        
 
-    }//GEN-LAST:event_btAlterarActionPerformed
+    }//GEN-LAST:event_lsListaClientesMouseClicked
 
 
     public void setColor(JPanel panel)
@@ -4653,4 +4667,5 @@ public class NewHome extends javax.swing.JFrame {
     Controller <Cliente>controllerCliente;
     List<Veiculo> todosDados;
     List<Cliente> todosClientes;
+    Cliente cli;
 }
