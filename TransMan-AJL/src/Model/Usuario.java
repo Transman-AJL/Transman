@@ -80,4 +80,11 @@ public class Usuario {
     
     }
     
+    public boolean actualizar(){
+        
+        Controller<Usuario>u=new Controller<Usuario>(Usuario.class);
+        return u.Actualizar(this);
+    
+    }
+    
 }
