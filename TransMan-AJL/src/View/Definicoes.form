@@ -485,6 +485,7 @@
               </Constraints>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
+<<<<<<< HEAD
               <SubComponents>
                 <Container class="javax.swing.JPanel" name="jPanel3">
                   <Properties>
@@ -806,6 +807,8 @@
                   </SubComponents>
                 </Container>
               </SubComponents>
+=======
+>>>>>>> parent of c66c3fe... Merge branch 'master' of https://github.com/Transman-AJL/Transman
             </Container>
           </SubComponents>
         </Container>

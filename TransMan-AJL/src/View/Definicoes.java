@@ -71,6 +71,7 @@ public class Definicoes extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         JPanelTarifas = new javax.swing.JPanel();
+<<<<<<< HEAD
         jPanel3 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -104,6 +105,8 @@ public class Definicoes extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+=======
+>>>>>>> parent of c66c3fe... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Definições");
@@ -456,6 +459,7 @@ public class Definicoes extends javax.swing.JFrame {
 
         JPanelTarifas.setOpaque(false);
         JPanelTarifas.setLayout(new java.awt.GridBagLayout());
+<<<<<<< HEAD
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Custos de veículos"));
         jPanel3.setOpaque(false);
@@ -754,6 +758,8 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.08;
         JPanelTarifas.add(jPanel5, gridBagConstraints);
 
+=======
+>>>>>>> parent of c66c3fe... Merge branch 'master' of https://github.com/Transman-AJL/Transman
         JPanelRoot.add(JPanelTarifas, "card2");
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -799,14 +805,6 @@ public class Definicoes extends javax.swing.JFrame {
     private void btDefUtilizadorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefUtilizadorMousePressed
         // TODO add your handling code here:
         tfBtDefUtilizador.setFont(new java.awt.Font("Tahoma", 1, 13));
-        
-        
-        JPanelRoot.removeAll();
-        JPanelRoot.add(JPanelUtilizador);
-        JPanelRoot.repaint();
-        JPanelRoot.revalidate(); 
-        
-        
     }//GEN-LAST:event_btDefUtilizadorMousePressed
 
     private void btDefUtilizadorMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefUtilizadorMouseReleased
@@ -833,12 +831,6 @@ public class Definicoes extends javax.swing.JFrame {
     private void btDefTarifasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefTarifasMousePressed
         // TODO add your handling code here:
         tfBtDefTarifas.setFont(new java.awt.Font("Tahoma", 1, 13));
-        
-        JPanelRoot.removeAll();
-        JPanelRoot.add(JPanelTarifas);
-        JPanelRoot.repaint();
-        JPanelRoot.revalidate();
-        
     }//GEN-LAST:event_btDefTarifasMousePressed
 
     private void btDefTarifasMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefTarifasMouseReleased
@@ -933,18 +925,6 @@ public class Definicoes extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbCategoriaActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
-
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
-
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -1035,46 +1015,15 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanelButtons;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private keeptoo.KGradientPanel kPannelMain;
     private javax.swing.JLabel lbPassword;
     private javax.swing.JPasswordField pwPassword;
