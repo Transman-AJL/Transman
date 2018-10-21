@@ -9,8 +9,14 @@ import javax.persistence.Id;
  * @author Arley Bebe
  */
 @Entity
+/**
+ * Classe Documentação
+ */
 public class Documentacao {
     //Seguro
+    /**
+     * Criando Identificadores para a classe Documentação
+     */
     @Id
     @GeneratedValue
     private int id;

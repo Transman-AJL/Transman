@@ -60,7 +60,7 @@ public class Definicoes extends javax.swing.JFrame {
         lbPassword = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         cbCategoria = new javax.swing.JComboBox<>();
-        jButton4 = new javax.swing.JButton();
+        btGravar = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
         pwPassword = new javax.swing.JPasswordField();
         jPanel1 = new javax.swing.JPanel();
@@ -305,16 +305,16 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 20, 0, 20);
         jPanel2.add(cbCategoria, gridBagConstraints);
 
-        jButton4.setText("Guardar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btGravar.setText("Guardar");
+        btGravar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btGravarActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 6;
-        jPanel2.add(jButton4, gridBagConstraints);
+        jPanel2.add(btGravar, gridBagConstraints);
 
         jLabel10.setForeground(new java.awt.Color(0, 153, 51));
         jLabel10.setText("Registrado com sucesso");
@@ -530,31 +530,38 @@ public class Definicoes extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-
-        String tipo=(String)cbCategoria.getSelectedItem();
-        Usuario usr=new Usuario(tfUsername.getText(), new String(pwPassword.getPassword()),tipo);
-        System.out.println(usr.gravar());
-        JOptionPane.showMessageDialog(this, "Usuario Registado");
+    private void btGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGravarActionPerformed
+        
+        if(btGravar.getText().equalsIgnoreCase("guardar")){
+            String tipo=(String)cbCategoria.getSelectedItem();
+            Usuario usr=new Usuario(tfUsername.getText(), new String(pwPassword.getPassword()),tipo);
+            System.out.println(usr.gravar());
+            JOptionPane.showMessageDialog(this, "Usuario Registado");
+        }
+        else if(btGravar.getText().equalsIgnoreCase("alterar")){
+            System.out.println("bt Alterar");
+        }
         
         
 
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btGravarActionPerformed
 
     private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
         
         tfUsername.setEnabled(true);
         pwPassword.setEnabled(true);
         cbCategoria.setEnabled(true);
-        lbPassword.setText("Nova Password");
+        lbPassword.setText("Nova Senha");
+        btGravar.setText("Alterar");
         
         String nome=(String)jTable2.getValueAt(jTable2.getSelectedRow(), 0);
+        
         for(Usuario u:todosUsers){
         
             if(u.getNome().equalsIgnoreCase(nome)){
                 System.out.println("Nome igual");
                 tfUsername.setText(nome);
-                pwPassword.setText(new String(u.getSenha()));
+                pwPassword.setFocusable(true);
             }
         }
 
@@ -627,10 +634,10 @@ public class Definicoes extends javax.swing.JFrame {
     private keeptoo.KGradientPanel btDefAdicionais;
     private keeptoo.KGradientPanel btDefTarifas;
     private keeptoo.KGradientPanel btDefUtilizador;
+    private javax.swing.JButton btGravar;
     private javax.swing.JComboBox<String> cbCategoria;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;

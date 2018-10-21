@@ -62,6 +62,26 @@ public class Controller<T> {
         }
         return funcionou;
     }
+    
+    public boolean Actualizar(Object objecto){
+    
+        boolean funcionou = false;
+        Session sessao = factory.openSession();
+        sessao.beginTransaction();
+        
+        try {
+            sessao.update(objecto);
+            sessao.getTransaction().commit();
+            funcionou = true;
+        } catch (Exception h) {
+            funcionou = false;
+//            JOptionPane.showMessageDialog(null, "Erro do hibernate: \n" + h);
+        } finally {
+            sessao.close();
+            dados = actualizarLista();
+        }
+        return funcionou;
+    }
 
     /**
      * Exclusão de um determinado dado à nível lógico
