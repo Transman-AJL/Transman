@@ -9,6 +9,10 @@ import Control.Controller;
 import Model.Usuario;
 import Model.Veiculo;
 import java.awt.Color;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -576,7 +580,10 @@ public class Definicoes extends javax.swing.JFrame {
        // dtm.setNumRows(0);
         
         for(Usuario usr:todosUsers){
-            String dados[]={usr.getNome(),usr.getTipo(),usr.getDataUltimoLog()+""};
+            Date ul=usr.getDataUltimoLog();
+            DateFormat df=DateFormat.getDateTimeInstance(Calendar.SHORT, Calendar.SHORT);
+            String data=df.format(ul);
+            String dados[]={usr.getNome(),usr.getTipo(),data};
             
             dtm.addRow(dados);
         }
