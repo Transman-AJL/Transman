@@ -974,7 +974,7 @@
                               <Component id="btVoltarRViagem" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
                               <Component id="lbRegistrarViagem" min="-2" pref="115" max="-2" attributes="0"/>
-                              <EmptySpace pref="333" max="32767" attributes="0"/>
+                              <EmptySpace pref="146" max="32767" attributes="0"/>
                           </Group>
                           <Component id="kPanelRegRoot" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -1107,11 +1107,11 @@
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="jButton2" min="-2" pref="77" max="-2" attributes="0"/>
+                                                  <Component id="btAdicionar" min="-2" pref="77" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="btAlterar" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace max="-2" attributes="0"/>
-                                                  <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="btNovo" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <Component id="jTextField21" min="-2" pref="114" max="-2" attributes="0"/>
@@ -1164,9 +1164,9 @@
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="3" attributes="0">
-                                              <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btAdicionar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btAlterar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              <Component id="btNovo" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lbErro" min="-2" max="-2" attributes="0"/>
@@ -1221,26 +1221,41 @@
                                   </Properties>
                                 </Component>
                                 <Component class="javax.swing.JTextField" name="tfNomeCliente1">
+                                  <Properties>
+                                    <Property name="editable" type="boolean" value="false"/>
+                                  </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfNomeCliente1ActionPerformed"/>
                                   </Events>
                                 </Component>
                                 <Component class="javax.swing.JTextField" name="tfClienteNuit1">
+                                  <Properties>
+                                    <Property name="editable" type="boolean" value="false"/>
+                                  </Properties>
                                 </Component>
-                                <Component class="javax.swing.JButton" name="jButton2">
+                                <Component class="javax.swing.JButton" name="btAdicionar">
                                   <Properties>
                                     <Property name="text" type="java.lang.String" value="Adicionar"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAdicionarActionPerformed"/>
+                                  </Events>
                                 </Component>
-                                <Component class="javax.swing.JButton" name="jButton3">
+                                <Component class="javax.swing.JButton" name="btAlterar">
                                   <Properties>
                                     <Property name="text" type="java.lang.String" value="Alterar"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAlterarActionPerformed"/>
+                                  </Events>
                                 </Component>
-                                <Component class="javax.swing.JButton" name="jButton4">
+                                <Component class="javax.swing.JButton" name="btNovo">
                                   <Properties>
                                     <Property name="text" type="java.lang.String" value="Novo"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btNovoActionPerformed"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="lbErro">
                                   <Properties>
@@ -3720,7 +3735,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="208" max="32767" attributes="0"/>
+                                      <EmptySpace pref="48" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -3784,7 +3799,7 @@
                                                   <Component id="jLabel54" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                                   <Component id="jLabel53" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace pref="10" max="32767" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="jComboBox2" min="-2" max="-2" attributes="0"/>
                                                   <Component id="jComboBox3" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -5196,7 +5211,7 @@
                                   <Component id="btVoltarRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lbRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="439" max="32767" attributes="0"/>
+                              <EmptySpace pref="239" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
