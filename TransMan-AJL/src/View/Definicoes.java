@@ -57,7 +57,7 @@ public class Definicoes extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         tfUsername = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
+        lbPassword = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         cbCategoria = new javax.swing.JComboBox<>();
         jButton4 = new javax.swing.JButton();
@@ -65,7 +65,7 @@ public class Definicoes extends javax.swing.JFrame {
         pwPassword = new javax.swing.JPasswordField();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btAlterar = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
@@ -274,7 +274,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 20, 0, 20);
         jPanel2.add(tfUsername, gridBagConstraints);
 
-        jLabel8.setText("Palavra-Passe");
+        lbPassword.setText("Palavra-Passe");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 2;
@@ -282,7 +282,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(20, 20, 0, 0);
-        jPanel2.add(jLabel8, gridBagConstraints);
+        jPanel2.add(lbPassword, gridBagConstraints);
 
         jLabel9.setText("Categoria");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -362,17 +362,17 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
         jPanel1.add(jButton1, gridBagConstraints);
 
-        jButton2.setText("Alterar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btAlterar.setText("Alterar");
+        btAlterar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btAlterarActionPerformed(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.insets = new java.awt.Insets(10, 10, 10, 10);
-        jPanel1.add(jButton2, gridBagConstraints);
+        jPanel1.add(btAlterar, gridBagConstraints);
 
         jButton3.setText("Cancelar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -541,8 +541,13 @@ public class Definicoes extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-
+    private void btAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarActionPerformed
+        
+        tfUsername.setEnabled(true);
+        pwPassword.setEnabled(true);
+        cbCategoria.setEnabled(true);
+        lbPassword.setText("Nova Password");
+        
         String nome=(String)jTable2.getValueAt(jTable2.getSelectedRow(), 0);
         for(Usuario u:todosUsers){
         
@@ -553,7 +558,7 @@ public class Definicoes extends javax.swing.JFrame {
             }
         }
 
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btAlterarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -618,12 +623,12 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JPanel JPanelRoot;
     private javax.swing.JPanel JPanelTarifas;
     private javax.swing.JPanel JPanelUtilizador;
+    private javax.swing.JButton btAlterar;
     private keeptoo.KGradientPanel btDefAdicionais;
     private keeptoo.KGradientPanel btDefTarifas;
     private keeptoo.KGradientPanel btDefUtilizador;
     private javax.swing.JComboBox<String> cbCategoria;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
@@ -631,7 +636,6 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -639,6 +643,7 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
     private keeptoo.KGradientPanel kPannelMain;
+    private javax.swing.JLabel lbPassword;
     private javax.swing.JPasswordField pwPassword;
     private javax.swing.JLabel tfBtDefAdicionais;
     private javax.swing.JLabel tfBtDefTarifas;
