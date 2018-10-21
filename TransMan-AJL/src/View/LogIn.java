@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 import keeptoo.Drag;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Date;
 import java.util.List;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
@@ -347,11 +348,10 @@ public class LogIn extends javax.swing.JFrame {
     private void btLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLoginActionPerformed
         
         if(verificar(tfUserName.getText(), new String(tfPassword.getPassword()))){
-            userName=tfUserName.getText();
-            String pw=new String(tfPassword.getPassword());
-            
+
             panelRoot.removeAll();
             panelRoot.add(kPanelLoading);
+            
             if(tfUserName.getText().equalsIgnoreCase("josemanuel")){
             lbUserIconLoad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/josemanuel.png")));}else
             if(tfUserName.getText().equalsIgnoreCase("arleybebe"))
@@ -362,11 +362,9 @@ public class LogIn extends javax.swing.JFrame {
             lbUserNameLoad.setText(tfUserName.getText());
             panelRoot.repaint();
             panelRoot.revalidate();
-            //webProgressBar1.setValue(50);
             
-            /*this.dispose();
-            Loading loa=new Loading();
-            loa.setVisible(true);*/
+            
+        
         }else{
             JOptionPane.showMessageDialog(this, "Usuario ou Senha Invalidas");
         }
@@ -383,10 +381,15 @@ public class LogIn extends javax.swing.JFrame {
         
         controller=new Controller<Usuario>(Usuario.class);
         todosUsers=(List<Usuario>)controller.getDados();
+        Usuario usr=new Usuario();
         
         for(Usuario u:todosUsers){
         
             if(u.getNome().equalsIgnoreCase(nome) && u.getSenha().equalsIgnoreCase(password)){
+                usr=u;
+                usr.setId(u.getId());
+                usr.setDataUltimoLog(new Date());
+                System.out.println(usr.gravar());
                 return true;
             }
         }
