@@ -997,6 +997,7 @@ public class NewHome extends javax.swing.JFrame {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         tfClienteNuit1.setEditable(false);
 
         btAdicionar.setText("Adicionar");
@@ -1026,6 +1027,13 @@ public class NewHome extends javax.swing.JFrame {
 =======
         jButton4.setText("Novo");
 >>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
+=======
+        jButton2.setText("Adicionar");
+
+        jButton3.setText("Alterar");
+
+        jButton4.setText("Novo");
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 =======
         jButton2.setText("Adicionar");
 
@@ -4144,6 +4152,7 @@ public class NewHome extends javax.swing.JFrame {
     }//GEN-LAST:event_tfValorTotal3ActionPerformed
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
@@ -4198,6 +4207,9 @@ public class NewHome extends javax.swing.JFrame {
 =======
 //>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
 >>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
+=======
+//>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+>>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
 =======
 //>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
 >>>>>>> parent of 4e36ae5... Merge branch 'master' of https://github.com/Transman-AJL/Transman
