@@ -11,8 +11,14 @@ import java.util.Date;
  *
  * @author JoseM
  */
+/**
+ * Classe Tarifas
+ * @author lipe
+ */
 public class Tarifas {
-    
+    /**
+     * Criação das variáveis da classe Tarifas
+     */
     private double precoKM;
     private double precoKGAberto;
     private double precoKGFechado;
