@@ -363,6 +363,11 @@ public class Definicoes extends javax.swing.JFrame {
         jPanel1.add(jButton1, gridBagConstraints);
 
         jButton2.setText("Alterar");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -536,6 +541,20 @@ public class Definicoes extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+
+        String nome=(String)jTable2.getValueAt(jTable2.getSelectedRow(), 0);
+        for(Usuario u:todosUsers){
+        
+            if(u.getNome().equalsIgnoreCase(nome)){
+                System.out.println("Nome igual");
+                tfUsername.setText(nome);
+                pwPassword.setText(new String(u.getSenha()));
+            }
+        }
+
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -577,12 +596,18 @@ public class Definicoes extends javax.swing.JFrame {
         todosUsers=(List<Usuario>)controller.getDados();
 
         DefaultTableModel dtm=(DefaultTableModel)jTable2.getModel(); 
-       // dtm.setNumRows(0);
         
         for(Usuario usr:todosUsers){
+            
             Date ul=usr.getDataUltimoLog();
-            DateFormat df=DateFormat.getDateTimeInstance(Calendar.SHORT, Calendar.SHORT);
-            String data=df.format(ul);
+            String data=null;
+            
+            if(ul!=null){
+            
+                DateFormat df=DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT);
+                data=df.format(ul);
+            }
+            
             String dados[]={usr.getNome(),usr.getTipo(),data};
             
             dtm.addRow(dados);
