@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Entity
 /**
  * Classe Cliente.
- * nelaencontramos os requisitos para cadastrar clintes e suas necessiddes.
+ * Nela encontramos os requisitos para cadastrar clintes e suas necessiddes.
  */
 public class Cliente {
     /**
