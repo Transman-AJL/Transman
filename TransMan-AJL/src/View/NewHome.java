@@ -3352,7 +3352,7 @@ public class NewHome extends javax.swing.JFrame {
     }
     
     public void preencherTabela(){
-    
+        
         controller=new Controller<Veiculo>(Veiculo.class);
         todosDados=(List<Veiculo>)controller.getDados();
 

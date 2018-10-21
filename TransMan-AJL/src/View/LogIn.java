@@ -361,7 +361,7 @@ public class LogIn extends javax.swing.JFrame {
 
     public boolean verificar(String nome, String password){
         
-        return null;
+        return false;
         
     }
     
