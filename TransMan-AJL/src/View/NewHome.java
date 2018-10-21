@@ -4129,7 +4129,6 @@ public class NewHome extends javax.swing.JFrame {
     private void tfValorTotal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfValorTotal3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfValorTotal3ActionPerformed
-<<<<<<< HEAD
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
@@ -4144,12 +4143,12 @@ public class NewHome extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        
         tfNomeCliente1.setEditable(true);
+        tfClienteNuit1.setEditable(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton4ActionPerformed
-=======
->>>>>>> b95d1350ac193abf27418755a5ab0c98f8486256
-//>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+
 
     public void setColor(JPanel panel)
     {
