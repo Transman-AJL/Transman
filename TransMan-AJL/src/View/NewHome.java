@@ -4076,21 +4076,14 @@ public class NewHome extends javax.swing.JFrame {
         } else{
             tfDistancia2.setText(tfDistancia2.getText());
         }
-        
-        
-        
+
         if(verificado==true){
             System.out.println("Verificado final : "+verificado);
             kPanelRegRoot.removeAll();
             kPanelRegRoot.add(kPanelRegRoot2);
             kPanelRegRoot.repaint();
             kPanelRegRoot.revalidate(); 
-        }
-       
-        
-        
-        
-        
+        }  
     }//GEN-LAST:event_btProximoActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
