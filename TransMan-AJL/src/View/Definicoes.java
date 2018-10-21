@@ -252,7 +252,7 @@ public class Definicoes extends javax.swing.JFrame {
         btDefAdicionais.add(jLabel5, gridBagConstraints);
 
         tfBtDefAdicionais.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        tfBtDefAdicionais.setText("Definições de etc....");
+        tfBtDefAdicionais.setText("Definições Adicionais");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
