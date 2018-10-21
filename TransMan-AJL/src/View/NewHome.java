@@ -992,13 +992,13 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel74.setText("NUIT");
 
-        tfNomeCliente1.setEditable(false);
         tfNomeCliente1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tfNomeCliente1ActionPerformed(evt);
             }
         });
 
+<<<<<<< HEAD
         tfClienteNuit1.setEditable(false);
 
         btAdicionar.setText("Adicionar");
@@ -1007,6 +1007,9 @@ public class NewHome extends javax.swing.JFrame {
                 btAdicionarActionPerformed(evt);
             }
         });
+=======
+        jButton2.setText("Adicionar");
+>>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
 
         btAlterar.setText("Alterar");
         btAlterar.addActionListener(new java.awt.event.ActionListener() {
@@ -1015,12 +1018,16 @@ public class NewHome extends javax.swing.JFrame {
             }
         });
 
+<<<<<<< HEAD
         btNovo.setText("Novo");
         btNovo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btNovoActionPerformed(evt);
             }
         });
+=======
+        jButton4.setText("Novo");
+>>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
 
         lbErro.setForeground(new java.awt.Color(255, 0, 51));
         lbErro.setText(" ");
@@ -1947,7 +1954,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarRViagem)
                 .addGap(245, 245, 245)
                 .addComponent(lbRegistrarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(146, Short.MAX_VALUE))
+                .addContainerGap(333, Short.MAX_VALUE))
             .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kPanelRViagemLayout.setVerticalGroup(
@@ -2598,7 +2605,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jLabel56, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jTextField19)
                             .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(48, Short.MAX_VALUE))
+                .addContainerGap(208, Short.MAX_VALUE))
         );
         kPanelAlterarViatLayout.setVerticalGroup(
             kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2646,7 +2653,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -3425,7 +3432,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarRelatorios)
                     .addComponent(lbRelatorios))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(439, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRelatorios, "card2");
@@ -4097,21 +4104,14 @@ public class NewHome extends javax.swing.JFrame {
         } else{
             tfDistancia2.setText(tfDistancia2.getText());
         }
-        
-        
-        
+
         if(verificado==true){
             System.out.println("Verificado final : "+verificado);
             kPanelRegRoot.removeAll();
             kPanelRegRoot.add(kPanelRegRoot2);
             kPanelRegRoot.repaint();
             kPanelRegRoot.revalidate(); 
-        }
-       
-        
-        
-        
-        
+        }  
     }//GEN-LAST:event_btProximoActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -4137,6 +4137,7 @@ public class NewHome extends javax.swing.JFrame {
     private void tfValorTotal3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfValorTotal3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfValorTotal3ActionPerformed
+<<<<<<< HEAD
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
@@ -4188,6 +4189,9 @@ public class NewHome extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btAlterarActionPerformed
 
+=======
+//>>>>>>> 3a094a0bae6c1e4145589e22829af9420d5efb60
+>>>>>>> 110f4dee35f320a2759123d3c43b69552f4021c6
 
     public void setColor(JPanel panel)
     {
