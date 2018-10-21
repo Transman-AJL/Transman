@@ -22,7 +22,6 @@ public class Tarifas {
     private double precoMotorista;
     private double precoEstivador;
     private double precoCombustivel;
-    private double precoLitro;
     private double precoPassageiro;
     private Date dataAlteracao;
     
