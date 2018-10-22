@@ -8,11 +8,15 @@ package View;
 import Control.ComponentResizer;
 import Control.Controller;
 import Model.Cliente;
+import Model.Tarifas;
 import Model.Usuario;
 import Model.Veiculo;
+import Model.Viagem;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
@@ -39,6 +43,7 @@ public class NewHome extends javax.swing.JFrame {
         initComponents();
         this.preencherTabela();
         this.preencherLista();
+        this.preencherTabela4();
         /**
          * 
          * Permite que os frames sejam redimensionáveis.
@@ -256,22 +261,43 @@ public class NewHome extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
         jLabel91 = new javax.swing.JLabel();
-        jTextField29 = new javax.swing.JTextField();
+        tfClienteF = new javax.swing.JTextField();
         jLabel92 = new javax.swing.JLabel();
-        jTextField30 = new javax.swing.JTextField();
+        tfEstadoF = new javax.swing.JTextField();
         jLabel93 = new javax.swing.JLabel();
-        jTextField31 = new javax.swing.JTextField();
+        tfPOrigemF = new javax.swing.JTextField();
         jLabel94 = new javax.swing.JLabel();
-        jTextField32 = new javax.swing.JTextField();
+        tfPDestinoF = new javax.swing.JTextField();
         jLabel95 = new javax.swing.JLabel();
-        jTextField33 = new javax.swing.JTextField();
+        tfDataPartidaF = new javax.swing.JTextField();
         jLabel96 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel97 = new javax.swing.JLabel();
-        jTextField34 = new javax.swing.JTextField();
+        tfDistanciaF = new javax.swing.JTextField();
         jLabel98 = new javax.swing.JLabel();
-        jTextField35 = new javax.swing.JTextField();
+        tfVeiculoF = new javax.swing.JTextField();
         jButton7 = new javax.swing.JButton();
+        btTerminarViagem = new javax.swing.JButton();
+        kPanelVTerminadas = new keeptoo.KGradientPanel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jLabel99 = new javax.swing.JLabel();
+        jTextField36 = new javax.swing.JTextField();
+        jLabel106 = new javax.swing.JLabel();
+        jTextField37 = new javax.swing.JTextField();
+        jLabel133 = new javax.swing.JLabel();
+        jTextField38 = new javax.swing.JTextField();
+        jLabel134 = new javax.swing.JLabel();
+        jTextField39 = new javax.swing.JTextField();
+        jLabel135 = new javax.swing.JLabel();
+        jTextField40 = new javax.swing.JTextField();
+        jLabel136 = new javax.swing.JLabel();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jLabel137 = new javax.swing.JLabel();
+        jTextField41 = new javax.swing.JTextField();
+        jLabel138 = new javax.swing.JLabel();
+        jTextField42 = new javax.swing.JTextField();
+        jButton9 = new javax.swing.JButton();
         kButton5 = new keeptoo.KButton();
         kButton6 = new keeptoo.KButton();
         kButton7 = new keeptoo.KButton();
@@ -738,7 +764,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
@@ -1135,6 +1161,12 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel81.setText("Distância");
 
+        tfDistancia1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                tfDistancia1KeyTyped(evt);
+            }
+        });
+
         jLabel82.setText("Tipo de Veículo");
 
         buttonGroup1.add(radioAberto);
@@ -1366,7 +1398,7 @@ public class NewHome extends javax.swing.JFrame {
         jLabel119.setText("Selecionar Motorista");
 
         lsMotoristas.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            String[] strings = { "Fred Jossias", "Ernersto Martinho", "Jose Macamo", "Augusto Marcos", "Adalberto Simango" };
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
@@ -1376,15 +1408,17 @@ public class NewHome extends javax.swing.JFrame {
 
         tableRegViaturas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+
             },
             new String [] {
                 "Matricula", "Marca", "Modelo"
             }
         ));
+        tableRegViaturas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tableRegViaturasMouseClicked(evt);
+            }
+        });
         jScrollPane7.setViewportView(tableRegViaturas);
 
         jLabel130.setText("Nr de estivadores");
@@ -1580,6 +1614,11 @@ public class NewHome extends javax.swing.JFrame {
         );
 
         jButton6.setText("Voltar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton8.setText("Proximo");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -1763,11 +1802,11 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(jLabel132)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfDataPartida3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel129)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(tfValorTotal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27))
+                .addGap(33, 33, 33))
         );
 
         jPanel9.setOpaque(false);
@@ -1934,9 +1973,9 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(kPanelRegRoot3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btTerminar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -1963,7 +2002,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(btVoltarRViagem)
                     .addComponent(lbRegistrarViagem))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 378, Short.MAX_VALUE))
+                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRViagem, "card2");
@@ -2007,6 +2046,11 @@ public class NewHome extends javax.swing.JFrame {
                 "Cliente", "Origem", "Destino", "Data Partida"
             }
         ));
+        jTable4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable4MouseClicked(evt);
+            }
+        });
         jScrollPane5.setViewportView(jTable4);
 
         jLabel91.setText("Cliente");
@@ -2027,6 +2071,13 @@ public class NewHome extends javax.swing.JFrame {
 
         jButton7.setText("Imprimir detalhes");
 
+        btTerminarViagem.setText("Terminar viagem");
+        btTerminarViagem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btTerminarViagemActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout kPanelVEmCursoLayout = new javax.swing.GroupLayout(kPanelVEmCurso);
         kPanelVEmCurso.setLayout(kPanelVEmCursoLayout);
         kPanelVEmCursoLayout.setHorizontalGroup(
@@ -2037,75 +2088,80 @@ public class NewHome extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
-                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField29)
-                            .addComponent(jLabel91, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField30)
-                            .addComponent(jLabel92, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)))
-                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
-                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField31)
-                            .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField32)
-                            .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
-                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField33)
-                            .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
-                            .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
-                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextField34, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel97, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
-                        .addGap(47, 47, 47)
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tfClienteF)
+                                    .addComponent(jLabel91, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tfEstadoF)
+                                    .addComponent(jLabel92, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)))
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tfPOrigemF)
+                                    .addComponent(jLabel93, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tfPDestinoF)
+                                    .addComponent(jLabel94, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(tfDataPartidaF)
+                                    .addComponent(jLabel95, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(tfDistanciaF, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel97, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tfVeiculoF, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelVEmCursoLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btTerminarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(49, 49, 49))))
         );
         kPanelVEmCursoLayout.setVerticalGroup(
             kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
                     .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                                 .addComponent(jLabel92)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(tfEstadoF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                                 .addComponent(jLabel91)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(tfClienteF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                                 .addComponent(jLabel93)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(tfPOrigemF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                                 .addComponent(jLabel94)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(tfPDestinoF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                                 .addComponent(jLabel95)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tfDataPartidaF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                                 .addComponent(jLabel96)
@@ -2115,15 +2171,147 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jLabel98))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(42, 42, 42)
+                            .addComponent(tfDistanciaF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tfVeiculoF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(35, 35, 35)
+                        .addComponent(btTerminarViagem)
+                        .addGap(30, 30, 30)
                         .addComponent(jButton7)
-                        .addGap(0, 136, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
         kPanelVerVRoot.add(kPanelVEmCurso, "card2");
+
+        kPanelVTerminadas.setkBorderRadius(0);
+        kPanelVTerminadas.setkEndColor(new java.awt.Color(204, 255, 255));
+        kPanelVTerminadas.setkStartColor(new java.awt.Color(255, 255, 255));
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Cliente", "Origem", "Destino", "Data Partida"
+            }
+        ));
+        jScrollPane8.setViewportView(jTable5);
+
+        jLabel99.setText("Cliente");
+
+        jLabel106.setText("Estado");
+
+        jLabel133.setText("Prov. Origem");
+
+        jLabel134.setText("Prov. Destino");
+
+        jLabel135.setText("Data Partida");
+
+        jLabel136.setText("Motoristas");
+
+        jLabel137.setText("Distancia");
+
+        jLabel138.setText("Veículo");
+
+        jButton9.setText("Imprimir detalhes");
+
+        javax.swing.GroupLayout kPanelVTerminadasLayout = new javax.swing.GroupLayout(kPanelVTerminadas);
+        kPanelVTerminadas.setLayout(kPanelVTerminadasLayout);
+        kPanelVTerminadasLayout.setHorizontalGroup(
+            kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 361, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField36)
+                            .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField37)
+                            .addComponent(jLabel106, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)))
+                    .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField38)
+                            .addComponent(jLabel133, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField39)
+                            .addComponent(jLabel134, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTextField40)
+                            .addComponent(jLabel135, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel136, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                            .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(jTextField41, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel137, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel138, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        kPanelVTerminadasLayout.setVerticalGroup(
+            kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                                .addComponent(jLabel106)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                                .addComponent(jLabel99)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                                .addComponent(jLabel133)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                                .addComponent(jLabel134)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                                .addComponent(jLabel135)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
+                                .addComponent(jLabel136)
+                                .addGap(26, 26, 26)))
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel137)
+                            .addComponent(jLabel138))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(42, 42, 42)
+                        .addComponent(jButton9)
+                        .addGap(0, 136, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+
+        kPanelVerVRoot.add(kPanelVTerminadas, "card2");
 
         kButton5.setText("Viagens Terminadas");
         kButton5.setkHoverEndColor(new java.awt.Color(0, 204, 51));
@@ -3430,7 +3618,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarRelatorios)
                     .addComponent(lbRelatorios))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(439, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRelatorios, "card2");
@@ -4047,22 +4235,26 @@ public class NewHome extends javax.swing.JFrame {
 
     private void btProximoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btProximoActionPerformed
         // TODO add your handling code here:
+        try{
         boolean verificado=true;
         System.out.println("Verificado Inicial : "+verificado);
         
         if(radioAberto.isSelected() || RadioFechado.isSelected() || radioBasculante.isSelected() || radioPortaContentor.isSelected()){
             lbPesoVolume.setText("Peso");
             tfTipoV1.setText("Aberto");
+            this.preencherTabelaFiltrada("Aberto");
             //verificado=true;
         } else
         if(radioFrigorifico.isSelected() || radioFrigorifico.isSelected()){
             lbPesoVolume.setText("Volume");
             tfTipoV1.setText("Frigorifico");
-            //verificado=true;
+            this.preencherTabelaFiltrada("Frigorifico");
+//verificado=true;
         } else
         if(radioAutomovel.isSelected() || radioTanque.isSelected()){
             lbPesoVolume.setText("Lotação");
             tfTipoV1.setText("Automovel");
+            this.preencherTabelaFiltrada("Automovel");
             //verificado=true;
         }else{
             verificado=false;
@@ -4077,6 +4269,10 @@ public class NewHome extends javax.swing.JFrame {
             //verificado=true;
             tfNomeCliente2.setText(tfNomeCliente1.getText());
             tfNuitCliente2.setText(tfClienteNuit1.getText());
+            tfDistancia2.setText(tfDistancia1.getText());
+            int motoristas=(int) (1+(Double.parseDouble(tfDistancia1.getText())/1000));
+            tfNumeroMot2.setText(motoristas+"");
+            
         }
         System.out.println("Lista: "+verificado);
 
@@ -4118,7 +4314,10 @@ public class NewHome extends javax.swing.JFrame {
             kPanelRegRoot.repaint();
             kPanelRegRoot.revalidate(); 
         }
-       
+        }catch(Exception e){
+        
+            JOptionPane.showMessageDialog(this, "Preencha campos necessarios");
+        }
         
         
         
@@ -4131,8 +4330,129 @@ public class NewHome extends javax.swing.JFrame {
         kPanelRegRoot.add(kPanelRegRoot3);
         kPanelRegRoot.repaint();
         kPanelRegRoot.revalidate();
+        
+        tfNomeCliente3.setText(tfNomeCliente2.getText());
+        String nome=tfNomeCliente3.getText();
+        
+        tfNuitCliente3.setText(tfNuitCliente2.getText());
+        String nuit=tfNuitCliente3.getText();
+        
+        tfValorCombustivel3.setText(tfConsumoCombustivel.getText());
+        String vCombustivel=tfValorCombustivel3.getText();
+
+        tfEnderecoD3.setText(tfEnderecoD2.getText());
+        String endD=tfEnderecoD3.getText();
+
+        tfProvinciaP3.setText(tfProvinciaP2.getText());
+        String provP=tfProvinciaP3.getText();
+        
+        tfProvinciaD3.setText(tfProvinciaD2.getText());
+        String provD=tfProvinciaD3.getText();
+        
+        tfDistritoP3.setText(tfLocalP2.getText());
+        String distP=tfDistritoP3.getText();
+        
+        tfDistritoD3.setText(tfLocalD2.getText());
+        String distD=tfDistritoD3.getText();
+        
+        tfEnderecoP3.setText(tfEnderecoP2.getText());
+        String endrP=tfEnderecoP3.getText();
+        
+        tfEnderecoD3.setText(tfEnderecoD2.getText());
+        String endrD=tfEnderecoD3.getText();
+        
+        tfTipoV3.setText(tfTipoV1.getText());
+        String tipo=tfTipoV3.getText();
+        
+        tfNumeroM3.setText(tfNumeroMot2.getText());
+        String mot=tfNumeroM3.getText();
+        
+        tfPesoVolume3.setText(tfPesoVol2.getText());
+        String vol=tfPesoVolume3.getText();
+        
+        tfNumeroEstivadores3.setText(tfNEstivadores3.getText());
+        String est=tfNumeroEstivadores3.getText();
+        
+        tfDistancia3.setText(tfDistancia2.getText());
+        String dist=tfDistancia3.getText();
+        
+        tfDataPartida3.setText(jDateChooser1.getDateFormatString());
+        String dat =tfDataPartida3.getText();
+        //--------------------------------
+        /*
+        if(radioAberto.isSelected() || RadioFechado.isSelected() || radioBasculante.isSelected() || radioPortaContentor.isSelected()){
+            lbPesoVolume.setText("Peso");
+            tfTipoV1.setText("Aberto");
+            this.preencherTabelaFiltrada("Aberto");
+            //verificado=true;
+        } else
+        if(radioFrigorifico.isSelected() || radioFrigorifico.isSelected()){
+            lbPesoVolume.setText("Volume");
+            tfTipoV1.setText("Frigorifico");
+            this.preencherTabelaFiltrada("Frigorifico");
+
+        } else
+        if(radioAutomovel.isSelected() || radioTanque.isSelected()){
+            lbPesoVolume.setText("Lotação");
+            tfTipoV1.setText("Automovel");
+            this.preencherTabelaFiltrada("Automovel");
+            //verificado=true;
+        }*/
+        //-----------------------------------
+        
+        double distancia=Double.parseDouble(tfDistancia1.getText());
+        Tarifas t=this.tarifa();
+        double consumoC=(Double.parseDouble(tfDistancia1.getText())*0.28);
+        tfConsumoCombustivel.setText(consumoC+" Litros");
+        String consumo=tfConsumoCombustivel.getText();
+        
+        tfValorCombustivel3.setText(t.getPrecoCombustivel()*consumoC+ "MT");
+        String vCombust=tfValorCombustivel3.getText();
+        
+        double alojamento=t.getPrecoAliementacao()*(distancia/500);
+        tfValorAlojamento3.setText(alojamento+" Meticais");
+        
+        double alimentacao=t.getPrecoAliementacao()*distancia;
+        
+        
+        double vTotal=consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM());
+        tfValorTotal3.setText(consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM())+"");
+        String total=tfValorTotal3.getText();
+        
+        Viagem v=new Viagem();
+        v.setNomeCliente(nome);
+        v.setConsumoCombustivel(consumoC);
+        v.setDataChegada(jDateChooser1.getDate());
+        v.setDataPartida(jDateChooser1.getDate());
+        v.setDataRegisto(new Date());
+        v.setDistancia(distancia);
+        v.setEstado("Marcada");
+        v.setLocalDestino(distD);
+        v.setLocalPartida(distP);
+        v.setPrecoTotal(vTotal);
+        v.setNumMotoristas(Integer.parseInt(tfNumeroMot2.getText()));
+        v.setProvinciaDestino(provD);
+        v.setProvinciaPartida(provP);
+        v.setValorAlimentacao(alimentacao);
+        v.setValorAlojamento(alojamento);
+        v.setMatriculaVeiculo(matricula);        
+        
+        if(v.gravar()){
+        
+            JOptionPane.showMessageDialog(this, "Dados gravados.");
+        }
+        
     }//GEN-LAST:event_jButton8ActionPerformed
 
+    public Tarifas tarifa(){
+    
+        Controller <Tarifas>controllerT=new Controller<Tarifas>(Tarifas.class);
+        List<Tarifas>todasTarifas=(List<Tarifas>)controllerT.getDados();
+
+        Tarifas t=todasTarifas.get(0);
+        return t;
+    }
+    
     private void btTerminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTerminarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btTerminarActionPerformed
@@ -4208,6 +4528,48 @@ public class NewHome extends javax.swing.JFrame {
 
     }//GEN-LAST:event_lsListaClientesMouseClicked
 
+    private void tfDistancia1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_tfDistancia1KeyTyped
+        // TODO add your handling code here:
+        char character = evt.getKeyChar();
+        
+        if(((character < '0' || character > '9')) && (character!= '\b') ){
+        evt.consume();
+    }
+    }//GEN-LAST:event_tfDistancia1KeyTyped
+
+    private void jTable4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable4MouseClicked
+        String nome=(String)jTable4.getValueAt(jTable4.getSelectedRow(), 0);
+        for(Viagem vi:todosDadosVi){
+        
+            if(vi.getNomeCliente().equalsIgnoreCase(nome)){
+            
+                tfClienteF.setText(vi.getNomeCliente());
+                tfEstadoF.setText(vi.getEstado());
+                tfPOrigemF.setText(vi.getProvinciaPartida());
+                tfPDestinoF.setText(vi.getProvinciaDestino());
+                tfDataPartidaF.setText(vi.getDataPartida()+"");
+                tfDistanciaF.setText(vi.getDistancia()+"");
+                tfVeiculoF.setText(vi.getMatriculaVeiculo());
+            }
+        }
+    }//GEN-LAST:event_jTable4MouseClicked
+
+    private void tableRegViaturasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableRegViaturasMouseClicked
+        String mat=(String)tableRegViaturas.getValueAt(tableRegViaturas.getSelectedRow(), 0);
+        
+        for(Veiculo vei:todosDados){
+        
+            if(vei.getMatricula().equalsIgnoreCase(matricula)){
+                
+                matricula=vei.getMatricula();
+            }
+        }
+    }//GEN-LAST:event_tableRegViaturasMouseClicked
+
+    private void btTerminarViagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTerminarViagemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btTerminarViagemActionPerformed
+
 
     public void setColor(JPanel panel)
     {
@@ -4243,6 +4605,63 @@ public class NewHome extends javax.swing.JFrame {
             System.out.println(vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
         }
     }
+    
+    public void preencherTabela4(){
+        this.limparTabela4();
+        controllerVi=new Controller<Viagem>(Viagem.class);
+        todosDadosVi=(List<Viagem>)controllerVi.getDados();
+
+        DefaultTableModel dtm=(DefaultTableModel)jTable4.getModel();        
+        
+        for(Viagem vi:todosDadosVi){
+            String dados[]={vi.getNomeCliente(),vi.getLocalPartida(),vi.getLocalDestino(),vi.getDataPartida()+""};
+            
+            dtm.addRow(dados);
+            //System.out.println(vi.getMarca()+" "+vi.getModelo()+" "+vi.getTipo());
+        }
+    }
+    
+    public void preencherTabelaFiltrada(String condicao){
+        this.limparTabelaFiltrada();
+        controller=new Controller<Veiculo>(Veiculo.class);
+        todosDados=(List<Veiculo>)controller.getDados();
+        
+        DefaultTableModel dtm=(DefaultTableModel)tableRegViaturas.getModel();        
+        
+        for(Veiculo vei:todosDados){
+            if(vei.getTipo().equalsIgnoreCase(condicao)){
+                String dados[]={vei.getMatricula(),vei.getMarca(),vei.getModelo()};
+
+                dtm.addRow(dados);
+                System.out.println(vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
+            }
+        }
+    }
+    
+    public void limparTabelaFiltrada(){
+        
+        DefaultTableModel dtm=(DefaultTableModel)tableRegViaturas.getModel();
+        
+        System.out.println(dtm.getRowCount());
+        int linhas=dtm.getRowCount();
+        
+        for(int i=linhas-1;i>=0;i--){
+          dtm.removeRow(i);  
+        }
+    }
+    
+    public void limparTabela4(){
+        
+        DefaultTableModel dtm=(DefaultTableModel)jTable4.getModel();
+        
+        System.out.println(dtm.getRowCount());
+        int linhas=dtm.getRowCount();
+        
+        for(int i=linhas-1;i>=0;i--){
+          dtm.removeRow(i);  
+        }
+    }
+    
     
     public void limparTabela(){
         
@@ -4346,6 +4765,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton btProximo;
     private javax.swing.JLabel btSettings;
     private javax.swing.JButton btTerminar;
+    private javax.swing.JButton btTerminarViagem;
     private keeptoo.KButton btVerViaturas;
     private javax.swing.JLabel btVoltarAddFunc;
     private javax.swing.JLabel btVoltarGFunc;
@@ -4365,9 +4785,11 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -4377,6 +4799,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel103;
     private javax.swing.JLabel jLabel104;
     private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
     private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel108;
     private javax.swing.JLabel jLabel109;
@@ -4406,6 +4829,12 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel130;
     private javax.swing.JLabel jLabel131;
     private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
@@ -4499,6 +4928,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel96;
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -4519,12 +4949,14 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
+    private javax.swing.JTable jTable5;
     private javax.swing.JTextField jTextField12;
     private javax.swing.JTextField jTextField13;
     private javax.swing.JTextField jTextField14;
@@ -4533,13 +4965,13 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JTextField jTextField34;
-    private javax.swing.JTextField jTextField35;
+    private javax.swing.JTextField jTextField36;
+    private javax.swing.JTextField jTextField37;
+    private javax.swing.JTextField jTextField38;
+    private javax.swing.JTextField jTextField39;
+    private javax.swing.JTextField jTextField40;
+    private javax.swing.JTextField jTextField41;
+    private javax.swing.JTextField jTextField42;
     private javax.swing.JTextField jTextField8;
     private keeptoo.KButton kButton1;
     private keeptoo.KButton kButton2;
@@ -4568,6 +5000,7 @@ public class NewHome extends javax.swing.JFrame {
     private keeptoo.KGradientPanel kPanelRoot;
     private keeptoo.KGradientPanel kPanelTerminadas;
     private keeptoo.KGradientPanel kPanelVEmCurso;
+    private keeptoo.KGradientPanel kPanelVTerminadas;
     private keeptoo.KGradientPanel kPanelVViagens;
     private keeptoo.KGradientPanel kPanelVerFunc;
     private keeptoo.KGradientPanel kPanelVerVRoot;
@@ -4641,12 +5074,15 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTable tableRegViaturas;
     private javax.swing.JTextField tfAno;
     private javax.swing.JTextField tfCategoria;
+    private javax.swing.JTextField tfClienteF;
     private javax.swing.JTextField tfClienteNuit1;
     private javax.swing.JTextField tfConsumoCombustivel;
     private javax.swing.JTextField tfDataPartida3;
+    private javax.swing.JTextField tfDataPartidaF;
     private javax.swing.JTextField tfDistancia1;
     private javax.swing.JTextField tfDistancia2;
     private javax.swing.JTextField tfDistancia3;
+    private javax.swing.JTextField tfDistanciaF;
     private javax.swing.JTextField tfDistritoD3;
     private javax.swing.JTextField tfDistritoP3;
     private javax.swing.JTextField tfEderecoD1;
@@ -4655,6 +5091,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfEnderecoP1;
     private javax.swing.JTextField tfEnderecoP2;
     private javax.swing.JTextField tfEnderecoP3;
+    private javax.swing.JTextField tfEstadoF;
     private javax.swing.JTextField tfKilometragem;
     private javax.swing.JTextField tfLocalD2;
     private javax.swing.JTextField tfLocalP2;
@@ -4671,6 +5108,8 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfNumeroEstivadores3;
     private javax.swing.JTextField tfNumeroM3;
     private javax.swing.JTextField tfNumeroMot2;
+    private javax.swing.JTextField tfPDestinoF;
+    private javax.swing.JTextField tfPOrigemF;
     private javax.swing.JTextField tfPeso;
     private javax.swing.JTextField tfPesoVol2;
     private javax.swing.JTextField tfPesoVolume3;
@@ -4685,6 +5124,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfValorAlojamento3;
     private javax.swing.JTextField tfValorCombustivel3;
     private javax.swing.JTextField tfValorTotal3;
+    private javax.swing.JTextField tfVeiculoF;
     private javax.swing.JTextField tfVolume;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
@@ -4694,4 +5134,7 @@ public class NewHome extends javax.swing.JFrame {
     List<Veiculo> todosDados;
     List<Cliente> todosClientes;
     Cliente cli;
+    Controller <Viagem> controllerVi;
+    List<Viagem> todosDadosVi;
+    String matricula;
 }

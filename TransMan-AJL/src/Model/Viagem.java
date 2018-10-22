@@ -34,6 +34,32 @@ public class Viagem {
     private String nomeUsuario;
     private String nomeCliente;
 
+    public Viagem() {
+    }
+    
+
+    public Viagem(String localPartida, String provinciaPartida, String localDestino, String provinciaDestino, Date dataRegisto, Date dataPartida, Date dataChegada, int numMotoristas, String estado, double distancia, String matriculaVeiculo, double consumoCombustivel, double tempoEstimado, double ValorAlimentacao, double valorAlojamento, double precoTotal, String nomeUsuario, String nomeCliente) {
+        this.localPartida = localPartida;
+        this.provinciaPartida = provinciaPartida;
+        this.localDestino = localDestino;
+        this.provinciaDestino = provinciaDestino;
+        this.dataRegisto = dataRegisto;
+        this.dataPartida = dataPartida;
+        this.dataChegada = dataChegada;
+        this.numMotoristas = numMotoristas;
+        this.estado = estado;
+        this.distancia = distancia;
+        this.matriculaVeiculo = matriculaVeiculo;
+        this.consumoCombustivel = consumoCombustivel;
+        this.tempoEstimado = tempoEstimado;
+        this.ValorAlimentacao = ValorAlimentacao;
+        this.valorAlojamento = valorAlojamento;
+        this.precoTotal = precoTotal;
+        this.nomeUsuario = nomeUsuario;
+        this.nomeCliente = nomeCliente;
+    }
+
+    
     
     public Date getDataPartida() {
         return dataPartida;
@@ -122,6 +148,78 @@ public class Viagem {
 
     public void setPrecoTotal(double precoTotal) {
         this.precoTotal = precoTotal;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getLocalPartida() {
+        return localPartida;
+    }
+
+    public void setLocalPartida(String localPartida) {
+        this.localPartida = localPartida;
+    }
+
+    public String getProvinciaPartida() {
+        return provinciaPartida;
+    }
+
+    public void setProvinciaPartida(String provinciaPartida) {
+        this.provinciaPartida = provinciaPartida;
+    }
+
+    public String getLocalDestino() {
+        return localDestino;
+    }
+
+    public void setLocalDestino(String localDestino) {
+        this.localDestino = localDestino;
+    }
+
+    public String getProvinciaDestino() {
+        return provinciaDestino;
+    }
+
+    public void setProvinciaDestino(String provinciaDestino) {
+        this.provinciaDestino = provinciaDestino;
+    }
+
+    public Date getDataRegisto() {
+        return dataRegisto;
+    }
+
+    public void setDataRegisto(Date dataRegisto) {
+        this.dataRegisto = dataRegisto;
+    }
+
+    public double getValorAlojamento() {
+        return valorAlojamento;
+    }
+
+    public void setValorAlojamento(double valorAlojamento) {
+        this.valorAlojamento = valorAlojamento;
+    }
+
+    public String getNomeUsuario() {
+        return nomeUsuario;
+    }
+
+    public void setNomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
     
     public boolean gravar(){
