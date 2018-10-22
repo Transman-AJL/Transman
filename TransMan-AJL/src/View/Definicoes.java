@@ -254,7 +254,7 @@ public class Definicoes extends javax.swing.JFrame {
         btDefAdicionais.add(jLabel5, gridBagConstraints);
 
         tfBtDefAdicionais.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        tfBtDefAdicionais.setText("Definições de etc....");
+        tfBtDefAdicionais.setText("Definições Adicionais");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -459,6 +459,7 @@ public class Definicoes extends javax.swing.JFrame {
         JPanelTarifas.setOpaque(false);
         JPanelTarifas.setLayout(new java.awt.GridBagLayout());
 
+        jPanel3.setOpaque(false);
         jPanel3.setLayout(new java.awt.GridBagLayout());
 
         jLabel2.setText("Aberto (por KG)");
@@ -630,8 +631,10 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         JPanelTarifas.add(jPanel3, gridBagConstraints);
 
+        jPanel4.setOpaque(false);
         jPanel4.setLayout(new java.awt.GridBagLayout());
 
+        jPanel6.setOpaque(false);
         jPanel6.setLayout(new java.awt.GridBagLayout());
 
         jLabel14.setText("Alimentação(por KM)");
@@ -771,6 +774,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         JPanelTarifas.add(jPanel4, gridBagConstraints);
 
+        jPanel5.setOpaque(false);
         jPanel5.setLayout(new java.awt.GridBagLayout());
 
         jButton1.setText("Ver Histórico de Alterações");
@@ -851,6 +855,11 @@ public class Definicoes extends javax.swing.JFrame {
     private void btDefUtilizadorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefUtilizadorMousePressed
         // TODO add your handling code here:
         tfBtDefUtilizador.setFont(new java.awt.Font("Tahoma", 1, 13));
+        
+        JPanelRoot.removeAll();
+        JPanelRoot.add(JPanelUtilizador);
+        JPanelRoot.repaint();
+        JPanelRoot.revalidate();
     }//GEN-LAST:event_btDefUtilizadorMousePressed
 
     private void btDefUtilizadorMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefUtilizadorMouseReleased
@@ -877,6 +886,11 @@ public class Definicoes extends javax.swing.JFrame {
     private void btDefTarifasMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefTarifasMousePressed
         // TODO add your handling code here:
         tfBtDefTarifas.setFont(new java.awt.Font("Tahoma", 1, 13));
+        
+        JPanelRoot.removeAll();
+        JPanelRoot.add(JPanelTarifas);
+        JPanelRoot.repaint();
+        JPanelRoot.revalidate();
     }//GEN-LAST:event_btDefTarifasMousePressed
 
     private void btDefTarifasMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btDefTarifasMouseReleased
