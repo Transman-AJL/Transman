@@ -107,7 +107,7 @@ public class Definicoes extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Definições");
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(650, 500));
@@ -778,6 +778,11 @@ public class Definicoes extends javax.swing.JFrame {
         jPanel5.setLayout(new java.awt.GridBagLayout());
 
         jButton1.setText("Ver Histórico de Alterações");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -984,6 +989,14 @@ public class Definicoes extends javax.swing.JFrame {
     private void cbCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCategoriaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cbCategoriaActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        HistoricoAlteracoes historicoTela=new HistoricoAlteracoes();
+        historicoTela.setVisible(true);
+        historicoTela.setLocationRelativeTo(null);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
