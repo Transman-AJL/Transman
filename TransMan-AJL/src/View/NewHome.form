@@ -974,7 +974,7 @@
                               <Component id="btVoltarRViagem" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
                               <Component id="lbRegistrarViagem" min="-2" pref="115" max="-2" attributes="0"/>
-                              <EmptySpace pref="146" max="32767" attributes="0"/>
+                              <EmptySpace pref="168" max="32767" attributes="0"/>
                           </Group>
                           <Component id="kPanelRegRoot" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -1300,7 +1300,6 @@
                                                           <Component id="jLabel76" alignment="1" min="-2" pref="150" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Component id="tfEnderecoP1" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                                      <Component id="jLabel80" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
                                                       <Group type="102" alignment="0" attributes="0">
                                                           <Component id="jLabel83" min="-2" max="-2" attributes="0"/>
                                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -1319,11 +1318,15 @@
                                                               <Component id="jRadioButton8" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
                                                           </Group>
                                                       </Group>
+                                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                          <Component id="jDateChooser1" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel80" alignment="0" pref="150" max="32767" attributes="0"/>
+                                                      </Group>
                                                   </Group>
-                                                  <EmptySpace pref="95" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" alignment="1" attributes="0">
-                                                          <EmptySpace min="0" pref="88" max="32767" attributes="0"/>
+                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                               <Group type="102" alignment="0" attributes="0">
                                                                   <Component id="jLabel90" min="-2" max="-2" attributes="0"/>
@@ -1409,7 +1412,10 @@
                                               <Component id="jLabel81" alignment="3" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                                          <Component id="tfDistancia1" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" attributes="0">
+                                              <Component id="tfDistancia1" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jDateChooser1" min="-2" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jLabel82" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
@@ -1675,6 +1681,8 @@
                                       <Image iconType="3" name="/View/icons/icons8_Car_25px_2.png"/>
                                     </Property>
                                   </Properties>
+                                </Component>
+                                <Component class="com.toedter.calendar.JDateChooser" name="jDateChooser1">
                                 </Component>
                               </SubComponents>
                             </Container>
