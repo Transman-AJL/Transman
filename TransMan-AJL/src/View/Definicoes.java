@@ -6,6 +6,7 @@
 package View;
 
 import Control.Controller;
+import Model.Tarifas;
 import Model.Usuario;
 import Model.Veiculo;
 import java.awt.Color;
@@ -30,6 +31,7 @@ public class Definicoes extends javax.swing.JFrame {
         initComponents();
         dtm=(DefaultTableModel)jTable2.getModel();
         this.preencherTabela();
+        this.preencherTarifas();
     }
 
     /**
@@ -80,14 +82,14 @@ public class Definicoes extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        tfPrecoAberto = new javax.swing.JTextField();
+        tfPrecoFechado = new javax.swing.JTextField();
+        tfPrecoBasculante = new javax.swing.JTextField();
+        tfPrecoPortaContentor = new javax.swing.JTextField();
+        tfPrecoFrigorifico = new javax.swing.JTextField();
+        tfPrecoTanque = new javax.swing.JTextField();
+        tfPrecoBus = new javax.swing.JTextField();
+        tfPrecoAutomovel = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jLabel14 = new javax.swing.JLabel();
@@ -96,16 +98,16 @@ public class Definicoes extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
+        tfPrecoAlimentacao = new javax.swing.JTextField();
+        tfPrecoAlojamento = new javax.swing.JTextField();
+        tfPrecoMotorista = new javax.swing.JTextField();
+        tfPrecoEstivador = new javax.swing.JTextField();
+        tfPrecoCombustivel = new javax.swing.JTextField();
+        tfPrecoViagem = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btAlterarTarifa = new javax.swing.JButton();
+        btGuardarTarifa = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Definições");
@@ -542,7 +544,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
         jPanel3.add(jLabel13, gridBagConstraints);
 
-        jTextField1.setEnabled(false);
+        tfPrecoAberto.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -551,9 +553,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField1, gridBagConstraints);
+        jPanel3.add(tfPrecoAberto, gridBagConstraints);
 
-        jTextField2.setEnabled(false);
+        tfPrecoFechado.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
@@ -561,9 +563,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField2, gridBagConstraints);
+        jPanel3.add(tfPrecoFechado, gridBagConstraints);
 
-        jTextField3.setEnabled(false);
+        tfPrecoBasculante.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -571,9 +573,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField3, gridBagConstraints);
+        jPanel3.add(tfPrecoBasculante, gridBagConstraints);
 
-        jTextField4.setEnabled(false);
+        tfPrecoPortaContentor.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -581,9 +583,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField4, gridBagConstraints);
+        jPanel3.add(tfPrecoPortaContentor, gridBagConstraints);
 
-        jTextField5.setEnabled(false);
+        tfPrecoFrigorifico.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -591,9 +593,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField5, gridBagConstraints);
+        jPanel3.add(tfPrecoFrigorifico, gridBagConstraints);
 
-        jTextField6.setEnabled(false);
+        tfPrecoTanque.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -601,9 +603,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField6, gridBagConstraints);
+        jPanel3.add(tfPrecoTanque, gridBagConstraints);
 
-        jTextField7.setEnabled(false);
+        tfPrecoBus.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -611,9 +613,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField7, gridBagConstraints);
+        jPanel3.add(tfPrecoBus, gridBagConstraints);
 
-        jTextField8.setEnabled(false);
+        tfPrecoAutomovel.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 7;
@@ -621,7 +623,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel3.add(jTextField8, gridBagConstraints);
+        jPanel3.add(tfPrecoAutomovel, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -697,7 +699,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
         jPanel6.add(jLabel19, gridBagConstraints);
 
-        jTextField9.setEnabled(false);
+        tfPrecoAlimentacao.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -706,9 +708,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel6.add(jTextField9, gridBagConstraints);
+        jPanel6.add(tfPrecoAlimentacao, gridBagConstraints);
 
-        jTextField10.setEnabled(false);
+        tfPrecoAlojamento.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 1;
@@ -716,9 +718,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel6.add(jTextField10, gridBagConstraints);
+        jPanel6.add(tfPrecoAlojamento, gridBagConstraints);
 
-        jTextField11.setEnabled(false);
+        tfPrecoMotorista.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -726,9 +728,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel6.add(jTextField11, gridBagConstraints);
+        jPanel6.add(tfPrecoMotorista, gridBagConstraints);
 
-        jTextField12.setEnabled(false);
+        tfPrecoEstivador.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 3;
@@ -736,9 +738,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel6.add(jTextField12, gridBagConstraints);
+        jPanel6.add(tfPrecoEstivador, gridBagConstraints);
 
-        jTextField13.setEnabled(false);
+        tfPrecoCombustivel.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -746,9 +748,9 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel6.add(jTextField13, gridBagConstraints);
+        jPanel6.add(tfPrecoCombustivel, gridBagConstraints);
 
-        jTextField14.setEnabled(false);
+        tfPrecoViagem.setEnabled(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 5;
@@ -756,7 +758,7 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
-        jPanel6.add(jTextField14, gridBagConstraints);
+        jPanel6.add(tfPrecoViagem, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -790,21 +792,31 @@ public class Definicoes extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         jPanel5.add(jButton1, gridBagConstraints);
 
-        jButton2.setText("Alterar");
+        btAlterarTarifa.setText("Alterar");
+        btAlterarTarifa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btAlterarTarifaActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
-        jPanel5.add(jButton2, gridBagConstraints);
+        jPanel5.add(btAlterarTarifa, gridBagConstraints);
 
-        jButton3.setText("Guardar");
+        btGuardarTarifa.setText("Guardar");
+        btGuardarTarifa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btGuardarTarifaActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 1.0;
-        jPanel5.add(jButton3, gridBagConstraints);
+        jPanel5.add(btGuardarTarifa, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -998,6 +1010,75 @@ public class Definicoes extends javax.swing.JFrame {
         historicoTela.setLocationRelativeTo(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btAlterarTarifaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAlterarTarifaActionPerformed
+
+        tfPrecoAberto.setEnabled(true);
+        tfPrecoAlimentacao.setEnabled(true);
+        tfPrecoAlojamento.setEnabled(true);
+        tfPrecoAutomovel.setEnabled(true);
+        tfPrecoBasculante.setEnabled(true);
+        tfPrecoBus.setEnabled(true);
+        tfPrecoCombustivel.setEnabled(true);
+        tfPrecoEstivador.setEnabled(true);
+        tfPrecoFechado.setEnabled(true);
+        tfPrecoFrigorifico.setEnabled(true);
+        tfPrecoMotorista.setEnabled(true);
+        tfPrecoPortaContentor.setEnabled(true);
+        tfPrecoTanque.setEnabled(true);
+        tfPrecoViagem.setEnabled(true);
+        
+
+    }//GEN-LAST:event_btAlterarTarifaActionPerformed
+
+    private void btGuardarTarifaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btGuardarTarifaActionPerformed
+
+        double precoAberto=Double.parseDouble(tfPrecoAberto.getText());
+        double precoAlimentacao=Double.parseDouble(tfPrecoAlimentacao.getText());
+        double precoAlojamento=Double.parseDouble(tfPrecoAlojamento.getText());
+        double precoAutomovel=Double.parseDouble(tfPrecoAutomovel.getText());
+        double precoBasculante=Double.parseDouble(tfPrecoBasculante.getText());
+        double precoBus=Double.parseDouble(tfPrecoBus.getText());
+        double precoCombustivel=Double.parseDouble(tfPrecoCombustivel.getText());
+        double precoEstivador=Double.parseDouble(tfPrecoEstivador.getText());
+        double precoFechado=Double.parseDouble(tfPrecoFechado.getText());
+        double precoFrigorifico=Double.parseDouble(tfPrecoFrigorifico.getText());
+        double precoMotorista=Double.parseDouble(tfPrecoMotorista.getText());
+        double precoPortaContentor=Double.parseDouble(tfPrecoPortaContentor.getText());
+        double precoTanque=Double.parseDouble(tfPrecoTanque.getText());
+        double precoViagem=Double.parseDouble(tfPrecoViagem.getText());
+        
+        Tarifas t=new Tarifas(precoViagem, precoAberto, precoFechado, precoFrigorifico, precoAlojamento,
+                    precoAlimentacao, precoMotorista, precoEstivador, precoCombustivel, precoTanque, precoAutomovel, 
+                precoBus, precoBasculante, precoPortaContentor);
+        System.out.println(t.gravar());
+        if(t.gravar()){
+        
+            JOptionPane.showMessageDialog(this, "Tarifa Alterada");
+        }
+    }//GEN-LAST:event_btGuardarTarifaActionPerformed
+
+    public void preencherTarifas(){
+        
+        controllerT=new Controller<Tarifas>(Tarifas.class);
+        todasTarifas=(List<Tarifas>)controllerT.getDados();
+
+        Tarifas t=todasTarifas.get(0);
+        
+        tfPrecoAberto.setText(t.getPrecoKGAberto()+"");
+        tfPrecoAlimentacao.setText(t.getPrecoAliementacao()+"");
+        tfPrecoAlojamento.setText(t.getPrecoAlojamento()+"");
+        tfPrecoAutomovel.setText(t.getPrecoAutomovel()+"");
+        tfPrecoBasculante.setText(t.getPrecoBasculante()+"");
+        tfPrecoBus.setText(t.getPrecoBus()+"");
+        tfPrecoCombustivel.setText(t.getPrecoCombustivel()+"");
+        tfPrecoEstivador.setText(t.getPrecoEstivador()+"");
+        tfPrecoFechado.setText(t.getPrecoKGFechado()+"");
+        tfPrecoFrigorifico.setText(t.getPrecoKGFrigorifico()+"");
+        tfPrecoMotorista.setText(t.getPrecoMotorista()+"");
+        tfPrecoPortaContentor.setText(t.getPrecoPortaContentor()+"");
+        tfPrecoTanque.setText(t.getPrecoPassageiro()+"");
+        tfPrecoViagem.setText(t.getPrecoKM()+"");
+    }
     /**
      * @param args the command line arguments
      */
@@ -1078,15 +1159,15 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JPanel JPanelUtilizador;
     private javax.swing.JButton btAdicionar;
     private javax.swing.JButton btAlterar;
+    private javax.swing.JButton btAlterarTarifa;
     private javax.swing.JButton btCancelar;
     private keeptoo.KGradientPanel btDefAdicionais;
     private keeptoo.KGradientPanel btDefTarifas;
     private keeptoo.KGradientPanel btDefUtilizador;
     private javax.swing.JButton btGravar;
+    private javax.swing.JButton btGuardarTarifa;
     private javax.swing.JComboBox<String> cbCategoria;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1115,20 +1196,6 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelButtons;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable2;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     private keeptoo.KGradientPanel kPannelMain;
     private javax.swing.JLabel lbCategoria;
     private javax.swing.JLabel lbPassword;
@@ -1136,10 +1203,26 @@ public class Definicoes extends javax.swing.JFrame {
     private javax.swing.JLabel tfBtDefAdicionais;
     private javax.swing.JLabel tfBtDefTarifas;
     private javax.swing.JLabel tfBtDefUtilizador;
+    private javax.swing.JTextField tfPrecoAberto;
+    private javax.swing.JTextField tfPrecoAlimentacao;
+    private javax.swing.JTextField tfPrecoAlojamento;
+    private javax.swing.JTextField tfPrecoAutomovel;
+    private javax.swing.JTextField tfPrecoBasculante;
+    private javax.swing.JTextField tfPrecoBus;
+    private javax.swing.JTextField tfPrecoCombustivel;
+    private javax.swing.JTextField tfPrecoEstivador;
+    private javax.swing.JTextField tfPrecoFechado;
+    private javax.swing.JTextField tfPrecoFrigorifico;
+    private javax.swing.JTextField tfPrecoMotorista;
+    private javax.swing.JTextField tfPrecoPortaContentor;
+    private javax.swing.JTextField tfPrecoTanque;
+    private javax.swing.JTextField tfPrecoViagem;
     private javax.swing.JTextField tfUsername;
     // End of variables declaration//GEN-END:variables
     Controller<Usuario> controller;
     List<Usuario> todosUsers;
     DefaultTableModel dtm;
+    Controller<Tarifas> controllerT;
+    List<Tarifas> todasTarifas;
     Usuario a;
 }

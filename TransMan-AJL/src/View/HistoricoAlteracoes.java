@@ -5,6 +5,14 @@
  */
 package View;
 
+import Control.Controller;
+import Model.Tarifas;
+import Model.Usuario;
+import java.text.DateFormat;
+import java.util.Date;
+import java.util.List;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author JoseM
@@ -16,6 +24,7 @@ public class HistoricoAlteracoes extends javax.swing.JFrame {
      */
     public HistoricoAlteracoes() {
         initComponents();
+        preencherTabela();
     }
 
     /**
@@ -32,7 +41,7 @@ public class HistoricoAlteracoes extends javax.swing.JFrame {
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        getContentPane().setLayout(new java.awt.GridLayout());
+        getContentPane().setLayout(new java.awt.GridLayout(1, 0));
 
         kGradientPanel1.setkEndColor(new java.awt.Color(0, 153, 255));
         kGradientPanel1.setkStartColor(new java.awt.Color(255, 255, 255));
@@ -41,13 +50,10 @@ public class HistoricoAlteracoes extends javax.swing.JFrame {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Alimentacao", "Alojamento", "Automovel", "Basculante", "Bus", "Combustivel", "Estivador", "Aberto/Kg", "Fechado/Kg", "Frigorifico/Kg", "Preco/KMl", "P/Motorista", "PortaContentor", "Data de Alteração"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -58,8 +64,7 @@ public class HistoricoAlteracoes extends javax.swing.JFrame {
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kGradientPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 780, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 980, Short.MAX_VALUE))
         );
         kGradientPanel1Layout.setVerticalGroup(
             kGradientPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,10 +113,44 @@ public class HistoricoAlteracoes extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void preencherTabela(){
+        dtm=(DefaultTableModel)jTable1.getModel();
+        this.limparTabela();
+        controller=new Controller<Tarifas>(Tarifas.class);
+        todasTarifas=(List<Tarifas>)controller.getDados();
+
+        for(Tarifas trf:todasTarifas){
+            
+            String dados[]={trf.getPrecoAliementacao()+"",trf.getPrecoAlojamento()+"",trf.getPrecoAutomovel()+"",
+                trf.getPrecoBasculante()+"",trf.getPrecoBus()+"",trf.getPrecoCombustivel()+"",trf.getPrecoEstivador()+"",
+                trf.getPrecoKGAberto()+"",trf.getPrecoKGFechado()+"",trf.getPrecoKGFrigorifico()+"",trf.getPrecoKM()+"",
+                trf.getPrecoMotorista()+"",trf.getPrecoPassageiro()+"",trf.getDataAlteracao()+""};
+            
+            dtm.addRow(dados);
+        }
+    }
+    
+    public void limparTabela(){
+        
+        DefaultTableModel dtm=(DefaultTableModel)jTable1.getModel();
+        
+        System.out.println(dtm.getRowCount());
+        int linhas=dtm.getRowCount();
+        
+        for(int i=linhas-1;i>=0;i--){
+          dtm.removeRow(i);  
+        }
+            
+        
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private keeptoo.KGradientPanel kGradientPanel1;
     // End of variables declaration//GEN-END:variables
+    Controller <Tarifas>controller;
+    List<Tarifas> todasTarifas;
+    DefaultTableModel dtm;
 }

@@ -3862,7 +3862,9 @@ public class NewHome extends javax.swing.JFrame {
 
     //<<<<<<< HEAD
     private void kButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton1ActionPerformed
-
+        
+        
+        
         String matricula=tfMatricula.getText();
         String marca=tfMarca.getText();
         String modelo=tfModelo.getText();
@@ -3880,6 +3882,7 @@ public class NewHome extends javax.swing.JFrame {
         
         System.out.println(v.gravar());
         JOptionPane.showMessageDialog(this, "Veiculo Registado.");
+        this.preencherTabela();
 
     }//GEN-LAST:event_kButton1ActionPerformed
 //=======
@@ -4049,14 +4052,17 @@ public class NewHome extends javax.swing.JFrame {
         
         if(radioAberto.isSelected() || RadioFechado.isSelected() || radioBasculante.isSelected() || radioPortaContentor.isSelected()){
             lbPesoVolume.setText("Peso");
+            tfTipoV1.setText("Aberto");
             //verificado=true;
         } else
         if(radioFrigorifico.isSelected() || radioFrigorifico.isSelected()){
             lbPesoVolume.setText("Volume");
+            tfTipoV1.setText("Frigorifico");
             //verificado=true;
         } else
         if(radioAutomovel.isSelected() || radioTanque.isSelected()){
             lbPesoVolume.setText("Lotação");
+            tfTipoV1.setText("Automovel");
             //verificado=true;
         }else{
             verificado=false;
@@ -4069,8 +4075,8 @@ public class NewHome extends javax.swing.JFrame {
            verificado=false;
         } else {
             //verificado=true;
-            tfNomeCliente2.setText("Fiz Test");
-            tfNuitCliente2.setText("48156 test");
+            tfNomeCliente2.setText(tfNomeCliente1.getText());
+            tfNuitCliente2.setText(tfClienteNuit1.getText());
         }
         System.out.println("Lista: "+verificado);
 
@@ -4224,7 +4230,7 @@ public class NewHome extends javax.swing.JFrame {
     }
     
     public void preencherTabela(){
-        
+        this.limparTabela();
         controller=new Controller<Veiculo>(Veiculo.class);
         todosDados=(List<Veiculo>)controller.getDados();
 
@@ -4236,6 +4242,20 @@ public class NewHome extends javax.swing.JFrame {
             dtm.addRow(dados);
             System.out.println(vei.getMarca()+" "+vei.getModelo()+" "+vei.getTipo());
         }
+    }
+    
+    public void limparTabela(){
+        
+        DefaultTableModel dtm=(DefaultTableModel)jTable3.getModel();
+        
+        System.out.println(dtm.getRowCount());
+        int linhas=dtm.getRowCount();
+        
+        for(int i=linhas-1;i>=0;i--){
+          dtm.removeRow(i);  
+        }
+            
+        
     }
     
     public void preencherLista(){

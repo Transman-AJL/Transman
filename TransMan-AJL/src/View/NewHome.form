@@ -416,14 +416,14 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
                           <Component id="btSettings" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="86" max="32767" attributes="0"/>
+                          <EmptySpace pref="46" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="17" max="32767" attributes="0"/>
+                          <EmptySpace pref="16" max="32767" attributes="0"/>
                           <Component id="btSettings" min="-2" pref="40" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
@@ -988,7 +988,7 @@
                                   <Component id="lbRegistrarViagem" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="kPanelRegRoot" pref="378" max="32767" attributes="0"/>
+                              <Component id="kPanelRegRoot" pref="418" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -5214,7 +5214,7 @@
                                   <Component id="btVoltarRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lbRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="239" max="32767" attributes="0"/>
+                              <EmptySpace pref="429" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>

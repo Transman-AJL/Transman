@@ -53,5 +53,6 @@ Contributor(s):
     <mapping class="Model.Usuario"/>
     <mapping class="Model.Funcionario"/>
     <mapping class="Model.Documentacao"/>
+    <mapping class="Model.Tarifas"/>
   </session-factory>
 </hibernate-configuration>
