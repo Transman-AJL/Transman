@@ -2,6 +2,17 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/C:/Users/JoseM/Documents/GitHub/Transman/TransMan-AJL/src/View/NewHome.java</file>
+            <file>file:/C:/Users/JoseM/Documents/GitHub/Transman/TransMan-AJL/src/View/HistoricoAlteracoes.java</file>
+            <file>file:/C:/Users/JoseM/Documents/GitHub/Transman/TransMan-AJL/src/Control/ComponentResizer.java</file>
+            <file>file:/C:/Users/JoseM/Documents/GitHub/Transman/TransMan-AJL/src/View/LogIn.java</file>
+            <file>file:/C:/Users/JoseM/Documents/GitHub/Transman/TransMan-AJL/src/Model/Tarifas.java</file>
+            <file>file:/C:/Users/JoseM/Documents/GitHub/Transman/TransMan-AJL/src/View/Definicoes.java</file>
+        </group>
+>>>>>>> 9ea039a03798d736025860654ae6f14b7e27844e
     </open-files>
 </project-private>

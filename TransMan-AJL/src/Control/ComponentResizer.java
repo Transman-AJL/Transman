@@ -162,7 +162,8 @@ public class ComponentResizer extends MouseAdapter
 	 *  Specify the minimum size for the component. The minimum size is
 	 *  constrained by the drag insets.
 	 *
-	 *  @param minimumSize the minimum size for a component.
+	 *  @param minimumSize 
+         * the minimum size for a component.
 	 */
 	public void setMinimumSize(Dimension minimumSize)
 	{
@@ -174,7 +175,8 @@ public class ComponentResizer extends MouseAdapter
 	/**
 	 *  Remove listeners from the specified component
 	 *
-	 *  @param component  the component the listeners are removed from
+	 *  @param component  
+         * the component the listeners are removed from
 	 */
 	public void deregisterComponent(Component... components)
 	{
@@ -188,7 +190,8 @@ public class ComponentResizer extends MouseAdapter
 	/**
 	 *  Add the required listeners to the specified component
 	 *
-	 *  @param component  the component the listeners are added to
+	 *  @param component  
+         * the component the listeners are added to
 	 */
 	public void registerComponent(Component... components)
 	{

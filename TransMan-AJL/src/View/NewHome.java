@@ -764,7 +764,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
@@ -2318,6 +2318,11 @@ public class NewHome extends javax.swing.JFrame {
         kButton5.setkHoverForeGround(new java.awt.Color(255, 255, 255));
         kButton5.setkHoverStartColor(new java.awt.Color(0, 153, 51));
         kButton5.setkSelectedColor(new java.awt.Color(0, 0, 0));
+        kButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kButton5ActionPerformed(evt);
+            }
+        });
 
         kButton6.setText("Viagens Em Curso");
         kButton6.setkEndColor(new java.awt.Color(204, 255, 255));
@@ -4569,6 +4574,14 @@ public class NewHome extends javax.swing.JFrame {
     private void btTerminarViagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTerminarViagemActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btTerminarViagemActionPerformed
+
+    private void kButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton5ActionPerformed
+        // TODO add your handling code here:
+        kPanelVerVRoot.removeAll();
+        kPanelVerVRoot.add(kPanelVTerminadas);
+        kPanelVerVRoot.repaint();
+        kPanelVerVRoot.revalidate();
+    }//GEN-LAST:event_kButton5ActionPerformed
 
 
     public void setColor(JPanel panel)
