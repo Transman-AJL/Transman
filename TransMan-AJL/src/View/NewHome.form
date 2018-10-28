@@ -2198,18 +2198,10 @@
                             <DimensionLayout dim="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <EmptySpace min="-2" pref="219" max="-2" attributes="0"/>
-                                              <Component id="btTerminar" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -2222,9 +2214,7 @@
                                           <Component id="jPanel8" min="-2" pref="300" max="-2" attributes="0"/>
                                           <Component id="jPanel9" pref="0" max="32767" attributes="0"/>
                                       </Group>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="btTerminar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="117" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2686,14 +2676,6 @@
                                 </Component>
                               </SubComponents>
                             </Container>
-                            <Component class="javax.swing.JButton" name="btTerminar">
-                              <Properties>
-                                <Property name="text" type="java.lang.String" value="Terminar"/>
-                              </Properties>
-                              <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btTerminarActionPerformed"/>
-                              </Events>
-                            </Component>
                           </SubComponents>
                         </Container>
                       </SubComponents>
@@ -4554,9 +4536,11 @@
                             <Component class="javax.swing.JComboBox" name="cbTipo">
                               <Properties>
                                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                                  <StringArray count="2">
-                                    <StringItem index="0" value="Carga"/>
-                                    <StringItem index="1" value="Tanque"/>
+                                  <StringArray count="4">
+                                    <StringItem index="0" value="Aberto"/>
+                                    <StringItem index="1" value="Fechado"/>
+                                    <StringItem index="2" value="Frigorifico"/>
+                                    <StringItem index="3" value="Tanque"/>
                                   </StringArray>
                                 </Property>
                               </Properties>

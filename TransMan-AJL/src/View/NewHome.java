@@ -252,7 +252,6 @@ public class NewHome extends javax.swing.JFrame {
         tfTipoV3 = new javax.swing.JTextField();
         jLabel124 = new javax.swing.JLabel();
         tfNumeroM3 = new javax.swing.JTextField();
-        btTerminar = new javax.swing.JButton();
         kPanelVViagens = new keeptoo.KGradientPanel();
         btVoltarVViagens = new javax.swing.JLabel();
         lbVerViagens = new javax.swing.JLabel();
@@ -1944,27 +1943,15 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        btTerminar.setText("Terminar");
-        btTerminar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btTerminarActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout kPanelRegRoot3Layout = new javax.swing.GroupLayout(kPanelRegRoot3);
         kPanelRegRoot3.setLayout(kPanelRegRoot3Layout);
         kPanelRegRoot3Layout.setHorizontalGroup(
             kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelRegRoot3Layout.createSequentialGroup()
-                .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(kPanelRegRoot3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(kPanelRegRoot3Layout.createSequentialGroup()
-                        .addGap(219, 219, 219)
-                        .addComponent(btTerminar)))
+                .addContainerGap()
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRegRoot3Layout.setVerticalGroup(
@@ -1974,9 +1961,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btTerminar)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         kPanelRegRoot.add(kPanelRegRoot3, "card2");
@@ -2889,7 +2874,7 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel46.setText("Volume");
 
-        cbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Carga", "Tanque" }));
+        cbTipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aberto", "Fechado", "Frigorifico", "Tanque" }));
 
         kButton1.setText("Gravar");
         kButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -4334,7 +4319,8 @@ public class NewHome extends javax.swing.JFrame {
     }//GEN-LAST:event_btProximoActionPerformed
 
     private void btProximo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btProximo2ActionPerformed
-        // TODO add your handling code here:
+
+        
         kPanelRegRoot.removeAll();
         kPanelRegRoot.add(kPanelRegRoot3);
         kPanelRegRoot.repaint();
@@ -4408,7 +4394,6 @@ public class NewHome extends javax.swing.JFrame {
             //verificado=true;
         }*/
         //-----------------------------------
-        
         double distancia=Double.parseDouble(tfDistancia1.getText());
         Tarifas t=this.tarifa();
         double consumoC=(Double.parseDouble(tfDistancia1.getText())*0.28);
@@ -4464,6 +4449,7 @@ public class NewHome extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this,"Dados Alterados");
             this.preencherLista();
         }
+        this.preencherTabela4();
         
     }//GEN-LAST:event_btProximo2ActionPerformed
 
@@ -4476,10 +4462,6 @@ public class NewHome extends javax.swing.JFrame {
         return t;
     }
     
-    private void btTerminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTerminarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btTerminarActionPerformed
-
     private void tfNomeCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNomeCliente1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tfNomeCliente1ActionPerformed
@@ -4668,7 +4650,7 @@ public class NewHome extends javax.swing.JFrame {
         DefaultTableModel dtm=(DefaultTableModel)tableRegViaturas.getModel();        
         
         for(Veiculo vei:todosDados){
-            if(vei.getTipo().equalsIgnoreCase(condicao)){
+            if(vei.getTipo().equalsIgnoreCase(condicao)&& vei.getStatus().equalsIgnoreCase("Disponivel")){
                 String dados[]={vei.getMatricula(),vei.getMarca(),vei.getModelo()};
 
                 dtm.addRow(dados);
@@ -4804,7 +4786,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton btProximo;
     private javax.swing.JButton btProximo2;
     private javax.swing.JLabel btSettings;
-    private javax.swing.JButton btTerminar;
     private javax.swing.JButton btTerminarViagem;
     private keeptoo.KButton btVerViaturas;
     private javax.swing.JLabel btVoltarAddFunc;
