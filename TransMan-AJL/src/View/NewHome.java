@@ -356,13 +356,13 @@ public class NewHome extends javax.swing.JFrame {
         tfLotacao4 = new javax.swing.JTextField();
         jLabel57 = new javax.swing.JLabel();
         tfVolume4 = new javax.swing.JTextField();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        cbTipo4 = new javax.swing.JComboBox<>();
         kButton2 = new keeptoo.KButton();
         jLabel58 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         kButton3 = new keeptoo.KButton();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        cbCategoria4 = new javax.swing.JComboBox<>();
         kPanelAdViaturas = new keeptoo.KGradientPanel();
         jLabel29 = new javax.swing.JLabel();
         tfMatricula = new javax.swing.JTextField();
@@ -2694,11 +2694,16 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel57.setText("Volume");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aberto", "Fechado", "Frigorífico", "Basculante", "Porta Contentor", "Tanque", "Bus", "Automóvel" }));
+        cbTipo4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aberto", "Fechado", "Frigorífico", "Basculante", "Porta Contentor", "Tanque", "Bus", "Automóvel" }));
 
         kButton2.setText("Gravar");
         kButton2.setkHoverForeGround(new java.awt.Color(102, 255, 102));
         kButton2.setkHoverStartColor(new java.awt.Color(51, 153, 0));
+        kButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel58.setText("Alterar Viaturas");
 
@@ -2746,7 +2751,7 @@ public class NewHome extends javax.swing.JFrame {
             }
         });
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Aberto", "Fechado" }));
+        cbCategoria4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pesado", "Ligeiro" }));
 
         javax.swing.GroupLayout kPanelAlterarViatLayout = new javax.swing.GroupLayout(kPanelAlterarViat);
         kPanelAlterarViat.setLayout(kPanelAlterarViatLayout);
@@ -2762,11 +2767,11 @@ public class NewHome extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelAlterarViatLayout.createSequentialGroup()
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(kButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-                            .addComponent(jComboBox2, 0, 0, Short.MAX_VALUE))
+                            .addComponent(cbTipo4, 0, 0, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 28, Short.MAX_VALUE)
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(kButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
-                            .addComponent(jComboBox3, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(cbCategoria4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(kPanelAlterarViatLayout.createSequentialGroup()
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -2840,8 +2845,8 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(cbTipo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cbCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(kButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4618,23 +4623,41 @@ public class NewHome extends javax.swing.JFrame {
         for(Veiculo v:todosDados){
         
             if(v.getMatricula().equalsIgnoreCase(matricula)){
-                System.out.println("Matricula igual");
-                tFStatusVer.setText(v.getStatus());
-                tFAnoVer.setText(v.getAno()+"");
-                tFCategoriaVer.setText(v.getCategoria());
-                tFKilometragemVer.setText(v.getKilometragem()+"");
-                tFLotacaoVer.setText(v.getLotacao()+"");
-                tFMarcaVer.setText(v.getMarca());
-                tFMatriculaVer.setText(v.getMatricula());
-                tFModeloVer.setText(v.getModelo());
-                tFPesoVer.setText(v.getPeso()+"");
-                tFTipoVer.setText(v.getTipo());
-
-                tFVolumeVer.setText(v.getVolume()+"");
+                vei=v;
+                tfAno4.setText(v.getAno()+"");
+                tfLotacao4.setText(v.getLotacao()+"");
+                tfKilometragem4.setText(v.getKilometragem()+"");
+                tfMatricula4.setText(v.getMatricula());
+                tfModelo4.setText(v.getModelo());
+                tfMarca4.setText(v.getMarca());
+                tfVolume4.setText(v.getVolume()+"");
+                tfPeso4.setText(v.getPeso()+"");
+                //tipo
+                //categoria
             }
         }
 
     }//GEN-LAST:event_jTable2MouseClicked
+
+    private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton2ActionPerformed
+        
+        double km=Double.parseDouble(tfKilometragem4.getText());
+        double vl=Double.parseDouble(tfVolume4.getText());
+        double ps=Double.parseDouble(tfPeso4.getText());
+        String tipo=(String)cbTipo4.getSelectedItem();
+        String categoria=(String)cbCategoria4.getSelectedItem();
+        
+        vei.setKilometragem(km);
+        vei.setVolume(vl);
+        vei.setPeso(ps);
+        vei.setTipo(tipo);
+        vei.setCategoria(categoria);
+        
+        System.out.println(vei.actualizar());
+        JOptionPane.showMessageDialog(this,"Dados Alterados");
+        this.preencherTabelaEd();
+
+    }//GEN-LAST:event_kButton2ActionPerformed
 
 
     public void setColor(JPanel panel)
@@ -4899,19 +4922,19 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel btVoltarVViagens;
     private javax.swing.JLabel btVoltarVerFunc;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JComboBox<String> cbCategoria4;
     private javax.swing.JComboBox<String> cbDistritosDestino;
     private javax.swing.JComboBox<String> cbDistritosPartida;
     private javax.swing.JComboBox<String> cbProvinciasDest;
     private javax.swing.JComboBox<String> cbProvinciasPart;
     private javax.swing.JComboBox<String> cbTipo;
+    private javax.swing.JComboBox<String> cbTipo4;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
