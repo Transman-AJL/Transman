@@ -229,4 +229,11 @@ public class Viagem {
     
     }
     
+    public boolean actualizar(){
+        
+        Controller<Viagem>c=new Controller<Viagem>(Viagem.class);
+        return c.Actualizar(this);
+    
+    }
+    
 }

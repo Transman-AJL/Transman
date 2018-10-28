@@ -44,6 +44,7 @@ public class NewHome extends javax.swing.JFrame {
         this.preencherTabela();
         this.preencherLista();
         this.preencherTabela4();
+        this.preencherTabela4Terminadas();
         /**
          * 
          * Permite que os frames sejam redimensionáveis.
@@ -1960,8 +1961,8 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(117, Short.MAX_VALUE))
+                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         kPanelRegRoot.add(kPanelRegRoot3, "card2");
@@ -1975,7 +1976,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarRViagem)
                 .addGap(245, 245, 245)
                 .addComponent(lbRegistrarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(168, Short.MAX_VALUE))
+                .addContainerGap(158, Short.MAX_VALUE))
             .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kPanelRViagemLayout.setVerticalGroup(
@@ -1986,7 +1987,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(btVoltarRViagem)
                     .addComponent(lbRegistrarViagem))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE))
+                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 378, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRViagem, "card2");
@@ -2118,7 +2119,7 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 373, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(kPanelVEmCursoLayout.createSequentialGroup()
@@ -2291,7 +2292,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42)
                         .addComponent(jButton9)
-                        .addGap(0, 136, Short.MAX_VALUE)))
+                        .addGap(0, 21, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -4572,7 +4573,15 @@ public class NewHome extends javax.swing.JFrame {
     }//GEN-LAST:event_tableRegViaturasMouseClicked
 
     private void btTerminarViagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTerminarViagemActionPerformed
-        // TODO add your handling code here:
+
+        Viagem viagem=new Viagem();
+        
+            //viagem.setStatus("Ocupado");
+        
+            System.out.println(vei.actualizar());
+            JOptionPane.showMessageDialog(this,"Dados Alterados");
+            this.preencherLista();
+        
     }//GEN-LAST:event_btTerminarViagemActionPerformed
 
     private void kButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton5ActionPerformed
@@ -4642,6 +4651,22 @@ public class NewHome extends javax.swing.JFrame {
         }
     }
     
+    public void preencherTabela4Terminadas(){
+        this.limparTabela4Terminadas();
+        controllerVi=new Controller<Viagem>(Viagem.class);
+        todosDadosVi=(List<Viagem>)controllerVi.getDados();
+
+        DefaultTableModel dtm=(DefaultTableModel)jTable5.getModel();        
+        
+        for(Viagem vi:todosDadosVi){
+            if(vi.getEstado().equalsIgnoreCase("Terminada")){
+                String dados[]={vi.getNomeCliente(),vi.getLocalPartida(),vi.getLocalDestino(),vi.getDataPartida()+""};
+                dtm.addRow(dados);
+            }
+            //System.out.println(vi.getMarca()+" "+vi.getModelo()+" "+vi.getTipo());
+        }
+    }
+    
     public void preencherTabelaFiltrada(String condicao){
         this.limparTabelaFiltrada();
         controller=new Controller<Veiculo>(Veiculo.class);
@@ -4674,6 +4699,17 @@ public class NewHome extends javax.swing.JFrame {
     public void limparTabela4(){
         
         DefaultTableModel dtm=(DefaultTableModel)jTable4.getModel();
+        
+        System.out.println(dtm.getRowCount());
+        int linhas=dtm.getRowCount();
+        
+        for(int i=linhas-1;i>=0;i--){
+          dtm.removeRow(i);  
+        }
+    }
+    public void limparTabela4Terminadas(){
+        
+        DefaultTableModel dtm=(DefaultTableModel)jTable5.getModel();
         
         System.out.println(dtm.getRowCount());
         int linhas=dtm.getRowCount();

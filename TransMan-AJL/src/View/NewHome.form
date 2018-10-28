@@ -974,7 +974,7 @@
                               <Component id="btVoltarRViagem" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
                               <Component id="lbRegistrarViagem" min="-2" pref="115" max="-2" attributes="0"/>
-                              <EmptySpace pref="168" max="32767" attributes="0"/>
+                              <EmptySpace pref="158" max="32767" attributes="0"/>
                           </Group>
                           <Component id="kPanelRegRoot" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -988,7 +988,7 @@
                                   <Component id="lbRegistrarViagem" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="kPanelRegRoot" pref="428" max="32767" attributes="0"/>
+                              <Component id="kPanelRegRoot" pref="378" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -2214,7 +2214,7 @@
                                           <Component id="jPanel8" min="-2" pref="300" max="-2" attributes="0"/>
                                           <Component id="jPanel9" pref="0" max="32767" attributes="0"/>
                                       </Group>
-                                      <EmptySpace pref="117" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2871,7 +2871,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jScrollPane5" alignment="0" pref="373" max="32767" attributes="0"/>
+                                          <Component id="jScrollPane5" alignment="0" pref="0" max="32767" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="102" attributes="0">
@@ -3200,7 +3200,7 @@
                                               </Group>
                                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                               <Component id="jButton9" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="136" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="21" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>

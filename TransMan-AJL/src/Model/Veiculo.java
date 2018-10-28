@@ -155,7 +155,7 @@ public class Veiculo {
     
     public boolean actualizar(){
         
-        Controller<Cliente>c=new Controller<Cliente>(Cliente.class);
+        Controller<Veiculo>c=new Controller<Veiculo>(Veiculo.class);
         return c.Actualizar(this);
     
     }
