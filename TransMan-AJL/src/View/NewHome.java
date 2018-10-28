@@ -2330,6 +2330,11 @@ public class NewHome extends javax.swing.JFrame {
         kButton6.setkHoverForeGround(new java.awt.Color(255, 255, 255));
         kButton6.setkHoverStartColor(new java.awt.Color(0, 51, 204));
         kButton6.setkSelectedColor(new java.awt.Color(0, 0, 0));
+        kButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kButton6ActionPerformed(evt);
+            }
+        });
 
         kButton7.setText("Viagens Pendentes");
         kButton7.setkEndColor(new java.awt.Color(255, 255, 255));
@@ -4582,6 +4587,14 @@ public class NewHome extends javax.swing.JFrame {
         kPanelVerVRoot.repaint();
         kPanelVerVRoot.revalidate();
     }//GEN-LAST:event_kButton5ActionPerformed
+
+    private void kButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton6ActionPerformed
+        // TODO add your handling code here:
+        kPanelVerVRoot.removeAll();
+        kPanelVerVRoot.add(kPanelVEmCurso);
+        kPanelVerVRoot.repaint();
+        kPanelVerVRoot.revalidate();
+    }//GEN-LAST:event_kButton6ActionPerformed
 
 
     public void setColor(JPanel panel)

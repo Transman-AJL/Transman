@@ -3388,6 +3388,9 @@
                           <Color blue="0" green="0" red="0" type="rgb"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kButton6ActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="keeptoo.KButton" name="kButton7">
                       <Properties>
