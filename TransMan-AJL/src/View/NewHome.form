@@ -2945,7 +2945,8 @@
                                 <Component class="javax.swing.JTable" name="jTable4">
                                   <Properties>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="4" rowCount="0">
+                                      <Table columnCount="5" rowCount="0">
+                                        <Column editable="true" title="Id" type="java.lang.Object"/>
                                         <Column editable="true" title="Cliente" type="java.lang.Object"/>
                                         <Column editable="true" title="Origem" type="java.lang.Object"/>
                                         <Column editable="true" title="Destino" type="java.lang.Object"/>
@@ -2954,6 +2955,11 @@
                                     </Property>
                                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                       <TableColumnModel selectionModel="0">
+                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                          <Title/>
+                                          <Editor/>
+                                          <Renderer/>
+                                        </Column>
                                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                                           <Title/>
                                           <Editor/>
@@ -3200,7 +3206,7 @@
                                               </Group>
                                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                               <Component id="jButton9" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="21" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -3219,7 +3225,8 @@
                                 <Component class="javax.swing.JTable" name="jTable5">
                                   <Properties>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="4" rowCount="0">
+                                      <Table columnCount="5" rowCount="0">
+                                        <Column editable="true" title="Id" type="java.lang.Object"/>
                                         <Column editable="true" title="Cliente" type="java.lang.Object"/>
                                         <Column editable="true" title="Origem" type="java.lang.Object"/>
                                         <Column editable="true" title="Destino" type="java.lang.Object"/>
@@ -3228,6 +3235,11 @@
                                     </Property>
                                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
                                       <TableColumnModel selectionModel="0">
+                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                          <Title/>
+                                          <Editor/>
+                                          <Renderer/>
+                                        </Column>
                                         <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
                                           <Title/>
                                           <Editor/>
@@ -3994,31 +4006,31 @@
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
                                                       <Component id="jLabel50" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField13" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="tfModelo4" alignment="0" max="32767" attributes="0"/>
                                                       <Component id="jLabel51" alignment="0" max="32767" attributes="0"/>
-                                                      <Component id="jTextField14" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="tfAno4" alignment="0" max="32767" attributes="0"/>
                                                       <Component id="jLabel48" alignment="0" pref="90" max="32767" attributes="0"/>
                                                       <Component id="jLabel55" pref="90" max="32767" attributes="0"/>
-                                                      <Component id="jTextField17" alignment="0" pref="90" max="32767" attributes="0"/>
-                                                      <Component id="jTextField8" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="tfPeso4" alignment="0" pref="90" max="32767" attributes="0"/>
+                                                      <Component id="tfMatricula4" alignment="0" max="32767" attributes="0"/>
                                                   </Group>
                                                   <Component id="jLabel54" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                                  <Component id="jTextField18" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="jTextField15" alignment="0" pref="90" max="32767" attributes="0"/>
+                                                  <Component id="tfLotacao4" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfKilometragem4" alignment="0" pref="90" max="32767" attributes="0"/>
                                                   <Component id="jLabel52" alignment="0" min="-2" pref="81" max="-2" attributes="0"/>
                                                   <Component id="jLabel57" alignment="0" pref="90" max="32767" attributes="0"/>
                                                   <Component id="jLabel49" alignment="0" pref="90" max="32767" attributes="0"/>
-                                                  <Component id="jTextField12" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfMarca4" alignment="0" max="32767" attributes="0"/>
                                                   <Component id="jLabel56" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="jTextField19" max="32767" attributes="0"/>
+                                                  <Component id="tfVolume4" max="32767" attributes="0"/>
                                                   <Component id="jLabel53" alignment="0" max="32767" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="48" max="32767" attributes="0"/>
+                                      <EmptySpace pref="18" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4032,8 +4044,8 @@
                                                   <Group type="102" alignment="0" attributes="0">
                                                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="3" attributes="0">
-                                                          <Component id="jTextField8" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jTextField12" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="tfMatricula4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="tfMarca4" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                       <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4055,15 +4067,15 @@
                                                           <Group type="102" alignment="0" attributes="0">
                                                               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                                  <Component id="jTextField18" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                                  <Component id="jTextField13" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="tfLotacao4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                                  <Component id="tfModelo4" alignment="3" min="-2" max="-2" attributes="0"/>
                                                               </Group>
                                                           </Group>
                                                       </Group>
                                                       <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="3" attributes="0">
-                                                          <Component id="jTextField19" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                          <Component id="jTextField14" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="tfVolume4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="tfAno4" alignment="3" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="3" attributes="0">
@@ -4074,8 +4086,8 @@
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="jTextField15" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jTextField17" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfKilometragem4" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfPeso4" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
@@ -4110,12 +4122,12 @@
                                 <Property name="text" type="java.lang.String" value="Matricula"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField8">
+                            <Component class="javax.swing.JTextField" name="tfMatricula4">
                               <Properties>
                                 <Property name="enabled" type="boolean" value="false"/>
                               </Properties>
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField8ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfMatricula4ActionPerformed"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel49">
@@ -4123,7 +4135,7 @@
                                 <Property name="text" type="java.lang.String" value="Marca"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField12">
+                            <Component class="javax.swing.JTextField" name="tfMarca4">
                               <Properties>
                                 <Property name="enabled" type="boolean" value="false"/>
                               </Properties>
@@ -4133,7 +4145,7 @@
                                 <Property name="text" type="java.lang.String" value="Modelo"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField13">
+                            <Component class="javax.swing.JTextField" name="tfModelo4">
                               <Properties>
                                 <Property name="enabled" type="boolean" value="false"/>
                               </Properties>
@@ -4143,7 +4155,7 @@
                                 <Property name="text" type="java.lang.String" value="Ano Fabrico"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField14">
+                            <Component class="javax.swing.JTextField" name="tfAno4">
                               <Properties>
                                 <Property name="enabled" type="boolean" value="false"/>
                               </Properties>
@@ -4153,9 +4165,9 @@
                                 <Property name="text" type="java.lang.String" value="Kilometragem"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField15">
+                            <Component class="javax.swing.JTextField" name="tfKilometragem4">
                               <Events>
-                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField15ActionPerformed"/>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfKilometragem4ActionPerformed"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel53">
@@ -4173,14 +4185,14 @@
                                 <Property name="text" type="java.lang.String" value="Peso"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField17">
+                            <Component class="javax.swing.JTextField" name="tfPeso4">
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel56">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Lota&#xe7;&#xe3;o"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField18">
+                            <Component class="javax.swing.JTextField" name="tfLotacao4">
                               <Properties>
                                 <Property name="enabled" type="boolean" value="false"/>
                               </Properties>
@@ -4190,7 +4202,7 @@
                                 <Property name="text" type="java.lang.String" value="Volume"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="jTextField19">
+                            <Component class="javax.swing.JTextField" name="tfVolume4">
                             </Component>
                             <Component class="javax.swing.JComboBox" name="jComboBox2">
                               <Properties>
@@ -4249,22 +4261,10 @@
                                       <Font name="Segoe UI" size="12" style="0"/>
                                     </Property>
                                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                                      <Table columnCount="3" rowCount="3">
-                                        <Column editable="false" title="Matricula" type="java.lang.String">
-                                          <Data value="ABC-123 MC"/>
-                                          <Data value="ACD-234 MP"/>
-                                          <Data value="AEF-456 GZ"/>
-                                        </Column>
-                                        <Column editable="false" title="Marca" type="java.lang.String">
-                                          <Data value="Volvo"/>
-                                          <Data value="Freightliner"/>
-                                          <Data value="Tata"/>
-                                        </Column>
-                                        <Column editable="false" title="Modelo" type="java.lang.String">
-                                          <Data value="Vlv"/>
-                                          <Data value="Cascadia"/>
-                                          <Data value="Prima"/>
-                                        </Column>
+                                      <Table columnCount="3" rowCount="0">
+                                        <Column editable="false" title="Matricula" type="java.lang.String"/>
+                                        <Column editable="false" title="Marca" type="java.lang.String"/>
+                                        <Column editable="false" title="Modelo" type="java.lang.String"/>
                                       </Table>
                                     </Property>
                                     <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -4294,6 +4294,9 @@
                                       <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
                                     </Property>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTable2MouseClicked"/>
+                                  </Events>
                                 </Component>
                               </SubComponents>
                             </Container>
