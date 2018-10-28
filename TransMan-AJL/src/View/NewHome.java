@@ -208,7 +208,7 @@ public class NewHome extends javax.swing.JFrame {
         jLabel100 = new javax.swing.JLabel();
         tfNumeroMot2 = new javax.swing.JTextField();
         jButton6 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        btProximo2 = new javax.swing.JButton();
         kPanelRegRoot3 = new keeptoo.KGradientPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel107 = new javax.swing.JLabel();
@@ -764,7 +764,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(lbEmCursoTop)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lbEmCurso, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
+                .addComponent(lbEmCurso, javax.swing.GroupLayout.PREFERRED_SIZE, 43, Short.MAX_VALUE)
                 .addGap(16, 16, 16))
         );
 
@@ -1367,8 +1367,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGap(29, 29, 29)
                         .addComponent(btProximo)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRegRoot1Layout.setVerticalGroup(
             kPanelRegRoot1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1620,10 +1619,10 @@ public class NewHome extends javax.swing.JFrame {
             }
         });
 
-        jButton8.setText("Proximo");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btProximo2.setText("Proximo");
+        btProximo2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btProximo2ActionPerformed(evt);
             }
         });
 
@@ -1640,7 +1639,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGap(29, 29, 29)
                         .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(32, 32, 32)
-                        .addComponent(jButton8)))
+                        .addComponent(btProximo2)))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -1656,7 +1655,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelRegRoot2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton6)
-                            .addComponent(jButton8)))))
+                            .addComponent(btProximo2)))))
         );
 
         kPanelRegRoot.add(kPanelRegRoot2, "card2");
@@ -4334,7 +4333,7 @@ public class NewHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btProximoActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void btProximo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btProximo2ActionPerformed
         // TODO add your handling code here:
         kPanelRegRoot.removeAll();
         kPanelRegRoot.add(kPanelRegRoot3);
@@ -4430,6 +4429,8 @@ public class NewHome extends javax.swing.JFrame {
         String total=tfValorTotal3.getText();
         
         Viagem v=new Viagem();
+        
+        
         v.setNomeCliente(nome);
         v.setConsumoCombustivel(consumoC);
         v.setDataChegada(jDateChooser1.getDate());
@@ -4445,14 +4446,26 @@ public class NewHome extends javax.swing.JFrame {
         v.setProvinciaPartida(provP);
         v.setValorAlimentacao(alimentacao);
         v.setValorAlojamento(alojamento);
-        v.setMatriculaVeiculo(matricula);        
+        v.setMatriculaVeiculo(matricula);
+        
+        for(Veiculo ve:todosDados){
+            if(ve.getMatricula().equalsIgnoreCase(matricula)){
+                vei=ve;
+            }
+        }
         
         if(v.gravar()){
         
             JOptionPane.showMessageDialog(this, "Dados gravados.");
+            
+            vei.setStatus("Ocupado");
+        
+            System.out.println(vei.actualizar());
+            JOptionPane.showMessageDialog(this,"Dados Alterados");
+            this.preencherLista();
         }
         
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_btProximo2ActionPerformed
 
     public Tarifas tarifa(){
     
@@ -4569,7 +4582,7 @@ public class NewHome extends javax.swing.JFrame {
         
         for(Veiculo vei:todosDados){
         
-            if(vei.getMatricula().equalsIgnoreCase(matricula)){
+            if(vei.getMatricula().equalsIgnoreCase(mat)){
                 
                 matricula=vei.getMatricula();
             }
@@ -4789,6 +4802,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JPanel btPaneAlterFunc;
     private javax.swing.JPanel btPaneVerFunc;
     private javax.swing.JButton btProximo;
+    private javax.swing.JButton btProximo2;
     private javax.swing.JLabel btSettings;
     private javax.swing.JButton btTerminar;
     private javax.swing.JButton btTerminarViagem;
@@ -4810,7 +4824,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -5155,11 +5168,13 @@ public class NewHome extends javax.swing.JFrame {
     private com.alee.laf.progressbar.WebProgressBar webProgressBar2;
     private com.alee.laf.progressbar.WebProgressBar webProgressBar5;
     // End of variables declaration//GEN-END:variables
+    
     Controller <Veiculo>controller;
     Controller <Cliente>controllerCliente;
     List<Veiculo> todosDados;
     List<Cliente> todosClientes;
     Cliente cli;
+    Veiculo vei;
     Controller <Viagem> controllerVi;
     List<Viagem> todosDadosVi;
     String matricula;

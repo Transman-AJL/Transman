@@ -153,4 +153,11 @@ public class Veiculo {
     
     }
     
+    public boolean actualizar(){
+        
+        Controller<Cliente>c=new Controller<Cliente>(Cliente.class);
+        return c.Actualizar(this);
+    
+    }
+    
 }
