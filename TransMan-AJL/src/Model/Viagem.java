@@ -33,6 +33,7 @@ public class Viagem {
     private double precoTotal;
     private String nomeUsuario;
     private String nomeCliente;
+    private String tipo;
 
     public Viagem() {
     }
@@ -228,6 +229,15 @@ public class Viagem {
         return v.salvarOuAtualizar(this);
     
     }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+    
     
     public boolean actualizar(){
         

@@ -46,6 +46,7 @@ public class NewHome extends javax.swing.JFrame {
         this.preencherTabela4();
         this.preencherTabela4Terminadas();
         this.preencherTabelaEd();
+        this.preencherEstatisticas();
         /**
          * 
          * Permite que os frames sejam redimensionáveis.
@@ -445,6 +446,21 @@ public class NewHome extends javax.swing.JFrame {
         kPanelRelatorios = new keeptoo.KGradientPanel();
         btVoltarRelatorios = new javax.swing.JLabel();
         lbRelatorios = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        tfAbertoRel = new javax.swing.JTextField();
+        tfFechadoRel = new javax.swing.JTextField();
+        tfFrigorificoRel = new javax.swing.JTextField();
+        tfTanquerRel = new javax.swing.JTextField();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
+        tfTerminadasRel = new javax.swing.JTextField();
+        tfMarcadasRel = new javax.swing.JTextField();
+        tfEmCursoRel = new javax.swing.JTextField();
+        jLabel143 = new javax.swing.JLabel();
+        jLabel144 = new javax.swing.JLabel();
+        jLabel145 = new javax.swing.JLabel();
         kPanelNorth = new keeptoo.KGradientPanel();
         lbUserNameHome = new javax.swing.JLabel();
         btNotificacoes = new javax.swing.JLabel();
@@ -716,7 +732,7 @@ public class NewHome extends javax.swing.JFrame {
 
         lbPendentes.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
         lbPendentes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbPendentes.setText("0");
+        lbPendentes.setText("6");
 
         javax.swing.GroupLayout kPanelPendentesLayout = new javax.swing.GroupLayout(kPanelPendentes);
         kPanelPendentes.setLayout(kPanelPendentesLayout);
@@ -746,7 +762,7 @@ public class NewHome extends javax.swing.JFrame {
 
         lbEmCurso.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
         lbEmCurso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbEmCurso.setText("0");
+        lbEmCurso.setText("4");
 
         javax.swing.GroupLayout kPanelEmCursoLayout = new javax.swing.GroupLayout(kPanelEmCurso);
         kPanelEmCurso.setLayout(kPanelEmCursoLayout);
@@ -776,7 +792,7 @@ public class NewHome extends javax.swing.JFrame {
 
         lbTerminadas.setFont(new java.awt.Font("Josefin Sans", 1, 36)); // NOI18N
         lbTerminadas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbTerminadas.setText("0");
+        lbTerminadas.setText("3");
 
         javax.swing.GroupLayout kPanelTerminadasLayout = new javax.swing.GroupLayout(kPanelTerminadas);
         kPanelTerminadas.setLayout(kPanelTerminadasLayout);
@@ -817,13 +833,13 @@ public class NewHome extends javax.swing.JFrame {
         lbDestinoHome.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbDestinoHome.setText("Destino");
 
-        lbClienteHome1.setText("Pepsi co.");
+        lbClienteHome1.setText("Coca-Cola");
 
         lbOrigemHome1.setText("Maputo - Cidade");
 
         lbDestinohome1.setText("Zambezia - Quelimane");
 
-        lbClienteHome2.setText("Mozal");
+        lbClienteHome2.setText("CIM");
 
         webProgressBar2.setValue(20);
         webProgressBar2.setBgBottom(new java.awt.Color(204, 255, 255));
@@ -835,7 +851,7 @@ public class NewHome extends javax.swing.JFrame {
 
         lbDestinoHome2.setText("SA - Johanesburg");
 
-        lbClienteHome3.setText("Fematro");
+        lbClienteHome3.setText("Fizz");
 
         progressHome3.setValue(56);
         progressHome3.setBgBottom(new java.awt.Color(204, 255, 255));
@@ -849,7 +865,7 @@ public class NewHome extends javax.swing.JFrame {
 
         lbOrigemHome4.setText("Nampula - Nacala");
 
-        lbClienteHome4.setText("Maningue Nice");
+        lbClienteHome4.setText("Amazon");
 
         lbDestinoHome4.setText("Sofala - Beira");
 
@@ -913,7 +929,7 @@ public class NewHome extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(lbDestinoHome4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         kPanelHomeLayout.setVerticalGroup(
             kPanelHomeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -961,7 +977,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(lbOrigemHome4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(webProgressBar5, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelHome, "card2");
@@ -1244,10 +1260,10 @@ public class NewHome extends javax.swing.JFrame {
                             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jDateChooser1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel80, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)))
-                        .addGap(18, 18, Short.MAX_VALUE)
+                        .addGap(18, 32, Short.MAX_VALUE)
                         .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGap(0, 14, Short.MAX_VALUE)
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel5Layout.createSequentialGroup()
                                         .addComponent(jLabel90)
@@ -1382,7 +1398,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGroup(kPanelRegRoot1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jButton5)
                             .addComponent(btProximo))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
         kPanelRegRoot.add(kPanelRegRoot1, "card2");
@@ -1643,12 +1659,12 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(btProximo2)))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         kPanelRegRoot2Layout.setVerticalGroup(
             kPanelRegRoot2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelRegRoot2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(77, Short.MAX_VALUE)
                 .addGroup(kPanelRegRoot2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(kPanelRegRoot2Layout.createSequentialGroup()
@@ -1954,7 +1970,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(120, Short.MAX_VALUE))
         );
         kPanelRegRoot3Layout.setVerticalGroup(
             kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1962,8 +1978,8 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addContainerGap(117, Short.MAX_VALUE))
         );
 
         kPanelRegRoot.add(kPanelRegRoot3, "card2");
@@ -1977,7 +1993,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarRViagem)
                 .addGap(245, 245, 245)
                 .addComponent(lbRegistrarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(158, Short.MAX_VALUE))
+                .addContainerGap(186, Short.MAX_VALUE))
             .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kPanelRViagemLayout.setVerticalGroup(
@@ -1988,7 +2004,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(btVoltarRViagem)
                     .addComponent(lbRegistrarViagem))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 378, Short.MAX_VALUE))
+                .addComponent(kPanelRegRoot, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRViagem, "card2");
@@ -2107,7 +2123,7 @@ public class NewHome extends javax.swing.JFrame {
                                 .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel98, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(tfVeiculoF, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(27, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelVEmCursoLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(kPanelVEmCursoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2163,7 +2179,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(btTerminarViagem)
                         .addGap(30, 30, 30)
                         .addComponent(jButton7)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 90, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -2245,7 +2261,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         kPanelVTerminadasLayout.setVerticalGroup(
             kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2293,7 +2309,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42)
                         .addComponent(jButton9)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 136, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -2348,7 +2364,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(btVoltarVViagens)
                         .addGap(176, 176, 176)
                         .addComponent(lbVerViagens, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
             .addComponent(kPanelVerVRoot, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         kPanelVViagensLayout.setVerticalGroup(
@@ -2587,7 +2603,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(tFLotacaoVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tFVolumeVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tFKilometragemVer, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
         kPanelVerViaturasLayout.setVerticalGroup(
             kPanelVerViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2641,7 +2657,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(tFCategoriaVer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(kButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(74, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelVerViaturasLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
@@ -2795,7 +2811,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jLabel56, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(tfVolume4)
                             .addComponent(jLabel53, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
         kPanelAlterarViatLayout.setVerticalGroup(
             kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2843,7 +2859,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel54, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel53, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                         .addGroup(kPanelAlterarViatLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(cbTipo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cbCategoria4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -2939,7 +2955,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addGroup(kPanelAdViaturasLayout.createSequentialGroup()
                         .addGap(287, 287, 287)
                         .addComponent(jLabel47)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 13, Short.MAX_VALUE))
         );
         kPanelAdViaturasLayout.setVerticalGroup(
             kPanelAdViaturasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2987,7 +3003,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(tfAno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tfVolume, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         kPanelGViaturas1.add(kPanelAdViaturas, "card2");
@@ -3012,7 +3028,7 @@ public class NewHome extends javax.swing.JFrame {
                                 .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btAdicionarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 3, Short.MAX_VALUE))
+                        .addGap(0, 16, Short.MAX_VALUE))
                     .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -3029,7 +3045,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addComponent(btEditarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btAdicionarViaturas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+                .addComponent(kPanelGViaturas1, javax.swing.GroupLayout.DEFAULT_SIZE, 366, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -3200,7 +3216,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(btPaneAddFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btPaneAlterFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
         kPanelGFuncionariosLayout.setVerticalGroup(
             kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3216,7 +3232,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGroup(kPanelGFuncionariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(btPaneVerFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btPaneAddFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(178, Short.MAX_VALUE))
         );
 
         kPanelGFRoot.add(kPanelGFuncionarios, "card2");
@@ -3529,7 +3545,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ShadowViagemEDocFunc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(ShadowTableVFunc, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         kPanelGFRoot.add(kPanelVerFunc, "card2");
@@ -3566,7 +3582,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(btVoltarAddFunc)
                 .addGap(176, 176, 176)
                 .addComponent(lbGerirFuncV1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(222, Short.MAX_VALUE))
         );
         kPanelAddFuncLayout.setVerticalGroup(
             kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3575,7 +3591,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelAddFuncLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarAddFunc)
                     .addComponent(lbGerirFuncV1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(439, Short.MAX_VALUE))
         );
 
         kPanelGFRoot.add(kPanelAddFunc, "card2");
@@ -3604,16 +3620,65 @@ public class NewHome extends javax.swing.JFrame {
         lbRelatorios.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lbRelatorios.setText("Relatórios");
 
+        jButton2.setText("jButton2");
+
+        jLabel139.setText("Aberto");
+
+        jLabel140.setText("Fechado");
+
+        jLabel141.setText("Frigorifico");
+
+        jLabel142.setText("Tanque");
+
+        jLabel143.setText("Terminadas");
+
+        jLabel144.setText("Marcadas");
+
+        jLabel145.setText("Em Curso");
+
         javax.swing.GroupLayout kPanelRelatoriosLayout = new javax.swing.GroupLayout(kPanelRelatorios);
         kPanelRelatorios.setLayout(kPanelRelatoriosLayout);
         kPanelRelatoriosLayout.setHorizontalGroup(
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btVoltarRelatorios)
-                .addGap(176, 176, 176)
-                .addComponent(lbRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btVoltarRelatorios)
+                        .addGap(176, 176, 176)
+                        .addComponent(lbRelatorios, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                        .addGap(276, 276, 276)
+                        .addComponent(jButton2)))
+                .addContainerGap(255, Short.MAX_VALUE))
+            .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel139)
+                    .addComponent(jLabel140)
+                    .addComponent(jLabel141)
+                    .addComponent(jLabel142))
+                .addGap(18, 18, 18)
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(tfAbertoRel, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
+                    .addComponent(tfFechadoRel)
+                    .addComponent(tfFrigorificoRel)
+                    .addComponent(tfTanquerRel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                        .addComponent(jLabel145)
+                        .addGap(18, 18, 18)
+                        .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                        .addComponent(jLabel144)
+                        .addGap(18, 18, 18)
+                        .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                        .addComponent(jLabel143)
+                        .addGap(18, 18, 18)
+                        .addComponent(tfTerminadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(35, 35, 35))
         );
         kPanelRelatoriosLayout.setVerticalGroup(
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3622,7 +3687,35 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btVoltarRelatorios)
                     .addComponent(lbRelatorios))
-                .addContainerGap(439, Short.MAX_VALUE))
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tfAbertoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel139)
+                            .addComponent(tfTerminadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel143))
+                        .addGap(18, 18, 18)
+                        .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tfFechadoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel140)
+                            .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelRelatoriosLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel144)))
+                .addGap(18, 18, 18)
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfFrigorificoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel141)
+                    .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel145))
+                .addGap(18, 18, 18)
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfTanquerRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel142))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(53, 53, 53))
         );
 
         kPanelRoot.add(kPanelRelatorios, "card2");
@@ -4442,6 +4535,7 @@ public class NewHome extends javax.swing.JFrame {
         v.setValorAlimentacao(alimentacao);
         v.setValorAlojamento(alojamento);
         v.setMatriculaVeiculo(matricula);
+        v.setTipo(tipo);
         
         for(Veiculo ve:todosDados){
             if(ve.getMatricula().equalsIgnoreCase(matricula)){
@@ -4460,6 +4554,11 @@ public class NewHome extends javax.swing.JFrame {
             this.preencherLista();
         }
         this.preencherTabela4();
+        
+        lbOrigemHome4.setText(v.getProvinciaPartida());
+        lbClienteHome4.setText(v.getNomeCliente());
+        lbDestinoHome4.setText(v.getProvinciaDestino());
+        webProgressBar5.setValue(1);
         
     }//GEN-LAST:event_btProximo2ActionPerformed
 
@@ -4591,6 +4690,10 @@ public class NewHome extends javax.swing.JFrame {
             if(vi.getId()==id){
                 viagem=vi;
                 viagem.setEstado("Terminada");
+                int a=Integer.parseInt(lbTerminadas.getText())+1;
+                int b=Integer.parseInt(lbEmCurso.getText())+1;
+                lbTerminadas.setText(a+"");
+                lbEmCurso.setText(b+"");
             }
         }
         
@@ -4723,8 +4826,58 @@ public class NewHome extends javax.swing.JFrame {
             
                 dtm.addRow(dados);
             }
-            //System.out.println(vi.getMarca()+" "+vi.getModelo()+" "+vi.getTipo());
         }
+    }
+    
+    public void preencherEstatisticas(){
+        
+        controllerVi=new Controller<Viagem>(Viagem.class);
+        todosDadosVi=(List<Viagem>)controllerVi.getDados();
+
+        int aberto=0,fechado=0,frigorifico=0,tanque=0;
+        int terminadas=0,marcadas=0,emCurso=0;
+        
+        for(Viagem vi:todosDadosVi){
+            
+            
+            
+            if(vi.getTipo().equalsIgnoreCase("Aberto")){
+                aberto++;
+            }
+            
+            if(vi.getTipo().equalsIgnoreCase("Fechado")){
+                fechado++;
+            }
+            
+            if(vi.getTipo().equalsIgnoreCase("Frigorifico")){
+                frigorifico++;
+            }
+            
+            if(vi.getTipo().equalsIgnoreCase("Tanque")){
+               tanque++;
+            }
+            
+            if(vi.getEstado().equalsIgnoreCase("Terminada")){
+               terminadas++;
+            }
+            
+            if(vi.getEstado().equalsIgnoreCase("Marcada")){
+               marcadas++;
+            }
+            
+            if(vi.getEstado().equalsIgnoreCase("Em curso")){
+               emCurso++;
+            }
+            
+        }
+            tfAbertoRel.setText(aberto+"");
+            tfFechadoRel.setText(fechado+"");
+            tfFrigorificoRel.setText(frigorifico+"");
+            tfTanquerRel.setText(tanque+"");
+            
+            tfTerminadasRel.setText(terminadas+"");
+            tfMarcadasRel.setText(marcadas+"");
+            tfEmCursoRel.setText(emCurso+"");
     }
     
     public void preencherTabela4Terminadas(){
@@ -4930,6 +5083,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbTipo;
     private javax.swing.JComboBox<String> cbTipo4;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
@@ -4981,7 +5135,14 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel136;
     private javax.swing.JLabel jLabel137;
     private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -5210,6 +5371,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tFViagemVer;
     private javax.swing.JTextField tFVolumeVer;
     private javax.swing.JTable tableRegViaturas;
+    private javax.swing.JTextField tfAbertoRel;
     private javax.swing.JTextField tfAno;
     private javax.swing.JTextField tfAno4;
     private javax.swing.JTextField tfCategoria;
@@ -5225,12 +5387,15 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfDistritoD3;
     private javax.swing.JTextField tfDistritoP3;
     private javax.swing.JTextField tfEderecoD1;
+    private javax.swing.JTextField tfEmCursoRel;
     private javax.swing.JTextField tfEnderecoD2;
     private javax.swing.JTextField tfEnderecoD3;
     private javax.swing.JTextField tfEnderecoP1;
     private javax.swing.JTextField tfEnderecoP2;
     private javax.swing.JTextField tfEnderecoP3;
     private javax.swing.JTextField tfEstadoF;
+    private javax.swing.JTextField tfFechadoRel;
+    private javax.swing.JTextField tfFrigorificoRel;
     private javax.swing.JTextField tfKilometragem;
     private javax.swing.JTextField tfKilometragem4;
     private javax.swing.JTextField tfLocalD2;
@@ -5239,6 +5404,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfLotacao4;
     private javax.swing.JTextField tfMarca;
     private javax.swing.JTextField tfMarca4;
+    private javax.swing.JTextField tfMarcadasRel;
     private javax.swing.JTextField tfMatricula;
     private javax.swing.JTextField tfMatricula4;
     private javax.swing.JTextField tfModelo;
@@ -5262,7 +5428,9 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfProvinciaD3;
     private javax.swing.JTextField tfProvinciaP2;
     private javax.swing.JTextField tfProvinciaP3;
+    private javax.swing.JTextField tfTanquerRel;
     private javax.swing.JTextField tfTempoEstimado3;
+    private javax.swing.JTextField tfTerminadasRel;
     private javax.swing.JTextField tfTipoV1;
     private javax.swing.JTextField tfTipoV3;
     private javax.swing.JTextField tfValorAlimentacao3;

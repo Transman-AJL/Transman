@@ -567,7 +567,7 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="31" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -624,7 +624,7 @@
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="webProgressBar5" min="-2" pref="18" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="52" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -677,7 +677,7 @@
                               <Font name="Josefin Sans" size="36" style="1"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="0"/>
+                            <Property name="text" type="java.lang.String" value="6"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -729,7 +729,7 @@
                               <Font name="Josefin Sans" size="36" style="1"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="0"/>
+                            <Property name="text" type="java.lang.String" value="4"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -781,7 +781,7 @@
                               <Font name="Josefin Sans" size="36" style="1"/>
                             </Property>
                             <Property name="horizontalAlignment" type="int" value="0"/>
-                            <Property name="text" type="java.lang.String" value="0"/>
+                            <Property name="text" type="java.lang.String" value="3"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -837,7 +837,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="lbClienteHome1">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Pepsi co."/>
+                        <Property name="text" type="java.lang.String" value="Coca-Cola"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JSeparator" name="sepHome">
@@ -854,7 +854,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="lbClienteHome2">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Mozal"/>
+                        <Property name="text" type="java.lang.String" value="CIM"/>
                       </Properties>
                     </Component>
                     <Component class="com.alee.laf.progressbar.WebProgressBar" name="webProgressBar2">
@@ -886,7 +886,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="lbClienteHome3">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Fematro"/>
+                        <Property name="text" type="java.lang.String" value="Fizz"/>
                       </Properties>
                     </Component>
                     <Component class="com.alee.laf.progressbar.WebProgressBar" name="progressHome3">
@@ -923,7 +923,7 @@
                     </Component>
                     <Component class="javax.swing.JLabel" name="lbClienteHome4">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Maningue Nice"/>
+                        <Property name="text" type="java.lang.String" value="Amazon"/>
                       </Properties>
                     </Component>
                     <Component class="javax.swing.JLabel" name="lbDestinoHome4">
@@ -974,7 +974,7 @@
                               <Component id="btVoltarRViagem" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
                               <Component id="lbRegistrarViagem" min="-2" pref="115" max="-2" attributes="0"/>
-                              <EmptySpace pref="158" max="32767" attributes="0"/>
+                              <EmptySpace pref="186" max="32767" attributes="0"/>
                           </Group>
                           <Component id="kPanelRegRoot" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -988,7 +988,7 @@
                                   <Component id="lbRegistrarViagem" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="kPanelRegRoot" pref="378" max="32767" attributes="0"/>
+                              <Component id="kPanelRegRoot" pref="428" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1081,7 +1081,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="61" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -1322,10 +1322,10 @@
                                                           <Component id="jLabel80" alignment="0" pref="150" max="32767" attributes="0"/>
                                                       </Group>
                                                   </Group>
-                                                  <EmptySpace type="separate" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" pref="32" max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" alignment="1" attributes="0">
-                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                                          <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
                                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                               <Group type="102" alignment="0" attributes="0">
                                                                   <Component id="jLabel90" min="-2" max="-2" attributes="0"/>
@@ -1737,14 +1737,14 @@
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="66" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="77" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
@@ -2202,7 +2202,7 @@
                                       <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="120" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2214,7 +2214,7 @@
                                           <Component id="jPanel8" min="-2" pref="300" max="-2" attributes="0"/>
                                           <Component id="jPanel9" pref="0" max="32767" attributes="0"/>
                                       </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="117" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2718,7 +2718,7 @@
                                       <Component id="lbVerViagens" min="-2" pref="115" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="12" max="32767" attributes="0"/>
+                              <EmptySpace pref="29" max="32767" attributes="0"/>
                           </Group>
                           <Component id="kPanelVerVRoot" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -2852,7 +2852,7 @@
                                                       </Group>
                                                   </Group>
                                               </Group>
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace pref="27" max="32767" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -2926,7 +2926,7 @@
                                               <Component id="btTerminarViagem" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                               <Component id="jButton7" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="90" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -3144,7 +3144,7 @@
                                               <Component id="jButton9" min="-2" pref="134" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="27" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -3206,7 +3206,7 @@
                                               </Group>
                                               <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                               <Component id="jButton9" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="136" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -3448,7 +3448,7 @@
                                               <Component id="btAdicionarViaturas" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="16" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="kPanelGViaturas1" alignment="0" max="32767" attributes="0"/>
                               </Group>
@@ -3471,7 +3471,7 @@
                                   <Component id="btAdicionarViaturas" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="kPanelGViaturas1" pref="362" max="32767" attributes="0"/>
+                              <Component id="kPanelGViaturas1" pref="366" max="32767" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -3653,7 +3653,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="61" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -3721,7 +3721,7 @@
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="kButton4" min="-2" pref="27" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="74" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
@@ -4030,7 +4030,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="18" max="32767" attributes="0"/>
+                                      <EmptySpace pref="61" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4094,7 +4094,7 @@
                                                   <Component id="jLabel54" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                                   <Component id="jLabel53" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace pref="10" max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="cbTipo4" min="-2" max="-2" attributes="0"/>
                                                   <Component id="cbCategoria4" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -4403,7 +4403,7 @@
                                               <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="13" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4465,7 +4465,7 @@
                                           </Group>
                                           <Component id="jLabel46" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace pref="109" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4627,7 +4627,7 @@
                                           <Component id="btPaneAlterFunc" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="20" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -4649,7 +4649,7 @@
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="178" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -4938,7 +4938,7 @@
                                       </Group>
                                       <Component id="ShadowTableVFunc" alignment="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="31" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -5420,7 +5420,7 @@
                                   <Component id="btVoltarAddFunc" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
                                   <Component id="lbGerirFuncV1" min="-2" pref="148" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="222" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -5432,7 +5432,7 @@
                                       <Component id="btVoltarAddFunc" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="lbGerirFuncV1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="439" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -5485,12 +5485,55 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="btVoltarRelatorios" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
+                                      <Component id="lbRelatorios" min="-2" pref="115" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="276" max="-2" attributes="0"/>
+                                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace pref="255" max="32767" attributes="0"/>
+                          </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="btVoltarRelatorios" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
-                              <Component id="lbRelatorios" min="-2" pref="115" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel141" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel142" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="tfAbertoRel" pref="87" max="32767" attributes="0"/>
+                                  <Component id="tfFechadoRel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="tfFrigorificoRel" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="tfTanquerRel" alignment="0" max="32767" attributes="0"/>
+                              </Group>
                               <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel145" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="tfEmCursoRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="tfMarcadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel143" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="tfTerminadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -5502,7 +5545,42 @@
                                   <Component id="btVoltarRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lbRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="439" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfAbertoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel139" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfTerminadasRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel143" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfFechadoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfMarcadasRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="tfFrigorificoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="tfEmCursoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel145" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="tfTanquerRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel142" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="187" max="32767" attributes="0"/>
+                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -5530,6 +5608,60 @@
                           <Font name="Tahoma" size="12" style="1"/>
                         </Property>
                         <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="jButton2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="jButton2"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfAbertoRel">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfFechadoRel">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfFrigorificoRel">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfTanquerRel">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel139">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Aberto"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel140">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Fechado"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel141">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Frigorifico"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel142">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Tanque"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfTerminadasRel">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfMarcadasRel">
+                    </Component>
+                    <Component class="javax.swing.JTextField" name="tfEmCursoRel">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel143">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Terminadas"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel144">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Marcadas"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="jLabel145">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Em Curso"/>
                       </Properties>
                     </Component>
                   </SubComponents>

@@ -54,5 +54,6 @@ Contributor(s):
     <mapping class="Model.Funcionario"/>
     <mapping class="Model.Documentacao"/>
     <mapping class="Model.Tarifas"/>
+    <mapping class="Model.Notificacao"/>
   </session-factory>
 </hibernate-configuration>
