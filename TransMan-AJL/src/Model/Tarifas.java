@@ -141,13 +141,22 @@ public class Tarifas {
         this.precoCombustivel = precoCombustivel;
     }
 
-    public double getPrecoPassageiro() {
+    public double getPrecoAlimentacao() {
+        return precoAlimentacao;
+    }
+
+    public void setPrecoAlimentacao(double precoAlimentacao) {
+        this.precoAlimentacao = precoAlimentacao;
+    }
+
+    public double getPrecoTanque() {
         return precoTanque;
     }
 
-    public void setPrecoPassageiro(double precoPassageiro) {
-        this.precoTanque = precoPassageiro;
+    public void setPrecoTanque(double precoTanque) {
+        this.precoTanque = precoTanque;
     }
+
 
     public double getPrecoAutomovel() {
         return precoAutomovel;

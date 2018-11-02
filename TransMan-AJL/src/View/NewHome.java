@@ -15,6 +15,7 @@ import Model.Viagem;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -1790,14 +1791,6 @@ public class NewHome extends javax.swing.JFrame {
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(tfValorTotal3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(64, 64, 64))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel129)
-                .addGap(99, 99, 99))
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1830,9 +1823,14 @@ public class NewHome extends javax.swing.JFrame {
                             .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel127, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(tfConsumoCombustivel))))
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(tfDataPartida3, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jLabel132, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(tfDataPartida3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel132, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel129)
+                            .addComponent(tfValorTotal3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel8Layout.setVerticalGroup(
@@ -1873,14 +1871,14 @@ public class NewHome extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(tfTempoEstimado3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel132)
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel132)
+                    .addComponent(jLabel129))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tfDataPartida3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel129)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tfValorTotal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfDataPartida3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfValorTotal3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(79, 79, 79))
         );
 
         jPanel9.setOpaque(false);
@@ -2028,7 +2026,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRegRoot3Layout.setVerticalGroup(
             kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2037,7 +2035,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(117, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         kPanelRegRoot.add(kPanelRegRoot3, "card2");
@@ -3936,9 +3934,9 @@ public class NewHome extends javax.swing.JFrame {
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel139)
                             .addComponent(jLabel140)
@@ -3950,21 +3948,19 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(tfFechadoRel)
                             .addComponent(tfFrigorificoRel)
                             .addComponent(tfTanquerRel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addComponent(jLabel145)
-                                .addGap(18, 18, 18)
-                                .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addComponent(jLabel144)
-                                .addGap(18, 18, 18)
-                                .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addComponent(jLabel143)
-                                .addGap(18, 18, 18)
-                                .addComponent(tfTerminadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel10Layout.createSequentialGroup()
+                            .addComponent(jLabel145)
+                            .addGap(18, 18, 18)
+                            .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel10Layout.createSequentialGroup()
+                            .addComponent(jLabel144)
+                            .addGap(18, 18, 18)
+                            .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel10Layout.createSequentialGroup()
+                            .addComponent(jLabel143)
+                            .addGap(18, 18, 18)
+                            .addComponent(tfTerminadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(432, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
@@ -3994,9 +3990,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jLabel143))
                         .addGap(18, 18, 18)
                         .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel144)))
+                    .addComponent(jLabel144, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -4751,6 +4745,7 @@ public class NewHome extends javax.swing.JFrame {
 
     private void btProximo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btProximo2ActionPerformed
 
+        DecimalFormat df=new DecimalFormat("####0.00");
         
         kPanelRegRoot.removeAll();
         kPanelRegRoot.add(kPanelRegRoot3);
@@ -4802,28 +4797,10 @@ public class NewHome extends javax.swing.JFrame {
         tfDistancia3.setText(tfDistancia2.getText());
         String dist=tfDistancia3.getText();
         
-        tfDataPartida3.setText(jDateChooser1.getDateFormatString());
+        tfDataPartida3.setText(jDateChooser1.getDate()+"");
         String dat =tfDataPartida3.getText();
         //--------------------------------
-        /*
-        if(radioAberto.isSelected() || RadioFechado.isSelected() || radioBasculante.isSelected() || radioPortaContentor.isSelected()){
-            lbPesoVolume.setText("Peso");
-            tfTipoV1.setText("Aberto");
-            this.preencherTabelaFiltrada("Aberto");
-            //verificado=true;
-        } else
-        if(radioFrigorifico.isSelected() || radioFrigorifico.isSelected()){
-            lbPesoVolume.setText("Volume");
-            tfTipoV1.setText("Frigorifico");
-            this.preencherTabelaFiltrada("Frigorifico");
-
-        } else
-        if(radioAutomovel.isSelected() || radioTanque.isSelected()){
-            lbPesoVolume.setText("Lotação");
-            tfTipoV1.setText("Automovel");
-            this.preencherTabelaFiltrada("Automovel");
-            //verificado=true;
-        }*/
+        
         //-----------------------------------
         double distancia=Double.parseDouble(tfDistancia1.getText());
         Tarifas t=this.tarifa();
@@ -4831,19 +4808,21 @@ public class NewHome extends javax.swing.JFrame {
         tfConsumoCombustivel.setText(consumoC+" Litros");
         String consumo=tfConsumoCombustivel.getText();
         
-        tfValorCombustivel3.setText(t.getPrecoCombustivel()*consumoC+ "MT");
+        tfValorCombustivel3.setText(df.format(t.getPrecoCombustivel()*consumoC)+ " MT");
         String vCombust=tfValorCombustivel3.getText();
         
-        double alojamento=t.getPrecoAliementacao()*(distancia/500);
-        tfValorAlojamento3.setText(alojamento+" Meticais");
+        double alojamento=t.getPrecoAlojamento()*(distancia/500);
+        tfValorAlojamento3.setText(df.format(alojamento)+" Mt");
         
         double alimentacao=t.getPrecoAliementacao()*distancia;
+        tfValorAlimentacao3.setText(df.format(alimentacao)+" Mt");
         
         
         double vTotal=consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM());
-        tfValorTotal3.setText(consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM())+"");
+        tfValorTotal3.setText(consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM())+"Mt");
         String total=tfValorTotal3.getText();
         
+        /*
         Viagem v=new Viagem();
         
         
@@ -4873,30 +4852,65 @@ public class NewHome extends javax.swing.JFrame {
         
         if(v.gravar()){
         
-            JOptionPane.showMessageDialog(this, "Dados gravados.");
+            JOptionPane.showMessageDialog(this, "Viagem Registrada");
             
             vei.setStatus("Ocupado");
         
             System.out.println(vei.actualizar());
-            JOptionPane.showMessageDialog(this,"Dados Alterados");
+            //JOptionPane.showMessageDialog(this,"Dados Alterados");
             this.preencherLista();
         }
         this.preencherTabela4();
+        this.preencherTabela4Pendentes();
+        this.preencherTabela4Terminadas();
+        this.preencherEstatisticas();
+        
         
         lbOrigemHome4.setText(v.getProvinciaPartida());
         lbClienteHome4.setText(v.getNomeCliente());
         lbDestinoHome4.setText(v.getProvinciaDestino());
         webProgressBar5.setValue(1);
-        
+        */
     }//GEN-LAST:event_btProximo2ActionPerformed
 
     public Tarifas tarifa(){
     
         Controller <Tarifas>controllerT=new Controller<Tarifas>(Tarifas.class);
         List<Tarifas>todasTarifas=(List<Tarifas>)controllerT.getDados();
-
-        Tarifas t=todasTarifas.get(0);
+        
+        int cont=todasTarifas.size()-1;
+        Tarifas t=todasTarifas.get(cont);
         return t;
+    }
+    
+    public double precoCarga(double peso, String tipo){
+        Tarifas t=this.tarifa();
+        double preco=0;
+        if (tipo.equalsIgnoreCase("Aberto")){
+            preco=t.getPrecoKGAberto()*peso;
+        }
+        if (tipo.equalsIgnoreCase("Fechado")){
+            preco=t.getPrecoKGFechado()*peso;
+        }
+        if (tipo.equalsIgnoreCase("Frigorifico")){
+            preco=t.getPrecoKGFrigorifico()*peso;
+        }
+        if (tipo.equalsIgnoreCase("Basculante")){
+            preco=t.getPrecoBasculante()*peso;
+        }
+        if (tipo.equalsIgnoreCase("Contentor")){
+            preco=t.getPrecoPortaContentor()*peso;
+        }
+        if (tipo.equalsIgnoreCase("Tanque")){
+            preco=t.get*peso;
+        }
+        if (tipo.equalsIgnoreCase("Aberto")){
+            preco=t.getPrecoKGAberto()*peso;
+        }
+        if (tipo.equalsIgnoreCase("Aberto")){
+            preco=t.getPrecoKGAberto()*peso;
+        }
+        return preco;
     }
     
     private void tfNomeCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfNomeCliente1ActionPerformed
@@ -5050,8 +5064,7 @@ public class NewHome extends javax.swing.JFrame {
         for(Viagem vi:todosDadosVi){
             
             hoje=new Date();
-            System.out.println(vi.getDataPartida());
-            System.out.println(hoje);
+            
             
             
             if(hoje.after(vi.getDataPartida())){

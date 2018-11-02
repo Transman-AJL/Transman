@@ -1061,8 +1061,10 @@ public class Definicoes extends javax.swing.JFrame {
         
         controllerT=new Controller<Tarifas>(Tarifas.class);
         todasTarifas=(List<Tarifas>)controllerT.getDados();
-
-        Tarifas t=todasTarifas.get(0);
+        
+        int cont=todasTarifas.size()-1;
+        
+        Tarifas t=todasTarifas.get(cont);
         
         tfPrecoAberto.setText(t.getPrecoKGAberto()+"");
         tfPrecoAlimentacao.setText(t.getPrecoAliementacao()+"");
@@ -1076,7 +1078,7 @@ public class Definicoes extends javax.swing.JFrame {
         tfPrecoFrigorifico.setText(t.getPrecoKGFrigorifico()+"");
         tfPrecoMotorista.setText(t.getPrecoMotorista()+"");
         tfPrecoPortaContentor.setText(t.getPrecoPortaContentor()+"");
-        tfPrecoTanque.setText(t.getPrecoPassageiro()+"");
+        tfPrecoTanque.setText(t.getPrecoTanque()+"");
         tfPrecoViagem.setText(t.getPrecoKM()+"");
     }
     /**
