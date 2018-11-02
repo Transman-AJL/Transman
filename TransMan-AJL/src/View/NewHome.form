@@ -567,7 +567,7 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="31" max="32767" attributes="0"/>
+                              <EmptySpace pref="178" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -974,7 +974,7 @@
                               <Component id="btVoltarRViagem" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
                               <Component id="lbRegistrarViagem" min="-2" pref="115" max="-2" attributes="0"/>
-                              <EmptySpace pref="186" max="32767" attributes="0"/>
+                              <EmptySpace pref="333" max="32767" attributes="0"/>
                           </Group>
                           <Component id="kPanelRegRoot" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -1081,7 +1081,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="61" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -1234,6 +1234,9 @@
                                   <Properties>
                                     <Property name="editable" type="boolean" value="false"/>
                                   </Properties>
+                                  <Events>
+                                    <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfClienteNuit1KeyTyped"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JButton" name="btAdicionar">
                                   <Properties>
@@ -1322,10 +1325,10 @@
                                                           <Component id="jLabel80" alignment="0" pref="150" max="32767" attributes="0"/>
                                                       </Group>
                                                   </Group>
-                                                  <EmptySpace type="separate" pref="32" max="32767" attributes="0"/>
+                                                  <EmptySpace type="separate" max="32767" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
                                                       <Group type="102" alignment="1" attributes="0">
-                                                          <EmptySpace min="0" pref="14" max="32767" attributes="0"/>
+                                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                                               <Group type="102" alignment="0" attributes="0">
                                                                   <Component id="jLabel90" min="-2" max="-2" attributes="0"/>
@@ -1737,14 +1740,14 @@
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="66" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                             <DimensionLayout dim="1">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace pref="77" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
                                           <Group type="102" attributes="0">
@@ -1841,6 +1844,9 @@
                                   </Properties>
                                 </Component>
                                 <Component class="javax.swing.JTextField" name="tfPesoVol2">
+                                  <Events>
+                                    <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfPesoVol2KeyTyped"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JLabel" name="jLabel119">
                                   <Properties>
@@ -1928,6 +1934,9 @@
                                   </Properties>
                                 </Component>
                                 <Component class="javax.swing.JTextField" name="tfNEstivadores3">
+                                  <Events>
+                                    <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfNEstivadores3KeyTyped"/>
+                                  </Events>
                                 </Component>
                                 <Component class="javax.swing.JTextField" name="tfDistancia2">
                                   <Properties>
@@ -2202,7 +2211,7 @@
                                       <Component id="jPanel9" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="jPanel8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace pref="120" max="32767" attributes="0"/>
+                                      <EmptySpace pref="267" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -2718,7 +2727,7 @@
                                       <Component id="lbVerViagens" min="-2" pref="115" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="29" max="32767" attributes="0"/>
+                              <EmptySpace pref="12" max="32767" attributes="0"/>
                           </Group>
                           <Component id="kPanelVerVRoot" alignment="0" max="32767" attributes="0"/>
                       </Group>
@@ -2852,7 +2861,7 @@
                                                       </Group>
                                                   </Group>
                                               </Group>
-                                              <EmptySpace pref="27" max="32767" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
                                           </Group>
                                           <Group type="102" alignment="1" attributes="0">
                                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -2926,7 +2935,7 @@
                                               <Component id="btTerminarViagem" min="-2" max="-2" attributes="0"/>
                                               <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                                               <Component id="jButton7" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="0" pref="90" max="32767" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
@@ -3144,7 +3153,7 @@
                                               <Component id="jButton9" min="-2" pref="134" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="27" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -3340,6 +3349,296 @@
                             </Component>
                           </SubComponents>
                         </Container>
+                        <Container class="keeptoo.KGradientPanel" name="kPanelVPendentes">
+                          <Properties>
+                            <Property name="kBorderRadius" type="int" value="0"/>
+                            <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                            </Property>
+                            <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                            </Property>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                              <CardConstraints cardName="card2"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="jScrollPane9" min="-2" pref="361" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="tfClienteF1" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel146" alignment="0" pref="105" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="tfEstadoF1" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel147" alignment="0" pref="105" max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="tfPOrigemF1" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel148" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="tfPDestinoF1" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel149" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="tfDataPartidaF1" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel150" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                          <Component id="jLabel151" alignment="0" pref="105" max="32767" attributes="0"/>
+                                                          <Component id="jComboBox2" alignment="0" max="32767" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                          <Component id="tfDistanciaF1" alignment="0" max="32767" attributes="0"/>
+                                                          <Component id="jLabel152" alignment="0" pref="105" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jLabel153" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                                          <Component id="tfVeiculoF1" alignment="0" min="-2" pref="105" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jButton8" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                                                  <Component id="btTerminarViagem1" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jScrollPane9" alignment="0" pref="0" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel147" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="tfEstadoF1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel146" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="tfClienteF1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel148" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="tfPOrigemF1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel149" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Component id="tfPDestinoF1" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel150" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="-2" attributes="0"/>
+                                                      <Group type="103" groupAlignment="3" attributes="0">
+                                                          <Component id="tfDataPartidaF1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jComboBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel151" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="jLabel152" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel153" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="tfDistanciaF1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfVeiculoF1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                              <Component id="btTerminarViagem1" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Component id="jButton8" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Container class="javax.swing.JScrollPane" name="jScrollPane9">
+                              <AuxValues>
+                                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                              </AuxValues>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                              <SubComponents>
+                                <Component class="javax.swing.JTable" name="jTable6">
+                                  <Properties>
+                                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                                      <Table columnCount="5" rowCount="0">
+                                        <Column editable="true" title="Id" type="java.lang.Object"/>
+                                        <Column editable="true" title="Cliente" type="java.lang.Object"/>
+                                        <Column editable="true" title="Origem" type="java.lang.Object"/>
+                                        <Column editable="true" title="Destino" type="java.lang.Object"/>
+                                        <Column editable="true" title="Data Partida" type="java.lang.Object"/>
+                                      </Table>
+                                    </Property>
+                                    <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                                      <TableColumnModel selectionModel="0">
+                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                          <Title/>
+                                          <Editor/>
+                                          <Renderer/>
+                                        </Column>
+                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                          <Title/>
+                                          <Editor/>
+                                          <Renderer/>
+                                        </Column>
+                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                          <Title/>
+                                          <Editor/>
+                                          <Renderer/>
+                                        </Column>
+                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                          <Title/>
+                                          <Editor/>
+                                          <Renderer/>
+                                        </Column>
+                                        <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                                          <Title/>
+                                          <Editor/>
+                                          <Renderer/>
+                                        </Column>
+                                      </TableColumnModel>
+                                    </Property>
+                                    <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+                                      <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+                                    </Property>
+                                  </Properties>
+                                  <Events>
+                                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jTable6MouseClicked"/>
+                                  </Events>
+                                </Component>
+                              </SubComponents>
+                            </Container>
+                            <Component class="javax.swing.JLabel" name="jLabel146">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Cliente"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfClienteF1">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel147">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Estado"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfEstadoF1">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel148">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Prov. Origem"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfPOrigemF1">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel149">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Prov. Destino"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfPDestinoF1">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel150">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Data Partida"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfDataPartidaF1">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel151">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Motoristas"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JComboBox" name="jComboBox2">
+                              <Properties>
+                                <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                                  <StringArray count="0"/>
+                                </Property>
+                              </Properties>
+                              <AuxValues>
+                                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                              </AuxValues>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel152">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Distancia"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfDistanciaF1">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel153">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Ve&#xed;culo"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfVeiculoF1">
+                            </Component>
+                            <Component class="javax.swing.JButton" name="jButton8">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Imprimir detalhes"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JButton" name="btTerminarViagem1">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Terminar viagem"/>
+                              </Properties>
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btTerminarViagem1ActionPerformed"/>
+                              </Events>
+                            </Component>
+                          </SubComponents>
+                        </Container>
                       </SubComponents>
                     </Container>
                     <Component class="keeptoo.KButton" name="kButton5">
@@ -3407,6 +3706,9 @@
                           <Color blue="0" green="0" red="ff" type="rgb"/>
                         </Property>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kButton7ActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -3448,7 +3750,7 @@
                                               <Component id="btAdicionarViaturas" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace min="0" pref="16" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="163" max="32767" attributes="0"/>
                                   </Group>
                                   <Component id="kPanelGViaturas1" alignment="0" max="32767" attributes="0"/>
                               </Group>
@@ -3653,7 +3955,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="61" max="32767" attributes="0"/>
+                                      <EmptySpace pref="208" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4030,7 +4332,7 @@
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <EmptySpace pref="61" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4094,7 +4396,7 @@
                                                   <Component id="jLabel54" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                                   <Component id="jLabel53" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace pref="10" max="32767" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="cbTipo4" min="-2" max="-2" attributes="0"/>
                                                   <Component id="cbCategoria4" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -4111,7 +4413,7 @@
                                               <Component id="jScrollPane2" pref="0" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4168,6 +4470,7 @@
                             <Component class="javax.swing.JTextField" name="tfKilometragem4">
                               <Events>
                                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfKilometragem4ActionPerformed"/>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfKilometragem4KeyTyped"/>
                               </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel53">
@@ -4186,6 +4489,9 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfPeso4">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfPeso4KeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel56">
                               <Properties>
@@ -4203,6 +4509,9 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfVolume4">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfVolume4KeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JComboBox" name="cbTipo4">
                               <Properties>
@@ -4387,8 +4696,6 @@
                                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                                       <Group type="103" groupAlignment="0" attributes="0">
                                                           <Component id="tfKilometragem" alignment="0" min="-2" pref="180" max="-2" attributes="0"/>
-                                                          <Component id="tfCategoria" min="-2" pref="180" max="-2" attributes="0"/>
-                                                          <Component id="jLabel36" min="-2" pref="131" max="-2" attributes="0"/>
                                                           <Component id="jLabel35" min="-2" pref="131" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
@@ -4403,7 +4710,7 @@
                                               <Component id="jLabel47" min="-2" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <EmptySpace min="0" pref="13" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="160" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
@@ -4428,13 +4735,9 @@
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="jLabel30" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
                                           <Group type="102" alignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="jLabel38" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                                                  <Component id="jLabel36" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                                              </Group>
+                                              <Component id="jLabel38" min="-2" pref="14" max="-2" attributes="0"/>
                                               <EmptySpace max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="tfCategoria" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="tfPeso" alignment="3" min="-2" max="-2" attributes="0"/>
                                                   <Component id="tfMarca" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
@@ -4477,6 +4780,9 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfMatricula">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfMatriculaKeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel30">
                               <Properties>
@@ -4484,6 +4790,9 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfMarca">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfMarcaKeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel31">
                               <Properties>
@@ -4498,6 +4807,10 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfAno">
+                              <Events>
+                                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tfAnoActionPerformed"/>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfAnoKeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel35">
                               <Properties>
@@ -4505,13 +4818,9 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfKilometragem">
-                            </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel36">
-                              <Properties>
-                                <Property name="text" type="java.lang.String" value="Categoria"/>
-                              </Properties>
-                            </Component>
-                            <Component class="javax.swing.JTextField" name="tfCategoria">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfKilometragemKeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel37">
                               <Properties>
@@ -4524,6 +4833,9 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfPeso">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfPesoKeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel39">
                               <Properties>
@@ -4531,6 +4843,9 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfLotacao">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfLotacaoKeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JLabel" name="jLabel46">
                               <Properties>
@@ -4538,18 +4853,30 @@
                               </Properties>
                             </Component>
                             <Component class="javax.swing.JTextField" name="tfVolume">
+                              <Events>
+                                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="tfVolumeKeyTyped"/>
+                              </Events>
                             </Component>
                             <Component class="javax.swing.JComboBox" name="cbTipo">
                               <Properties>
                                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                                  <StringArray count="4">
+                                  <StringArray count="8">
                                     <StringItem index="0" value="Aberto"/>
                                     <StringItem index="1" value="Fechado"/>
                                     <StringItem index="2" value="Frigorifico"/>
                                     <StringItem index="3" value="Tanque"/>
+                                    <StringItem index="4" value="Basculante"/>
+                                    <StringItem index="5" value="Porta Contentor"/>
+                                    <StringItem index="6" value="Bus"/>
+                                    <StringItem index="7" value="Autom&#xf3;vel"/>
                                   </StringArray>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="cbTipoItemStateChanged"/>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cbTipoMouseClicked"/>
+                                <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="cbTipoKeyPressed"/>
+                              </Events>
                               <AuxValues>
                                 <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
                               </AuxValues>
@@ -4627,7 +4954,7 @@
                                           <Component id="btPaneAlterFunc" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                                  <EmptySpace pref="167" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -5420,7 +5747,7 @@
                                   <Component id="btVoltarAddFunc" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
                                   <Component id="lbGerirFuncV1" min="-2" pref="148" max="-2" attributes="0"/>
-                                  <EmptySpace pref="222" max="32767" attributes="0"/>
+                                  <EmptySpace pref="369" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -5487,53 +5814,23 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="btVoltarRelatorios" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
-                                      <Component id="lbRelatorios" min="-2" pref="115" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="276" max="-2" attributes="0"/>
-                                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace pref="255" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel141" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel142" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="tfAbertoRel" pref="87" max="32767" attributes="0"/>
-                                  <Component id="tfFechadoRel" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="tfFrigorificoRel" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="tfTanquerRel" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel145" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="tfEmCursoRel" min="-2" pref="90" max="-2" attributes="0"/>
-                                  </Group>
                                   <Group type="102" attributes="0">
-                                      <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="tfMarcadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="btVoltarRelatorios" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="176" max="-2" attributes="0"/>
+                                              <Component id="lbRelatorios" min="-2" pref="115" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jPanelRelatRoot" alignment="0" min="-2" pref="605" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel143" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="tfTerminadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                      <Component id="btRelatTipo" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <EmptySpace pref="156" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -5545,42 +5842,11 @@
                                   <Component id="btVoltarRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lbRelatorios" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tfAbertoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel139" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="tfTerminadasRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel143" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tfFechadoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="tfMarcadasRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="tfFrigorificoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="tfEmCursoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel145" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="tfTanquerRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel142" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace pref="187" max="32767" attributes="0"/>
-                              <Component id="jButton2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jPanelRelatRoot" min="-2" pref="370" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="btRelatTipo" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace pref="29" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -5610,59 +5876,190 @@
                         <Property name="text" type="java.lang.String" value="Relat&#xf3;rios"/>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="jButton2">
+                    <Container class="javax.swing.JPanel" name="jPanelRelatRoot">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="jButton2"/>
+                        <Property name="opaque" type="boolean" value="false"/>
                       </Properties>
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tfAbertoRel">
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tfFechadoRel">
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tfFrigorificoRel">
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tfTanquerRel">
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel139">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
+                      <SubComponents>
+                        <Container class="javax.swing.JPanel" name="PainelRelatorios">
+                          <Properties>
+                            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="ff" red="cc" type="rgb"/>
+                            </Property>
+                            <Property name="opaque" type="boolean" value="false"/>
+                          </Properties>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                              <CardConstraints cardName="card2"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="jPanel10">
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                              <CardConstraints cardName="card3"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel141" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel142" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="tfAbertoRel" max="32767" attributes="0"/>
+                                                  <Component id="tfFechadoRel" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfFrigorificoRel" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfTanquerRel" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="1" attributes="0">
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel145" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="tfEmCursoRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="tfMarcadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="jLabel143" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                      <Component id="tfTerminadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace pref="432" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfAbertoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel139" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfFechadoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfFrigorificoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfTanquerRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel142" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="3" attributes="0">
+                                                  <Component id="tfTerminadasRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel143" alignment="3" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="tfMarcadasRel" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfEmCursoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel145" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="123" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextField" name="tfAbertoRel">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel139">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Aberto"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel140">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Fechado"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfFechadoRel">
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfFrigorificoRel">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel141">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Frigorifico"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel142">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Tanque"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfTanquerRel">
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfEmCursoRel">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel145">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Em Curso"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel144">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Marcadas"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfMarcadasRel">
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfTerminadasRel">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel143">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Terminadas"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JButton" name="btRelatTipo">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Aberto"/>
+                        <Property name="text" type="java.lang.String" value="Viagens por tipo"/>
                       </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel140">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Fechado"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel141">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Frigorifico"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel142">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Tanque"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tfTerminadasRel">
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tfMarcadasRel">
-                    </Component>
-                    <Component class="javax.swing.JTextField" name="tfEmCursoRel">
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel143">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Terminadas"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel144">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Marcadas"/>
-                      </Properties>
-                    </Component>
-                    <Component class="javax.swing.JLabel" name="jLabel145">
-                      <Properties>
-                        <Property name="text" type="java.lang.String" value="Em Curso"/>
-                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRelatTipoActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
