@@ -189,7 +189,7 @@ public class NewHome extends javax.swing.JFrame {
         jLabel88 = new javax.swing.JLabel();
         radioTanque = new javax.swing.JRadioButton();
         jLabel89 = new javax.swing.JLabel();
-        jRadioButton8 = new javax.swing.JRadioButton();
+        radioBus = new javax.swing.JRadioButton();
         radioAutomovel = new javax.swing.JRadioButton();
         jLabel90 = new javax.swing.JLabel();
         jDateChooser1 = new com.toedter.calendar.JDateChooser();
@@ -249,7 +249,7 @@ public class NewHome extends javax.swing.JFrame {
         jLabel127 = new javax.swing.JLabel();
         tfConsumoCombustivel = new javax.swing.JTextField();
         jLabel128 = new javax.swing.JLabel();
-        tfTempoEstimado3 = new javax.swing.JTextField();
+        tfCustoCarga3 = new javax.swing.JTextField();
         jLabel129 = new javax.swing.JLabel();
         tfValorTotal3 = new javax.swing.JTextField();
         tfDataPartida3 = new javax.swing.JTextField();
@@ -275,6 +275,7 @@ public class NewHome extends javax.swing.JFrame {
         tfTipoV3 = new javax.swing.JTextField();
         jLabel124 = new javax.swing.JLabel();
         tfNumeroM3 = new javax.swing.JTextField();
+        btTerminar = new javax.swing.JButton();
         kPanelVViagens = new keeptoo.KGradientPanel();
         btVoltarVViagens = new javax.swing.JLabel();
         lbVerViagens = new javax.swing.JLabel();
@@ -1265,8 +1266,8 @@ public class NewHome extends javax.swing.JFrame {
 
         jLabel89.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/icons/icons8_Bus_25px.png"))); // NOI18N
 
-        buttonGroup1.add(jRadioButton8);
-        jRadioButton8.setText("Bus");
+        buttonGroup1.add(radioBus);
+        radioBus.setText("Bus");
 
         buttonGroup1.add(radioAutomovel);
         radioAutomovel.setText("Automóvel");
@@ -1303,7 +1304,7 @@ public class NewHome extends javax.swing.JFrame {
                                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(radioPortaContentor, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(radioFrigorifico, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jRadioButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(radioBus, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jDateChooser1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel80, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 150, Short.MAX_VALUE)))
@@ -1402,7 +1403,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addComponent(jLabel88)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jRadioButton8)
+                    .addComponent(radioBus)
                     .addComponent(jLabel89)
                     .addComponent(radioAutomovel)
                     .addComponent(jLabel90)))
@@ -1770,9 +1771,9 @@ public class NewHome extends javax.swing.JFrame {
 
         tfConsumoCombustivel.setEnabled(false);
 
-        jLabel128.setText("Tempo estimado");
+        jLabel128.setText("Custo Carga");
 
-        tfTempoEstimado3.setEnabled(false);
+        tfCustoCarga3.setEnabled(false);
 
         jLabel129.setText("Valor Total");
 
@@ -1794,44 +1795,46 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(tfValorAlimentacao3, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel122, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel125, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(tfValorCombustivel3, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel121, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                                .addComponent(tfValorAlojamento3)
-                                .addComponent(tfTempoEstimado3)
-                                .addComponent(jLabel128, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(tfPesoVolume3)
-                                .addComponent(jLabel107, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(tfNumeroEstivadores3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel108, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(jPanel8Layout.createSequentialGroup()
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jLabel126, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
-                                .addComponent(tfDistancia3))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel127, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(tfConsumoCombustivel))))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel126, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                            .addComponent(tfDistancia3))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tfConsumoCombustivel)
+                            .addComponent(jLabel127, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel122, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tfValorCombustivel3, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel125, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tfValorAlimentacao3))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel121, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
+                            .addComponent(tfValorAlojamento3)
+                            .addComponent(tfCustoCarga3)
+                            .addComponent(jLabel128, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(tfDataPartida3, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel132, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel129)
-                            .addComponent(tfValorTotal3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jLabel129, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel8Layout.createSequentialGroup()
+                                .addComponent(tfValorTotal3, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tfPesoVolume3)
+                            .addComponent(jLabel107, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tfNumeroEstivadores3, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel108, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(20, 20, 20))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1869,7 +1872,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel128)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tfTempoEstimado3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(tfCustoCarga3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel132)
@@ -2017,6 +2020,13 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        btTerminar.setText("Terminar");
+        btTerminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btTerminarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout kPanelRegRoot3Layout = new javax.swing.GroupLayout(kPanelRegRoot3);
         kPanelRegRoot3.setLayout(kPanelRegRoot3Layout);
         kPanelRegRoot3Layout.setHorizontalGroup(
@@ -2026,7 +2036,11 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(32, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, kPanelRegRoot3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btTerminar)
+                .addGap(141, 141, 141))
         );
         kPanelRegRoot3Layout.setVerticalGroup(
             kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2034,8 +2048,10 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btTerminar)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         kPanelRegRoot.add(kPanelRegRoot3, "card2");
@@ -4658,19 +4674,49 @@ public class NewHome extends javax.swing.JFrame {
         boolean verificado=true;
         System.out.println("Verificado Inicial : "+verificado);
         
-        if(radioAberto.isSelected() || RadioFechado.isSelected() || radioBasculante.isSelected() || radioPortaContentor.isSelected()){
+        if(radioAberto.isSelected()){
             lbPesoVolume.setText("Peso");
             tfTipoV1.setText("Aberto");
             this.preencherTabelaFiltrada("Aberto");
             //verificado=true;
         } else
-        if(radioFrigorifico.isSelected() || radioFrigorifico.isSelected()){
+            if(RadioFechado.isSelected()){
+            lbPesoVolume.setText("Peso");
+            tfTipoV1.setText("Fechado");
+            this.preencherTabelaFiltrada("Fechado");
+            //verificado=true;
+        } else
+             if(radioBasculante.isSelected()){
+            lbPesoVolume.setText("Peso");
+            tfTipoV1.setText("Basculante");
+            this.preencherTabelaFiltrada("Basculante");
+            //verificado=true;
+        } else
+            if( radioPortaContentor.isSelected()){
+            lbPesoVolume.setText("Peso");
+            tfTipoV1.setText("Contentor");
+            this.preencherTabelaFiltrada("Contentor");
+            //verificado=true;
+        } else
+        if(radioFrigorifico.isSelected()){
             lbPesoVolume.setText("Volume");
             tfTipoV1.setText("Frigorifico");
             this.preencherTabelaFiltrada("Frigorifico");
-//verificado=true;
+//      verificado=true;
         } else
-        if(radioAutomovel.isSelected() || radioTanque.isSelected()){
+            if(radioTanque.isSelected() ){
+            lbPesoVolume.setText("Volume");
+            tfTipoV1.setText("Tanque");
+            this.preencherTabelaFiltrada("Tanque");
+//      verificado=true;
+        } else
+                if(radioBus.isSelected()){
+            lbPesoVolume.setText("Lotação");
+            tfTipoV1.setText("Bus");
+            this.preencherTabelaFiltrada("Bus");
+            //verificado=true;
+        }else
+        if(radioAutomovel.isSelected()){
             lbPesoVolume.setText("Lotação");
             tfTipoV1.setText("Automovel");
             this.preencherTabelaFiltrada("Automovel");
@@ -4746,6 +4792,7 @@ public class NewHome extends javax.swing.JFrame {
     private void btProximo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btProximo2ActionPerformed
 
         DecimalFormat df=new DecimalFormat("####0.00");
+        SimpleDateFormat dt = new SimpleDateFormat("yyyy-MM-dd hh");
         
         kPanelRegRoot.removeAll();
         kPanelRegRoot.add(kPanelRegRoot3);
@@ -4798,14 +4845,18 @@ public class NewHome extends javax.swing.JFrame {
         String dist=tfDistancia3.getText();
         
         tfDataPartida3.setText(jDateChooser1.getDate()+"");
+        Date data=jDateChooser1.getDate();
         String dat =tfDataPartida3.getText();
-        //--------------------------------
+        
+            tfDataPartida3.setText(dt.format(data)+"");
+            //--------------------------------
+        
         
         //-----------------------------------
         double distancia=Double.parseDouble(tfDistancia1.getText());
         Tarifas t=this.tarifa();
         double consumoC=(Double.parseDouble(tfDistancia1.getText())*0.28);
-        tfConsumoCombustivel.setText(consumoC+" Litros");
+        tfConsumoCombustivel.setText(df.format(consumoC)+" Litros");
         String consumo=tfConsumoCombustivel.getText();
         
         tfValorCombustivel3.setText(df.format(t.getPrecoCombustivel()*consumoC)+ " MT");
@@ -4817,10 +4868,13 @@ public class NewHome extends javax.swing.JFrame {
         double alimentacao=t.getPrecoAliementacao()*distancia;
         tfValorAlimentacao3.setText(df.format(alimentacao)+" Mt");
         
+        double valCarga=this.precoCarga(Double.parseDouble(tfPesoVol2.getText()), tipo);
         
         double vTotal=consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM());
         tfValorTotal3.setText(consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM())+"Mt");
         String total=tfValorTotal3.getText();
+        
+        tfCustoCarga3.setText(df.format(valCarga)+" Mt");
         
         /*
         Viagem v=new Viagem();
@@ -4902,13 +4956,13 @@ public class NewHome extends javax.swing.JFrame {
             preco=t.getPrecoPortaContentor()*peso;
         }
         if (tipo.equalsIgnoreCase("Tanque")){
-            preco=t.get*peso;
+            preco=t.getPrecoTanque()*peso;
         }
-        if (tipo.equalsIgnoreCase("Aberto")){
-            preco=t.getPrecoKGAberto()*peso;
+        if (tipo.equalsIgnoreCase("Bus")){
+            preco=t.getPrecoBus()*peso;
         }
-        if (tipo.equalsIgnoreCase("Aberto")){
-            preco=t.getPrecoKGAberto()*peso;
+        if (tipo.equalsIgnoreCase("Automovel")){
+            preco=t.getPrecoAutomovel()*peso;
         }
         return preco;
     }
@@ -5594,6 +5648,23 @@ public class NewHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jTable5MouseClicked
 
+    private void btTerminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTerminarActionPerformed
+        // TODO add your handling code here:
+        
+        kPanelRegRoot.removeAll();
+        kPanelRegRoot.add(kPanelRegRoot1);
+        kPanelRegRoot.repaint();
+        kPanelRegRoot.revalidate();
+        
+        tfEnderecoP1.setText("");
+        tfEderecoD1.setText("");
+        jDateChooser1.setDate(null);
+        tfDistancia1.setText("");
+        tfPesoVol2.setText("");
+        tfNEstivadores3.setText("");
+        
+    }//GEN-LAST:event_btTerminarActionPerformed
+
 
     public void setColor(JPanel panel)
     {
@@ -6021,6 +6092,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton btProximo2;
     private javax.swing.JButton btRelatTipo;
     private javax.swing.JLabel btSettings;
+    private javax.swing.JButton btTerminar;
     private javax.swing.JButton btTerminarViagem;
     private keeptoo.KButton btVerViaturas;
     private javax.swing.JLabel btVoltarAddFunc;
@@ -6214,7 +6286,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelMainBackground;
     private javax.swing.JPanel jPanelMenu;
     private javax.swing.JPanel jPanelRelatRoot;
-    private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -6315,6 +6386,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JRadioButton radioAberto;
     private javax.swing.JRadioButton radioAutomovel;
     private javax.swing.JRadioButton radioBasculante;
+    private javax.swing.JRadioButton radioBus;
     private javax.swing.JRadioButton radioFrigorifico;
     private javax.swing.JRadioButton radioPortaContentor;
     private javax.swing.JRadioButton radioTanque;
@@ -6341,6 +6413,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfClienteNuit1;
     private javax.swing.JTextField tfClienteTer;
     private javax.swing.JTextField tfConsumoCombustivel;
+    private javax.swing.JTextField tfCustoCarga3;
     private javax.swing.JTextField tfDataPTer;
     private javax.swing.JTextField tfDataPartida3;
     private javax.swing.JTextField tfDataPartidaF;
@@ -6402,7 +6475,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfProvinciaP2;
     private javax.swing.JTextField tfProvinciaP3;
     private javax.swing.JTextField tfTanquerRel;
-    private javax.swing.JTextField tfTempoEstimado3;
     private javax.swing.JTextField tfTerminadasRel;
     private javax.swing.JTextField tfTipoV1;
     private javax.swing.JTextField tfTipoV3;

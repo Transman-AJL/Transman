@@ -125,7 +125,7 @@ public class HistoricoAlteracoes extends javax.swing.JFrame {
             String dados[]={trf.getPrecoAliementacao()+"",trf.getPrecoAlojamento()+"",trf.getPrecoAutomovel()+"",
                 trf.getPrecoBasculante()+"",trf.getPrecoBus()+"",trf.getPrecoCombustivel()+"",trf.getPrecoEstivador()+"",
                 trf.getPrecoKGAberto()+"",trf.getPrecoKGFechado()+"",trf.getPrecoKGFrigorifico()+"",trf.getPrecoKM()+"",
-                trf.getPrecoMotorista()+"",trf.getPrecoPassageiro()+"",trf.getDataAlteracao()+""};
+                trf.getPrecoMotorista()+"",trf.getPrecoTanque()+"",trf.getDataAlteracao()+""};
             
             dtm.addRow(dados);
         }
