@@ -2048,7 +2048,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(kPanelRegRoot3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btTerminar)
                 .addContainerGap(21, Short.MAX_VALUE))
@@ -4769,6 +4769,12 @@ public class NewHome extends javax.swing.JFrame {
         } else{
             tfDistancia2.setText(tfDistancia2.getText());
         }
+        Date data=jDateChooser1.getDate();
+        Date hoje=new Date();
+         if(hoje.after(data)){
+            verificado=false;
+            lbErro.setText("Introduza uma data válida");
+        }
         
         
         
@@ -4876,7 +4882,7 @@ public class NewHome extends javax.swing.JFrame {
         
         tfCustoCarga3.setText(df.format(valCarga)+" Mt");
         
-        /*
+        
         Viagem v=new Viagem();
         
         
@@ -4924,7 +4930,7 @@ public class NewHome extends javax.swing.JFrame {
         lbClienteHome4.setText(v.getNomeCliente());
         lbDestinoHome4.setText(v.getProvinciaDestino());
         webProgressBar5.setValue(1);
-        */
+        
     }//GEN-LAST:event_btProximo2ActionPerformed
 
     public Tarifas tarifa(){
