@@ -303,21 +303,21 @@ public class NewHome extends javax.swing.JFrame {
         jScrollPane8 = new javax.swing.JScrollPane();
         jTable5 = new javax.swing.JTable();
         jLabel99 = new javax.swing.JLabel();
-        jTextField36 = new javax.swing.JTextField();
+        tfClienteTer = new javax.swing.JTextField();
         jLabel106 = new javax.swing.JLabel();
-        jTextField37 = new javax.swing.JTextField();
+        tfEstadoTer = new javax.swing.JTextField();
         jLabel133 = new javax.swing.JLabel();
-        jTextField38 = new javax.swing.JTextField();
+        tfProvOTer = new javax.swing.JTextField();
         jLabel134 = new javax.swing.JLabel();
-        jTextField39 = new javax.swing.JTextField();
+        tfProvDTer = new javax.swing.JTextField();
         jLabel135 = new javax.swing.JLabel();
-        jTextField40 = new javax.swing.JTextField();
+        tfDataPTer = new javax.swing.JTextField();
         jLabel136 = new javax.swing.JLabel();
         jComboBox4 = new javax.swing.JComboBox<>();
         jLabel137 = new javax.swing.JLabel();
-        jTextField41 = new javax.swing.JTextField();
+        tfDistTer = new javax.swing.JTextField();
         jLabel138 = new javax.swing.JLabel();
-        jTextField42 = new javax.swing.JTextField();
+        tfVeiTer = new javax.swing.JTextField();
         jButton9 = new javax.swing.JButton();
         kPanelVPendentes = new keeptoo.KGradientPanel();
         jScrollPane9 = new javax.swing.JScrollPane();
@@ -339,7 +339,7 @@ public class NewHome extends javax.swing.JFrame {
         jLabel153 = new javax.swing.JLabel();
         tfVeiculoF1 = new javax.swing.JTextField();
         jButton8 = new javax.swing.JButton();
-        btTerminarViagem1 = new javax.swing.JButton();
+        btCancelarViagem = new javax.swing.JButton();
         kButton5 = new keeptoo.KButton();
         kButton6 = new keeptoo.KButton();
         kButton7 = new keeptoo.KButton();
@@ -2255,6 +2255,11 @@ public class NewHome extends javax.swing.JFrame {
                 "Id", "Cliente", "Origem", "Destino", "Data Partida"
             }
         ));
+        jTable5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jTable5MouseClicked(evt);
+            }
+        });
         jScrollPane8.setViewportView(jTable5);
 
         jLabel99.setText("Cliente");
@@ -2286,23 +2291,23 @@ public class NewHome extends javax.swing.JFrame {
                 .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField36)
+                            .addComponent(tfClienteTer)
                             .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField37)
+                            .addComponent(tfEstadoTer)
                             .addComponent(jLabel106, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)))
                     .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField38)
+                            .addComponent(tfProvOTer)
                             .addComponent(jLabel133, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField39)
+                            .addComponent(tfProvDTer)
                             .addComponent(jLabel134, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jTextField40)
+                            .addComponent(tfDataPTer)
                             .addComponent(jLabel135, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -2310,12 +2315,12 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextField41, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tfDistTer, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel137, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel138, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(tfVeiTer, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -2332,28 +2337,28 @@ public class NewHome extends javax.swing.JFrame {
                             .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                                 .addComponent(jLabel106)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(tfEstadoTer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                                 .addComponent(jLabel99)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(tfClienteTer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                                 .addComponent(jLabel133)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(tfProvOTer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                                 .addComponent(jLabel134)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(tfProvDTer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                                 .addComponent(jLabel135)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(tfDataPTer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(kPanelVTerminadasLayout.createSequentialGroup()
                                 .addComponent(jLabel136)
@@ -2363,11 +2368,11 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jLabel138))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(kPanelVTerminadasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(tfDistTer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tfVeiTer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42)
                         .addComponent(jButton9)
-                        .addGap(0, 136, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -2410,10 +2415,10 @@ public class NewHome extends javax.swing.JFrame {
 
         jButton8.setText("Imprimir detalhes");
 
-        btTerminarViagem1.setText("Terminar viagem");
-        btTerminarViagem1.addActionListener(new java.awt.event.ActionListener() {
+        btCancelarViagem.setText("Cancelar Viagem");
+        btCancelarViagem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btTerminarViagem1ActionPerformed(evt);
+                btCancelarViagemActionPerformed(evt);
             }
         });
 
@@ -2465,7 +2470,7 @@ public class NewHome extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(kPanelVPendentesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btTerminarViagem1, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btCancelarViagem, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(49, 49, 49))))
         );
         kPanelVPendentesLayout.setVerticalGroup(
@@ -2513,7 +2518,7 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(tfDistanciaF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(tfVeiculoF1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(35, 35, 35)
-                        .addComponent(btTerminarViagem1)
+                        .addComponent(btCancelarViagem)
                         .addGap(30, 30, 30)
                         .addComponent(jButton8)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -4025,7 +4030,7 @@ public class NewHome extends javax.swing.JFrame {
                     .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
                         .addComponent(btRelatTipo)))
-                .addContainerGap(156, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRelatoriosLayout.setVerticalGroup(
             kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4038,7 +4043,7 @@ public class NewHome extends javax.swing.JFrame {
                 .addComponent(jPanelRelatRoot, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btRelatTipo)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         kPanelRoot.add(kPanelRelatorios, "card2");
@@ -5017,11 +5022,20 @@ public class NewHome extends javax.swing.JFrame {
                 int b=Integer.parseInt(lbEmCurso.getText())+1;
                 lbTerminadas.setText(a+"");
                 lbEmCurso.setText(b+"");
+                
+                for(Veiculo ve:todosDados){
+                    if(vi.getMatriculaVeiculo().equalsIgnoreCase(ve.getMatricula())){
+                        vei=ve;
+                        vei.setStatus("Disponivel");
+                    }
+                }
+                
             }
         }
         
         System.out.println(viagem.actualizar());
-        JOptionPane.showMessageDialog(this,"Dados Alterados");
+        System.out.println(vei.actualizar());
+        JOptionPane.showMessageDialog(this,"Viagem Terminada");
         this.preencherTabela4Terminadas();
         this.preencherTabela4();
         
@@ -5487,11 +5501,55 @@ public class NewHome extends javax.swing.JFrame {
 
     private void jTable6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable6MouseClicked
         // TODO add your handling code here:
+        
+        int id=Integer.parseInt((String)jTable6.getValueAt(jTable6.getSelectedRow(), 0));
+        for(Viagem vi:todosDadosVi){
+        
+            if(vi.getId()==id){
+            
+                tfClienteF1.setText(vi.getNomeCliente());
+                tfEstadoF1.setText(vi.getEstado());
+                tfPOrigemF1.setText(vi.getProvinciaPartida());
+                tfPDestinoF1.setText(vi.getProvinciaDestino());
+                tfDataPartidaF1.setText(vi.getDataPartida()+"");
+                tfDistanciaF1.setText(vi.getDistancia()+"");
+                tfVeiculoF1.setText(vi.getMatriculaVeiculo());
+            }
+        }
     }//GEN-LAST:event_jTable6MouseClicked
 
-    private void btTerminarViagem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTerminarViagem1ActionPerformed
+    private void btCancelarViagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCancelarViagemActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btTerminarViagem1ActionPerformed
+        
+        
+        int id=Integer.parseInt((String)jTable6.getValueAt(jTable6.getSelectedRow(), 0));
+        for(Viagem vi:todosDadosVi){
+        
+            if(vi.getId()==id){
+                viagem=vi;
+                viagem.setEstado("Cancelada");
+                int a=Integer.parseInt(lbTerminadas.getText())+1;
+                int b=Integer.parseInt(lbEmCurso.getText())+1;
+                lbTerminadas.setText(a+"");
+                lbEmCurso.setText(b+"");
+                
+                for(Veiculo ve:todosDados){
+                    if(vi.getMatriculaVeiculo().equalsIgnoreCase(ve.getMatricula())){
+                        vei=ve;
+                        vei.setStatus("Disponivel");
+                    }
+                }
+                
+            }
+        }
+        
+        System.out.println(viagem.actualizar());
+        System.out.println(vei.actualizar());
+        JOptionPane.showMessageDialog(this,"Viagem Cancelada");
+        this.preencherTabela4Terminadas();
+        this.preencherTabela4();
+        
+    }//GEN-LAST:event_btCancelarViagemActionPerformed
 
     private void kButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton7ActionPerformed
         // TODO add your handling code here:
@@ -5502,6 +5560,26 @@ public class NewHome extends javax.swing.JFrame {
         kPanelVerVRoot.revalidate();
         
     }//GEN-LAST:event_kButton7ActionPerformed
+
+    private void jTable5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable5MouseClicked
+        // TODO add your handling code here:
+        
+        int id=Integer.parseInt((String)jTable5.getValueAt(jTable5.getSelectedRow(), 0));
+        for(Viagem vi:todosDadosVi){
+        
+            if(vi.getId()==id){
+            
+                tfClienteTer.setText(vi.getNomeCliente());
+                tfEstadoTer.setText(vi.getEstado());
+                tfProvOTer.setText(vi.getProvinciaPartida());
+                tfProvDTer.setText(vi.getProvinciaDestino());
+                tfDataPTer.setText(vi.getDataPartida()+"");
+                tfDistTer.setText(vi.getDistancia()+"");
+                tfVeiTer.setText(vi.getMatriculaVeiculo());
+            }
+        }
+        
+    }//GEN-LAST:event_jTable5MouseClicked
 
 
     public void setColor(JPanel panel)
@@ -5684,17 +5762,37 @@ public class NewHome extends javax.swing.JFrame {
             if(vi.getEstado().equalsIgnoreCase("Bus")){
                bus++;
             }
+            if(vi.getEstado().equalsIgnoreCase("Automovel")){
+                automovel++;
+            }
             
         }
             
             DefaultCategoryDataset dcd= new DefaultCategoryDataset();
-            dcd.setValue(aberto, "Aberto", "Aberto");
-            dcd.setValue(fechado, "Fechado", "Fechado");
-            dcd.setValue(frigorifico, "Frigorifico", "Frigorífico");
-            dcd.setValue(tanque, "Tanque", "Tanque");
-            dcd.setValue(basculante, "Basculante", "Basculante");
-            dcd.setValue(contentor, "Contentor", "Contentor");
-            dcd.setValue(bus, "Bus", "Bus");
+            if(aberto>0){
+               dcd.setValue(aberto, "Aberto", "Aberto"); 
+            }
+            if(fechado>0){
+                dcd.setValue(fechado, "Fechado", "Fechado");
+            }
+            if(frigorifico>0){
+                dcd.setValue(frigorifico, "Frigorifico", "Frigorífico");
+            }
+            if(tanque>0){
+                dcd.setValue(tanque, "Tanque", "Tanque");
+            }
+            if(basculante>0){
+                dcd.setValue(basculante, "Basculante", "Basculante");
+            }
+            if(contentor>0){
+               dcd.setValue(contentor, "Contentor", "Contentor"); 
+            }
+            if(bus>0){
+               dcd.setValue(bus, "Bus", "Bus"); 
+            }
+            if(automovel>0){
+               dcd.setValue(bus, "Automóvel", "Automóvel"); 
+            }
             
             JFreeChart chartTipo= ChartFactory.createBarChart("Viagens por tipo de Veículo", "Tipos", "Quantidade", dcd, PlotOrientation.VERTICAL, true, true, false);
             CategoryPlot plot = chartTipo.getCategoryPlot();
@@ -5704,10 +5802,10 @@ public class NewHome extends javax.swing.JFrame {
             PainelRelatorios.add(chartPanelTipo);
             PainelRelatorios.updateUI();
             
-            
+        /*    
         ChartFrame chartFrm=new ChartFrame("Registros dos alunos", chartTipo, true);
         chartFrm.setVisible(true);
-        chartFrm.setSize(300,180);
+        chartFrm.setSize(300,180);*/
             
     }
     
@@ -5719,7 +5817,7 @@ public class NewHome extends javax.swing.JFrame {
         DefaultTableModel dtm=(DefaultTableModel)jTable5.getModel();        
         
         for(Viagem vi:todosDadosVi){
-            if(vi.getEstado().equalsIgnoreCase("Terminada")){
+            if(vi.getEstado().equalsIgnoreCase("Terminada") || vi.getEstado().equalsIgnoreCase("Cancelada") ){
                 String dados[]={vi.getId()+"",vi.getNomeCliente(),vi.getLocalPartida(),vi.getLocalDestino(),vi.getDataPartida()+""};
                 dtm.addRow(dados);
             }
@@ -5897,6 +5995,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton btAdicionar;
     private keeptoo.KButton btAdicionarViaturas;
     private javax.swing.JButton btAlterar;
+    private javax.swing.JButton btCancelarViagem;
     private keeptoo.KButton btEditarViaturas;
     private javax.swing.JLabel btExit;
     private javax.swing.JLabel btMax;
@@ -5910,7 +6009,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton btRelatTipo;
     private javax.swing.JLabel btSettings;
     private javax.swing.JButton btTerminarViagem;
-    private javax.swing.JButton btTerminarViagem1;
     private keeptoo.KButton btVerViaturas;
     private javax.swing.JLabel btVoltarAddFunc;
     private javax.swing.JLabel btVoltarGFunc;
@@ -6122,13 +6220,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTable jTable5;
     private javax.swing.JTable jTable6;
     private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField36;
-    private javax.swing.JTextField jTextField37;
-    private javax.swing.JTextField jTextField38;
-    private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField40;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
     private keeptoo.KButton kButton1;
     private keeptoo.KButton kButton2;
     private keeptoo.KButton kButton3;
@@ -6235,10 +6326,13 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfClienteF;
     private javax.swing.JTextField tfClienteF1;
     private javax.swing.JTextField tfClienteNuit1;
+    private javax.swing.JTextField tfClienteTer;
     private javax.swing.JTextField tfConsumoCombustivel;
+    private javax.swing.JTextField tfDataPTer;
     private javax.swing.JTextField tfDataPartida3;
     private javax.swing.JTextField tfDataPartidaF;
     private javax.swing.JTextField tfDataPartidaF1;
+    private javax.swing.JTextField tfDistTer;
     private javax.swing.JTextField tfDistancia1;
     private javax.swing.JTextField tfDistancia2;
     private javax.swing.JTextField tfDistancia3;
@@ -6255,6 +6349,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfEnderecoP3;
     private javax.swing.JTextField tfEstadoF;
     private javax.swing.JTextField tfEstadoF1;
+    private javax.swing.JTextField tfEstadoTer;
     private javax.swing.JTextField tfFechadoRel;
     private javax.swing.JTextField tfFrigorificoRel;
     private javax.swing.JTextField tfKilometragem;
@@ -6287,6 +6382,8 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfPeso4;
     private javax.swing.JTextField tfPesoVol2;
     private javax.swing.JTextField tfPesoVolume3;
+    private javax.swing.JTextField tfProvDTer;
+    private javax.swing.JTextField tfProvOTer;
     private javax.swing.JTextField tfProvinciaD2;
     private javax.swing.JTextField tfProvinciaD3;
     private javax.swing.JTextField tfProvinciaP2;
@@ -6300,6 +6397,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfValorAlojamento3;
     private javax.swing.JTextField tfValorCombustivel3;
     private javax.swing.JTextField tfValorTotal3;
+    private javax.swing.JTextField tfVeiTer;
     private javax.swing.JTextField tfVeiculoF;
     private javax.swing.JTextField tfVeiculoF1;
     private javax.swing.JTextField tfVolume;
