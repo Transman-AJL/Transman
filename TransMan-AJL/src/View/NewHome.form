@@ -5847,6 +5847,8 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                                       <Component id="btRelatTipo" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                      <Component id="btRelatTipo1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
@@ -5864,7 +5866,10 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="jPanelRelatRoot" min="-2" pref="370" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="btRelatTipo" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="btRelatTipo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btRelatTipo1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -5930,36 +5935,192 @@
                                   <Group type="102" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel144" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <Component id="jLabel161" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                                  <Component id="tfEmCursoRel2" min="-2" pref="90" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel141" min="-2" max="-2" attributes="0"/>
+                                                          <Component id="jLabel142" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="103" groupAlignment="0" attributes="0">
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Group type="102" alignment="0" attributes="0">
+                                                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                                                  <Component id="tfCarg" min="-2" pref="87" max="-2" attributes="0"/>
+                                                              </Group>
+                                                              <Group type="102" alignment="1" attributes="0">
+                                                                  <EmptySpace max="-2" attributes="0"/>
+                                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                                      <Component id="tfAlo" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+                                                                      <Component id="tfComb" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+                                                                      <Component id="tfAli" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+                                                                  </Group>
+                                                              </Group>
+                                                          </Group>
+                                                          <Group type="102" alignment="0" attributes="0">
+                                                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                                              <Component id="tfMarcadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                                  <Group type="102" alignment="0" attributes="0">
+                                                      <Component id="jLabel145" min="-2" max="-2" attributes="0"/>
+                                                      <EmptySpace max="32767" attributes="0"/>
+                                                      <Component id="tfEmCursoRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace pref="397" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                            <DimensionLayout dim="1">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfComb" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel139" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfAlo" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="tfAli" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="tfCarg" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel142" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfMarcadasRel" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="jLabel145" alignment="3" min="-2" pref="17" max="-2" attributes="0"/>
+                                          <Component id="tfEmCursoRel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel161" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfEmCursoRel2" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="130" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                            </DimensionLayout>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="javax.swing.JTextField" name="tfComb">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel139">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Total Combust&#xed;vel"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel140">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Total Alojamento"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfAlo">
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfAli">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel141">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Total Alimenta&#xe7;&#xe3;o"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel142">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Total Lucro Carga"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfCarg">
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfEmCursoRel">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel145">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Valor total Custos"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel144">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Valor Total Gasto"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfMarcadasRel">
+                            </Component>
+                            <Component class="javax.swing.JLabel" name="jLabel161">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="Valor Total Lucros"/>
+                              </Properties>
+                            </Component>
+                            <Component class="javax.swing.JTextField" name="tfEmCursoRel2">
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JPanel" name="jPanelCustos">
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
+                              <CardConstraints cardName="card3"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout>
+                            <DimensionLayout dim="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Component id="jLabel139" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLabel140" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLabel141" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLabel142" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel154" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel155" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel156" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel157" alignment="0" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
                                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                                  <Component id="tfAbertoRel" max="32767" attributes="0"/>
-                                                  <Component id="tfFechadoRel" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="tfFrigorificoRel" alignment="0" max="32767" attributes="0"/>
-                                                  <Component id="tfTanquerRel" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
+                                                  <Component id="tfAbertoRel1" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfFechadoRel1" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfFrigorificoRel1" alignment="0" max="32767" attributes="0"/>
+                                                  <Component id="tfTanquerRel1" alignment="0" min="-2" pref="87" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel145" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel158" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="tfEmCursoRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  <Component id="tfEmCursoRel1" min="-2" pref="90" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel144" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel159" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="tfMarcadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  <Component id="tfMarcadasRel1" min="-2" pref="90" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jLabel143" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel160" min="-2" max="-2" attributes="0"/>
                                                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                                                  <Component id="tfTerminadasRel" min="-2" pref="90" max="-2" attributes="0"/>
+                                                  <Component id="tfTerminadasRel1" min="-2" pref="90" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
@@ -5972,40 +6133,40 @@
                                   <Group type="102" alignment="1" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tfAbertoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel139" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfAbertoRel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel154" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tfFechadoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel140" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfFechadoRel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel155" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tfFrigorificoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel141" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfFrigorificoRel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel156" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tfTanquerRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel142" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfTanquerRel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel157" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Group type="102" alignment="0" attributes="0">
                                               <Group type="103" groupAlignment="3" attributes="0">
-                                                  <Component id="tfTerminadasRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                                  <Component id="jLabel143" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="tfTerminadasRel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel160" alignment="3" min="-2" max="-2" attributes="0"/>
                                               </Group>
                                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="tfMarcadasRel" min="-2" max="-2" attributes="0"/>
+                                              <Component id="tfMarcadasRel1" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <Component id="jLabel144" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel159" alignment="1" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="tfEmCursoRel" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel145" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="tfEmCursoRel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel158" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace pref="123" max="32767" attributes="0"/>
                                   </Group>
@@ -6013,51 +6174,51 @@
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JTextField" name="tfAbertoRel">
+                            <Component class="javax.swing.JTextField" name="tfAbertoRel1">
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel139">
+                            <Component class="javax.swing.JLabel" name="jLabel154">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Aberto"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel140">
+                            <Component class="javax.swing.JLabel" name="jLabel155">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Fechado"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="tfFechadoRel">
+                            <Component class="javax.swing.JTextField" name="tfFechadoRel1">
                             </Component>
-                            <Component class="javax.swing.JTextField" name="tfFrigorificoRel">
+                            <Component class="javax.swing.JTextField" name="tfFrigorificoRel1">
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel141">
+                            <Component class="javax.swing.JLabel" name="jLabel156">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Frigorifico"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel142">
+                            <Component class="javax.swing.JLabel" name="jLabel157">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Tanque"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="tfTanquerRel">
+                            <Component class="javax.swing.JTextField" name="tfTanquerRel1">
                             </Component>
-                            <Component class="javax.swing.JTextField" name="tfEmCursoRel">
+                            <Component class="javax.swing.JTextField" name="tfEmCursoRel1">
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel145">
+                            <Component class="javax.swing.JLabel" name="jLabel158">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Em Curso"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel144">
+                            <Component class="javax.swing.JLabel" name="jLabel159">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Marcadas"/>
                               </Properties>
                             </Component>
-                            <Component class="javax.swing.JTextField" name="tfMarcadasRel">
+                            <Component class="javax.swing.JTextField" name="tfMarcadasRel1">
                             </Component>
-                            <Component class="javax.swing.JTextField" name="tfTerminadasRel">
+                            <Component class="javax.swing.JTextField" name="tfTerminadasRel1">
                             </Component>
-                            <Component class="javax.swing.JLabel" name="jLabel143">
+                            <Component class="javax.swing.JLabel" name="jLabel160">
                               <Properties>
                                 <Property name="text" type="java.lang.String" value="Terminadas"/>
                               </Properties>
@@ -6072,6 +6233,14 @@
                       </Properties>
                       <Events>
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRelatTipoActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btRelatTipo1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Custos/Lucros"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btRelatTipo1ActionPerformed"/>
                       </Events>
                     </Component>
                   </SubComponents>

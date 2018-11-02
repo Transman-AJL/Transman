@@ -489,21 +489,37 @@ public class NewHome extends javax.swing.JFrame {
         jPanelRelatRoot = new javax.swing.JPanel();
         PainelRelatorios = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
-        tfAbertoRel = new javax.swing.JTextField();
+        tfComb = new javax.swing.JTextField();
         jLabel139 = new javax.swing.JLabel();
         jLabel140 = new javax.swing.JLabel();
-        tfFechadoRel = new javax.swing.JTextField();
-        tfFrigorificoRel = new javax.swing.JTextField();
+        tfAlo = new javax.swing.JTextField();
+        tfAli = new javax.swing.JTextField();
         jLabel141 = new javax.swing.JLabel();
         jLabel142 = new javax.swing.JLabel();
-        tfTanquerRel = new javax.swing.JTextField();
+        tfCarg = new javax.swing.JTextField();
         tfEmCursoRel = new javax.swing.JTextField();
         jLabel145 = new javax.swing.JLabel();
         jLabel144 = new javax.swing.JLabel();
         tfMarcadasRel = new javax.swing.JTextField();
-        tfTerminadasRel = new javax.swing.JTextField();
-        jLabel143 = new javax.swing.JLabel();
+        jLabel161 = new javax.swing.JLabel();
+        tfEmCursoRel2 = new javax.swing.JTextField();
+        jPanelCustos = new javax.swing.JPanel();
+        tfAbertoRel1 = new javax.swing.JTextField();
+        jLabel154 = new javax.swing.JLabel();
+        jLabel155 = new javax.swing.JLabel();
+        tfFechadoRel1 = new javax.swing.JTextField();
+        tfFrigorificoRel1 = new javax.swing.JTextField();
+        jLabel156 = new javax.swing.JLabel();
+        jLabel157 = new javax.swing.JLabel();
+        tfTanquerRel1 = new javax.swing.JTextField();
+        tfEmCursoRel1 = new javax.swing.JTextField();
+        jLabel158 = new javax.swing.JLabel();
+        jLabel159 = new javax.swing.JLabel();
+        tfMarcadasRel1 = new javax.swing.JTextField();
+        tfTerminadasRel1 = new javax.swing.JTextField();
+        jLabel160 = new javax.swing.JLabel();
         btRelatTipo = new javax.swing.JButton();
+        btRelatTipo1 = new javax.swing.JButton();
         kPanelNorth = new keeptoo.KGradientPanel();
         lbUserNameHome = new javax.swing.JLabel();
         btNotificacoes = new javax.swing.JLabel();
@@ -3931,19 +3947,19 @@ public class NewHome extends javax.swing.JFrame {
         PainelRelatorios.setLayout(new javax.swing.BoxLayout(PainelRelatorios, javax.swing.BoxLayout.LINE_AXIS));
         jPanelRelatRoot.add(PainelRelatorios, "card2");
 
-        jLabel139.setText("Aberto");
+        jLabel139.setText("Total Combustível");
 
-        jLabel140.setText("Fechado");
+        jLabel140.setText("Total Alojamento");
 
-        jLabel141.setText("Frigorifico");
+        jLabel141.setText("Total Alimentação");
 
-        jLabel142.setText("Tanque");
+        jLabel142.setText("Total Lucro Carga");
 
-        jLabel145.setText("Em Curso");
+        jLabel145.setText("Valor total Custos");
 
-        jLabel144.setText("Marcadas");
+        jLabel144.setText("Valor Total Gasto");
 
-        jLabel143.setText("Terminadas");
+        jLabel161.setText("Valor Total Lucros");
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -3952,74 +3968,171 @@ public class NewHome extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel139)
-                            .addComponent(jLabel140)
-                            .addComponent(jLabel141)
-                            .addComponent(jLabel142))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(tfAbertoRel)
-                            .addComponent(tfFechadoRel)
-                            .addComponent(tfFrigorificoRel)
-                            .addComponent(tfTanquerRel, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel144)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addComponent(jLabel145)
-                            .addGap(18, 18, 18)
-                            .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addComponent(jLabel144)
-                            .addGap(18, 18, 18)
-                            .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel10Layout.createSequentialGroup()
-                            .addComponent(jLabel143)
-                            .addGap(18, 18, 18)
-                            .addComponent(tfTerminadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(432, Short.MAX_VALUE))
+                            .addComponent(jLabel161)
+                            .addGap(23, 23, 23)
+                            .addComponent(tfEmCursoRel2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel139)
+                                    .addComponent(jLabel140)
+                                    .addComponent(jLabel141)
+                                    .addComponent(jLabel142))
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jPanel10Layout.createSequentialGroup()
+                                            .addGap(23, 23, 23)
+                                            .addComponent(tfCarg, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(tfAlo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(tfComb, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(tfAli, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(jPanel10Layout.createSequentialGroup()
+                                        .addGap(23, 23, 23)
+                                        .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel10Layout.createSequentialGroup()
+                                .addComponent(jLabel145)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(397, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tfAbertoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfComb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel139))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tfFechadoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfAlo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel140))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tfFrigorificoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfAli, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel141))
                 .addGap(18, 18, 18)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tfCarg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel142, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel144)
+                    .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tfTanquerRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel142))
+                    .addComponent(jLabel145, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(tfTerminadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel143))
-                        .addGap(18, 18, 18)
-                        .addComponent(tfMarcadasRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel144, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tfEmCursoRel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel145))
-                .addContainerGap(123, Short.MAX_VALUE))
+                    .addComponent(jLabel161)
+                    .addComponent(tfEmCursoRel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(130, Short.MAX_VALUE))
         );
 
         jPanelRelatRoot.add(jPanel10, "card3");
+
+        jLabel154.setText("Aberto");
+
+        jLabel155.setText("Fechado");
+
+        jLabel156.setText("Frigorifico");
+
+        jLabel157.setText("Tanque");
+
+        jLabel158.setText("Em Curso");
+
+        jLabel159.setText("Marcadas");
+
+        jLabel160.setText("Terminadas");
+
+        javax.swing.GroupLayout jPanelCustosLayout = new javax.swing.GroupLayout(jPanelCustos);
+        jPanelCustos.setLayout(jPanelCustosLayout);
+        jPanelCustosLayout.setHorizontalGroup(
+            jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCustosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelCustosLayout.createSequentialGroup()
+                        .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel154)
+                            .addComponent(jLabel155)
+                            .addComponent(jLabel156)
+                            .addComponent(jLabel157))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(tfAbertoRel1)
+                            .addComponent(tfFechadoRel1)
+                            .addComponent(tfFrigorificoRel1)
+                            .addComponent(tfTanquerRel1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanelCustosLayout.createSequentialGroup()
+                            .addComponent(jLabel158)
+                            .addGap(18, 18, 18)
+                            .addComponent(tfEmCursoRel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanelCustosLayout.createSequentialGroup()
+                            .addComponent(jLabel159)
+                            .addGap(18, 18, 18)
+                            .addComponent(tfMarcadasRel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanelCustosLayout.createSequentialGroup()
+                            .addComponent(jLabel160)
+                            .addGap(18, 18, 18)
+                            .addComponent(tfTerminadasRel1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(432, Short.MAX_VALUE))
+        );
+        jPanelCustosLayout.setVerticalGroup(
+            jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCustosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfAbertoRel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel154))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfFechadoRel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel155))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfFrigorificoRel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel156))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfTanquerRel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel157))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelCustosLayout.createSequentialGroup()
+                        .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tfTerminadasRel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel160))
+                        .addGap(18, 18, 18)
+                        .addComponent(tfMarcadasRel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel159, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCustosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(tfEmCursoRel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel158))
+                .addContainerGap(123, Short.MAX_VALUE))
+        );
+
+        jPanelRelatRoot.add(jPanelCustos, "card3");
 
         btRelatTipo.setText("Viagens por tipo");
         btRelatTipo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btRelatTipoActionPerformed(evt);
+            }
+        });
+
+        btRelatTipo1.setText("Custos/Lucros");
+        btRelatTipo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btRelatTipo1ActionPerformed(evt);
             }
         });
 
@@ -4039,7 +4152,9 @@ public class NewHome extends javax.swing.JFrame {
                             .addComponent(jPanelRelatRoot, javax.swing.GroupLayout.PREFERRED_SIZE, 605, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(kPanelRelatoriosLayout.createSequentialGroup()
                         .addGap(47, 47, 47)
-                        .addComponent(btRelatTipo)))
+                        .addComponent(btRelatTipo)
+                        .addGap(41, 41, 41)
+                        .addComponent(btRelatTipo1)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         kPanelRelatoriosLayout.setVerticalGroup(
@@ -4052,7 +4167,9 @@ public class NewHome extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanelRelatRoot, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btRelatTipo)
+                .addGroup(kPanelRelatoriosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btRelatTipo)
+                    .addComponent(btRelatTipo1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -4876,8 +4993,8 @@ public class NewHome extends javax.swing.JFrame {
         
         double valCarga=this.precoCarga(Double.parseDouble(tfPesoVol2.getText()), tipo);
         
-        double vTotal=consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM());
-        tfValorTotal3.setText(consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM())+"Mt");
+        double vTotal=consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM())+valCarga;
+        tfValorTotal3.setText(consumoC+alojamento+alimentacao+(distancia*t.getPrecoKM())+valCarga+"Mt");
         String total=tfValorTotal3.getText();
         
         tfCustoCarga3.setText(df.format(valCarga)+" Mt");
@@ -5671,6 +5788,10 @@ public class NewHome extends javax.swing.JFrame {
         
     }//GEN-LAST:event_btTerminarActionPerformed
 
+    private void btRelatTipo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btRelatTipo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btRelatTipo1ActionPerformed
+
 
     public void setColor(JPanel panel)
     {
@@ -5795,12 +5916,12 @@ public class NewHome extends javax.swing.JFrame {
             }
             
         }
-            tfAbertoRel.setText(aberto+"");
-            tfFechadoRel.setText(fechado+"");
-            tfFrigorificoRel.setText(frigorifico+"");
-            tfTanquerRel.setText(tanque+"");
+            tfComb.setText(aberto+"");
+            tfAlo.setText(fechado+"");
+            tfAli.setText(frigorifico+"");
+            tfCarg.setText(tanque+"");
             
-            tfTerminadasRel.setText(terminadas+"");
+            //tfTerminadasRel.setText(terminadas+"");
             tfMarcadasRel.setText(marcadas+"");
             tfEmCursoRel.setText(emCurso+"");
             
@@ -6097,6 +6218,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JButton btProximo;
     private javax.swing.JButton btProximo2;
     private javax.swing.JButton btRelatTipo;
+    private javax.swing.JButton btRelatTipo1;
     private javax.swing.JLabel btSettings;
     private javax.swing.JButton btTerminar;
     private javax.swing.JButton btTerminarViagem;
@@ -6175,7 +6297,6 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel140;
     private javax.swing.JLabel jLabel141;
     private javax.swing.JLabel jLabel142;
-    private javax.swing.JLabel jLabel143;
     private javax.swing.JLabel jLabel144;
     private javax.swing.JLabel jLabel145;
     private javax.swing.JLabel jLabel146;
@@ -6187,7 +6308,15 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel151;
     private javax.swing.JLabel jLabel152;
     private javax.swing.JLabel jLabel153;
+    private javax.swing.JLabel jLabel154;
+    private javax.swing.JLabel jLabel155;
+    private javax.swing.JLabel jLabel156;
+    private javax.swing.JLabel jLabel157;
+    private javax.swing.JLabel jLabel158;
+    private javax.swing.JLabel jLabel159;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel160;
+    private javax.swing.JLabel jLabel161;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
@@ -6289,6 +6418,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel jPanelCustos;
     private javax.swing.JPanel jPanelMainBackground;
     private javax.swing.JPanel jPanelMenu;
     private javax.swing.JPanel jPanelRelatRoot;
@@ -6411,13 +6541,17 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tFViagemVer;
     private javax.swing.JTextField tFVolumeVer;
     private javax.swing.JTable tableRegViaturas;
-    private javax.swing.JTextField tfAbertoRel;
+    private javax.swing.JTextField tfAbertoRel1;
+    private javax.swing.JTextField tfAli;
+    private javax.swing.JTextField tfAlo;
     private javax.swing.JTextField tfAno;
     private javax.swing.JTextField tfAno4;
+    private javax.swing.JTextField tfCarg;
     private javax.swing.JTextField tfClienteF;
     private javax.swing.JTextField tfClienteF1;
     private javax.swing.JTextField tfClienteNuit1;
     private javax.swing.JTextField tfClienteTer;
+    private javax.swing.JTextField tfComb;
     private javax.swing.JTextField tfConsumoCombustivel;
     private javax.swing.JTextField tfCustoCarga3;
     private javax.swing.JTextField tfDataPTer;
@@ -6434,6 +6568,8 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfDistritoP3;
     private javax.swing.JTextField tfEderecoD1;
     private javax.swing.JTextField tfEmCursoRel;
+    private javax.swing.JTextField tfEmCursoRel1;
+    private javax.swing.JTextField tfEmCursoRel2;
     private javax.swing.JTextField tfEnderecoD2;
     private javax.swing.JTextField tfEnderecoD3;
     private javax.swing.JTextField tfEnderecoP1;
@@ -6442,8 +6578,8 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfEstadoF;
     private javax.swing.JTextField tfEstadoF1;
     private javax.swing.JTextField tfEstadoTer;
-    private javax.swing.JTextField tfFechadoRel;
-    private javax.swing.JTextField tfFrigorificoRel;
+    private javax.swing.JTextField tfFechadoRel1;
+    private javax.swing.JTextField tfFrigorificoRel1;
     private javax.swing.JTextField tfKilometragem;
     private javax.swing.JTextField tfKilometragem4;
     private javax.swing.JTextField tfLocalD2;
@@ -6453,6 +6589,7 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfMarca;
     private javax.swing.JTextField tfMarca4;
     private javax.swing.JTextField tfMarcadasRel;
+    private javax.swing.JTextField tfMarcadasRel1;
     private javax.swing.JTextField tfMatricula;
     private javax.swing.JTextField tfMatricula4;
     private javax.swing.JTextField tfModelo;
@@ -6480,8 +6617,8 @@ public class NewHome extends javax.swing.JFrame {
     private javax.swing.JTextField tfProvinciaD3;
     private javax.swing.JTextField tfProvinciaP2;
     private javax.swing.JTextField tfProvinciaP3;
-    private javax.swing.JTextField tfTanquerRel;
-    private javax.swing.JTextField tfTerminadasRel;
+    private javax.swing.JTextField tfTanquerRel1;
+    private javax.swing.JTextField tfTerminadasRel1;
     private javax.swing.JTextField tfTipoV1;
     private javax.swing.JTextField tfTipoV3;
     private javax.swing.JTextField tfValorAlimentacao3;
